@@ -7,7 +7,8 @@
     "test": "jest -i --coverage",
     "start": "node index.js",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
-    "dboff": "killall mondod"
+    "dboff": "killall mondod",
+    "lint": "eslint ."
   },
   "author": "Jeff Kusowski",
   "license": "MIT",
