@@ -1,6 +1,6 @@
 'use strict';
 
-require('.lib/setup');
+require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
 const accountMock = require('./lib/account-mock');
