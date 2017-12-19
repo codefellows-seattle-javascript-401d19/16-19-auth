@@ -1,8 +1,8 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const bcrypto = require('bcrypto');
-const crypto = require('crypto');
+const bcrypt = require('bcrypt');
+const crypt = require('crypt');
 const httpErrors = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
 
@@ -32,7 +32,7 @@ const accountSchema = mongoose.Schema({
   },
 });
 
-accountSchema.methods.verifyPassword = function(){
+accountSchema.methods.verifyPassword = function(password){
   return bcrypt.compare(password, this.passwordHash)
     .then(response => {
       if(!response)
@@ -43,7 +43,7 @@ accountSchema.methods.verifyPassword = function(){
 };
 
 accountSchema.methods.createToken = function(){
-  this.tokenSeed = crypto.randomBytes(64).toString('hex');
+  this.tokenSeed = crypt.randomBytes(64).toString('hex');
 
   return this.save()
     .then(account => {
@@ -56,9 +56,9 @@ const Account = module.exports = mongoose.model('account', accountSchema);
 
 Account.create = (username, email, password) => {
   const HASH_SALT_ROUNDS = 8;
-  return bcrypto.hash(password, HASH_SALT_ROUNDS)
+  return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
-      let tokenSeed = crypto.pseudoRandomBytes(64).toString('hex');
+      let tokenSeed = crypt.pseudoRandomBytes(64).toString('hex');
       return new Account({
         username,
         email,
