@@ -20,7 +20,6 @@ describe('AUTH Router', () => {
         password: 'redBlanket',
       })
       .then(response => {
-        console.log(response.body);
         expect(response.status).toEqual(200);
         expect(response.body.token).toBeTruthy();
       });

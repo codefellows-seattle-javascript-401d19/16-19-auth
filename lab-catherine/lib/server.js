@@ -16,7 +16,7 @@ app.use(require('../route/auth-router'));
 
 
 
-app.all('*', (request,response) => {
+app.all('*', (request, response) => {
   logger.log('info', 'Returning a 404 from the catch-all route');
   return response.sendStatus(404);
 });
@@ -27,7 +27,7 @@ app.use(require('./error-middleware'));
 const server = module.exports = {};
 
 server.start = () => {
-  return new Promise((resolve,reject) => {
+  return new Promise((resolve, reject) => {
     if(isServerOn){
       logger.log('error', '__SERVER_ERROR__ server is already on');
       return reject(new Error('__SERVER_ERROR__ server is already on'));
