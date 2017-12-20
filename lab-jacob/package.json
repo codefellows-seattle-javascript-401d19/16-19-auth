@@ -8,5 +8,19 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mongoose": "^4.13.7"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^4.0.0",
+    "faker": "^4.1.0",
+    "httperrors": "^2.3.0",
+    "jest": "^22.0.3",
+    "jsonwebtoken": "^8.1.0",
+    "superagent": "^3.8.2"
+  }
 }

@@ -1,19 +1,22 @@
-# 15-Lab Binary Tree
+# 17-Lab basic authentication
 
-* Day 15 Bunary Tree Traversal
+* Day 17 basic authentication
  
 ### Data structures, Double Linked List, Stack, Queue and Binary Search Algorithims 
 
 ## Built With
 * **ECMA6**
-
 * **Jest**
-
 * **Node**
-
 * **Net** 
-
 * **Winston**
+* **superagent**
+* **mongoose**
+* **dotenv** 
+* **crypto**
+* **httpErrors**
+* **jsonwebtoken**
+* **bcrypt**
 
 ## Authors
 
