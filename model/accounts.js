@@ -53,7 +53,7 @@ accountSchema.methods.createToken = function(){
     .then(account => {
         
       return jsonWebToken.sign({
-        tokenSeed : account.tokenSeed},process.env.CAT_CLOUD_SECRET);
+        tokenSeed : account.tokenSeed},process.env.THE_CLOUD_SECRET);
     });
 };
 
