@@ -6,8 +6,6 @@ const bcrypt = require('bcrypt');
 const httpErrors = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
 
-require('dotenv');//wont be needed once this is running on server
-
 const accountSchema = mongoose.Schema({
   passwordHash : {
     type : String,
@@ -62,7 +60,7 @@ Account.create = (username, email, password) => {
   return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
       let tokenSeed = crypto.randomBytes(64).toString('hex');
-      return new Account({ //nicholas TODO: remove me--this is the same as username : username
+      return new Account({
         username,
         email,
         passwordHash,

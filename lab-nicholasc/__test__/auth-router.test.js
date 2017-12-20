@@ -3,38 +3,55 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock');
+const accountMockFactory = require('./lib/account-mock'); //TODO: change all accountMock in accountmock.js to account-mock-factory
 
-const apiUrl =`http://localhost:{process.env.PORT}/signup`;
+const apiUrl =`http://localhost:{process.env.PORT}`; //TODO : give/signup to post routes
 
 describe('auth router', () => {
   beforeAll(server.start);
   afterAll(server.stop);
-  afterEach(accountMock.remove({}));
+  afterEach(accountMockFactory.remove);
+  //
+  // describe('POST', () => {
+  //   test('post creating account should respond 200 and token if no errors', () => {
+  //     return superagent.post(apiUrl)
+  //       .send({
+  //         username : 'nicholas',
+  //         email : 'nick.carignan@sbcglobal.net',
+  //         password : 'password',
+  //       })
+  //       .then(response => {
+  //         console.log(response.body);
+  //         expect(response.status).toEqual(200);
+  //         expect(response.body.token).toBeTruthy();
+  //       });
+  //   });
+  //   test('POST /signup should return a 400 if incomplete request', () => {
+  //     return superagent.post(apiUrl)
+  //       .send({
+  //         username : 'nicholas',
+  //         email : 'nick.carignan@sbcglobal.net',
+  //       })
+  //       .then(Promise.reject)
+  //       .catch(response => {
+  //         console.log(response.body);
+  //         expect(response.status).toEqual(400);
+  //       });
+  //   });
+  // });
+  //
 
-  test('post creating account should respond 200 and token if no errors', () => {
-    return superagent.post(apiUrl)
-      .send({
-        username : 'gregor',
-        email : 'gregor@gregor.com',
-        password : 'password',
-      })
-      .then(response => {
-        console.log(response.body);
-        expect(response.status).toEqual(200);
-        expect(response.body.token).toBeTruthy();
-      });
-  });
-  test('POST /signup should return a 400 if incomplete request', () => {
-    return superagent.post(apiUrl)
-      .send({
-        username : 'gregor',
-        email : 'gregor@gregor.com',
-      })
-      .then(Promise.reject)
-      .catch(response => {
-        console.log(response.body);
-        expect(response.status).toEqual(400);
-      });
+  describe('GET /login', () => {
+    test('GET login should get 200 if there are no errors', () =>{
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`apiUrl/login`)
+            .auth(mock.request.username, mock.username.password);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.token).toBeTruthy();
+        });
+    });
   });
 });
