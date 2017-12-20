@@ -21,7 +21,7 @@ module.exports = (request, response, next) => {
   Account.findOne({username})
     .then(account => {
       if(!account)
-        throw new httpErrors(404, '__ERROR__ not found'); //TODO: delete this- NOTE: all sites have different standards for this and maybe you dont want to give too specific information here so that dirty hackers cant get in
+        throw new httpErrors(404, '__ERROR__ not found');
       return account.verifyPassword(password);
     })
     .then(account => {
