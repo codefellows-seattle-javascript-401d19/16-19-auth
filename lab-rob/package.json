@@ -1,0 +1,27 @@
+{
+  "name": "lab-17-19-auth",
+  "version": "1.0.0",
+  "description": "CodeFellows Code 401d19 Lab 17-19 Auth",
+  "main": "error-middleware.js",
+  "scripts": {
+    "test": "jest -i --coverage",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db",
+    "dboff": "killall mongod"
+  },
+  "author": "Robert Reed",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "faker": "^4.1.0",
+    "jest": "^22.0.3",
+    "superagent": "^3.8.2"
+  }
+}
