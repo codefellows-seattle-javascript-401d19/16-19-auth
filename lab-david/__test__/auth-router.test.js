@@ -63,7 +63,7 @@ describe('AUTH Router', () => {
     test('GET /login should get a 200 status code and a token if there are no errors', () => {
       return accountMockFactory.create()
         .then(mock => {
-          return superagent.get(`${apiURL}/login/:_id`)
+          return superagent.get(`${apiURL}/login`)
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
