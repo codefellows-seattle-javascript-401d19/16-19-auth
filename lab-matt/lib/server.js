@@ -24,7 +24,7 @@ app.use(require('../route/account-router'));
 
 app.all('*', (request, response) => {
   log('info', '__404__ They don\'t think it be like it is, but it do.');
-  return response.sendStatus(404);
+  return response.status(404).send('__404__ They Don\'t think it be like it is, but it do')
 });
 
 // ================ ERROR MIDDLEWARE ===================
@@ -43,7 +43,7 @@ server.start = () => {
     }
     httpServer = app.listen(process.env.PORT, () => {
       isServerOn = true;
-      log('info', `Server is listening on port: ${process.env.PORT}`);
+      log('verbose', `Server is listening on port: ${process.env.PORT}`);
       return resolve();
     });
   })
