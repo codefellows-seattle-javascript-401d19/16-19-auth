@@ -1,8 +1,8 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const crypto = require('crypto'); // generate random strings
-const bcrypt = require('bcrypt'); //hash passwords
+const crypto = require('crypto');
+const bcrypt = require('bcrypt');
 const httpErrors = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');	
 
@@ -47,7 +47,6 @@ accountSchema.methods.createToken = function() {
 
 	return this.save()
 		.then(account => {
-			//here, we know the tokenSeed is unique
 			return jsonWebToken.sign({
 				tokenSeed: account.tokenSeed}, process.env.CAT_CLOUD_SECRET);
 		});
@@ -56,13 +55,12 @@ accountSchema.methods.createToken = function() {
 const Account = module.exports = mongoose.model('account', accountSchema);
 
 Account.create = (username, email, password) => {
-	//TODO: error checking
 	const HASH_SALT_ROUNDS = 8;
 	return bcrypt.hash(password, HASH_SALT_ROUNDS)
 	.then(passwordHash => {
 		let tokenSeed = crypto.randomBytes(64).toString('hex');
 		return new Account({
-			username, //ES6 method...same as username: username, email: email, etc
+			username, 
 			email,
 			passwordHash,
 			tokenSeed,
