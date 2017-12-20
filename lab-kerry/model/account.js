@@ -1,10 +1,10 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt'); //hash passwords
 const crypto = require('crypto'); // generate random strings
-const jsonWebToken = require('jsonwebtoken');	
+const bcrypt = require('bcrypt'); //hash passwords
 const httpErrors = require('http-errors');
+const jsonWebToken = require('jsonwebtoken');	
 
 
 const accountSchema = mongoose.Schema ({
@@ -30,7 +30,7 @@ const accountSchema = mongoose.Schema ({
 	created: {
 		type: Date,
 		default: () => new Date(),
-	}
+	},
 });
 
 accountSchema.methods.verifyPassword = function(password) {
