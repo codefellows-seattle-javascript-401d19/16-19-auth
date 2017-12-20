@@ -37,4 +37,22 @@ describe('AUTH Router', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST /signup - if a key is unique request should return a 409', () => {
+    let userToPost = {
+      username: 'mooshy',
+      email: 'mooshy@mooshy.com',
+      password: 'redBlanket',
+    };
+    return superagent.post(apiURL)
+      .send(userToPost)
+      .then(() => { 
+        return superagent.post(apiURL)
+          .send(userToPost);
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
+      });
+  });
 });
