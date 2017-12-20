@@ -72,9 +72,6 @@ describe('AUTH Router', () => {
         .then(response => {
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
-        })
-        .catch(err => {
-          expect(err).toEqual(undefined);
         });
     });
   });

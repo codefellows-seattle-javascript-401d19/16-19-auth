@@ -103,3 +103,16 @@
 {"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-20T18:35:39.827Z"}
 {"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-20T18:35:39.828Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-20T18:35:39.834Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-20T18:53:09.657Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T18:53:09.803Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T18:53:09.899Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T18:53:09.901Z"}
+{"message":"__ERROR__ username, email and passowrd are required to create an account","stack":"BadRequestError: __ERROR__ username, email and passowrd are required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/route/account-router.js:14:17)\n    at Layer.handle [as handle_request] (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/express/lib/router/route.js:137:13)\n    at /Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/raw-body/index.js:224:16)\n    at done (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/Andrew/cf/401/labs/16-19-auth/lab-andrew/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:106:13)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T18:53:09.901Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and passowrd are required to create an account","timestamp":"2017-12-20T18:53:09.903Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T18:53:09.911Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T18:53:09.948Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T18:53:09.979Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"kitty@cats.com\" }","op":{"username":"kitty","email":"kitty@cats.com","passwordHash":"$2a$08$JggRb2PWjfwcqVrp9odEFOOMbft06SpK/oPuYhCPAoS1ufC9rrOCy","tokenSeed":"400172c1f1618abe13b7947ff4b5462f652b4bb2d11f6f647aabed4740289d75fba1a1f41e3337e3c99fbf634ab5e1199de791c72ca97a90ccbdc3d3335d4fc5","_id":"5a3ab195b3a87deb447df874","created":"2017-12-20T18:53:09.975Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code","timestamp":"2017-12-20T18:53:09.983Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-20T18:53:10.036Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-20T18:53:10.077Z"}
