@@ -13,7 +13,7 @@ describe('AUTH Router', () => {
   afterAll(server.stop);
   afterEach(accountMockFactory.remove);
 
-  describe('AUTH Router', () => {
+  describe('POST', () => {
 
     test('POST creating an account should respond with a 200 and a token if there are no errors', () => {
       return superagent.post(`${apiURL}/signup`)

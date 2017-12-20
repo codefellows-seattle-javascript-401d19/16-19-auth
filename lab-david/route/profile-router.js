@@ -2,12 +2,12 @@
 
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
-const Account = require('../model/account');
+const Profile = require('../model/profile');
 const httpErrors = require('http-errors');
 
-const basicAuthMiddleware = require('../lib/basic-auth-middleware');
+const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 
-const authRouter = module.exports = new Router();
+const profileRouter = module.exports = new Router();
 
 authRouter.post('/signup', jsonParser, (request, response, next) => {
   if(!request.body.username || !request.body.email || !request.body.password)

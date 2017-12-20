@@ -24,7 +24,7 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(400, '__ERROR__ token required'));
 
   return promisify(jsonWebToken.verify)(token, process.env.CAT_CLOUD_SECRET)
-    .catch(error => Promise.reject(new httpErrors(401, error)) //poor practice as its a catch thats not at the end of the code. if web token fails it goes here. 
+    .catch(error => Promise.reject(new httpErrors(401, error))) //poor practice as its a catch thats not at the end of the code. if web token fails it goes here. 
     .then(decryptedData => {
       console.log(decryptedData);
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
