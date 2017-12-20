@@ -1,15 +1,15 @@
 'use strict';
 
 const faker = require('faker');
-const accountMock = require('./account-mock');
+const accountMockFactory = require('./account-mock-factory');
 const Profile = require('../../model/profile');
 
-const profileMock = module.exports = {};
+const profileMockFactory = module.exports = {};
 
-profileMock.create = () => {
+profileMockFactory.create = () => {
   let resultMock = {};
 
-  return accountMock.create()
+  return accountMockFactory.create()
     .then(accountMock => {
       resultMock.accountMock = accountMock;
 
@@ -28,9 +28,9 @@ profileMock.create = () => {
     });
 };
 
-profileMock.remove = () => {
+profileMockFactory.remove = () => {
   return Promise.all([
-    accountMock.remove(),
+    accountMockFactory.remove(),
     Profile.remove({}),
   ]);
 };

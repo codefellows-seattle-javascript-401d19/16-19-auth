@@ -15,7 +15,7 @@ module.exports = (request, response, next) => {
   let stringAuthHeader = new Buffer(base64AuthHeader, 'base64').toString();
   let [username, password] = stringAuthHeader.split(':');
 
-  if(!username || password)
+  if(!username || !password)
     return next(new httpErrors(400, '__ERROR__ username and password required'));
 
   Account.findOne({username})
