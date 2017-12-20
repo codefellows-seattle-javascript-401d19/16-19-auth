@@ -7,29 +7,11 @@ const httpErrors = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
 
 const accountSchema = mongoose.Schema({
-  passwordHash: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    require: true,
-    unique: true,
-  },
-  username : {
-    type : String,
-    required : true,
-    unique : true,
-  },
-  tokenSeed : {
-    type : String,
-    required : true,
-    unique : true,
-  },
-  created :{
-    type : Date,
-    default : () => new Date(),
-  },
+  passwordHash: {type: String, required: true},
+  email: {type: String, require: true, unique: true},
+  username : {type : String, required : true, unique : true},
+  tokenSeed : {type : String, required : true, unique : true},
+  created :{type : Date, default : () => new Date()},
 });
 
 accountSchema.methods.verifyPassword = function(password){
