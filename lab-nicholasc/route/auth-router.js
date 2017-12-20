@@ -8,10 +8,14 @@ const httpErrors = require('http-errors');
 const authRouter = module.exports = new Router();
 
 authRouter.post('/signup', jsonParser, (request, response, next) => {
-  if(!request.body.username || !request.body.email || !request.body.password)
+  if(!request.body.username || !request.body.email || !request.body.password){
+    logger.log('info', '__ERROR__ username, email, and password are required to create an account');
     return next(httpErrors(400, '__ERROR__ username, email, and password are required to create an account'));
+  }
   Account.create(request.body.username, request.body.email, request.body.password)
-    .then(user => user.createToken())
+    .then(user => {
+      console.log('user is', user);
+      user.createToken();})
     .then(token => response.json({token}))
     .catch(next);
 });
