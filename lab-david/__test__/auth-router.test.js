@@ -56,19 +56,22 @@ describe('AUTH Router', () => {
         .catch(response => {
           expect(response.status).toEqual(409);
         });
+    });
   });
-});
 
-describe('GET /login', () => {
-  test('GET /login should get a 200 status code and a token if there are no errors', () => {
-    return accountMockFactory.create()
-      .then(mock => {
-        return superagent.get(`${apiURL}/login`)
-          .auth(mock.request.username, mock.request.password);
-      })
-      .then(response => {
-        expect(response.status).toEqual(200);
-        expect(response.body.token).toBeTruthy();
-      });
+  describe('GET /login', () => {
+    test('GET /login should get a 200 status code and a token if there are no errors', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username, mock.request.password);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.token).toBeTruthy();
+        });
+    });
   });
+
+  
 });
