@@ -31,6 +31,7 @@ Setting user auth ability for our cat cloud app.
 ## Installation / How to use
 - clone this repo to your machine
 - run `npm install` to install all dependencies
+- run `npm run dbon` to turn on the mongoDB server
 - run `npm test` to run tests
 
 ## Tests
