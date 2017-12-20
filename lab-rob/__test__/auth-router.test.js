@@ -36,4 +36,36 @@ describe('auth-router.js', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST should respond with a 409 if a duplicate username is sent.', () => {
+    return accountMock.create()
+      .then(mock => {
+        return superagent.post(apiUrl)
+          .send({
+            username: mock.account.username,
+            email: 'new@email.com',
+            password: 'secretStuff',
+          });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
+      });
+  });
+
+  test('POST should respond with a 409 if a duplicate email is sent.', () => {
+    return accountMock.create()
+      .then(mock => {
+        return superagent.post(apiUrl)
+          .send({
+            username: 'myName',
+            email: mock.account.email,
+            password: 'secretStuff',
+          });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
+      });
+  });
 });

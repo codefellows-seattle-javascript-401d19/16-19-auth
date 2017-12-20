@@ -7,7 +7,7 @@ const accountMock = module.exports = {};
 accountMock.create = () => {
   let mock = {};
   mock.request = {
-    username: faker.internet.username(),
+    username: faker.internet.userName(),
     password: faker.lorem.words(10),
     email: faker.internet.email(),
   };
