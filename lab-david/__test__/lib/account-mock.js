@@ -5,7 +5,7 @@ const Account = require('../../model/account');
 
 const accountMock = module.exports = {};
 
-accountMock.create = () = {
+accountMock.create = () => {
   let mock = {};
   mock.request = {
     username : faker.internet.userName(),
@@ -20,7 +20,7 @@ accountMock.create = () = {
     })
     .then(token => {
       mock.token = token;
-        return Account.findById(mock.account._id);
+      return Account.findById(mock.account._id);
     })
     .then(account => {
       mock.account = account;
