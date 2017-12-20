@@ -88,6 +88,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# DB 
+db/* 
 
 ### VisualStudioCode ###
 .vscode/*
