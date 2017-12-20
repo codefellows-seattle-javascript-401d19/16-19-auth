@@ -5,7 +5,7 @@ const jsonParser = require('body-parser').json();
 const Account = require('../model/account');
 const httpErrors = require('http-errors');
 
-const authRouter = moduule.exports = new Router();
+const authRouter = module.exports = new Router();
 
 authRouter.post('/signup', jsonParser, (request, response, next) => {
   if(!request.body.username || !request.body.email || !request.body.password)
