@@ -1,7 +1,7 @@
 'use strict';
 
 const httpErrors = require('http-errors');
-const Account = require('../mode/account');
+const Account = require('../model/account');
 
 module.exports = (request, response, next) => {
   if(!request.headers.authorization)
