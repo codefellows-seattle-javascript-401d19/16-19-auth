@@ -41,7 +41,7 @@ server.start = () => {
       return resolve();
     });
   })
-    .then(() => mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true}));
+    .then(mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true}));
 };
 server.stop = () => {
   return new Promise((resolve, reject) => {

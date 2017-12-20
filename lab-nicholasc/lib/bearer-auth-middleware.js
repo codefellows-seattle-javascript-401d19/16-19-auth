@@ -24,7 +24,7 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(404, '__ERROR__ token required'));
 
   return promisify(jsonWebToken.verify)(token, process.env.CAT_CLOUD_SECRET)
-    .catch(error => Promise.reject(new httpErrors(401, error)))
+    .catch(error => Promise.reject(new httpErrors(401, error))) //TODO: refactor for homework -put this all into the error middleware
     .then(decryptedData => {
       console.log(decryptedData); //TODO:remove me
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
