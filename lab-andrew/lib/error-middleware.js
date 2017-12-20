@@ -35,6 +35,8 @@ module.exports = (error, request, response, next) => { //eslint-disable-line
     return response.sendStatus(401);
   }
 
+  // TODO: add error handling for bearer-auth errors (401 code/unauthorized) if incorrect token sent
+
   logger.log('info', 'Responding with a 500 status code');
   logger.log('info',error);
   return response.sendStatus(500);
