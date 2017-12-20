@@ -15,12 +15,3 @@ authRouter.post('/signup', jsonParser, (request, response, next) => {
     .then(token => response.json({token}))
     .catch(next);
 });
-
-// authRouter.post('/signup', jsonParser, (request, response, next) => {
-//   if(!request.body.username || !request.body.email || !request.body.password)
-//     return next(httpErrors(409, `__ERROR__ this user already exists`));
-//   Account.create(request.body.username, request.body.email, request.body.password)
-//     .then(user => user.createToken())
-//     .then(token => response.json({token}))
-//     .catch(next);
-// });
