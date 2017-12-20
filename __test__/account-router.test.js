@@ -37,4 +37,25 @@ describe('Account Router', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST /signup - a duplate request should return a 409', () => {
+    return superagent.post(apiURL)
+      .send({
+        username: 'stupid',
+        email: 'stupid@stupider.com',
+        password: 'catstuffs',
+      })
+      .then(() => {
+        return superagent.post(apiURL)
+          .send({
+            username: 'stupid',
+            email: 'stupid@stupider.com',
+            password: 'catstuffs',
+          });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
+      });
+  });
 });
