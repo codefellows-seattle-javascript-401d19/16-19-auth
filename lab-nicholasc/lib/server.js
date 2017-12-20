@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true});
 //-------------------------------
 
 app.use(require('./logger-middleware'));
+
 const authRoutes = require('../route/auth-router');
 app.use(authRoutes);
 
