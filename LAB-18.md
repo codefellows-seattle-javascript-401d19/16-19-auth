@@ -36,9 +36,9 @@ Create a model with at least four properties that belongs to an account. The mod
   * on failure due to bad token or lack of token respond with a 401 status code
 
 ## Tests
-* Write 200, 400, and 401 tests for `/login`
-* Write 200, 400, and 401 tests for `POST /<resource-name>`
-* Write 200, 404, and 401 tests for `GET /<resource-name>/:id`
+* Write 200, 400, and 401/404 tests for `/login`
+* Write 200, 400, and 401/404 tests for `POST /<resource-name>`
+* Write 200, 404, and 401/404 tests for `GET /<resource-name>/:id`
 
 ## Documentation
 In the README.md write documention for starting your server and makeing requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
