@@ -31,9 +31,8 @@ describe('AUTH Router', () => {
         username: 'kitty',
         email: 'kitty@cats.com',
       })
-      // .then(Promise.reject())
+      .then(Promise.reject)
       .catch(response => {
-        console.log('hey');
         expect(response.status).toEqual(400);
       });
   });
