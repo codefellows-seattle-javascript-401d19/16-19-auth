@@ -46,3 +46,6 @@
 {"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"kitty@cats.com\" }","op":{"username":"kitty","email":"kitty@cats.com","passwordHash":"$2a$08$mSbL.Byd9BSDRz8CpvMmfukDq71DDd.xkRmt/MVvNRfGjx8aXxpR2","tokenSeed":"567bcfa8c1b053ef7d3103c645d302a265d452379d9c492d435d69ea21f111933dda4a38877ce9ec9b4d5077604a1c8a8066ccd2a776a6b684e20d395e5268f3","_id":"5a39ed8274fe61d6990d7cc4","created":"2017-12-20T04:56:34.100Z","__v":0}}
 {"level":"info","message":"Responding with a 409 status code","timestamp":"2017-12-20T04:56:34.110Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-20T04:56:34.114Z"}
+{"level":"error","message":"__SERVER_ERROR__ PORT variable is not configured","timestamp":"2017-12-20T05:11:31.450Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-20T05:11:59.323Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-20T05:12:26.814Z"}
