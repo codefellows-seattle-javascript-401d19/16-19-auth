@@ -33,7 +33,6 @@ describe('auth router', () => {
         })
         .then(Promise.reject)
         .catch(response => {
-          console.log(response.body);
           expect(response.status).toEqual(400);
         });
     });
