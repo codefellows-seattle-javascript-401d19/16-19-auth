@@ -7,15 +7,15 @@ const logger = require('./logger');
 const app = express();
 let isServerOn = false;
 let httpServer = null;
+//NOTE: debugged, server working great
 //------------------------------------------------
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true});
+// mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true});
 //-------------------------------
 
 app.use(require('./logger-middleware'));
 
-const authRoutes = require('../route/auth-router');
-app.use(authRoutes);
+app.use(require('../route/auth-router'));
 
 app.all('*', (request, response) => {
   logger.log('info', 'returning a 404 from the catch-all route');

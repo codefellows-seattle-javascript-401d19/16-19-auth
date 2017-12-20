@@ -1,5 +1,5 @@
 'use strict';
-
+//NOTE : this looks like lecture code
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
 const Account = require('../model/account');
@@ -14,10 +14,12 @@ authRouter.post('/signup', jsonParser, (request, response, next) => {
     return next(new httpErrors(400, '__ERROR__ username, email, and password are required to create an account'));
   }
   Account.create(request.body.username, request.body.email, request.body.password)
-    .then(user => {
-      console.log('user is', user); //TODO:remove
-      user.createToken();})
-    .then(token => response.json({token}))
+    .then(user => user.createToken())
+    .then(token => {
+      console.log('token is' , token);
+      response.json({token});
+
+    })
     .catch(next);
 });
 

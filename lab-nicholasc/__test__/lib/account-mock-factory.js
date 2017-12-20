@@ -3,9 +3,9 @@
 const faker = require('faker');
 const Account = require('../../model/account');
 
-const accountMock = module.exports = {};
+const accountMockFactory = module.exports = {};
 
-accountMock.create = () => {
+accountMockFactory.create = () => {
   let mock = {};
   mock.request = {
     username : faker.internet.userName(),
@@ -20,13 +20,13 @@ accountMock.create = () => {
     })
     .then(token => {
       mock.token = token;
-      return Account.findById(mock.account.id);
+      return Account.findById(mock.account._id);
     })
     .then(account => {
       mock.account = account;
-      console.log(mock);
+      // console.log(mock);
       return mock;
     });
 };
 
-accountMock.remove = () => Account.remove({});
+accountMockFactory.remove = () => Account.remove({});

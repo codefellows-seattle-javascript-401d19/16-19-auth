@@ -1,5 +1,5 @@
 'use strict';
-
+//NOTE:debugged this file
 const mongoose = require('mongoose');
 const crypto = require('crypto');
 const bcrypt = require('bcrypt');
@@ -36,7 +36,7 @@ accountSchema.methods.verifyPassword = function(password){
   return bcrypt.compare(password, this.passwordHash)
     .then(response => {
       if(!response)
-        throw httpErrors(401, '__AUTH__ incorrect username or password');
+        throw new httpErrors(401, '__AUTH__ incorrect username or password');
 
       return this;
     });

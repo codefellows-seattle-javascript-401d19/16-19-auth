@@ -1,11 +1,11 @@
 'use strict';
-
+// NOTE:fixed apiUrl- still failing elsewhere
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMockFactory = require('./lib/account-mock'); //TODO: change all accountMock in accountmock.js to account-mock-factory
+const accountMockFactory = require('./lib/account-mock-factory'); //TODO: change all accountMock in accountmock.js to account-mock-factory
 
-const apiUrl =`http://localhost:{process.env.PORT}`; //TODO : give/signup to post routes
+const apiUrl =`http://localhost:${process.env.PORT}`; //TODO : give/signup to post routes
 
 describe('auth router', () => {
   beforeAll(server.start);
@@ -13,15 +13,15 @@ describe('auth router', () => {
   afterEach(accountMockFactory.remove);
 
   describe('POST', () => {
-    test('post creating account should respond 200 and token if no errors', () => {
-      return superagent.post(apiUrl)
+    test.only('post creating account should respond 200 and token if no errors', () => {
+      return superagent.post(`${apiUrl}/signup`)
         .send({
           username : 'nicholas',
           email : 'nick.carignan@sbcglobal.net',
           password : 'password',
         })
         .then(response => {
-          console.log(response.body);
+          console.log('response.body is : ', response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
