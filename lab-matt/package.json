@@ -1,0 +1,25 @@
+{
+  "name": "lab-matt",
+  "version": "1.0.0",
+  "description": "Lab 17 of code fellows Basic Authorization",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest -i --coverage"
+  },
+  "author": "Matthew LeBlanc",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "http-errors": "^1.6.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "jest": "^22.0.3"
+  }
+}

@@ -22,7 +22,7 @@ app.use(require('./logger-middleware'));
 app.use(require('../route/account-router'));
 
 app.all('*', (request, response) => {
-  log('info', 'Returning a 404 from the catch-all route');
+  log('info', '__404__ They don\'t think it be like it is, but it do.');
   return response.sendStatus(404);
 });
 
