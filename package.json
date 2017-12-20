@@ -28,6 +28,7 @@
     "express": "^4.16.2",
     "http-errors": "^1.6.2",
     "jsonwebtoken": "^8.1.0",
+    "mongodb": "^3.0.0-rc0",
     "mongoose": "^4.13.7",
     "winston": "^2.4.0"
   }

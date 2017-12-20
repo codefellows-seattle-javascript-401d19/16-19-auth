@@ -2,7 +2,7 @@
 
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
-const Account = require('../model/account');
+const Account = require('../model/accounts');
 const httpErrors = require('http-errors');
 
 
