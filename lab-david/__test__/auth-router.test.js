@@ -39,11 +39,13 @@ describe('AUTH Router', () => {
       });
   });
 
-  test('POST /signup - an request for an id that already exists should send a 409 status', () => {
-    return superagent.post(apiURL)
-      .send({
-        username : 'zaphod',
-        email : 'president@galaxy.org',
+  test('POST /signup - an duplicate username request should send a 409 status', () => {
+    return accountMock.create()
+      .then(mock => {
+        return superagent.post(apiURL)
+          .send({
+            username : mock.username,
+          });
       })
       .then(Promise.reject)
       .catch(response => {

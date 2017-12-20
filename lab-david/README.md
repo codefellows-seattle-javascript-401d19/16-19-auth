@@ -1,6 +1,6 @@
 # Code Fellows 401
-## Binary Tree - Day 15
-This is a binary tree data structure demonstration that uses a constructor to create new binary trees. The constructor includes three prototype methods that traverse the trees. 
+## Authentication
+This is a RESTful HTTP server with basic authentication using express.  
 
 ## Motivation
 I was motivated by an extreme desire to learn web development which led me to enroll in this program which ultimately led me to this assignment. 
@@ -10,16 +10,22 @@ Javascript
 
 ## Dependencies necessary 
 ### for production: 
-- none
+- bcrypt
+- body-parser
+- dotenv
+- express
+- http-errors
+- jsonwebtoken
+- mongoose
+- winston
 ### for development: 
 - eslint
-- jest
+- faker
+- jest 
+- superagent
 
 ## Features
-The constructor should create new binary trees and the prototype methods should do the following: 
-- `find(value)` : should iterate over all the child nodes using *in-order traversal* and return the first node given `value` value.
-- `toString(str)` : should iterate over all the child nodes using *pre-order traversal* and concatenate their values into a string separated by new lines. 
-- `toArray(array)` : should iterate over all the child nodes using *post-order traversal* and push all the tree's elements into an array.
+Setting user auth ability for our cat cloud app. 
 
 
 ## Installation / How to use
@@ -28,7 +34,7 @@ The constructor should create new binary trees and the prototype methods should 
 - run `npm test` to run tests
 
 ## Tests
-Test should make sure each traversal and prototype is working correctly. 
+Tests will test for 200, 400 and 409 status codes on the POST route.
 
 ## Contribute
 If anyone wants to help, feel free to open a pull request and send it over. PRs will be answered in the order they are received. 
