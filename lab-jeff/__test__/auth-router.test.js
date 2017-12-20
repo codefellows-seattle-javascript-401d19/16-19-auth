@@ -20,7 +20,6 @@ describe('authRouter', () => {
         password: 'secret',
       })
       .then(response => {
-        console.log(response.body); //TODO: remove this
         expect(response.status).toEqual(200);
         expect(response.body.token).toBeTruthy();
       });
