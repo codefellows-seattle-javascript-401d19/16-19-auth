@@ -21,7 +21,7 @@ Create a middleware for parsing a Bear Authorization header, it should add an Ac
 Create a model with at least four properties that belongs to an account. The model should require an account id associated to an account.
 
 #### Server Endpoints
-* `GET /login`
+* `GET /login` (Auth Route)
   * Create a login route that uses the basic authentication middleware to log in a user.
 * `POST /<resouces-name>` 
   * pass a bearer authentication token in the request to authorize the creation of the resource
