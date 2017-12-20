@@ -13,7 +13,7 @@ describe('AUTH Router', () => {
   afterAll(server.stop);
   afterEach(accountMockFactory.remove);
 
-  describe('POST', () => {
+  describe('POST /signup', () => {
     test('POST creating an account should respond with a 200 and a token if there are no errors', () => {
       return superagent.post(`${apiURL}/signup`)
         .send({
@@ -63,7 +63,7 @@ describe('AUTH Router', () => {
     test('GET /login should get a 200 status code and a token if there are no errors', () => {
       return accountMockFactory.create()
         .then(mock => {
-          return superagent.get(`${apiURL}/login`)
+          return superagent.get(`${apiURL}/login/:_id`)
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
@@ -73,5 +73,18 @@ describe('AUTH Router', () => {
     });
   });
 
-  
+  // TODO : write test for 400 on /login
+
+  // TODO : write test for 404 on /login
+
+  describe('GET /profile/:id', () => {
+
+  // TODO : write test for 404 on GET/profile/:id
+
+  // TODO : write test for 401 on GET/profile/:id
+
+
+
+  });
+
 });
