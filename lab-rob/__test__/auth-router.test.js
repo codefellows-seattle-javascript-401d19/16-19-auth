@@ -24,4 +24,16 @@ describe('auth-router.js', () => {
         expect(response.body.token).toBeTruthy();
       });
   });
+
+  test('POST should respond with a 400 error if incomplete data is sent.', () => {
+    return superagent.post(apiUrl)
+      .send({
+        username: 'Ollie',
+        email: 'dog_stuff@doggoes.net',
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(400);
+      });
+  });
 });
