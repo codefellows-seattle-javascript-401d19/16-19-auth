@@ -14,10 +14,8 @@ accountMock.create = () => {
     password : faker.lorem.words(10),
   };
 
-  return Account.create(mock.request.username,mock.request.email,
-    mock.request.password)
+  return Account.create(mock.request.username, mock.request.email, mock.request.password)
     .then(account => {
-      // vinicio - this account will be re-written, but we need it for now
       mock.account = account;
       return account.createToken();
     })
