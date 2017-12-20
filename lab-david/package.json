@@ -10,21 +10,25 @@
     "test": "jest -i --coverage",
     "lint": "eslint",
     "start": "dbon",
-    "dbon": "mongodb on",
-    "dboff": "mongodb off"
+    "dbon": "mkdir -p ./db && mogod --dpath ./gb",
+    "dboff": "killall mongod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.13.1",
-    "jest": "^22.0.3"
+    "jest": "^22.0.3",
+    "superagent": "^3.8.2"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "http-errors": "^1.6.2",
     "jsonwebtoken": "^8.1.0",
-    "mongoose": "^4.13.7"
+    "mongoose": "^4.13.7",
+    "winston": "^2.4.0"
   }
 }
