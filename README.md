@@ -18,7 +18,7 @@ Configure the root of your repository with the following files and directories. 
 * **README.md** - contains documentation
 * **.env** - contains env variables **(should be git ignored)**
 * **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file 
-* **.eslintrc.json** - contains the course linter configuratoin
+* **.eslintrc.json** - contains the course linter configuration
 * **.eslintignore** - contains the course linter ignore configuration
 * **package.json** - contains npm package config
   * create a `lint` script for running eslint
