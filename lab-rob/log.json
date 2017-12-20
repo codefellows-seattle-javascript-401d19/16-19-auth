@@ -1,0 +1,6 @@
+{"level":"info","message":"Server running on port 3000.","timestamp":"2017-12-20T01:43:57.820Z"}
+{"level":"info","message":"Handling a POST request at endpoint /signup.","timestamp":"2017-12-20T01:43:57.849Z"}
+{"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-20T01:43:57.900Z"}
+{"level":"info","message":"Server running on port 3000.","timestamp":"2017-12-20T01:54:35.701Z"}
+{"level":"info","message":"Handling a POST request at endpoint /signup.","timestamp":"2017-12-20T01:54:35.733Z"}
+{"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-20T01:54:35.838Z"}

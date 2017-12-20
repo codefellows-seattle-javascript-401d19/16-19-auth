@@ -2,4 +2,4 @@
 
 process.env.PORT = 3000;
 process.env.MONGODB_URI = 'mongodb://localhost/testing';
-process.env.SALT_SEED = 'schmoopschmoopschmoop';
+process.env.SALT_SECRET = 'schmoopschmoopschmoop';

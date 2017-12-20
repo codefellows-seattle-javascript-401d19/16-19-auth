@@ -27,4 +27,4 @@ accountMock.create = () => {
     });
 };
 
-accountMock.remove = Account.remove({});
+accountMock.remove = () => Account.remove({});
