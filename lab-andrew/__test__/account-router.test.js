@@ -36,4 +36,26 @@ describe('AUTH Router', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST /signup - a duplicate request should return a 409', () => {
+    return superagent.post(__API_URL__)
+      .send({
+        username: 'kitty',
+        email: 'kitty@cats.com',
+        password: 'catsrule',
+      })
+      .then(() => {
+        return superagent.post(__API_URL__)
+          .send({
+            username: 'kitty',
+            email: 'kitty@cats.com',
+            password: 'catsrule',
+          })
+          .then(Promise.reject)
+          .catch(response => {
+            expect(response.status).toEqual(409);
+          });
+
+      });
+  });
 });
