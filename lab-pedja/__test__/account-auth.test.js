@@ -36,7 +36,7 @@ describe('AUTH Router', () => {
       });
   });
   test('POST should return a 409 due to duplicate username property', () => {
-    return accountMock.create()
+    accountMock.create()
       .then(user => {
         return superagent.post(apiURL)
           .send({

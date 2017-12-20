@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const crypt = require('crypt');
+const crypto = require('crypto');
 const httpErrors = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
 
@@ -43,7 +43,7 @@ accountSchema.methods.verifyPassword = function(password){
 };
 
 accountSchema.methods.createToken = function(){
-  this.tokenSeed = crypt.randomBytes(64).toString('hex');
+  this.tokenSeed = crypto.randomBytes(64).toString('hex');
 
   return this.save()
     .then(account => {
@@ -58,7 +58,7 @@ Account.create = (username, email, password) => {
   const HASH_SALT_ROUNDS = 8;
   return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
-      let tokenSeed = crypt.pseudoRandomBytes(64).toString('hex');
+      let tokenSeed = crypto.pseudoRandomBytes(64).toString('hex');
       return new Account({
         username,
         email,

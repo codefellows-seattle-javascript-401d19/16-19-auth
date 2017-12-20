@@ -1,7 +1,8 @@
-'use script';
+'use strict';
 
 const faker = require('faker');
 const Account = require('../../model/account');
+
 
 const accountMock = module.exports = {};
 
@@ -10,10 +11,11 @@ accountMock.create = () => {
   mock.request = {
     username : faker.internet.userName(),
     email : faker.internet.email(),
-    password : faker.lorem.words(5),
+    password : faker.lorem.words(10),
   };
 
-  return Account.create(mock.request.username, mock.request.email, mock.request.password)
+  return Account.create(mock.request.username,mock.request.email,
+    mock.request.password)
     .then(account => {
       mock.account = account;
       return account.createToken();
