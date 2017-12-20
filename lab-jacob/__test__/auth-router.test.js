@@ -2,7 +2,7 @@
 
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock');
+const accountMock = require('./lib/account-mock-factory');
 
 const apiURL = `http://localhost:${process.env.PORT}/signup`;
 

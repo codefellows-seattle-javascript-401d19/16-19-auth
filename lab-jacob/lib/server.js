@@ -13,8 +13,6 @@ mongoose.connect(process.env.MONGODB_URI,{useMongoClient : true});
 
 const auth = require('../route/auth-router');
 app.use(auth);
-
-
 app.use(require('./logger-middleware'));
 
 app.all('*', (request, response)=> {
@@ -41,6 +39,7 @@ server.start = () => {
   })
     .then(() => mongoose.connect(process.env.MONGODB_URI,{useMongoClient : true}));
 };
+
 server.stop = () => {
   return new Promise((resolve,reject) => {
     if(!isServerOn){
