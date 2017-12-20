@@ -12,7 +12,7 @@ accountMock.create = () => {
     username: faker.internet.userName(),
     password: faker.lorem.words(10),
     email: faker.internet.email(),
-  }
+  };
 
   return Account.create(mock.request.username, mock.request.password, mock.request.email)
     .then(newAccount => {
@@ -27,7 +27,7 @@ accountMock.create = () => {
       mock.account = accountFound;
       return mock;
     });
-}
+};
 
 accountMock.remove = () => {
   return Account.remove({});

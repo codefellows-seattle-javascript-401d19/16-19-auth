@@ -35,7 +35,7 @@ const accountSchema = mongoose.Schema({
 accountSchema.methods.verifyPassword = function(password) {
   return bcrypt.compare(password, this.passwordHash)
     .then(response => {
-      if (!reponse) {
+      if (!response) {
         throw new httpError(401, '__AUTHORIZATION__ Incorrect username or password');
       } else
         return this;
@@ -48,8 +48,8 @@ accountSchema.methods.createToken = function() {
   return this.save()
     .then(account => {
       return jsonWebToken.sign({tokenSeed: account.tokenSeed}, process.env.CLOUD_SALT);    
-    })
-}
+    });
+};
 
 const Account = module.exports = mongoose.model('account', accountSchema);
 

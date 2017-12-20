@@ -24,7 +24,7 @@ app.use(require('../route/account-router'));
 
 app.all('*', (request, response) => {
   log('info', '__404__ They don\'t think it be like it is, but it do.');
-  return response.status(404).send('__404__ They Don\'t think it be like it is, but it do')
+  return response.status(404).send('__404__ They Don\'t think it be like it is, but it do');
 });
 
 // ================ ERROR MIDDLEWARE ===================

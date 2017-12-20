@@ -2,7 +2,7 @@
 
 const log = require('../lib/logger');
 
-module.exports = (error, request, response, next) => {
+module.exports = (error, request, response) => {
   // ================ HTTP ERRORS ================
   log('info', `__MIDDLEWARE_IS_HANDLING_ERROR__ `);
   log('error', error);
