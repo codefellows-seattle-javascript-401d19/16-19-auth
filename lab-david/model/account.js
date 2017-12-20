@@ -1,7 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const crypo = require('cryto');
+const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const httpErrors = require('http-errors');
 const jsonWebTokens = require('jsonwebtoken');
