@@ -21,5 +21,16 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(400, '__ERROR__ username and password required'));
   }
 
-  Account.findOne({username});
+  Account.findOne({username})
+    .then(account => {
+      if (!account){
+        return next(new httpErrors(404, '__ERROR__ username or password is incorrect'));
+      }
+      return account.verifyPassword(password);
+    })
+    .then(account => {
+      request.account = account;
+      return next();
+    })
+    .catch(next);
 };
