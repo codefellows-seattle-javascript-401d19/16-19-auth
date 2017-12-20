@@ -1,50 +1,46 @@
 ![cf](https://i.imgur.com/7v5ASc8.png) Lab 17: Authentication
 ======
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+* The goal of this exercise is building RESTful HTTP server that uses basic authorization using express.
 
-## Resources
-* [express docs](http://expressjs.com/en/4x/api.html)
-* [mongoosse guide](http://mongoosejs.com/docs/guide.html)
-* [mongoosse api docs](http://mongoosejs.com/docs/api.html)
+## Code Style
+* Javascript + ES6, Express JS, Mongodb, Mongoose
 
-## Configuration 
-Configure the root of your repository with the following files and directories. Thoughfully name and organize any aditional configuration or module files.
-* **README.md** - contains documentation
-* **.env** - contains env variables **(should be git ignored)**
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file 
-* **.eslintrc** - contains the course linter configuratoin
-* **.eslintignore** - contains the course linter ignore configuration
-* **package.json** - contains npm package config
-  * create a `lint` script for running eslint
-  * create a `test` script for running tests
-  * create a `start` script for running your server
-  * create `dbon` and `dboff` scripts for managing the mongo daemon
-* **db/** - contains mongodb files **(should be git ignored)**
-* **lib/** - contains module definitions
-* **model/** - contains module definitions
-* **route/** - contains module definitions
-* **\_\_test\_\_/** - contains test modules
 
-## Feature Tasks  
-For this assignment you will be building a RESTful HTTP server with basic authentication useing express.
+## Tech / framework used
+* [npm package faker](https://www.npmjs.com/package/faker) creating random generated text.
+* [npm package http-errors](https://www.npmjs.com/package/uuid) to handle HTTP request/response error.
+* [npm package winston](https://www.npmjs.com/package/winston) as a logging library.
+* [npm package jest](http://facebook.github.io/jest/) used for TDD
+* [npm package dotenv](https://www.npmjs.com/package/dotenv) for loading env variables.
+* [npm package superagent](https://www.npmjs.com/package/superagent) for testing http requests
+* [npm package bcrypt](https://www.npmjs.com/package/bcrypt) used to hash passwords
+* [npm package jsonwebtoken](https://www.npmjs.com/package/bcrypt) de(encrypt) tokens
+* [node crypto](https://nodejs.org/api/crypto.html) generating random strings
 
-#### Account
-Create a user `Account` model that keeps track of a username, email, hashed password, and token seed. The model should be able to regenorate tokens using json web token. 
+## Installation and How To Use
 
-#### Server Endpoints
-* `POST /signup` 
-  * pass data as stringifed JSON in the body of a **POST** request to create a new account
-  * on success respond with a 200 status code and an authentication token
-  * on failure due to a bad request send a 400 status code
+  * Fork || clone this repo to you computer.
 
-## Tests
-* POST should test for 200, 400, and 409 (if any keys are unique)
+  * Run `npm install`
 
-## Documentation
-In the README.md write documention for starting your server and makeing requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
+  * Create .env file and add `PORT=<port>` and `MONGODB_URI=mongodb://localhost/testing`.
+
+  * Run tests using `npm test`
+
+
+## Model
+`Account` model that keeps track of a username, email, hashed password, date when it was created and token seed. Where following properties; email, username and password are requested. The model should be able to regenorate tokens using json web token. 
+
+## Server Endpoints
+
+* Use **POST** `/api/signup/`
+
+  * sends data as a stringified JSON object that has following properties: `username`, `password`, `email`, `created`.
+
+  * if `username`, `email` and `password`  is left out, 400 status code will be returned.
+
+  * if object with same `username` property is send, 409 status code will be returned marking conflict in request.
+
+## Licence
+MIT © Pedja Josifovic
