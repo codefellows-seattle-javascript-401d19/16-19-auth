@@ -1,0 +1,35 @@
+{
+  "name": "16-19-authentication",
+  "version": "1.0.0",
+  "description": "authentication lab",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest -i --coverage",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db",
+    "dboff": "killall mongod",
+    "lint": "eslint",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "token",
+    "token-seed",
+    "authentication"
+  ],
+  "author": "KAry Nordstrom",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "http-errors": "^1.6.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "superagent": "^3.8.2",
+    "winston": "^2.4.0"
+  }
+}
