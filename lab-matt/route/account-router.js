@@ -1,9 +1,10 @@
 'use strict';
 
 const {Router} = require('express');
-const jsonParser = require('express').json();
+const jsonParser = require('body-parser').json();
 const Account = require('../model/account');
 const httpError = require('http-errors');
+// const log = require('../lib/logger');
 
 const authorizationRouter = module.exports = new Router();
 
@@ -14,10 +15,10 @@ authorizationRouter.post('/signup', jsonParser, (request, response, next) => {
 
   Account.create(request.body.username, request.body.password, request.body.email)
     .then(newUser => {
-      newUser.createToken();
+      return newUser.createToken();
     })
     .then(newToken => {
-      response.json({token: newToken});
+      return response.json({token: newToken});
     })
     .catch(next);
 });

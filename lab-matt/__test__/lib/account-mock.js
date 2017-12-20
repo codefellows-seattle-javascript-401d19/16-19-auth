@@ -30,5 +30,5 @@ accountMock.create = () => {
 }
 
 accountMock.remove = () => {
-  Account.remove({});
+  return Account.remove({});
 };

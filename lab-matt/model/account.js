@@ -1,9 +1,7 @@
-import { Mongoose } from 'mongoose';
-
 'use strict';
 
 const mongoose = require('mongoose');
-const crpyto = require('crypto');
+const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const httpError = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
@@ -60,7 +58,7 @@ Account.create = (username, password, email) => {
 
   return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
-      let tokenSeed = crpyto.randomBytes(64).toString('hex');
+      let tokenSeed = crypto.randomBytes(64).toString('hex');
       return new Account({username, email, passwordHash, tokenSeed}).save();
-    })
+    });
 };

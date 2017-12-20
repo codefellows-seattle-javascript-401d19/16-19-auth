@@ -7,15 +7,22 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest -i --coverage"
+    "test": "jest -i --coverage",
+    "lint": "eslint ./",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db",
+    "dboff": "killall mongod"
   },
   "author": "Matthew LeBlanc",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
     "http-errors": "^1.6.2",
     "jsonwebtoken": "^8.1.0",
     "mongoose": "^4.13.7",
+    "superagent": "^3.8.2",
     "winston": "^2.4.0"
   },
   "devDependencies": {

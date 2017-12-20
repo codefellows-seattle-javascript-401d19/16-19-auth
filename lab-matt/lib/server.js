@@ -5,8 +5,9 @@ const mongoose = require('mongoose');
 const log = require('./logger');
 
 // ================ ENV VALUES ===================
-const PORT = process.env.PORT;
-const MONGODB_URI = process.env.MONGODB_URI;
+// process.env.PORT;
+// process.env.MONGODB_URI;
+// process.env.CLOUD_SALT;
 
 // ================ MONGO DB SETUP ===================
 mongoose.Promise = Promise;
@@ -40,14 +41,14 @@ server.start = () => {
       log('error', '__SERVER_ERROR__ Server is already on');
       return reject(new Error('__SERVER_ERROR__ Server is already on'));
     }
-    httpServer = app.listen(PORT, () => {
+    httpServer = app.listen(process.env.PORT, () => {
       isServerOn = true;
-      log('info', `Server is listening on port: ${PORT}`);
+      log('info', `Server is listening on port: ${process.env.PORT}`);
       return resolve();
     });
   })
     .then(() => {
-      mongoose.connect(MONGODB_URI, {useMongoClient: true});
+      mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
     });
 };
 
