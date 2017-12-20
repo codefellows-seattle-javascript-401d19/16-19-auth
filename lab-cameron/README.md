@@ -41,7 +41,9 @@ unique key clashes in the database occur.
 2. run `npm install`
 3. If developing, Ensure that `setup.js` inside of `__test__/lib` is compatible with your machine
 4. If for use in production, create a `.env` file at the root of the project and create a PORT, MONGODB_URI and SECRET (for JWT encryption) key/value pairs
-5. Make POST requests and receive your JWT's
+5. run `npm run dbon` to startup mongo
+6. index.js would be an entry point for `server.start()` to be called upon in future versions
+7. Make POST requests and receive your JWT's
 
 # Tests
 
