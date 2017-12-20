@@ -14,7 +14,6 @@ describe('AUTH Router', () => {
   afterEach(accountMockFactory.remove);
 
   describe('POST', () => {
-
     test('POST creating an account should respond with a 200 and a token if there are no errors', () => {
       return superagent.post(`${apiURL}/signup`)
         .send({
@@ -42,37 +41,34 @@ describe('AUTH Router', () => {
     });
 
     test('POST /signup - an duplicate username request should send a 409 status', () => {
+      let testUser = {
+        username : 'zaphod',
+        email : 'president@galaxy.org',
+        password : '42',
+      };
       return superagent.post(`${apiURL}/signup`)
-        .send({
-          username : 'zaphod',
-          email : 'president@galaxy.org',
-          password : '42',
+        .send(testUser)
+        .then( () => {
+          return superagent.post(`${apiURL}/signup`)
+            .send(testUser);
         })
-        .send({
-          username : 'zaphod',
-          email : 'president@galaxy.org',
-          password : '42',
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(409);
         });
-    })
-      .then(Promise.reject)
-      .catch(response => {
-        expect(response.status).toEqual(409);
+  });
+});
+
+describe('GET /login', () => {
+  test('GET /login should get a 200 status code and a token if there are no errors', () => {
+    return accountMockFactory.create()
+      .then(mock => {
+        return superagent.get(`${apiURL}/login`)
+          .auth(mock.request.username, mock.request.password);
+      })
+      .then(response => {
+        expect(response.status).toEqual(200);
+        expect(response.body.token).toBeTruthy();
       });
   });
-
-  describe('GET /login', () => {
-    test('GET /login should get a 200 status code and a token if there are no errors', () => {
-      return accountMockFactory.create()
-        .then(mock => {
-          return superagent.get(`${apiURL}/login`)
-            .auth(mock.request.username, mock.request.password);
-        })
-        .then(response => {
-          expect(response.status).toEqual(200);
-          expect(response.body.token).toBeTruthy();
-        });
-    });
-
-  });
-
 });

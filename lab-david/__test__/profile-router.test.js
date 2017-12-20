@@ -9,7 +9,7 @@ const profileMockFactory = require('./lib/profile-mock-factory');
 
 const apiURL = `http://localhost:${process.env.PORT}`;
 
-describe('POST / profiles', () => {
+describe('POST /profiles', () => {
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(profileMockFactory.remove);
@@ -23,17 +23,17 @@ describe('POST / profiles', () => {
         return superagent.post(`${apiURL}/profiles`)
           .set('Authorization', `Bearer ${accountMock.token}`)
           .send({
-            bio : 'I am the president.',
+            bio : 'I am the president',
             firstName : 'Zaphod',
             lastName : 'Beeblebrox',
           });
       })
       .then(response => {
         expect(response.status).toEqual(200);
-        expect(response.body.account).toEqual(accountMockFactory.account._id.toString());
+        expect(response.body.account).toEqual(accountMock.account._id.toString());
         expect(response.body.firstName).toEqual('Zaphod');
         expect(response.body.lastName).toEqual('Beeblebrox');
-        expect(response.body.bio).toEqual('I am the president.');
+        expect(response.body.bio).toEqual('I am the president');
 
 
       });

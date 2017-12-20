@@ -6,7 +6,7 @@ const Profile = require('../../model/profile');
 
 const profileMockFactory = module.exports = {};
 
-profileMockFactory.create = () = {
+profileMockFactory.create = () => {
   let resultMock = {};
 
   return accountMockFactory.create()
@@ -15,7 +15,7 @@ profileMockFactory.create = () = {
 
       return new Profile({
         bio : faker.lorem.words(50),
-        avatatar : faker.random.image(),
+        avatar : faker.random.image(),
         lastName : faker.name.lastName(),
         firstName : faker.name.firstName(),
 
@@ -29,9 +29,9 @@ profileMockFactory.create = () = {
 };
 
 
-profileMockFactory.remove = () = {
+profileMockFactory.remove = () => {
   return Promise.all([
-    accountMockFactor.remove();
-    Profile.remove({})
+    accountMockFactory.remove(),
+    Profile.remove({}),
   ]);
 };

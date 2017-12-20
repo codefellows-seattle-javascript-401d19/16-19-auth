@@ -13,6 +13,8 @@ mongoose.Promise = Promise;
 app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
+app.use(require('../route/profile-router'));
+
 
 
 app.all('*', (request, response) => {
