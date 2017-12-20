@@ -13,7 +13,7 @@ describe('auth router', () => {
   afterEach(accountMockFactory.remove);
 
   describe('POST', () => {
-    test.only('post creating account should respond 200 and token if no errors', () => {
+    test('post creating account should respond 200 and token if no errors', () => {
       return superagent.post(`${apiUrl}/signup`)
         .send({
           username : 'nicholas',
@@ -21,13 +21,12 @@ describe('auth router', () => {
           password : 'password',
         })
         .then(response => {
-          console.log('response.body is : ', response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
     });
     test('POST /signup should return a 400 if incomplete request', () => {
-      return superagent.post(apiUrl)
+      return superagent.post(`${apiUrl}/signup`)
         .send({
           username : 'nicholas',
           email : 'nick.carignan@sbcglobal.net',

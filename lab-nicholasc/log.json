@@ -4,3 +4,20 @@
 {"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-20T22:49:57.415Z"}
 {"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T22:49:57.439Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-20T22:49:57.510Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-20T22:50:55.684Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T22:50:55.708Z"}
+{"level":"info","message":"Processing : POST on : /","timestamp":"2017-12-20T22:50:55.787Z"}
+{"level":"info","message":"returning a 404 from the catch-all route","timestamp":"2017-12-20T22:50:55.788Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-20T22:50:55.822Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-20T22:51:57.426Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T22:51:57.450Z"}
+{"level":"info","message":"Processing : POST on : /","timestamp":"2017-12-20T22:51:57.511Z"}
+{"level":"info","message":"returning a 404 from the catch-all route","timestamp":"2017-12-20T22:51:57.512Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-20T22:51:57.544Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-20T22:53:12.803Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T22:53:12.827Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-20T22:53:12.893Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:53:12.895Z"}
+{"message":"__ERROR__ username, email, and password are required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password are required to create an account\n    at Object.<anonymous>.authRouter.post (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/route/auth-router.js:14:64)\n    at Layer.handle [as handle_request] (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/route.js:137:13)\n    at /home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/raw-body/index.js:224:16)\n    at done (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:86:13)\n    at IncomingMessage.emit (events.js:185:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:80:11)\n    at process._tickCallback (internal/process/next_tick.js:104:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:53:12.895Z"}
+{"level":"info","message":"responding with a 400 status and message: __ERROR__ username, email, and password are required to create an account","timestamp":"2017-12-20T22:53:12.896Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-20T22:53:12.926Z"}
