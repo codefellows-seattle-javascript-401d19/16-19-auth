@@ -38,4 +38,17 @@ describe('AUTH Router', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST /signup - an request for an id that already exists should send a 409 status', () => {
+    return superagent.post(apiURL)
+      .send({
+        username : 'zaphod',
+        email : 'president@galaxy.org',
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
+      });
+  });
+
 });
