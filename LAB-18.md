@@ -15,7 +15,7 @@
 Create a middleware for parsing a Basic Authentication header, it should add an Account to the request object. 
 
 #### Bearer Auth middleware 
-Create a middleware for parsing a Bear Authorization header, it should add an Account to the request object.
+Create a middleware for parsing a Bearer Authorization header, it should add an Account to the request object.
 
 #### Access controled resourse 
 Create a model with at least four properties that belongs to an account. The model should require an account id associated to an account.
@@ -36,7 +36,7 @@ Create a model with at least four properties that belongs to an account. The mod
   * on failure due to bad token or lack of token respond with a 401 status code
 
 ## Tests
-* Write 200, 400, and 401/404 tests for `/login`
+* Write 200, 400, and 401/404 tests for `/login` (Auth router)
 * Write 200, 400, and 401/404 tests for `POST /<resource-name>`
 * Write 200, 404, and 401/404 tests for `GET /<resource-name>/:id`
 
