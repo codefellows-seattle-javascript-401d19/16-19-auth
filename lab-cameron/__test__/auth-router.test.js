@@ -37,4 +37,20 @@ describe('auth-router.js', () => {
         expect(response.status).toEqual(400);
       });
   });
+
+  test('POST /signup - should return 409 if unique field is already in use', () => {
+    return accountMock.create()
+      .then(account => {
+        return superagent.post(apiURL)
+          .send({
+            username: account.request.username,
+            email: 'test@test.com',
+            password: 'password',
+          })
+          .then(Promise.reject)
+          .catch(response => {
+            expect(response.status).toEqual(409);
+          });
+      });
+  });
 });
