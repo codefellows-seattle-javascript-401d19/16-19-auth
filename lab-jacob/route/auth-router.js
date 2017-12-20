@@ -8,7 +8,7 @@ const httpErrors = require('http-errors');
 const authRouter = module.exports = new Router();
 
 authRouter.post('/signup', jsonParser, (request, response, next) => {
-  if(!request.bosy.username || !request.body.email || !request.body.password)
+  if(!request.body.username || !request.body.email || !request.body.password)
     return next(httpErrors(400,'__ERROR__ username, email, and password required to make an account'));
 
   Account.create(request.body.username, request.body.email, request.body.password)
