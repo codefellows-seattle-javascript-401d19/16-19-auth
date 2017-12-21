@@ -18,6 +18,7 @@ mongoose.Promise = Promise;
 app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
+app.use(require('../route/profile.router'))
 
 //the catch-all should be at the end of all routes
 
