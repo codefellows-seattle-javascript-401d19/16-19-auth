@@ -96,11 +96,8 @@ describe('ACCOUNTS', () => {
       });
 
       test(': should respond with a 404 if the account was not found', () => {
-        return accountMock.create()
-          .then(mock => { // eslint-disable-line
-            return superagent.get(`${__API_URL__}/login`)
-              .auth('username that doesn\'t exsist', 'password');
-          })
+        return superagent.get(`${__API_URL__}/login`)
+          .auth('username that doesn\'t exsist', 'password')
           .then(Promise.reject)
           .catch(error => {
             expect(error.status).toEqual(404);
