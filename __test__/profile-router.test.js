@@ -14,7 +14,6 @@ describe('Profile Router', () => {
   afterEach(profileMockFactory.remove);
 
   describe('POST/profiles', () => {
-    //TODO: Write 200, test for POST / profiles
     test('Should return a 200 and a profile if there are no errors', () => {
       let accountMock = null;
 
@@ -27,7 +26,6 @@ describe('Profile Router', () => {
               bio: 'I am stupider',
               firstName: 'Cheif',
               lastName: 'Stupid',
-
             }); //body
         })
         .then(response => {
@@ -62,7 +60,7 @@ describe('Profile Router', () => {
         })
         .then(response => {
           expect(response.status).toEqual(200);
-          // expect(response.body.account).toEqual(profileMock.profile.id.toString());
+          expect(response.body._id).toEqual(profileMock.profile._id.toString());
           expect(response.body.firstName).toEqual(profileMock.profile.firstName);
           expect(response.body.lastName).toEqual(profileMock.profile.lastName);
           expect(response.body.bio).toEqual(profileMock.profile.bio);
