@@ -33,7 +33,7 @@ Run `npm start` to start the server.
 
 Make sure you have MongoDb installed (`brew install mongo`), and then run `npm run dbon` to start the database.
 
-Make POST/GET/DELETE/PUT requests to the server to interact with the database, try using httpie (`brew install httpie`).
+Make POST/GET requests to the server to interact with the database, try using httpie (`brew install httpie`).
 
 When finished, run `npm run dboff` to terminate the database.
 
@@ -46,6 +46,32 @@ Send a JSON object with the properties `username` (String, required, unique), `p
 Throws a 400 error if any of the required properties are missing.
 
 Creates a new user in the database and returns their access token.
+
+#### `GET /login`
+
+Set Auth header with Basic authorization `username:password` in base 64. If username and password match, a login token is returned.
+
+Sends a 401 if access is not authorized.
+
+Sends a 404 if account with username is not found.
+
+#### `POST /movies`
+
+Set Bearer auth with token and send a JSON object with `title` (String), `lead` (String), `year` (Number), `synopsis` (String), `account` (account id).
+
+Sends a 400 if any piece of the schema is missing, or if auth is missing or invalid.
+
+Sends a 401 if request is invalid.
+
+Sends a 404 if the token doesn't match any users's token.
+
+#### `GET /movies/<movie id>
+
+Set Bearer auth with token and get the requested movie.
+
+404 is sent if id is not in database.
+
+401 is sent if request is unauthorized.
 
 ## Modules
 
@@ -67,15 +93,31 @@ Exports an object with two methods, `start()` and `stop`. Both have an arity of 
 
 ### `account.js`
 
-Exports a mongoose model for a show. Schema is as follows:
+Exports a mongoose model for an account. Schema is as follows:
 
     `username: String` (required, unique)
     `email: String` (required, unique)
     `password: String` (required)
 
+### `movie.js`
+
+Exports a mongoose model for a movie. Schema is as follows:
+
+    `title: String`
+    `lead: String`
+    `year: Number`
+    `synopsis: String`
+    `account: ObjectId`
+
 ### `auth-router.js`
 
-Exports an instance of a new `Express` Router object specifying a POST for account creation. 
+Exports an instance of a new `Express` Router object specifying a POST for account creation and a GET for logging in. 
+
+Is required into server.js `app.use`.
+
+### `movie-router.js`
+
+Exports an instance of a new `Express` Router object specifying a POST for movie creation and a GET for movie getting. 
 
 Is required into server.js `app.use`.
 
@@ -84,12 +126,27 @@ Is required into server.js `app.use`.
 
 When executed, starts the server.
 
-### account-mock.js
+### account-mock-factory.js
 
 Exports an object with two methods.
 
 1. `accountMock.create()` has an arity of zero and adds a mock account to the database. Returns an object with the mock account and token.
 1. `accountMock.remove()` has an arity of zero and removes all accounts from the database.
+
+### movie-mock-factory.js
+
+Exports an object with two methods.
+
+1. `movieMock.create()` has an arity of zero and adds a mock movie to the database as well as a mock account. Returns an object with the mock account and token, and mock movie.
+1. `accountMock.remove()` has an arity of zero and removes all accounts and movies from the database.
+
+### basic-auth-middleware.js
+
+exports a middleware function of arity three that processes requests and checks for proper basic authentication. Adds an account to the request if the username and password are correct, otherwise throws an error.
+
+### bearer-auth-middleware.js
+
+exports a middleware function of arity three that processes requests and checks for proper bearer authentication. Adds an account to the request if the token is correct, otherwise throws an error.
 
 ### setup.js
 
