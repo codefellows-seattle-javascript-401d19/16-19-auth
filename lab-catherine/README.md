@@ -1,13 +1,13 @@
 # Code Fellows: Seattle 401 JavaScript - 401d19
 
-##  Lab 17: Authentication 
+##  Lab 18: Authorization
 
 ### Author:
  Catherine Looper
 
 ### Motivation
 
-In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic authentication using Express. This server handles POST requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence.
+In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic and bearer authentication using Express. This server handles POST and GET requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence.
 
 ### Build
 
@@ -15,30 +15,56 @@ In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server wit
 
 The server module is creating an http server, defining server-on behavior and exporting an interface for starting and stopping the server. The server module exports an object containing start and stop methods.
 
-The server module requires in express, mongoose, logger, logger-middleware, error-middleware, and the auth-router.js file. The server.start and stop methods return a new Promise with resolve and reject parameters. The start method contains an app.listen function that listens for the server start. The server.stop method has an httpServer.close function that turns the server off by setting the isServerOn variable to false.
+The server module requires in express, mongoose, logger, logger-middleware, error-middleware, auth-router.js and the profile-router.js file. The server.start and stop methods return a new Promise with resolve and reject parameters. The start method contains an app.listen function that listens for the server start. The server.stop method has an httpServer.close function that turns the server off by setting the isServerOn variable to false.
 
 #### Route Module
 
 ##### `auth-router.js`
 
-`auth-router.js` requires in the Router object from express, the jsonParser(body-parser), http-errors, and the account.js model. Inside the module, there is a function declared for `authRouter.post` with the route `/signup`. If a username, email, or password are not provided, then the user will receive a 400 error notifying them that those pieces of information are required. Otherwise, if all pieces of information are provided - then a new account is created with username, email and password and the method `createToken()` is called to send a response with the token. 
+`auth-router.js` requires in the Router object from express, the jsonParser(body-parser), http-errors, the account.js model, and basic-auth-middleware.js. Inside the module, there is a function declared for `authRouter.post` with the route `/signup`. If a username, email, or password are not provided, then the user will receive a 400 error notifying them that those pieces of information are required. Otherwise, if all pieces of information are provided - then a new account is created with username, email and password and the method `createToken()` is called to send a response with the token. There is also an `authRouter.get` method with a `/login` route.
+
+##### `profile-router.js`
+
+`profile-router.js` requires in the Router object from express, the jsonParser(body-parser), http-errors, the profile.js model, and bearer-auth-middleware.js. Inside the module, there is a function declared for `profileRouter.post` with the route `/profiles` and a `profileRouter.get` method with the route `/profiles/:id`. These routes handle posting a profile and retrieving a profile based on its id.
 
 
 #### Model Module
 
+##### `account.js`
+
 `account.js` requires in mongoose, crypto (which generates random strings), bcrypt (for hash passwords), http-errors, and jsonwebtoken. The account model includes the parameters: passwordHash, email, username, tokenSeed, and created. The account model has the methods: `accountSchema.methods.verifyPassword()` and `accountSchema.methods.createToken()` which are for authentication and token creation. There is also an `Account.create` method with the parameters: username, email, and password that actually creates the account.
+
+##### `profile.js`
+
+`profile.js` requires in mongoose. The profile model includes the parameters: bio, avatar, lastName, firstName, and account. The profile model is being exported from the file. This model belongs to the account model.
+
 
 #### Test Module
 
-Contains a `lib/` directory with the files: `setup.js` and `account-mock.js`. These files assist in the tests by setting up the environment variables and mock objects to test.
+Contains a `lib/` directory with the files: `setup.js`,   `account-mock-factory.js`, and  `profile-mock-factory.js`. These files assist in the tests by setting up the environment variables and mock objects to test.
 
 * `POST` - tests for status codes: 
   * `200` - successful post request
   * `400` - if an incomplete post request is sent
+  * `401`/`404 ` - if unauthorized request
+  * `409` - if keys are unique
+
+* `GET` - tests for status codes:
+  * `200` - successful post request
+  * `400` - if an incomplete post request is sent
+  * `401`/`404 ` - if unauthorized request
   * `409` - if keys are unique
 
 
 #### Middleware
+
+#####  `basic-auth-middleware.js`
+
+The basic auth middleware sets up the authentication for username/password verification.
+
+##### `bearer-auth-middleware.js`
+
+The bearer auth middleware handles the error checking for the authorization. It checks that the token is authorized.
 
 ##### `error-middleware.js`
 
