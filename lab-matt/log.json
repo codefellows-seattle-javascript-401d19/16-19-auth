@@ -443,3 +443,232 @@
 {"level":"verbose","message":"Processing: GET On: /","timestamp":"2017-12-20T03:29:05.095Z"}
 {"level":"info","message":"__404__ They don't think it be like it is, but it do.","timestamp":"2017-12-20T03:29:05.096Z"}
 {"level":"verbose","message":"Processing: GET On: /","timestamp":"2017-12-20T03:29:07.098Z"}{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T04:18:36.272Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:54:29.651Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:54:29.738Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:54:29.884Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:54:29.898Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:54:29.965Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:54:43.163Z"}
+{"level":"verbose","message":"Processing: POST On: /profiles","timestamp":"2017-12-20T22:54:43.429Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:54:43.491Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:54:43.641Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:54:43.704Z"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblNlZWQiOiI2MDY4ZWU4MWJiZDFjY2IzYWZkY2M5ZGU2MmE3MDNkNThiYzM2Y2JjMWNjNjdlZjE5YjZlMjczM2MyOGJmODI2ODUwNThlYzU3YzVlY2I2MjY1N2FjNTUzNGNiODdjYWRmYjIzYTNkODdhNGEzMmVjYzJkYTliOWVlODhjYWY2NiIsImlhdCI6MTUxMzgxMDQ4M30.jm_zhS2cT4W5TUumpaJ2nufxXIv1aDS3M1ZAwTn-7UY","level":"verbose","message":"","timestamp":"2017-12-20T22:54:43.731Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:54:43.736Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:54:43.763Z"}
+{"level":"verbose","message":"Processing: GET On: /login","timestamp":"2017-12-20T22:54:43.841Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:54:43.865Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:55:46.989Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:55:47.015Z"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblNlZWQiOiJjMDBlMGViYjM3NjIyNmU4NmQ4ZDk3MTAzNTBlZThiMGRmMDA1MGE4OGY2YmUzMzliZDY4NzIyYWJiNDc4OGRmY2NmNGQ1MzQxM2VjNWQwZDRhZDQxM2VkZWE1ZWI0YjY4M2MwMGE1NDExZTNlNzNiNTI5ZTk3Mjg3MTQyMWRlYyIsImlhdCI6MTUxMzgxMDU0N30.ZiJKhRFb63yNMSsGN__7sZNTg1WvQSAE-O5NtQBsag8","level":"verbose","message":"","timestamp":"2017-12-20T22:55:47.068Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:55:47.076Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:55:47.102Z"}
+{"level":"verbose","message":"Processing: GET On: /login","timestamp":"2017-12-20T22:55:47.160Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:55:47.184Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:56:19.063Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:56:19.090Z"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblNlZWQiOiJkN2ZlMmIxNWM0Yzk1ZDY4ZWQ2NWRmNzk5MTViZmE4NWQ1YjYwZTljOGVhM2FiZmY2Y2FiZjIzNDA1NmM4YTY1Yjg2NjVhYmZlOWM1ZGM3MzI1N2I4ZGQ5ODZkYjUxYmMyNDk0YzM3NWU0MjQ4YzBhYzA5YmNlNmY3Y2UzNDQxZSIsImlhdCI6MTUxMzgxMDU3OX0.UJ5r975aRprg5PvQFeNvnfVBdWeXbwUDCftHHcQiH10","level":"verbose","message":"","timestamp":"2017-12-20T22:56:19.143Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:56:19.151Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:56:19.178Z"}
+{"level":"verbose","message":"Processing: GET On: /login","timestamp":"2017-12-20T22:56:19.233Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:56:19.258Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T22:57:24.780Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T22:57:24.837Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T22:57:24.887Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:06:33.314Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:06:33.367Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:06:33.411Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:07:11.282Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:07:11.342Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:07:11.389Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:07:47.486Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:07:47.538Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:07:47.585Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:10:25.279Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:10:25.338Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:10:25.385Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:10:49.476Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:10:49.530Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:10:49.573Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:11:11.762Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:11:11.814Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:11:11.856Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:11:28.444Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:11:28.497Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:11:28.541Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:12:35.598Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:12:35.652Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:12:35.697Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:12:45.386Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:12:45.439Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:12:45.483Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:13:01.131Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:13:01.184Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:13:01.230Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:13:25.829Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:13:25.883Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:13:25.926Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:24:37.462Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:24:37.522Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:24:37.570Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:25:10.108Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:25:10.164Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:25:10.208Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:25:41.018Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:25:41.078Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:25:41.122Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:27:43.506Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:27:43.559Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:27:43.604Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:29:01.072Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:29:01.126Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:29:01.172Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:30:22.905Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:30:22.958Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:30:23.004Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:30:47.150Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:30:47.203Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:30:47.248Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:31:27.611Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:31:27.667Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:31:27.712Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:31:44.314Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:31:44.370Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:31:44.415Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:32:42.157Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:32:42.184Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:32:42.212Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:33:21.480Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:33:21.508Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:33:21.536Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:33:46.147Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:33:46.173Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:33:46.202Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:35:57.900Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:35:57.929Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:35:57.958Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:36:22.284Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:36:22.338Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:36:22.383Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:37:40.942Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:37:40.997Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:37:41.042Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:38:01.691Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:38:01.748Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:38:01.794Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:38:23.319Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:38:23.374Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:38:23.421Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:39:57.556Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:39:57.610Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:39:57.657Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:40:13.566Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:40:13.619Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:40:13.665Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:43:28.732Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:43:28.788Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:43:28.834Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:43:59.898Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:43:59.953Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:43:59.999Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:45:28.967Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:45:29.023Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:45:29.066Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:48:11.767Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:48:11.823Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:48:11.868Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:48:46.734Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:48:46.792Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:48:46.837Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:49:26.509Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:49:26.566Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:49:26.614Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:49:47.217Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:49:47.273Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:49:47.320Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:53:57.520Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:53:57.578Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:53:57.623Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:55:14.387Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:55:14.444Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:55:14.491Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:58:09.462Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:58:09.520Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:58:09.570Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:59:04.252Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:59:04.280Z"}
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblNlZWQiOiI1ODg1MjQ0ZGE2YjliYzZlYmQ0MTg0NjU3NDI5YjRjNzEwNGJiMjZhYjM0NWYxN2E2YTIxZDg3M2JjZWY2ZjQ5ZDE0MDliMmUyMzIxNWI4N2NhZjlmZDMzYWE2ZmI1YjgyZGI1ODZkOWZjMDU0YTU5NjdmNWExOGYxODllMjYxMCIsImlhdCI6MTUxMzgxNDM0NH0.s_PStsLdQ0xL_lo9pHJ9rS_Pvje2yJN-f58ak_WFtvM","level":"verbose","message":"","timestamp":"2017-12-20T23:59:04.337Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:59:04.345Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:59:04.371Z"}
+{"level":"verbose","message":"Processing: GET On: /login","timestamp":"2017-12-20T23:59:04.426Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:59:04.450Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:59:14.449Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:59:14.505Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:59:14.552Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-20T23:59:27.911Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-20T23:59:27.967Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-20T23:59:28.017Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:00:21.034Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:00:21.090Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:00:21.137Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:00:37.477Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:00:37.533Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:00:37.579Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:01:08.077Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:01:08.133Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:01:08.181Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:02:53.302Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:02:53.355Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:02:53.401Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:04:44.947Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:04:45.000Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:04:45.046Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:09:14.195Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:09:14.249Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:09:14.292Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:10:49.932Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:10:49.986Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:10:50.033Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:12:31.689Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:12:31.742Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:12:31.786Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:12:45.510Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:12:45.563Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:12:45.612Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:13:17.454Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:13:17.509Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:13:17.555Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:18:46.434Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:18:46.488Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:18:46.531Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:20:39.092Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:20:39.147Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:20:39.186Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:20:58.621Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:20:58.675Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:20:58.720Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:21:22.962Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:21:23.016Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:21:23.059Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:22:04.808Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:22:04.860Z"}
+{"level":"info","message":"__404__ They don't think it be like it is, but it do.","timestamp":"2017-12-21T00:22:04.892Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:22:04.903Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:23:20.308Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:23:20.361Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:23:20.407Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:33:45.896Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:33:45.951Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:33:45.997Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:33:46.164Z"}
+{"level":"verbose","message":"Processing: POST On: /profiles","timestamp":"2017-12-21T00:33:46.264Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:33:46.278Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:37:10.048Z"}
+{"level":"verbose","message":"Processing: POST On: /signup","timestamp":"2017-12-21T00:37:10.102Z"}
+{"level":"info","message":"__MIDDLEWARE_IS_HANDLING_ERROR__ ","timestamp":"2017-12-21T00:37:10.140Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"sno@beer.com\" }","op":{"username":"sno","email":"sno@beer.com","passwordHash":"$2a$08$GLFtPQCVTkDwCR.WiJjoOu/.LxRnExLnHWj8rh3MI1grPnDAPQsQO","tokenSeed":"a01c650305d7d90f721811996581352a9d40699f055cb2797df49f50e5b8c3f907aaa9f75570ae3c0cd04cfb0deaa0875bd9c8fdd8b6043cc1935745405be6bf","_id":"5a3b0236e1d4063763c31240","dateCreated":"2017-12-21T00:37:10.136Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code - duplicate key","timestamp":"2017-12-21T00:37:10.142Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:37:10.153Z"}
+{"level":"verbose","message":"Server is listening on port: 3000","timestamp":"2017-12-21T00:37:10.312Z"}
+{"level":"verbose","message":"Processing: POST On: /profiles","timestamp":"2017-12-21T00:37:10.410Z"}
+{"level":"info","message":"Server is shutting down","timestamp":"2017-12-21T00:37:10.422Z"}

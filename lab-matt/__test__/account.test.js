@@ -10,7 +10,7 @@ const log = require('../lib/logger');
 
 const __API_URL__ = `http://localhost:${process.env.PORT}`;
 
-describe('AUTH - Router', () => {
+describe('ACCOUNT - Router', () => {
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(accountMock.remove);
@@ -42,20 +42,46 @@ describe('AUTH - Router', () => {
         });
     });
 
-    test(': sending a duplicate key results in a 409 status', () => {
-      return Account.create('sno', 'beard', 'sno@ballz.com')
+
+
+
+
+    
+    test.only(': sending a duplicate key results in a 409 status', () => {
+      return Account.create('sno', 'beard', 'sno@beer.com')
         .then(() => {
           return superagent.post(`${__API_URL__}/signup`)
             .send({
               username: 'sno',
               password: 'beard',
-              email: 'sno@ballz.com',
+              email: 'sno@beer.com',
             })
             .then(Promise.reject)
             .catch(error => {
+              // console.log('TEST ERROR: ', error);
               expect(error.status).toEqual(409);
             });
         });
+    });
+
+
+
+
+
+
+
+    describe('GET /login', () => {
+      test('should respond with a 200 status code and  a token if no errors', () => {
+        return accountMock.create()
+          .then(mock => {
+            return superagent.get(`${__API_URL__}/login`)
+              .auth(mock.request.username, mock.request.password);
+          })
+          .then(response => {
+            expect(response.status).toEqual(200);
+            expect(response.body.token).toBeTruthy();
+          });
+      });
     });
   });
 });

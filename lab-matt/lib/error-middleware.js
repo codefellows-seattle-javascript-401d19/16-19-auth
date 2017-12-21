@@ -2,7 +2,8 @@
 
 const log = require('../lib/logger');
 
-module.exports = (error, request, response) => {
+module.exports = (error, request, response, next) => {
+  console.log('a \n big \n line \n of \n inside \n error \n middleware');
   // ================ HTTP ERRORS ================
   log('info', `__MIDDLEWARE_IS_HANDLING_ERROR__ `);
   log('error', error);
@@ -34,6 +35,8 @@ module.exports = (error, request, response) => {
     log('info', 'Responding with a 401 status code - unauthorized');
     return response.sendStatus(401);
   }
+  // ================ JSON_WEB_TOKEN ERRORS ================
+
 
   // ================ ELSE ================
   log('info', 'Responding with a 500 status code');
