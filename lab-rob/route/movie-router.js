@@ -19,3 +19,17 @@ movieRouter.post('/movies', bearerAuth, jsonParser, (request, response, next) =>
     .then(movie => response.json(movie))
     .catch(next);
 });
+
+movieRouter.get('/movies/:id', bearerAuth, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ not found'));
+
+  return Movie.findById(request.params.id)
+    .then(movie => {
+      if(!movie)
+        throw new httpErrors(404, '__ERROR__ not found');
+
+      return response.json(movie);
+    })
+    .catch(next);
+});

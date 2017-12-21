@@ -110,4 +110,49 @@ describe('movie-router.js', () => {
         });
     });
   });
+
+  describe('GET /movies/<movie id>', () => {
+    test('should respond with a 200 and the movie if no errors', () => {
+      let resultMock = null;
+
+      return movieMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+
+          return superagent.get(`${apiUrl}/movies/${mock.movie._id}`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.title).toEqual(resultMock.movie.title);
+          expect(response.body.lead).toEqual(resultMock.movie.lead);
+          expect(response.body.year).toEqual(resultMock.movie.year);
+          expect(response.body.synopsis).toEqual(resultMock.movie.synopsis);
+        });
+    });
+
+    test('should respond with a 404 if no movie with the given id exists', () => {
+      return movieMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiUrl}/movies/123123123`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should respond with a 401 status if an unauthorized request is made', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .set('Authorization', 'Bearer wuh-oh!');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
+  });
 });
