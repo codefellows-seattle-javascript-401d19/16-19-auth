@@ -91,5 +91,23 @@ describe('movie-router.js', () => {
           expect(response.status).toEqual(401);
         });
     });
+
+    test('should respond with a 404 status if an token is sent that doesn\'t match a user account token seed', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .set('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblNlZWQiOiI4NWRmMzJhMzk2ZDcwNjIzZmZjZDg5ZjZmNGFmMGQ0MjI4ZGFhMDY0ZDIwNjk1ZWZiODRjMjhhZjQzOTQyMGVlYjBhODVmMzQzMTJjYzVmZmVhNzE0MzA3MjI5MzcxODA1MDllMDgyYWY2YTVjM2Q4Njk2MTUwYzFiZWE2MzdjZSIsImlhdCI6MTUxMzg0MTU3N30.9zkVSZqYblNMY1UO9TnTPYL259MRJgj3twKKtu-f8s0')
+            .send({
+              title: 'Hot Rod',
+              lead: 'Andy Samberg',
+              year: 2007,
+              synopsis: 'Hot Rod is a super silly movie of stuntman Rod Kimble and his journey to be the best stunt man he can be.',
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(4041);
+        });
+    });
   });
 });
