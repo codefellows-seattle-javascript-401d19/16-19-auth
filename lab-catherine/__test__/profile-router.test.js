@@ -38,4 +38,22 @@ describe('PROFILE router', () => {
         });
     });
   });
+
+  describe('GET /profiles/:id', () => {
+    test('Should return a 200 and a profile if there are no errors', () => {
+      let resultMock = null;
+
+      return profileMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/profiles/${resultMock.account._id}`)
+            .set('Authorization', `Bearer ${resultMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          // expect(response.body.token).toBeTruthy();
+          console.log('is this right?', response.body);
+        });
+    });
+  });
 });

@@ -71,5 +71,29 @@ describe('AUTH Router', () => {
           expect(response.body.token).toBeTruthy();
         });
     });
+
+    test('GET /login should get a 400 status code if username or password are not provided', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.password);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('GET /login should get a 404 status code if unauthorized request ', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiURL}/login`)
+            .auth('catherine', 'looper');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
   });
 });

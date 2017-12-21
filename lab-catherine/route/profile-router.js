@@ -12,10 +12,21 @@ const profileRouter = module.exports = new Router();
 profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ Not Found'));
-    return new Profile ({
-      ...request.body,
-      account: request.account._id,
-    }).save()
+  return new Profile ({
+    ...request.body,
+    account: request.account._id,
+  }).save()
+    .then(profile => response.json(profile))
+    .catch(next);
+});
+
+profileRouter.get('/profiles/:id', bearerAuthMiddleware, jsonParser, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ Not Found'));
+  return new Profile ({
+    ...request.body,
+    account: request.account._id,
+  }).save()
     .then(profile => response.json(profile))
     .catch(next);
 });
