@@ -77,19 +77,22 @@ describe('PROFILE router', () => {
   });
 
   describe('GET /profiles/:id', () => {
-    test('Should return a 200 and a profile if there are no errors', () => {
+    test('GET /profiles/:id Should return a 200 and a profile if there are no errors', () => {
       let resultMock = null;
 
       return profileMockFactory.create()
         .then(mock => {
           resultMock = mock;
-          return superagent.get(`${apiURL}/profiles/${resultMock.account._id}`)
-            .set('Authorization', `Bearer ${resultMock.token}`);
+          return superagent.get(`${apiURL}/profiles/${resultMock.profile._id}`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
         })
         .then(response => {
           expect(response.status).toEqual(200);
-          // expect(response.body.token).toBeTruthy();
-          console.log('is this right?', response.body);
+          expect(response.body.account).toEqual(resultMock.accountMock.account._id.toString());
+          expect(response.body.bio).toEqual(resultMock.profile.bio);
+          expect(response.body.avatar).toEqual(resultMock.profile.avatar);
+          expect(response.body.firstName).toEqual(resultMock.profile.firstName);
+          expect(response.body.lastName).toEqual(resultMock.profile.lastName);
         });
     });
   });
