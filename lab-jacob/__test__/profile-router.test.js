@@ -4,8 +4,8 @@ require('./lib/setup');
 
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMockFactory = ('./lib/account-mock-factory.js');
-const profileMockFactory = ('./lib/profile-mock-factory.js');
+const accountMockFactory = require('./lib/account-mock-factory.js');
+const profileMockFactory = require('./lib/profile-mock-factory.js');
 
 const apiURL = `http://localhost:${process.env.PORT}`;
 
