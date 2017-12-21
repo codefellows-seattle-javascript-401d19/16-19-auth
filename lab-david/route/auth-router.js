@@ -25,7 +25,6 @@ authRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
 
   return request.account.createToken()
     .then(token => {
-      console.log(token);
       response.json({token});
     })
     .catch(next);
