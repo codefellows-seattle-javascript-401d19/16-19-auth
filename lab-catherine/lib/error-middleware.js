@@ -33,6 +33,11 @@ module.exports = (error, request, response, next) => {
     logger.log('info', 'Responding with a 401 status code');
     return response.sendStatus(401);
   }
+
+  if(message.includes('jwt malformed')) {
+    logger.log('info', 'responding with a 401 status code');
+    return response.sendStatus(401);
+  }
  
   logger.log('info', 'Responding with a 500 status code');
   logger.log('info', error);

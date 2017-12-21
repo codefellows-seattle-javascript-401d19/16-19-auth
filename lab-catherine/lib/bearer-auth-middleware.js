@@ -16,7 +16,7 @@ const promisify = (fn) => (...args) => {
 
 module.exports = (request, response, next) => {
   if(!request.headers.authorization)
-    return next(new httpErrors(404, '__ERROR__ authorization header required'));
+    return next(new httpErrors(400, '__ERROR__ authorization header required'));
 
   const token = request.headers.authorization.split('Bearer ')[1];
 
@@ -24,7 +24,6 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(400, '__ERROR__ token required'));
 
   return promisify(jsonWebToken.verify)(token, process.env.CAT_CLOUD_SECRET)
-    .catch(error => Promise.reject(new httpErrors(401, error)))
     .then(decryptedData => {
       console.log(decryptedData);
       return Account.findOne({tokenSeed: decryptedData.tokenSeed});

@@ -58,10 +58,11 @@ describe('PROFILE router', () => {
         }); 
     });
 
-    test('Should return a 404 if unauthorized request', () => {
+    test('Should return a 401 if unauthorized request', () => {
       return accountMockFactory.create()
         .then(() => {
           return superagent.post(`${apiURL}/profiles`)
+            .set('Authorization', 'Bearer invalidtoken')
             .send({
               bio: {},
               firstName: {},
@@ -70,7 +71,7 @@ describe('PROFILE router', () => {
         })
         .then(Promise.reject)
         .catch(response => {
-          expect(response.status).toEqual(404);
+          expect(response.status).toEqual(401);
         }); 
     });
   });
