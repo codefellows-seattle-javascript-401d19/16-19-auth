@@ -28,7 +28,6 @@ app.all('*', (request, response) => {
   return response.status(404).send('__404__ They Don\'t think it be like it is, but it do');
 });
 
-// ================ ERROR MIDDLEWARE ===================
 app.use(require('./error-middleware'));
 
 // ================ SERVER USE ===================

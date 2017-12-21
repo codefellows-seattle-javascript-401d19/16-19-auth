@@ -10,7 +10,7 @@ const log = require('../lib/logger');
 
 const __API_URL__ = `http://localhost:${process.env.PORT}`;
 
-describe('ACCOUNT - Router', () => {
+describe('ACCOUNTS', () => {
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(accountMock.remove);
@@ -43,24 +43,23 @@ describe('ACCOUNT - Router', () => {
     });
 
     test(': sending a duplicate key results in a 409 status', () => {
-      return Account.create('sno', 'beard', 'sno@beer.com')
+      return Account.create('sno', 'beard', 'sno@ballz.com')
         .then(() => {
           return superagent.post(`${__API_URL__}/signup`)
             .send({
               username: 'sno',
               password: 'beard',
-              email: 'sno@beer.com',
+              email: 'sno@ballz.com',
             })
             .then(Promise.reject)
             .catch(error => {
-              // console.log('TEST ERROR: ', error);
               expect(error.status).toEqual(409);
             });
         });
     });
 
     describe('GET /login', () => {
-      test('should respond with a 200 status code and  a token if no errors', () => {
+      test(': should respond with a 200 status code and a token if no errors', () => {
         return accountMock.create()
           .then(mock => {
             return superagent.get(`${__API_URL__}/login`)
@@ -69,6 +68,42 @@ describe('ACCOUNT - Router', () => {
           .then(response => {
             expect(response.status).toEqual(200);
             expect(response.body.token).toBeTruthy();
+          });
+      });
+
+      test(': should respond with a 401 due to a bad token', () => {
+        return accountMock.create()
+          .then(mock => {
+            return superagent.get(`${__API_URL__}/login`)
+              .auth(mock.request.username, 'password');
+          })
+          .then(Promise.reject)
+          .catch(error => {
+            expect(error.status).toEqual(401);
+          });
+      });
+
+      test(': should respond with a 400 due to a bad request', () => {
+        return accountMock.create()
+          .then(mock => {
+            return superagent.get(`${__API_URL__}/login`)
+              .auth(mock.request.username);
+          })
+          .then(Promise.reject)
+          .catch(error => {
+            expect(error.status).toEqual(400);
+          });
+      });
+
+      test(': should respond with a 404 if the account was not found', () => {
+        return accountMock.create()
+          .then(mock => { // eslint-disable-line
+            return superagent.get(`${__API_URL__}/login`)
+              .auth('username that doesn\'t exsist', 'password');
+          })
+          .then(Promise.reject)
+          .catch(error => {
+            expect(error.status).toEqual(404);
           });
       });
     });

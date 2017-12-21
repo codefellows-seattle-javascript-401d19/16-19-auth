@@ -28,14 +28,10 @@ accountRouter.post('/signup', jsonParser, (request, response, next) => {
 
   Account.create(request.body.username, request.body.password, request.body.email)
     .then(newUser => {
-      console.log('NEW USER: ', newUser);
       return newUser.createToken();
     })
     .then(newToken => {
       return response.json({token: newToken});
     })
-    .catch(error => {
-      console.log('ROUTER: ', error);
-      next(error);
-    });
+    .catch(next);
 });
