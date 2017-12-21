@@ -130,5 +130,17 @@ describe('movie-router.js', () => {
           expect(response.body.synopsis).toEqual(resultMock.movie.synopsis);
         });
     });
+
+    test.only('should respond with a 404 if no movie with the given id exists', () => {
+      return movieMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiUrl}/movies/123123123`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
   });
 });

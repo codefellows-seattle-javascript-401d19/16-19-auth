@@ -30,5 +30,6 @@ movieRouter.get('/movies/:id', bearerAuth, (request, response, next) => {
         throw new httpErrors(404, '__ERROR__ not found');
 
       return response.json(movie);
-    });
+    })
+    .catch(next);
 });
