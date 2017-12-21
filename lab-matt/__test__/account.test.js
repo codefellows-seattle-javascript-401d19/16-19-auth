@@ -42,12 +42,7 @@ describe('ACCOUNT - Router', () => {
         });
     });
 
-
-
-
-
-    
-    test.only(': sending a duplicate key results in a 409 status', () => {
+    test(': sending a duplicate key results in a 409 status', () => {
       return Account.create('sno', 'beard', 'sno@beer.com')
         .then(() => {
           return superagent.post(`${__API_URL__}/signup`)
@@ -63,12 +58,6 @@ describe('ACCOUNT - Router', () => {
             });
         });
     });
-
-
-
-
-
-
 
     describe('GET /login', () => {
       test('should respond with a 200 status code and  a token if no errors', () => {
