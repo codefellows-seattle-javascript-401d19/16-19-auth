@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mongoose": "^4.13.7"
   },
   "dependencies": {
+    "mongoose": "^4.13.7",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
