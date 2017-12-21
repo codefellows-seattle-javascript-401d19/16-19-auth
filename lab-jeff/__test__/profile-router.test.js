@@ -58,7 +58,7 @@ describe('profile-router', () => {
         });
     });
 
-    test.only('Should return a 401 if there is no token', () => {
+    test('Should return a 401 if there is no token', () => {
 
       return accountMockFactory.create()
         .then( () => {
@@ -86,12 +86,10 @@ describe('profile-router', () => {
       return profileMockFactory.create()
         .then(mock => {
           resultMock = mock;
-          console.log(resultMock.profile._id);
           return superagent.get(`${apiURL}/profiles/${resultMock.profile._id}`)
             .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body._id).toEqual(resultMock.profile._id.toString());
           expect(response.body.firstName).toEqual(resultMock.profile.firstName);
@@ -99,6 +97,36 @@ describe('profile-router', () => {
           expect(response.body.bio).toEqual(resultMock.profile.bio);
         });
     });
-  });
 
+
+    test('Should return a 404 if a bad id is sent', () => {
+      let resultMock = null;
+
+      return profileMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/profiles/${resultMock.profile._id}1`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('Should return a 401 if no token is sent', () => {
+      let resultMock = null;
+
+      return profileMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/profiles/${resultMock.profile._id}`)
+            .set('Authorization', `Bearer badToken`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
+  });
 });

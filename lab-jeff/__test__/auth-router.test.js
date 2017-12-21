@@ -38,7 +38,7 @@ describe('auth-router', () => {
         });
     });
 
-    test('duplicate username or email should responsd with 401', () => {
+    test('duplicate username or email should responsd with 409', () => {
       let userToPost = {
         username: 'Dewey',
         email: 'dewey@dog.com',
@@ -70,6 +70,32 @@ describe('auth-router', () => {
           expect(response.body.token).toBeTruthy();
         });
     });
+
+    test('should get a 400 status if the request headers are not sent properly', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('should get a 401 status code if the password is incorrect', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          mock.request.password = 'wrongpassword';
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username, mock.request.password);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
+
   });
 
 
