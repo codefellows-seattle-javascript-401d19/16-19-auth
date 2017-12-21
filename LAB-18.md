@@ -7,17 +7,17 @@
 
 ## Resources
 * [express docs](http://expressjs.com/en/4x/api.html)
-* [mongoosse guide](http://mongoosejs.com/docs/guide.html)
-* [mongoosse api docs](http://mongoosejs.com/docs/api.html)
+* [mongoose guide](http://mongoosejs.com/docs/guide.html)
+* [mongoose api docs](http://mongoosejs.com/docs/api.html)
 
 ## Feature Tasks  
 #### Basic Auth Middleware
-Create a middleware for parsing a Basic Authentication header, it should add an Account to the request object. 
+Create middleware for parsing a Basic Authentication header, it should add an Account to the request object. 
 
 #### Bearer Auth middleware 
-Create a middleware for parsing a Bearer Authorization header, it should add an Account to the request object.
+Create middleware for parsing a Bearer Authorization header, it should add an Account to the request object.
 
-#### Access controled resourse 
+#### Access controlled resource 
 Create a model with at least four properties that belongs to an account. The model should require an account id associated to an account.
 
 #### Server Endpoints
@@ -41,7 +41,7 @@ Create a model with at least four properties that belongs to an account. The mod
 * Write 200, 404, and 401/404 tests for `GET /<resource-name>/:id`
 
 ## Documentation
-In the README.md write documention for starting your server and makeing requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
+In the README.md write documention for starting your server and making requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
 
 ## Bonus (2 Points)
 Refactor the error-middleware to include JsonWebToken errors and remove the need for the extra jsonWebToken.verify catch in lecture code.
