@@ -72,4 +72,56 @@ describe('profile-router.js', () => {
         });
     });
   });
+
+  describe('GET /profiles/id', () => {
+    test('GET /profiles/id should return a 200 if there are no errors', () => {
+      let profileMock = null;
+
+      return profileMockFactory.create()
+        .then(profile => {
+          profileMock = profile;
+          const profileId = profileMock.profile._id;
+          return superagent.get(`${apiURL}/profiles/${profileId}`)
+            .set('Authorization', `Bearer ${profileMock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.bio).toEqual(profileMock.profile.bio);
+          expect(response.body.avatar).toEqual(profileMock.profile.avatar);
+          expect(response.body.firstName).toEqual(profileMock.profile.firstName);
+          expect(response.body.lastName).toEqual(profileMock.profile.lastName);
+        });
+    });
+
+    test('GET /profiles/id should respond with a 404 if id is invalid', () => {
+      let profileMock = null;
+
+      return profileMockFactory.create()
+        .then(profile => {
+          profileMock = profile;
+          return superagent.get(`${apiURL}/profiles/invalidId`)
+            .set('Authorization', `Bearer ${profileMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('GET /profiles/id should respond with a 401 if token is missing', () => {
+      let profileMock = null;
+
+      return profileMockFactory.create()
+        .then(profile => {
+          profileMock = profile;
+          const profileId = profileMock.profile._id;
+          return superagent.get(`${apiURL}/profiles/${profileId}`)
+            .set('Authorization', `Bearer invalidToken`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
+  });
 });

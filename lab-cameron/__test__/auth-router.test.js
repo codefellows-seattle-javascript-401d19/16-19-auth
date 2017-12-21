@@ -78,5 +78,17 @@ describe('auth-router.js', () => {
           expect(response.status).toEqual(400);
         });
     });
+
+    test('GET /login should return a 404 if username or password is invalid', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth('invalid username', mock.request.password);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
   });
 });
