@@ -15,9 +15,10 @@ movieMockFactory.create = () => {
 
       return new Movie({
         title: faker.random.words(4),
-        lead: faker.name.firstName() + faker.name.lastName(),
+        lead: faker.name.firstName() + ' ' + faker.name.lastName(),
         year: Math.floor(Math.random() * 70) + 1947,
         synopsis: faker.random.words(100),
+        account: accountMock.account._id,
       }).save();
     })
     .then(movie => {
