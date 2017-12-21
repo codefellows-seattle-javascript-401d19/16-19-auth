@@ -37,6 +37,42 @@ describe('PROFILE router', () => {
           expect(response.body.bio).toEqual('I am a fluffy cat');
         });
     });
+
+    test('Should return a 400 if a bad request', () => {
+      let accountMock = null;
+
+      return accountMockFactory.create()
+        .then(mock => {
+          accountMock = mock;
+          return superagent.post(`${apiURL}/profiles`)
+            .set('Authorization', `Bearer ${accountMock.token}`)
+            .send({
+              bio: {},
+              firstName: {},
+              lastName: {},
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        }); 
+    });
+
+    test('Should return a 404 if unauthorized request', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiURL}/profiles`)
+            .send({
+              bio: {},
+              firstName: {},
+              lastName: {},
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        }); 
+    });
   });
 
   describe('GET /profiles/:id', () => {

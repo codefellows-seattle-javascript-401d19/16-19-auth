@@ -16,7 +16,7 @@ const promisify = (fn) => (...args) => {
 
 module.exports = (request, response, next) => {
   if(!request.headers.authorization)
-    return next(new httpErrors(400, '__ERROR__ authorization header required'));
+    return next(new httpErrors(404, '__ERROR__ authorization header required'));
 
   const token = request.headers.authorization.split('Bearer ')[1];
 
