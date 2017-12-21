@@ -9,10 +9,10 @@ const soundMockFactory = module.exports = {};
 soundMockFactory.create = () => {
   let mock = {};
   return accountMockFactory.create()
-    .then(account => {
-      mock.account = account;
+    .then(accountMock => {
+      mock.accountMock = accountMock;
       return new Sound({
-        account : account._id,
+        account : accountMock.account._id,
         title : faker.lorem.words(10),
         url : faker.random.image(),
       }).save();
