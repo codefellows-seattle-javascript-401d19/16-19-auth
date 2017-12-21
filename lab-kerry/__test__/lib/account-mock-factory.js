@@ -3,14 +3,14 @@
 const faker = require('faker');
 const Account = require('../../model/account');
 
-const accountMock = module.exports = {};
+const accountMockFactory = module.exports = {};
 
-accountMock.create = () => {
-	let mock = {};
+accountMockFactory.create = () => {
+	const mock = {};
 	mock.request = {
 		username: faker.internet.userName(),
 		email: faker.internet.email(),
-		password: faker.lorem.words(1),
+		password: faker.lorem.words(10),
 	};
 
 	return Account.create(mock.request.username, mock.request.email, mock.request.password)
@@ -28,4 +28,4 @@ accountMock.create = () => {
 		});
 };
 
-accountMock.remove = () => Account.remove({});
+accountMockFactory.remove = () => Account.remove({});

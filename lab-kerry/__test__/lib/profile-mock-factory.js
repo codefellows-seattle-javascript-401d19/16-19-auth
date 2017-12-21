@@ -7,7 +7,7 @@ const Profile = require('../../model/profile');
 const profileMockFactory = module.exports = {};
 
 profileMockFactory.create = () => {
-	let resultMock = {};
+	const resultMock = {};
 
 	return accountMockFactory.create()
 		.then(accountMock => {
@@ -18,13 +18,11 @@ profileMockFactory.create = () => {
 				avatar: faker.random.image(),
 				lastName: faker.name.lastName(),
 				firstName: faker.name.firstName(),
-
 				account: accountMock.account._id,
 			}).save();
 		})
 		.then(profile => {
 			resultMock.profile = profile;
-
 			return resultMock;
 		});
 };

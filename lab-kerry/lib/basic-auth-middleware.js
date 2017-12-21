@@ -8,7 +8,7 @@ module.exports = (request, response, next) => {
 		return next(new httpErrors(400, '__ERROR__ authorization header required'));
 	}
 
-	let base64AuthHeader = request.headers.authorization.split('Basic')[1];
+	let base64AuthHeader = request.headers.authorization.split('Basic ')[1];
 
 	if (!base64AuthHeader) {
 		return next(new httpErrors(400, '__ERROR__ basic authorization required'))
@@ -21,7 +21,7 @@ module.exports = (request, response, next) => {
 		return next(new httpErrors(400, '__ERROR__ username and password required'));
 	}
 
-	return Account.findOne({ username })
+	return Account.findOne({username})
 		.then(account => {
 			if (!account) {
 				throw new httpErrors(404, '__ERROR__ username not found'); 

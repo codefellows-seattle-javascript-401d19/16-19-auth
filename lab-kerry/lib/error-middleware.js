@@ -32,12 +32,12 @@ module.exports = (error, request, response, next) => {
     return response.sendStatus(409);
   }
   
-    if (message.includes('jwt malformed')) {
-      logger.log('info', 'Responding with a 401 status code.');
-      return response.sendStatus(401);
-    }
-  
   if (message.includes('unauthorized')) {
+    logger.log('info', 'Responding with a 401 status code.');
+    return response.sendStatus(401);
+  }
+  
+  if (message.includes('jwt malformed')) {
     logger.log('info', 'Responding with a 401 status code.');
     return response.sendStatus(401);
   }
