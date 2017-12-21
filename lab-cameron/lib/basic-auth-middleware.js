@@ -15,13 +15,13 @@ module.exports = (request, response, next) => {
   }
 
   const stringAuthHeader = new Buffer(base64AuthHeader, 'base64').toString();
-  const [username, password] = stringAuthHeader.split(' ');
+  const [username, password] = stringAuthHeader.split(':');
 
   if (!username || !password) {
     return next(new httpErrors(400, '__ERROR__ username and password required'));
   }
 
-  return Account.findOne({ username })
+  return Account.findOne({username})
     .then(account => {
       if (!account) {
         throw new httpErrors(404, '__ERROR__ not found');
