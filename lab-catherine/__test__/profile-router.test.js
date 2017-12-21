@@ -38,7 +38,7 @@ describe('PROFILE router', () => {
         });
     });
 
-    test('Should return a 400 if a bad request', () => {
+    test('Should return a 400 if a bad request is sent', () => {
       let accountMock = null;
 
       return accountMockFactory.create()
@@ -93,6 +93,20 @@ describe('PROFILE router', () => {
           expect(response.body.avatar).toEqual(resultMock.profile.avatar);
           expect(response.body.firstName).toEqual(resultMock.profile.firstName);
           expect(response.body.lastName).toEqual(resultMock.profile.lastName);
+        });
+    });
+
+    test('GET /profiles/:id Should return a 400 if authentication is invalid', () => {
+      let resultMock = null;
+
+      return profileMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/profiles/${resultMock.profile._id}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
         });
     });
   });
