@@ -131,7 +131,7 @@ describe('movie-router.js', () => {
         });
     });
 
-    test.only('should respond with a 404 if no movie with the given id exists', () => {
+    test('should respond with a 404 if no movie with the given id exists', () => {
       return movieMockFactory.create()
         .then(mock => {
           return superagent.get(`${apiUrl}/movies/123123123`)
@@ -140,6 +140,18 @@ describe('movie-router.js', () => {
         .then(Promise.reject)
         .catch(response => {
           expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should respond with a 401 status if an unauthorized request is made', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .set('Authorization', 'Bearer wuh-oh!');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
   });
