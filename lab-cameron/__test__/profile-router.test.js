@@ -55,7 +55,7 @@ describe('profile-router.js', () => {
         });
     });
 
-    test.only('should return a 401 status code if token is invalid or cannot be verified', () => {
+    test('should return a 401 status code if token is invalid or cannot be verified', () => {
       return accountMockFactory.create()
         .then(() => {
           return superagent.post(`${apiURL}/profiles`)
