@@ -64,6 +64,7 @@ typings/
 
 # dotenv environment variables file
 .env
+setup.js
 
 
 ### OSX ###
