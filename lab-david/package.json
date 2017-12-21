@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "aws-sdk-mock": "^1.7.0",
     "eslint": "^4.13.1",
     "faker": "^4.1.0",
     "jest": "^22.0.3",
