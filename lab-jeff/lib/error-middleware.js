@@ -17,7 +17,7 @@ module.exports = (error, request, response, next) => {
     logger.log('info', 'Responding with a 404 status code');
     return response.sendStatus(404);
   }
-  //jwt malformed
+
   if(message.includes('validation failed')){
     logger.log('info', 'Responding with a 400 status code');
     return response.sendStatus(400);

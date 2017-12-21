@@ -31,6 +31,6 @@ profileMockFactory.create = () => {
 profileMockFactory.remove = () => {
   return Promise.all([
     accountMockFactory.remove(),
-    Profile.remove(), //jeff - doublecheck this
+    Profile.remove(),
   ]);
 };
