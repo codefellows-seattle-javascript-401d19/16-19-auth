@@ -15,7 +15,6 @@ accountMock.create = () => {
 
 	return Account.create(mock.request.username, mock.request.email, mock.request.password)
 		.then(account => {
-			//This account will be rewritten, but we need it for now
 			mock.account = account;
 			return account.createToken();
 		})

@@ -37,7 +37,7 @@ accountSchema.methods.verifyPassword = function(password) {
 	return bcrypt.compare(password, this.passwordHash)
 		.then(response => {
 			if (!response) 
-				throw new httpErrors(401, '__AUTH__ Incorrect username or password.')
+				throw new httpErrors(401, '__AUTH__ Incorrect username or password.');
 			return this;
 		});
 };
@@ -55,6 +55,7 @@ accountSchema.methods.createToken = function() {
 const Account = module.exports = mongoose.model('account', accountSchema);
 
 Account.create = (username, email, password) => {
+
 	const HASH_SALT_ROUNDS = 8;
 	return bcrypt.hash(password, HASH_SALT_ROUNDS)
 	.then(passwordHash => {

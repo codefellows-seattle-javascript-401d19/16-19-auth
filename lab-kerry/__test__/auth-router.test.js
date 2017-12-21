@@ -38,20 +38,24 @@ describe('AUTH Router', () => {
 			});
 		});
 
-	// test('POST creating an account should response with a 409 status code if there is a duplicate key', () => {
-	// 	return accountMock.create()
-	// 		.then(account => {
-	// 			console.log(account);
-	// 			return superagent.post(apiURL)
-	// 		.send({username: account.request.username,
-	// 					email: account.request.email,
-	// 					password: account.request.password,
-	// 				})
-	// 		.then(Promise.reject)
-	// 		.catch(response => {
-	// 			console.log(response.status);
-	// 			expect(response.status).toEqual(409);
-	// 		});
+	test('POST creating an account should response with a 409 status code if there is a duplicate key', () => {
+		let accountObj = null;
+		return accountMock.create()
+			.then(account => {
+				accountObj = account;
+				console.log(account);
+				return superagent.post(apiURL)
+					.send({
+						username: accountObj.request.username,
+						email: accountObj.request.email,
+						password: accountObj.request.password,
+							})	
+					.then(Promise.reject)
+					.catch(response => {
+						console.log(accountObj);
+						console.log(response.message);
+						expect(response.status).toEqual(409);
+			});
 		});
 	});
 });

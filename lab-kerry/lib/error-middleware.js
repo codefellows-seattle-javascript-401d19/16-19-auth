@@ -2,7 +2,7 @@
 
 const logger = require('./logger');
 
-module.exports = () => (error, request, response, next) => {
+module.exports = (error, request, response, next) => {
   //-----------------------------------------
   //HTTP ERRORS
   //-----------------------------------------
@@ -36,6 +36,7 @@ module.exports = () => (error, request, response, next) => {
     logger.log('info', 'Responding with a 401 status code.');
     return response.sendStatus(401);
   }
+
  // -----------------------------------------
   logger.log('info', 'Responding with a 500 status code.');
   logger.log('info', error);
