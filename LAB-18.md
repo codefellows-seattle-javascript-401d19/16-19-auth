@@ -1,4 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 18: Authorization
+![cf](https://i.imgur.com/7v5ASc8.png) Lab 18: Bearer Authorization
 ======
 
 ## Submission Instructions
