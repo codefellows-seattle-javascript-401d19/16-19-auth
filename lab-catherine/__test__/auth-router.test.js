@@ -21,7 +21,6 @@ describe('AUTH Router', () => {
           password: 'redBlanket',
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
@@ -66,7 +65,6 @@ describe('AUTH Router', () => {
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });

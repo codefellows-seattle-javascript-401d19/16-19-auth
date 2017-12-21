@@ -25,7 +25,6 @@ module.exports = (request, response, next) => {
 
   return promisify(jsonWebToken.verify)(token, process.env.CAT_CLOUD_SECRET)
     .then(decryptedData => {
-      console.log(decryptedData);
       return Account.findOne({tokenSeed: decryptedData.tokenSeed});
     })
     .then(account => {
