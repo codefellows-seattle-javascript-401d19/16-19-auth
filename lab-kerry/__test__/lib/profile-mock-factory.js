@@ -17,7 +17,7 @@ profileMockFactory.create = () => {
 				bio: faker.lorem.words(50),
 				avatar: faker.random.image(),
 				lastName: faker.name.lastName(),
-				firstName: faker.random.firstName(),
+				firstName: faker.name.firstName(),
 
 				account: accountMock.account._id,
 			}).save();

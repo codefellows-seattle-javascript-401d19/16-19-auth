@@ -4,14 +4,14 @@ require('./lib/setup');
 
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock');
+const accountMockFactory = require('./lib/account-mock-factory');
 
 const apiURL = `http://localhost:${process.env.PORT}/signup`;
 
 describe('AUTH Router', () => {
 	beforeAll(server.start);
 	afterAll(server.stop);
-	afterEach(accountMock.remove);
+	afterEach(accountMockFactory.remove);
 
 	test('POST creating an account should response with a 200 if there are no errors', () => {
 		return superagent.post(apiURL)
@@ -21,7 +21,6 @@ describe('AUTH Router', () => {
 				password: 'kAryNation',
 			})
 			.then (response => {
-				console.log(response.body);
 				expect(response.status).toEqual(200);
 				expect(response.body.token).toBeTruthy();
 			});
@@ -40,10 +39,9 @@ describe('AUTH Router', () => {
 
 	test('POST creating an account should response with a 409 status code if there is a duplicate key', () => {
 		let accountObj = null;
-		return accountMock.create()
+		return accountMockFactory.create()
 			.then(account => {
 				accountObj = account;
-				console.log(account);
 				return superagent.post(apiURL)
 					.send({
 						username: accountObj.request.username,
@@ -52,8 +50,6 @@ describe('AUTH Router', () => {
 							})	
 					.then(Promise.reject)
 					.catch(response => {
-						console.log(accountObj);
-						console.log(response.message);
 						expect(response.status).toEqual(409);
 			});
 		});

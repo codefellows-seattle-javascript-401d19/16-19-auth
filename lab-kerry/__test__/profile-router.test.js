@@ -1,32 +1,34 @@
 'use strict';
 
-require('../lib/setup');
+require('./lib/setup');
 
 const superagent = require('superagent');
 const server = require('../lib/server');
 const accountMockFactory = require('./lib/account-mock-factory');
 const profileMockFactory = require('./lib/profile-mock-factory');
 
-const apiURL = `http://localhost:${process.env.PORT}/signup`;
+const apiURL = `http://localhost:${process.env.PORT}`;
 
-describe('POST/ profiles', () => {
+describe('Profile routes', () => {
 	beforeAll(server.start);
 	afterAll(server.stop);
 	afterEach(profileMockFactory.remove);
 
-	test('Should respond with a 200 and a profile if there are no errors', () => {
+describe('POST/ profiles', () => {
+	test.only('Should respond with a 200 and a profile if there are no errors', () => {
 		let accountMock = null; //this is done to mimic lower level languages which might not create the variable without first giving it a value or null 
 
 		return accountMockFactory.create()
 			.then(mock => {
 				accountMock = mock;
+				console.log(accountMock.token);
 				return superagent.post(`${apiURL}/profiles`)
 					.set('Authorization', `Bearer ${accountMock.token}`)
 					.send({
 						bio: 'I am a cat',
 						firstName: 'Gregor',
 						lastName: 'Samsa',
-					});
+					})
 			})
 			.then(response => {
 				expect(response.status).toEqual(200);
@@ -35,5 +37,26 @@ describe('POST/ profiles', () => {
 				expect(response.body.lastName).toEqual('Samsa');
 				expect(response.body.bio).toEqual('I am a cat');
 			});
+		});
+	});
+
+	describe('GET/ profiles', () => {
+		test('Should respond with a 200 and a profile if there are no errors', () => {
+			let profileMock = null; 
+
+			return profileMockFactory.create()
+				.then(mock => {
+					// console.log(mock);
+					profileMock = mock;
+					return superagent.get(`${apiURL}/profiles/${profileMock.profile._id}`)
+						.set('Authorization', `Bearer ${profileMock.accountMock.token}`);
+				})
+				.then(response => {
+					console.log(profileMock)
+					expect(response.status).toEqual(200);
+					expect(response.body.account).toEqual(profileMock.accountMock.account._id.toString());
+
+				});
+		});
 	});
 });
