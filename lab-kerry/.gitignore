@@ -64,6 +64,8 @@ typings/
 
 # dotenv environment variables file
 .env
+
+#Secret Key environment variables
 setup.js
 
 
