@@ -8,7 +8,6 @@ const profileMockFactory = module.exports = {};
 
 profileMockFactory.create = () => {
   let resultMock = {};
-
   return accountMockFactory.create()
     .then(accountMock => {
       resultMock.accountMock = accountMock;
@@ -18,7 +17,7 @@ profileMockFactory.create = () => {
         avatar: faker.random.image(),
         lastName: faker.name.lastName(),
         firstName: faker.name.firstName(),
-        website : faker.internet.domainName(),
+        // website : faker.internet.domainName(),
 
         account: accountMock.account._id,
       }).save();
