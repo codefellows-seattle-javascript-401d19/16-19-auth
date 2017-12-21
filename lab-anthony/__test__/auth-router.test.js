@@ -3,14 +3,14 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock');
+const accountMockFactory = require('./lib/account-mock');
 
 const apiURL = `http://localhost:${process.env.PORT}/signup`;
 
 describe('Auth Router', () => {
   beforeAll(server.start);
   afterAll(server.stop);
-  afterEach(accountMock.remove);
+  afterEach(accountMockFactory.remove);
 
   test('POST creating an account should respond with a 200', () => {
     return superagent.post(apiURL)
@@ -25,7 +25,7 @@ describe('Auth Router', () => {
     });
   });
 
-  test('POST creating an account without require parameter should respond with a 400', () => {
+  test('POST creating an account without required parameters should respond with a 400', () => {
     return superagent.post(apiURL)
     .send({
       username: 'Huckleberry',
@@ -38,7 +38,7 @@ describe('Auth Router', () => {
   });
 
   test('POST creating an account with a duplicate unique parameter should respond with a 409', () => {
-    accountMock.create()
+    accountMockFactory.create()
     .then(duplicateUser => {
       return superagent.post(apiURL)
       .send({
