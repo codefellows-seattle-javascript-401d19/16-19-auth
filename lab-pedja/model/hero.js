@@ -15,4 +15,4 @@ const heroSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('heroes', heroSchema);
+module.exports = mongoose.model('heroe', heroSchema);

@@ -8,17 +8,18 @@ const heroMock = module.exports = {};
 
 heroMock.create = () => {
   let resultMock = {};
-  return accountMock.create()
-    .then(accountMock => {
-      resultMock.accountMock = accountMock;
 
-      return new Promise({
+  return accountMock.create()
+    .then(accountToMock => {
+      resultMock.accountToMock = accountToMock;
+
+      return new Hero({
         name : faker.name.firstName(),
         sidekick : faker.name.firstName(),
         superpower : faker.random.word(),
         catchphrase : faker.hacker.phrase(),
 
-        account : accountMock.account._id,
+        account : accountToMock.account._id,
       }).save();
     })
     .then(hero => {
