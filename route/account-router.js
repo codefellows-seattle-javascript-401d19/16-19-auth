@@ -18,3 +18,12 @@ accountRouter.post('/signup', jsonParser, (request, response, next) => {
     .then(token => response.json({token}))//ES6 object creation shorthand
     .catch(next);
 });
+
+accountRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(httpErrors(404, '_ERROR_ not found'));
+
+  return request.account.createToken()
+    .then(token => response.json({token}))
+    .catch(next);
+});

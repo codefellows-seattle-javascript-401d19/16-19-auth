@@ -3,9 +3,9 @@
 const faker = require('faker');
 const Account = require('../../model/account');
 
-const accountMock = module.exports = {};
+const accountMockFactory = module.exports = {};
 
-accountMock.create = () => {
+accountMockFactory.create = () => {
   let mock = {};
 
   mock.request = {
@@ -32,4 +32,4 @@ accountMock.create = () => {
       return mock;
     });
 };
-accountMock.remove = () => Account.remove({});
+accountMockFactory.remove = () => Account.remove({});

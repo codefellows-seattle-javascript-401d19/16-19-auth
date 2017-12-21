@@ -38,7 +38,6 @@ accountSchema.methods.verifyPassword = function (password) {
     .then(response => {
       if (!response)
         throw new httpErrors(401, '__AUTH__ incorrect username or password');
-
       return this;
     });
 };
