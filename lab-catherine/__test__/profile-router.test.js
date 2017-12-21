@@ -109,5 +109,20 @@ describe('PROFILE router', () => {
           expect(response.status).toEqual(400);
         });
     });
+
+    test('GET /profiles/:id Should return a 404 if authentication is invalid', () => {
+      let resultMock = null;
+
+      return profileMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/profiles/invalidId`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
   });
 });
