@@ -20,8 +20,12 @@ profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, resp
     .catch(next);
 });
 
-profileRouter.get('/profiles', bearerAuthMiddleware, jsonParser, (request, response, next) => {
+profileRouter.get('/profiles/:id', bearerAuthMiddleware, jsonParser, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
-  return 
+  return Profile.findById(request.params.id)
+    .then(foundProfile => {
+      return response.json(foundProfile)
+    })
+    .catch(next)
 });

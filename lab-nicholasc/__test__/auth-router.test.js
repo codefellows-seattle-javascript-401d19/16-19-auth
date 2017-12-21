@@ -43,7 +43,6 @@ describe('auth router', () => {
     test('GET login should get 200 if there are no errors', () =>{
       return accountMockFactory.create()
         .then(mock => {
-          console.log(mock);
           return superagent.get(`${apiUrl}/login`)
             .auth(mock.request.username, mock.request.password);
         })
