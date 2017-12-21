@@ -20,7 +20,7 @@ Create a third model that represents a file asset. The file should be stored on 
 Create a model with at least 4 properties that represents some type of file asset (BLOB) resource (image, audio, movie, 3d file). One of the models properites should account and should hold an Account _id. One of the properties should be `url` and should hold an AWS Location.
 
 #### AWS Screenshoot
-Add a screenshot of your upploaded Model into your AWS bucket.
+Add a screenshot of your uploaded Model into your AWS bucket.
 
 #### Server Endpoints
 * `POST /<resouces-name>` 
