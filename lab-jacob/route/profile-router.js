@@ -1,7 +1,7 @@
 'use strict';
 
 const {Router} = require('express');
-const jsonParser = require('body-parser');
+const jsonParser = require('body-parser').json();
 const httpErrors = require('http-errors');
 const Profile = require('../model/profile');
 
