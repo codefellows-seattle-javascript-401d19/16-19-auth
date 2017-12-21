@@ -60,14 +60,13 @@ describe('AUTH Router', () => {
   });
 
   describe('GET /login', () => {
-    test.only('GET /login should get a 200 status code and a token if there are no errors', () => {
+    test('GET /login should get a 200 status code and a token if there are no errors', () => {
       return accountMockFactory.create()
         .then(mock => {
           return superagent.get(`${apiURL}/login`)
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });

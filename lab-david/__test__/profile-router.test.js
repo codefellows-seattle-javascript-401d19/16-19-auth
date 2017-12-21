@@ -34,8 +34,47 @@ describe('POST /profiles', () => {
         expect(response.body.firstName).toEqual('Zaphod');
         expect(response.body.lastName).toEqual('Beeblebrox');
         expect(response.body.bio).toEqual('I am the president');
-
-
       });
   });
+
+  test('should return a 400 for an incomplete request', () => {
+    let accountMock = null;
+
+    return accountMockFactory.create()
+      .then(mock => {
+        accountMock = mock;
+        return superagent.post(`${apiURL}/profiles`)
+          .set('Authorization', `Bearer ${accountMock.token}`)
+          .send({
+            firstName : 'Zaphod',
+          });
+      })
+      .then(response => {
+        expect(response.status).toEqual(400);
+        expect(response.body.account).toEqual(accountMock.account._id.toString());
+        expect(response.body.firstName).toEqual('Zaphod');
+      });
+  });
+
+  test('should return a 404 for a bad request', () => {
+    let accountMock = null;
+
+    return accountMockFactory.create()
+      .then(mock => {
+        accountMock = mock;
+        return superagent.post(`${apiURL}/profiles`)
+          .set('Authorization', `Bearer fakeToken333`)
+          .send({
+            bio : 'I am the president',
+            firstName : 'Zaphod',
+          });
+      })
+      .then(response => {
+        expect(response.status).toEqual(404);
+        expect(response.body.account).toEqual(accountMock.account._id.toString());
+        expect(response.body.firstName).toEqual('Zaphod');
+        expect(response.body.bio).toEqual('I am the president');
+      });
+  });
+
 });
