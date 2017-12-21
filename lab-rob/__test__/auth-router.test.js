@@ -3,14 +3,14 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock');
+const accountMockFactory = require('./lib/account-mock-factory');
 
 const apiUrl = `http://localhost:${process.env.PORT}/signup`;
 
 describe('auth-router.js', () => {
   beforeAll(server.start);
   afterAll(server.stop);
-  afterEach(accountMock.remove);
+  afterEach(accountMockFactory.remove);
 
   test('POST creating an account should respond with a 200 status and a token.', () => {
     return superagent.post(apiUrl)
@@ -38,7 +38,7 @@ describe('auth-router.js', () => {
   });
 
   test('POST should respond with a 409 if a duplicate username is sent.', () => {
-    return accountMock.create()
+    return accountMockFactory.create()
       .then(mock => {
         return superagent.post(apiUrl)
           .send({
@@ -54,7 +54,7 @@ describe('auth-router.js', () => {
   });
 
   test('POST should respond with a 409 if a duplicate email is sent.', () => {
-    return accountMock.create()
+    return accountMockFactory.create()
       .then(mock => {
         return superagent.post(apiUrl)
           .send({
