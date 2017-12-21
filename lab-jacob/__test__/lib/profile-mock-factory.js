@@ -6,7 +6,7 @@ const Profile = require('../../model/profile');
 
 const profileMockFactory = module.exports = {};
 
-const profileMockFactory.create = () => {
+profileMockFactory.create = () => {
   let resultMock = {};
   
   return accountMockFactory.create()
