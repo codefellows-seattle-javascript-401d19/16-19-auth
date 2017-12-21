@@ -11,9 +11,10 @@ let isServerOn = false;
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI,{useMongoClient : true});
 
-const auth = require('../route/auth-router');
-app.use(auth);
+app.use(require('../route/auth-router'));
 app.use(require('./logger-middleware'));
+app.use(require('../route/auth-router'));
+app.use(require('../route/profile-router'));
 
 app.all('*', (request, response)=> {
   logger.log('info', '404 from Catch-All route');
