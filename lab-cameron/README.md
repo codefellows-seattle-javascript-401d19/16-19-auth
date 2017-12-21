@@ -20,7 +20,13 @@ Auth in Node.js using bcrypt and JWT
 
 # Features
 
-- Allows you to make POST request to `http://localhost:PORTNAME/signup` and receives JWT back in response
+- Allows you to make POST requests to `http://localhost:PORTNAME/signup` and receives JWT back in response
+
+- Allows you to make POST requests to `http://localhost:PORTNAME/profiles` to update account profile info
+
+- Allows you to make GET requests to `http://localhost:PORTNAME/profiles/id` where `id` is the profile id to receive profile info
+
+- Accounts store all sensitive info for a user such as passwords and usernames whereas Profiles store all user data for them to create
 
 - Stores POST requests in MongoDB, hashes passwords using bcrypt, and encrypts JWT's via a salt and preferably sent over HTTPS
 
@@ -34,6 +40,15 @@ unique key clashes in the database occur.
 1. `post http://localhost:PORTNAME/signup` returns a JWT on success
 2. `post http://localhost:PORTNAME/signup` returns a 400 on bad requests
 3. `post http://localhost:PORTNAME/signup` returns a 409 in case of unique key clashes
+
+1. `post http://localhost:PORTNAME/profiles` returns a 200 status code on success
+2. `post http://localhost:PORTNAME/profiles` returns a 400 status code on bad requests
+3. `post http://localhost:PORTNAME/profiles` returns a 401 status code when tokens are invalid
+
+1. `get http://localhost:PORTNAME/profiles` returns a json blob with user info on success
+2. `get http://localhost:PORTNAME/profiles` returns a 404 status code when ids are invalid
+3. `get http://localhost:PORTNAME/profiles` returns a 401 status code when tokens are invalid
+
 
 # Installation / How to Use
 

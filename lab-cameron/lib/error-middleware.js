@@ -3,6 +3,7 @@
 const logger = require('./logger');
 
 module.exports = (error, request, response, next) => {
+  // HTTP errors
   logger.log('info', '__ERROR_MIDDLEWARE__');
   logger.log('info', error);
 
@@ -11,6 +12,7 @@ module.exports = (error, request, response, next) => {
     return response.sendStatus(error.status);
   }
 
+  // mongoDB errors
   let message = error.message.toLowerCase();
 
   if (message.includes('objectid failed')) {
@@ -29,6 +31,12 @@ module.exports = (error, request, response, next) => {
   }
 
   if (message.includes('unauthorized')) {
+    logger.log('info', 'Responding with a 401 status code');
+    return response.sendStatus(401);
+  }
+
+  // JWT errors
+  if (message.includes('jwt malformed')) {
     logger.log('info', 'Responding with a 401 status code');
     return response.sendStatus(401);
   }
