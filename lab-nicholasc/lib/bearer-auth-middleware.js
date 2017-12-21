@@ -10,7 +10,7 @@ const promisify = (fn) => (...args) => {
     fn(...args, (error, data) => {
       if(error)
         return reject(error);
-      resolve(data);
+      return resolve(data);
     });
   });
 };

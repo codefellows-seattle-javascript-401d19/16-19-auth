@@ -24,7 +24,7 @@ accountMockFactory.create = () => {
     })
     .then(account => {
       mock.account = account;
-      console.log(mock);
+      // console.log(mock);
       return mock;
     });
 };
