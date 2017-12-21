@@ -3,7 +3,7 @@
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
 const Account = require('../model/account');
-const httpErrors = require('http-errors ');
+const httpErrors = require('http-errors');
 
 
 const authRouter = module.exports = new Router();
