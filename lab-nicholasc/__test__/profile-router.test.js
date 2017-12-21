@@ -14,7 +14,7 @@ describe('POST /profiles', () => {
   afterAll(server.stop);
   afterEach(accountMockFactory.remove);
 
-  test('should return 200 and profile if no errors', () => {
+  test('POST should return 200 and profile if no errors', () => {
     let accountMock = null;
 
     return accountMockFactory.create()
@@ -29,10 +29,25 @@ describe('POST /profiles', () => {
           });
       })
       .then(response => {
-        console.log(response.body);
         expect(response.status).toEqual(200);
         expect(response.body.account).toEqual(accountMock.account._id.toString());//TODO: remove this NOTE: we would need to call a .populate to have account be the actual object instead of an id
         expect(response.body.firstName).toEqual('Nicholas');
       });
+  });
+
+  test('GET should return 200 and profile with id if no errors', () => {
+    let xToTest;
+    return profileMockFactory.create()
+      .then(profile => {
+        xToTest = profile;
+        console.log(xToTest);
+        return superagent.get(`${apiUrl}/profiles:${profile.id}`);
+      })
+      .then(response => {
+        expect(response.status).toEqual(200);
+        expect(response.body.firstName).toEqual(xToTest.firstName);
+      });
+
+
   });
 });

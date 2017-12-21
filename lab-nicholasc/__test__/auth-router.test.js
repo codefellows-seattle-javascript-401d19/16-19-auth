@@ -40,8 +40,7 @@ describe('auth router', () => {
 
 
   describe('GET /login', () => {
-    test
-    ('GET login should get 200 if there are no errors', () =>{
+    test('GET login should get 200 if there are no errors', () =>{
       return accountMockFactory.create()
         .then(mock => {
           console.log(mock);

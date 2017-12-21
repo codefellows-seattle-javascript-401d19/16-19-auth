@@ -91,3 +91,9 @@
 {"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-21T00:02:34.217Z"}
 {"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:02:34.267Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-21T00:02:34.289Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-21T01:07:26.607Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T01:07:26.661Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-21T01:07:26.688Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-21T01:08:57.433Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T01:08:57.482Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-21T01:08:57.524Z"}
