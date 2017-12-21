@@ -2,34 +2,34 @@
 
 const faker = require('faker');
 const accountMock = require('./account-mock');
-const Profile = require('../../model/profile');
+const Cat = require('../../model/cat');
 
-const profileMock = module.exports = {};
+const catMock = module.exports = {};
 
-profileMock.create = () => {
+catMock.create = () => {
   let resultMock = {};
   return accountMock.create()
     .then(accountMock => {
       resultMock.accountMock = accountMock;
 
-      return new Profile({
-        bio : faker.lorem.words(100),
-        avatar : faker.random.image(),
+      return new Cat({
+        says : faker.lorem.words(100),
+        catPic : faker.random.image(),
         lastName : faker.name.lastName(),
         firstName : faker.name.firstName(),
 
         account : accountMock.account._id,
       }).save();
     })
-    .then(profile => {
-      resultMock.profile = profile;
+    .then(cat => {
+      resultMock.cat = cat;
       return resultMock;
     });
 };
 
-profileMock.remove = () => {
+catMock.remove = () => {
   return Promise.all([
     accountMock.remove(),
-    Profile.remove({}),
+    Cat.remove({}),
   ]);
 };

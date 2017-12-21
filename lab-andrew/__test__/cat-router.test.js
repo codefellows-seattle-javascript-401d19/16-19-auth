@@ -5,26 +5,26 @@ require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
 const accountMock = require('./lib/account-mock');
-const profileMock = require('./lib/profile-mock');
+const catMock = require('./lib/cat-mock');
 
 const __API_URL__ = `http://localhost:${process.env.PORT}`;
 
-describe('Profile router', () => {
+describe('Cat router', () => {
   beforeAll(server.start);
   afterAll(server.stop);
-  afterEach(profileMock.remove);
+  afterEach(catMock.remove);
 
-  describe('POST /profiles', () => {
-    test('Should return a 200 and a profile if there are no errors', () => {
+  describe('POST /cats', () => {
+    test('Should return a 200 and a cat if there are no errors', () => {
       let acctMock = null;
 
       return accountMock.create()
         .then(mock => {
           acctMock = mock;
-          return superagent.post(`${__API_URL__}/profiles`)
+          return superagent.post(`${__API_URL__}/cats`)
             .set('Authorization', `Bearer ${acctMock.token}`)
             .send({
-              bio : 'Meowmeow meooow',
+              says : 'Meowmeow meooow',
               firstName : 'Kitty',
               lastName : 'Bloom',
             });
@@ -34,7 +34,7 @@ describe('Profile router', () => {
           expect(response.body.account).toEqual(acctMock.account._id.toString());
           expect(response.body.firstName).toEqual('Kitty');
           expect(response.body.lastName).toEqual('Bloom');
-          expect(response.body.bio).toEqual('Meowmeow meooow');
+          expect(response.body.says).toEqual('Meowmeow meooow');
         });
     });
 
@@ -44,10 +44,10 @@ describe('Profile router', () => {
       return accountMock.create()
         .then(mock => {
           acctMock = mock;
-          return superagent.post(`${__API_URL__}/profiles`)
+          return superagent.post(`${__API_URL__}/cats`)
             .set('Authorization', `Bearer ${acctMock.token}`)
             .send({
-              bio: {bio: 4},
+              says: {says: 'Meow'},
               firstName: 'Kitty',
               lastName: 'Bloom',
             });
@@ -59,10 +59,10 @@ describe('Profile router', () => {
     });
 
     test('Should return a 401 if the authorization is invalid', () => {
-      return superagent.post(`${__API_URL__}/profiles`)
+      return superagent.post(`${__API_URL__}/cats`)
         .set('Authorization', 'Bearer fakeToken')
         .send({
-          bio: { bio: 4 },
+          says: 'Meowmeow meooow',
           firstName: 'Kitty',
           lastName: 'Bloom',
         })
@@ -73,32 +73,32 @@ describe('Profile router', () => {
     });
   });
 
-  describe('GET /profiles/:id', () => {
-    test('GET /profiles/:id should return a 200 and a profile if there are no errors', () => {
+  describe('GET /cats/:id', () => {
+    test('GET /cats/:id should return a 200 and a cat if there are no errors', () => {
       let resultObj = null;
 
-      return profileMock.create()
+      return catMock.create()
         .then(mock => {
           resultObj = mock;
-          return superagent.get(`${__API_URL__}/profiles/${resultObj.profile._id}`)
+          return superagent.get(`${__API_URL__}/cats/${resultObj.cat._id}`)
             .set('Authorization', `Bearer ${resultObj.accountMock.token}`);
         })
         .then(response => {
           expect(response.status).toEqual(200);
           expect(response.body.account).toEqual(resultObj.accountMock.account._id.toString());
-          expect(response.body.firstName).toEqual(resultObj.profile.firstName);
-          expect(response.body.lastName).toEqual(resultObj.profile.lastName);
-          expect(response.body.bio).toEqual(resultObj.profile.bio);
+          expect(response.body.firstName).toEqual(resultObj.cat.firstName);
+          expect(response.body.lastName).toEqual(resultObj.cat.lastName);
+          expect(response.body.says).toEqual(resultObj.cat.says);
         });
     });
 
-    test('GET /profiles/:id should return a 400 if authentication is not sent', () => {
+    test('GET /cats/:id should return a 400 if authentication is not sent', () => {
       let resultObj = null;
 
-      return profileMock.create()
+      return catMock.create()
         .then(mock => {
           resultObj = mock;
-          return superagent.get(`${__API_URL__}/profiles/${resultObj.profile._id}`);
+          return superagent.get(`${__API_URL__}/cats/${resultObj.cat._id}`);
         })
         .then(Promise.reject)
         .catch(response => {
@@ -106,13 +106,13 @@ describe('Profile router', () => {
         });
     });
 
-    test('GET /profiles/:id should return a 404 if user does not exist', () => {
+    test('GET /cats/:id should return a 404 if user does not exist', () => {
       let resultObj = null;
 
-      return profileMock.create()
+      return catMock.create()
         .then(mock => {
           resultObj = mock;
-          return superagent.get(`${__API_URL__}/profiles/badId`)
+          return superagent.get(`${__API_URL__}/cats/badId`)
             .set('Authorization', `Bearer ${resultObj.accountMock.token}`);
         })
         .then(Promise.reject)

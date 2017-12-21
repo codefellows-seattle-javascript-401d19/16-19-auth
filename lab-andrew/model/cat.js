@@ -2,9 +2,9 @@
 
 const mongoose = require('mongoose');
 
-const profileSchema = mongoose.Schema({
-  bio : {type : String},
-  avatar : {type : String},
+const catSchema = mongoose.Schema({
+  says : {type : String},
+  catPic : {type : String},
   lastName : {type : String},
   firstName : {type : String},
   account : {
@@ -14,4 +14,4 @@ const profileSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('profile', profileSchema);
+module.exports = mongoose.model('cat', catSchema);
