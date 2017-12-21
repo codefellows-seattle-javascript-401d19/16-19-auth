@@ -106,7 +106,7 @@ describe('movie-router.js', () => {
         })
         .then(Promise.reject)
         .catch(response => {
-          expect(response.status).toEqual(4041);
+          expect(response.status).toEqual(404);
         });
     });
   });
