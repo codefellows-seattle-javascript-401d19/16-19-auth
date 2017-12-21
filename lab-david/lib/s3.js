@@ -14,7 +14,7 @@ s3.upload = (path, key) => {
     Body : fs.createReadStream(path), // path is local path
   };
   return amazonS3.upload(uploadOptions)
-    .promise() // makes it return a promise
+    .promise() // makes it return a promise, AWS thing
     .then(response => { // amazon response
       return fs.remove(path)
         .then(() => response.Location);  // location at AWS must be capital
@@ -23,4 +23,12 @@ s3.upload = (path, key) => {
       return fs.remove(path)
         .then(() => Promise.reject(error));
     });
+};
+
+s3.remove = (key) => {
+  let removeOptions = {
+    Key : key,
+    Bucket : process.env.AWS_BUCKET,
+  };
+  return amazonS3.deleteObject(removeOptions).promise(); // returns promise per AWS docs
 };
