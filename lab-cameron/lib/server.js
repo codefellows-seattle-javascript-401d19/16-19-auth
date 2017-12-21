@@ -10,13 +10,16 @@ let httpServer = null;
 
 mongoose.Promise = Promise;
 
-const loggerMiddlewaare = require('./logger-middleware');
+const loggerMiddleware = require('./logger-middleware');
 const authRouter = require('../route/auth-router');
+const profileRouter = require('../route/profile-router');
 const errorMiddleware = require('./error-middleware');
 
-app.use(loggerMiddlewaare);
+app.use(loggerMiddleware);
 
 app.use(authRouter);
+
+app.use(profileRouter);
 
 app.all('*', (request, response) => {
   logger.log('info', 'Returning a 404 from the catch-all route');
