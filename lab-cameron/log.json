@@ -219,3 +219,192 @@
 {"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:08:05.053Z"}
 {"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:08:05.085Z"}
 {"level":"info","message":"Server off","timestamp":"2017-12-21T00:08:05.116Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:33:37.841Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:33:37.868Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:33:37.949Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:33:37.951Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:33:37.951Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:33:37.952Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:33:37.992Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:33:38.018Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Edison.Keeling\" }","op":{"username":"Edison.Keeling","email":"test@test.com","passwordHash":"$2a$08$ipxd1zxg4SSlApVmiwjm5e6x6CSk9dE1lk.FW7seKIUIBa6C5frre","tokenSeed":"b24726c7885b06a3c653a7ca80c5149579eb82b73790b0873904c0c856a11bb69d779f80ffd8a1caeb5ec330e26220fb603006e467a63c05d0da6e9e5cd7e2b1","_id":"5a3b01620a738901fe87aeeb","created":"2017-12-21T00:33:38.015Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:33:38.020Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:33:38.049Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:33:38.077Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:34:43.552Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:34:43.577Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:34:43.655Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:34:43.656Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:34:43.656Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:34:43.657Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:34:43.693Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:34:43.716Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Katrine17\" }","op":{"username":"Katrine17","email":"test@test.com","passwordHash":"$2a$08$EYQZSF0BkA0Qd9ZdKOerLehFsPCiwI0A/s/Eftnb5Nq8b/aH066ja","tokenSeed":"7d3b4deea2dbd9c1c14e3e44b51101f8ddbc14d1effff7dea6eb3d35fcddc0240d4ccafa507882a119100afb8991a3b9aeb529be9580a79381900dac3eb559cf","_id":"5a3b01a3c3cc07023ed35549","created":"2017-12-21T00:34:43.714Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:34:43.719Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:34:43.747Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:34:43.775Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:34:44.392Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:34:44.467Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-21T00:34:44.468Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:34:44.474Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:35:21.081Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:35:21.152Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-21T00:35:21.153Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:35:21.165Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:35:21.681Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:35:21.718Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:35:21.768Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:35:21.770Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:35:21.770Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:35:21.772Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:35:21.804Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:35:21.827Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Ervin.Berge\" }","op":{"username":"Ervin.Berge","email":"test@test.com","passwordHash":"$2a$08$3RcrG23R.YfDTS9PDyKdouz.9z8gEJEFqq9gVXqDPXvA1vMhu0mH2","tokenSeed":"103c5f7aacba38c79f666cd1c8d36b58a694b1e91209691f6a5ca524f2c797f425bb3c206b72f45e7eb99def64381f53633d2ce59c33baa22a0d3f79312e2b3e","_id":"5a3b01c9b74f000288d6cf0d","created":"2017-12-21T00:35:21.825Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:35:21.829Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:35:21.860Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:35:21.888Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:36:34.951Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:36:35.022Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-21T00:36:35.023Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:36:35.034Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:36:35.243Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:35.316Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:35.368Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:36:35.370Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:36:35.370Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:36:35.371Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:35.402Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:36:35.428Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Annalise31\" }","op":{"username":"Annalise31","email":"test@test.com","passwordHash":"$2a$08$BWSALQSIZJp1sNherYTCu.y1bPB0LBy9lBV.AEn5/Q5l8d73bL2FW","tokenSeed":"cf676b9be46e6c0f8c16ec5367e1fdb954c57ac9a52e4704482ffec5dff6e8e120fadb8847b5629fd4ddd1f8adeadf7831b3a901af11c09e1fe850e2e972d70c","_id":"5a3b0213a2088302e461609f","created":"2017-12-21T00:36:35.426Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:36:35.430Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:36:35.463Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:36:35.491Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:36:58.077Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:36:58.148Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:36:58.155Z"}
+{"level":"info","timestamp":"2017-12-21T00:36:58.155Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:36:58.155Z"}
+{"level":"info","timestamp":"2017-12-21T00:36:58.155Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:36:58.166Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:36:58.386Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:58.461Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:58.512Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:36:58.513Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:36:58.513Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:36:58.515Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:36:58.544Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:36:58.567Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Beaulah43\" }","op":{"username":"Beaulah43","email":"test@test.com","passwordHash":"$2a$08$KkvGEkZiVTJ6QLpjqI9Ra.rrTAQ8XSUJA30rbrI1Uao62XgbWLp66","tokenSeed":"495dea5fb711255d71bf91947c059b73332a9228d206cc7bba73203865ce98178bd14b0479cd0b82c583fbb2dc363ac0660d6cc6f09ce8cfdc307d51a8bfe2a4","_id":"5a3b022af50c060326cb5747","created":"2017-12-21T00:36:58.565Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:36:58.570Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:36:58.599Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:36:58.627Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:39:18.983Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:39:19.054Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:39:19.061Z"}
+{"level":"info","timestamp":"2017-12-21T00:39:19.062Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:39:19.062Z"}
+{"level":"info","timestamp":"2017-12-21T00:39:19.062Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:39:19.073Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:39:19.297Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:39:19.367Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:39:19.449Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:39:19.451Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:39:19.451Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:39:19.452Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:39:19.484Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:39:19.510Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Bettye.Herzog19\" }","op":{"username":"Bettye.Herzog19","email":"test@test.com","passwordHash":"$2a$08$CUaddqnJul51PaSCNZYswuFmjpEe1Au1hD1ZpdBqvT9G5InqctAGG","tokenSeed":"c4d1407675d987b28a770326727040d83356dc060f7f672750e02347cd69423798395140d8d395da1b21630fbb9050df8382396ff16e466681b7bb09df24f9ad","_id":"5a3b02b7f1b2ab04aa8cbda1","created":"2017-12-21T00:39:19.508Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:39:19.512Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:39:19.540Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:39:19.567Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:42:10.122Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:42:10.244Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:42:10.251Z"}
+{"level":"info","timestamp":"2017-12-21T00:42:10.251Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:42:10.251Z"}
+{"level":"info","timestamp":"2017-12-21T00:42:10.251Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:42:10.262Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:42:10.471Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:42:10.475Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:42:10.528Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:42:10.529Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:42:10.529Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:42:10.530Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:42:10.560Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:42:10.582Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Hildegard_Thompson\" }","op":{"username":"Hildegard_Thompson","email":"test@test.com","passwordHash":"$2a$08$658lndqsfYJplxf2AJeowOPWbE8pNfgsapLqPmuSAsiRP7gFC537q","tokenSeed":"02632aae44d70e0cd15662cd47e509239f1fcc5d006daf9be8f17acc7eb2de5ccf9351c91b17144550fab0f7248050cf378b920bde181b6811889344fc11bcc5","_id":"5a3b03628e13f0055084b8e2","created":"2017-12-21T00:42:10.580Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:42:10.585Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:42:10.614Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:42:10.641Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:44:52.415Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:44:52.490Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:44:52.497Z"}
+{"level":"info","timestamp":"2017-12-21T00:44:52.497Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:44:52.497Z"}
+{"level":"info","timestamp":"2017-12-21T00:44:52.497Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:44:52.508Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:44:52.733Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:44:52.808Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:44:52.862Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:44:52.863Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:44:52.863Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:44:52.864Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:44:52.894Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:44:52.919Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Estel_Green64\" }","op":{"username":"Estel_Green64","email":"test@test.com","passwordHash":"$2a$08$/QTdfKlBahpHqgrKYChN1.GwBUgI.SKImUTGs5TTAAWmJFgR5W91G","tokenSeed":"34e0e04a268edaba1595a475c818360b646d95077c6b80deee02dbe7eeb4a85656ca090c29b274e80e81e5e06007e871d67eb7f93009ae1d6b0a30edc79c14ea","_id":"5a3b0404d4e8a806035607af","created":"2017-12-21T00:44:52.917Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:44:52.921Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:44:52.950Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:44:52.978Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:46:28.050Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:46:28.126Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:28.133Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:28.133Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:46:28.133Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:28.133Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:46:28.147Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:46:28.352Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:28.426Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:28.475Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:28.476Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:46:28.476Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:46:28.478Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:28.509Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:28.535Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Nat36\" }","op":{"username":"Nat36","email":"test@test.com","passwordHash":"$2a$08$6XfZjpV8cWujjiXMot1PmuyC9ylorujNpO5XYpLkxK6Fnij83vTBi","tokenSeed":"3f1770d17f2fbcea21dfca6ee1377ba1df8cad83fb4e8019579d8218466434f7685af3096156f03c82880574fcfc20faa4c7bcd420eb1ddd678a2d9b73bc5015","_id":"5a3b0464be3d7f0671d27162","created":"2017-12-21T00:46:28.533Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:46:28.538Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:46:28.569Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:46:28.599Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:46:47.360Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:46:47.430Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:47.438Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:47.438Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-21T00:46:47.438Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:47.438Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:46:47.450Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:46:47.681Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:47.754Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:47.811Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:47.813Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:46:47.813Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:46:47.816Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:46:47.849Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:47.876Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Cecilia_Will\" }","op":{"username":"Cecilia_Will","email":"test@test.com","passwordHash":"$2a$08$W2d5eRo7aDAsLLfdGqIJzO5x3lJzM7qgVTkEd1ER7k1hRdszqaaAW","tokenSeed":"5b6fe72ee9243618078a91abbb9a8dd33339b5a776499268af0d61916b829093d71098f51a3236d8624cab5a17e389c7c8ccda3c8a5234e9d5843563cd9162ee","_id":"5a3b0477c0e91206a503e7f6","created":"2017-12-21T00:46:47.874Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:46:47.878Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:46:47.908Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:46:47.936Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:51:16.564Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-21T00:51:16.637Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:51:16.671Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-21T00:51:16.896Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:51:16.969Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:51:17.011Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:51:17.013Z"}
+{"message":"__ERROR__ username, email and password required","stack":"BadRequestError: __ERROR__ username, email and password required\n    at Object.<anonymous>.authRouter.post (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/route/auth-router.js:15:17)\n    at Layer.handle [as handle_request] (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/express/lib/router/route.js:137:13)\n    at /home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:224:16)\n    at done (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cameron/Programming/CodeFellows/401/labs/16-19-auth/lab-cameron/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T00:51:17.013Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email and password required","timestamp":"2017-12-21T00:51:17.015Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-21T00:51:17.047Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:51:17.070Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: username_1 dup key: { : \"Kenneth86\" }","op":{"username":"Kenneth86","email":"test@test.com","passwordHash":"$2a$08$41ouxvx0JNegqDcOgUmICeqB7vQIJKS6YgVxWLwdI21aTn1IL8yXy","tokenSeed":"3f549c594fdd2aa1c8247cfabae869f996eef2996c9492b0d9925199a5395fc08dc831399a73d85b5f2cf81c009233950a7954dba5d71f8597fadda05c9cfc99","_id":"5a3b05851a61c807bb7fe599","created":"2017-12-21T00:51:17.068Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T00:51:17.073Z"}
+{"level":"info","message":"Processing : GET on : /login","timestamp":"2017-12-21T00:51:17.101Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-21T00:51:17.128Z"}

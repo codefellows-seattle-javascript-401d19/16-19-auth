@@ -21,7 +21,6 @@ describe('auth-router.js', () => {
           password: 'secret',
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
@@ -60,12 +59,10 @@ describe('auth-router.js', () => {
     test('GET /login should get a 200 status code and a token if there are no errors', () => {
       return accountMockFactory.create()
         .then(mock => {
-          console.log(mock);
           return superagent.get(`${apiURL}/login`)
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });

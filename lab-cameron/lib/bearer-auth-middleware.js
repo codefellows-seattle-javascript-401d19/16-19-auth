@@ -26,7 +26,7 @@ module.exports = (request, response, next) => {
   if (!token) {
     return next(new httpErrors(400, '__ERROR__ token required'));
   }
-  
+
   return promisify(jsonWebToken.verify)(token, process.env.SECRET)
     .catch(error => Promise.reject(new httpErrors(401, error)))
     .then(decryptedData => {
