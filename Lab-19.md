@@ -2,7 +2,7 @@
 ======
 
 ## Submission Instructions
-* Continue from lab 17
+* Continue from previous authorization labs.
 * Submit on canvas a question and observation, how long you spent, and a link to your pull request
 
 ## Resources
@@ -18,6 +18,9 @@ Create a third model that represents a file asset. The file should be stored on 
   
 #### File Asset Model
 Create a model with at least 4 properties that represents some type of file asset (BLOB) resource (image, audio, movie, 3d file). One of the models properites should account and should hold an Account _id. One of the properties should be `url` and should hold an AWS Location.
+
+#### AWS Screenshoot
+Add a screenshot of your upploaded Model into your AWS bucket.
 
 #### Server Endpoints
 * `POST /<resouces-name>` 
