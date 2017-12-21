@@ -67,5 +67,16 @@ describe('auth-router.js', () => {
           expect(response.body.token).toBeTruthy();
         });
     });
+
+    test('GET /login should return a 400 status code if auth header is missing', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiURL}/login`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
   });
 });
