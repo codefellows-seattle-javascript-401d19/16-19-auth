@@ -11,7 +11,7 @@ const photographSchema = mongoose.Schema({
     required : true},
   createdOn : { 
     type : Date, 
-    default : {} => new Date(){}
+    default : () => new Date(),
   },
   account : {
     type : mongoose.Schema.Types.ObjectId,
