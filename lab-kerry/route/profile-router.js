@@ -28,6 +28,10 @@ profileRouter.get('/profiles/:id', bearerAuthMiddleware, (request, response, nex
 		return next(new httpErrors(404, '__ERROR__ profile not found'));
 	return Profile.findById(request.params.id)
 		.then(profile => {
+			if(!profile) {
+				throw new httpErrors(404, '__ERROR__ not found')
+				logger.log('info', 'GET - responding with a 404 failure code at /profiles/:id - id not found')
+			}
 			logger.log('info', 'GET - responding with a 200 success code at /profiles/:id')
 			return response.json(profile);
 		})

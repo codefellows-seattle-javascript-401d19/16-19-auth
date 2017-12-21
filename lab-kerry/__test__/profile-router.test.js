@@ -67,7 +67,7 @@ describe('POST /profiles', () => {
 					.set('Authorization', `Bearer wrongtokenboyo`)
 					.send({
 						bio: 'I am dog person',
-						firstName: 'kAry',
+						firstName: 'kAry',	
 						lastName: 'Nordstrom',
 					});
 			})
@@ -97,6 +97,7 @@ describe('POST /profiles', () => {
 					expect(response.body.avatar).toEqual(profileMock.profile.avatar);
 				});
 		});
+
 		test('Should respond with a 404 error message if an incorrect id is passed.', () => {
 			let profileMock = null;
 
