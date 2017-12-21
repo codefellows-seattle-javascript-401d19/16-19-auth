@@ -79,7 +79,7 @@ describe('auth-router.js', () => {
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
-          expect(response.status).toEqual(2001);
+          expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
     });
