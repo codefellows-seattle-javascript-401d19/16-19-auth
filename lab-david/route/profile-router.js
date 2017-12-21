@@ -26,6 +26,9 @@ profileRouter.get('/profiles/:id', bearerAuthMiddleware, (request, response, nex
 
   return Profile.findById(request.params.id)
     .then(foundProfile => {
+      if(!foundProfile)
+        throw new httpErrors(404, '__ERROR__ Not Found');
+
       return response.json(foundProfile)
     })
     .catch(next)
