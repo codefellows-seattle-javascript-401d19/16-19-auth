@@ -22,13 +22,10 @@ module.exports = (request,response,next) => {
   const token = request.headers.authorization.split('Bearer ')[1];
 
   if(!token)
-    return next(new httpErrors(400, 'ERROR tokenrequired'));
+    return next(new httpErrors(400, 'ERROR token required'));
 
   return promisify(jsonWebToken.verify)(token, process.env.CAT_CLOUD_SECRET)
     .then(decryptedData => {
-      console.log('====================================');
-      console.log(decryptedData);
-      console.log('====================================');
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
     })
     .then(account => {

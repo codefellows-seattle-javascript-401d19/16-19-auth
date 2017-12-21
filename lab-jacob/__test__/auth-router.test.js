@@ -9,8 +9,8 @@ const apiURL = `http://localhost:${process.env.PORT}/signup`;
 
 
 describe('Auth Router Tests', () => {
-  beforeAll(server.start);
-  afterAll(server.stop);
+  beforeEach(server.start);
+  afterEach(server.stop);
   afterEach(accountMock.remove);
 
   
@@ -22,7 +22,6 @@ describe('Auth Router Tests', () => {
         password : 'Captain',
       })
       .then(response => {
-        console.log(response.body);
         expect(response.status).toEqual(200);
         expect(response.body.token).toBeTruthy();
       });

@@ -33,7 +33,6 @@ server.start = () => {
     }
     httpServer = app.listen(process.env.PORT, () =>{
       isServerOn = true;
-      console.log(`Server is listening on port ${process.env.PORT}`);
       logger.log('info',`Server is listening on port ${process.env.PORT}`);
       return resolve();
     });

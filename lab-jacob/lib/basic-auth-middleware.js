@@ -28,4 +28,4 @@ module.exports = (request, reponse, next) => {
       return next();
     })
     .catch(next);
-}
+};

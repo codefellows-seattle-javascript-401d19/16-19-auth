@@ -11,8 +11,8 @@ const apiURL = `http://localhost:${process.env.PORT}`;
 
 
 describe('POST /profiles', () => {
-  beforeAll(server.start);
-  afterAll(server.stop);
+  beforeEach(server.start);
+  afterEach(server.stop);
   afterEach(profileMockFactory.remove);
 
   
@@ -27,15 +27,33 @@ describe('POST /profiles', () => {
           .send({
             bio : 'I am a Starship Captain',
             firstName : 'Jean Luc',
-            lastname : 'Picard',
+            lastName : 'Picard',
           });
       })
       .then(response => {
         expect(response.status).toEqual(200);
         expect(response.body.account).toEqual(accountMock.account._id.toString());
-        expect(response.firstName).toEqual('Jean Luc');
+        expect(response.body.firstName).toEqual('Jean Luc');
         expect(response.body.lastName).toEqual('Picard');
         expect(response.body.bio).toEqual('I am a Starship Captain');
       });
   });
+  describe('GET by ID', () => {
+    
+    test('should get profile by ID return 200 code if no ERRORS', () => {
+      let profileMock = null;
+      return profileMockFactory.create()
+        .then(profile => {
+          profileMock = profile;
+          return superagent.get(`${apiURL}/profiles/${profileMock.profile._id}`)
+            .set('Authorization', `Bearer ${profileMock.accountMock.token}`);     
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+        });
+    });
+    
+  });
 });
+
+
