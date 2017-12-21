@@ -1,5 +1,8 @@
 'use strict';
-
+//------------------------------------
+//BEARER HEADER
+// checks the headers, checks the token, decrypts token, checks the token against the user- promisifies the verification to persist the promisechain
+//---------------------
 const jsonWebToken = require('jsonwebtoken');
 const httpErrors = require('http-errors');
 

@@ -46,6 +46,7 @@ describe('POST /profiles', () => {
       .then(response => {
         expect(response.status).toEqual(200);
         expect(response.body.firstName).toEqual(xToTest.profile.firstName);
+        expect((response.body._id).toString()).toEqual((xToTest.profile._id).toString());
       });
 
 
