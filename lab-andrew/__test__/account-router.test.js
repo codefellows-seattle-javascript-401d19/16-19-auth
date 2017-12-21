@@ -12,7 +12,7 @@ describe('AUTH Router', () => {
   afterAll(server.stop);
   afterEach(accountMock.remove);
 
-  describe('POST /signup', () =>{
+  describe('POST /signup', () => {
 
     test('POST creating an account should respond with 200 and a token if there are no errors', () => {
       return superagent.post(`${__API_URL__}/signup`)
@@ -72,6 +72,29 @@ describe('AUTH Router', () => {
         .then(response => {
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
+        });
+    });
+
+    test('GET /login should get a 400 status if authentication is not sent', () => {
+      return accountMock.create()
+        .then(() => {
+          return superagent.get(`${__API_URL__}/login`);
+        })
+        .then(Promise.reject)
+        .catch(response => { 
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('GET /login should get a 404 status if user does not exist', () => {
+      return accountMock.create()
+        .then(() => {
+          return superagent.get(`${__API_URL__}/login`)
+            .auth('fakeUser', 'fakePassword');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
         });
     });
   });

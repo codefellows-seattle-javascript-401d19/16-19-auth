@@ -25,7 +25,8 @@ accountMock.create = () => {
     .then(account => {
       mock.account = account;
       return mock;
-    });
+    })
+    .catch(err => console.error(err));
 };
 
 accountMock.remove = () => Account.remove({});

@@ -14,9 +14,9 @@ profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, resp
     return new httpErrors(404, '__ERROR__ not found');
   }
   return new Profile({
-    ...request.body,
+    ...request.body, 
     account : request.account._id,
   }).save()
-  .then(profile => response.json(profile))
-  .catch(next);
-})
+    .then(profile => response.json(profile))
+    .catch(next);
+});
