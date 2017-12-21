@@ -71,43 +71,5 @@ describe('AUTH Router', () => {
           expect(response.body.token).toBeTruthy();
         });
     });
-
-    // TODO : write test for 400 on /login
-    // test('GET /login should get a 400 status code if the request is incomplete', () => {
-    //   return accountMockFactory.create()
-    //     .then(mock => {
-    //       return superagent.get(`${apiURL}/login`)
-    //         .auth(mock.request.username, mock.request.password);
-    //     })
-    //     .then(response => {
-    //       expect(response.status).toEqual(400);
-    //       expect(response.body.token).toBeTruthy();
-    //     });
-    // });
-
-    // TODO : write test for 404 on /login
-    // test('GET /login should get a 404 if the login info is not found', () => {
-    //   return accountMockFactory.create()
-    //     .then(mock => {
-    //       return superagent.get(`${apiURL}/login`)
-    //         .auth(mock.request.username, mock.request.password);
-    //     })
-    //     .then(response => {
-    //       expect(response.status).toEqual(404);
-    //       expect(response.body.token).toBeTruthy();
-    //     });
-    // });
-
-    // describe('GET /profile/:id', () => {
-
-    // TODO : write test for 404 on GET/profile/:id
-
-    // TODO : write test for 401 on GET/profile/:id
-
-
-
-    // });
-
   });
-
 });
