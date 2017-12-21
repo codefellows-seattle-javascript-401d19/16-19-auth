@@ -38,5 +38,58 @@ describe('movie-router.js', () => {
           expect(response.body.synopsis).toEqual('Hot Rod is a super silly movie of stuntman Rod Kimble and his journey to be the best stunt man he can be.');
         });
     });
+
+    test('should respond with a 400 status if no auth header present', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .send({
+              title: 'Hot Rod',
+              lead: 'Andy Samberg',
+              year: 2007,
+              synopsis: 'Hot Rod is a super silly movie of stuntman Rod Kimble and his journey to be the best stunt man he can be.',
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('should respond with a 400 status if no Bearer auth present in header', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .set('Authorization', 'schmooop')
+            .send({
+              title: 'Hot Rod',
+              lead: 'Andy Samberg',
+              year: 2007,
+              synopsis: 'Hot Rod is a super silly movie of stuntman Rod Kimble and his journey to be the best stunt man he can be.',
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('should respond with a 401 status if an unauthorized request is made', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/movies`)
+            .set('Authorization', 'Bearer wuh-oh!')
+            .send({
+              title: 'Hot Rod',
+              lead: 'Andy Samberg',
+              year: 2007,
+              synopsis: 'Hot Rod is a super silly movie of stuntman Rod Kimble and his journey to be the best stunt man he can be.',
+            });
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
   });
 });

@@ -24,7 +24,6 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(400, '__ERROR__ Auth token required'));
   
   return promisify(jsonWebToken.verify)(token, process.env.SALT_SECRET)
-    .catch(error => Promise.reject(new httpErrors(401, error)))
     .then(decryptedData => {
       return Account.findOne({tokenSeed: decryptedData.tokenSeed});
     })
