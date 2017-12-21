@@ -11,4 +11,23 @@ const s3 = require('../lib/s3');
 
 const soundRouter = module.exports = new Router();
 
-soundRouter.post('/sounds', bearerAuthMiddleware, )
+soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ not found'));
+  if(!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'sound')
+    return next(new httpErrors(400, '__ERROR__ invalid request'));
+
+  let file = request.files[0];
+  let key = `${file.filename}.${file.originalname}`; //TODO: remove this NOTE: if you dont have the originalname the filename in aws will just be a random hash with nothing descriptive
+
+  return s3.upload(file.path, key)
+    .then(url => {
+      return new Sound({
+        title : request.body.title,
+        account : request.account._id,
+        url,
+      }).save();
+    })
+    .then(sound => response.json(sound))
+    .catch(next);
+});
