@@ -62,9 +62,31 @@ describe('AUTH', () => {
             .auth(mock.request.username,mock.request.password);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
+        });
+    });
+    test('GET /login should return 400 status code if no password is provided', () => {
+      return accountMock.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+    test('GET /login should return 401 status code if password is invalid', () => {
+      return accountMock.create()
+        .then(mock => {
+          let invalidPassword = 'bad password';
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username, invalidPassword);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
   }); 
