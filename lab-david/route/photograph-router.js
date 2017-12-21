@@ -4,7 +4,7 @@
 const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
-const Photograph = require('../model/photographs');
+const Photograph = require('../model/photograph');
 
 // FOR UPLOADING : 
 const multer = require('multer');

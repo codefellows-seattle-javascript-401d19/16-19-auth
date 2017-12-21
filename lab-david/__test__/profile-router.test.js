@@ -38,21 +38,12 @@ describe('POST /profiles', () => {
   });
 
   test('should return a 400 for an incomplete request', () => {
-    let accountMock = null;
-
-    return accountMockFactory.create()
-      .then(mock => {
-        accountMock = mock;
-        return superagent.post(`${apiURL}/profiles`)
-          .set('Authorization', `Bearer ${accountMock.token}`)
-          .send({
-            firstName : 'Zaphod',
-          });
+    return superagent.post(`${apiURL}/profiles`)
+      .send({
       })
-      .then(response => {
+      .then(Promise.reject)
+      .catch(response => {
         expect(response.status).toEqual(400);
-        expect(response.body.account).toEqual(accountMock.account._id.toString());
-        expect(response.body.firstName).toEqual('Zaphod');
       });
   });
 
@@ -63,7 +54,7 @@ describe('POST /profiles', () => {
       .then(mock => {
         accountMock = mock;
         return superagent.post(`${apiURL}/profiles`)
-          .set('Authorization', `Bearer fakeToken333`)
+          .set('Authorization', `Bearer ${accountMock.token}`)
           .send({
             bio : 'I am the president',
             firstName : 'Zaphod',
