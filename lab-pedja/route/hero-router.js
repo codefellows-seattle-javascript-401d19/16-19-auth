@@ -20,3 +20,15 @@ heroRouter.post('/heroes',bearerAuthMiddleware,jsonParser, (request,response,nex
   .then(hero => response.json(hero))
   .catch(next);
 });
+
+heroRouter.get('/heroes/:id', bearerAuthMiddleware, (request,response,next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ not found'));
+
+  Hero.findById(request.params.id)
+    .then(hero => {
+      response.json(hero);
+    })
+    .catch(next);
+
+});
