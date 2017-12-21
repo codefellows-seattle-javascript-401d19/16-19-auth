@@ -60,30 +60,54 @@ describe('AUTH Router', () => {
   });
 
   describe('GET /login', () => {
-    test('GET /login should get a 200 status code and a token if there are no errors', () => {
+    test.only('GET /login should get a 200 status code and a token if there are no errors', () => {
       return accountMockFactory.create()
         .then(mock => {
           return superagent.get(`${apiURL}/login`)
             .auth(mock.request.username, mock.request.password);
         })
         .then(response => {
+          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
     });
-  });
 
-  // TODO : write test for 400 on /login
+    // TODO : write test for 400 on /login
+    // test('GET /login should get a 400 status code if the request is incomplete', () => {
+    //   return accountMockFactory.create()
+    //     .then(mock => {
+    //       return superagent.get(`${apiURL}/login`)
+    //         .auth(mock.request.username, mock.request.password);
+    //     })
+    //     .then(response => {
+    //       expect(response.status).toEqual(400);
+    //       expect(response.body.token).toBeTruthy();
+    //     });
+    // });
 
-  // TODO : write test for 404 on /login
+    // TODO : write test for 404 on /login
+    // test('GET /login should get a 404 if the login info is not found', () => {
+    //   return accountMockFactory.create()
+    //     .then(mock => {
+    //       return superagent.get(`${apiURL}/login`)
+    //         .auth(mock.request.username, mock.request.password);
+    //     })
+    //     .then(response => {
+    //       expect(response.status).toEqual(404);
+    //       expect(response.body.token).toBeTruthy();
+    //     });
+    // });
 
-  describe('GET /profile/:id', () => {
+    // describe('GET /profile/:id', () => {
 
-  // TODO : write test for 404 on GET/profile/:id
+    // TODO : write test for 404 on GET/profile/:id
 
-  // TODO : write test for 401 on GET/profile/:id
+    // TODO : write test for 401 on GET/profile/:id
 
 
+
+    // });
 
   });
 

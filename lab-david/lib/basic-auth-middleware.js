@@ -8,11 +8,12 @@ module.exports = (request, response, next) => {
     return next(new httpErrors(400, `__ERROR__ authorization header required`));
 
   let base64AuthHeader = request.headers.authorization.split('Basic ')[1];
+  console.log(base64AuthHeader);
   
   if(!base64AuthHeader)
     return next(new httpErrors(400, `__ERROR__ basic authorization required`));
 
-  let stringAuthHeader = new Buffer(base64AuthHeader, 'base 64').toString();
+  let stringAuthHeader = new Buffer(base64AuthHeader, 'base64').toString();
   let [username, password] = stringAuthHeader.split(':'); //ES6 and its sick! study it up! 
 
   if(!username || !password)

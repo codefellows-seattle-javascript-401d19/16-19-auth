@@ -1,237 +1,286 @@
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T04:43:03.069Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:43:03.087Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:43:03.194Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:43:03.195Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:43:03.195Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:43:03.196Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:43:03.208Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:43:03.208Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:43:03.208Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:43:03.209Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T04:43:03.212Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T04:55:17.997Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:55:18.018Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:55:18.094Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:55:18.095Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:55:18.095Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:55:18.096Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:55:18.134Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:55:18.134Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:55:18.134Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:55:18.134Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T04:55:18.138Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T04:57:33.594Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:57:33.615Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:57:33.687Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:57:33.688Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:57:33.688Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:57:33.689Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T04:57:33.721Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T04:57:33.722Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T04:57:33.722Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T04:57:33.722Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T04:57:33.726Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T05:02:21.380Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T05:02:21.400Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T05:02:21.468Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T05:02:21.469Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T05:02:21.469Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T05:02:21.471Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T05:02:21.504Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T05:02:21.505Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T05:02:21.505Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T05:02:21.505Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T05:02:21.509Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T16:38:01.662Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:38:01.685Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:38:01.758Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:38:01.760Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:38:01.760Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:38:01.761Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:38:01.792Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:38:01.793Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:38:01.793Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:38:01.793Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T16:38:01.797Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T16:39:32.824Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:39:32.846Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:39:32.913Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:39:32.914Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:39:32.914Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:39:32.915Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:39:32.950Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:39:32.951Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:39:32.951Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:39:32.951Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T16:39:32.954Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T16:41:39.643Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:41:39.665Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:41:39.729Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:41:39.730Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:41:39.730Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:41:39.731Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:41:39.735Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T16:41:39.758Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T16:42:03.662Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:42:03.683Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:42:03.748Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T16:42:03.749Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T16:42:03.749Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T16:42:03.750Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T16:42:03.753Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T16:42:03.782Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T17:48:24.108Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:48:24.130Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:48:24.210Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T17:48:24.211Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T17:48:24.211Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T17:48:24.212Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:48:24.217Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T17:48:24.241Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T17:49:33.840Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:49:33.861Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:49:33.929Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T17:49:33.930Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:12:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T17:49:33.930Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T17:49:33.931Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T17:49:33.935Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T17:49:33.963Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T20:23:25.499Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:23:25.580Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:23:25.669Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T20:23:25.670Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T20:23:25.670Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T20:23:25.671Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:23:25.675Z"}
-{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-20T20:23:25.731Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T20:23:25.732Z"}
-{"level":"info","timestamp":"2017-12-20T20:23:25.732Z"}
-{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-20T20:23:25.732Z"}
-{"level":"info","timestamp":"2017-12-20T20:23:25.732Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T20:23:25.734Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T20:24:51.882Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:24:51.903Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:24:51.982Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T20:24:51.983Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T20:24:51.983Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T20:24:51.984Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T20:24:51.987Z"}
-{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-20T20:24:52.042Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T20:24:52.042Z"}
-{"level":"info","timestamp":"2017-12-20T20:24:52.042Z"}
-{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-20T20:24:52.042Z"}
-{"level":"info","timestamp":"2017-12-20T20:24:52.043Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T20:24:52.045Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T20:24:52.589Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T20:24:52.620Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T20:24:52.644Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:31:11.102Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:31:11.124Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:31:11.200Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:31:11.201Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:31:11.201Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:31:11.202Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:31:11.205Z"}
-{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-20T22:31:11.256Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:31:11.256Z"}
-{"level":"info","timestamp":"2017-12-20T22:31:11.257Z"}
-{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-20T22:31:11.257Z"}
-{"level":"info","timestamp":"2017-12-20T22:31:11.257Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:31:11.259Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:31:11.838Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:31:11.864Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:31:11.880Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:37:28.120Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:37:28.142Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:37:28.209Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:37:28.210Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:37:28.210Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:37:28.211Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:37:28.215Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:37:28.241Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:37:33.442Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:37:33.539Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:37:33.555Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:39:18.354Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:39:18.374Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:39:18.446Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:39:18.447Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:39:18.447Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:39:18.448Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:39:18.452Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:39:18.480Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:39:23.672Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:39:23.767Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:39:23.784Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:40:47.221Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:40:47.284Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:40:47.313Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:46:12.724Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:46:12.782Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:46:12.817Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:46:13.017Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:46:13.088Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:46:13.123Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:46:13.125Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:46:13.125Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:46:13.126Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:46:13.130Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:46:13.158Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:48:12.400Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:48:12.421Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:48:12.490Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:48:12.491Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:48:12.491Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:48:12.492Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:48:12.496Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:48:12.519Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:48:17.976Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:48:18.033Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:48:18.050Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:50:52.907Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:50:52.929Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:50:53.002Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T22:50:53.004Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T22:50:53.004Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T22:50:53.005Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T22:50:53.008Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:50:53.033Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:50:58.569Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:50:58.599Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:50:58.611Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T22:58:19.006Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T22:58:19.069Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T22:58:19.095Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T23:01:39.779Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T23:01:39.838Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T23:01:39.867Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T23:02:45.295Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T23:02:45.359Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T23:02:45.385Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T23:02:45.812Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:45.852Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:45.883Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T23:02:45.910Z"}
-{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$Qdr49lshFmuAnxmjBR8j7ue0UT.SQlax.1Z2USAehFR0C9t25dYw.","tokenSeed":"43bbd337a7f42520445b7cdc5cb8d747baae05da3c40a8dae9db3ee4f38c431f3e68d77619fd53534aae6ffb800d4b4645c24ca9d5a5a68d19dbf943c07dde30","_id":"5a3aec157dc7efd529c08385","created":"2017-12-20T23:02:45.903Z","__v":0}}
-{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-20T23:02:45.911Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T23:02:45.914Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T23:02:56.023Z"}
-{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-20T23:02:56.083Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T23:02:56.112Z"}
-{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-20T23:02:56.601Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:56.621Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:56.652Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T23:02:56.653Z"}
-{"message":"__ERROR__ username, password and email are all required to creat an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to creat an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-20T23:02:56.653Z"}
-{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to creat an account","timestamp":"2017-12-20T23:02:56.654Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:56.658Z"}
-{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-20T23:02:56.684Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T23:02:56.704Z"}
-{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$wBgJxX0tInhGkPydXaWfDOG6R7xFFuwMVsrzJXAk2/ccgC3dwttaa","tokenSeed":"0810c15ae3a347dce51295ed16dd7c6a3fb8b4b31d20bbd15b57b53b30fb21a430bd4145759172d53d0ab8d31f6552a963106ad37da503dbefb33add00b81fc3","_id":"5a3aec20898ac8d54d51400d","created":"2017-12-20T23:02:56.703Z","__v":0}}
-{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-20T23:02:56.706Z"}
-{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-20T23:02:56.734Z"}
-{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-20T23:02:56.735Z"}
-{"level":"info","timestamp":"2017-12-20T23:02:56.735Z"}
-{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-20T23:02:56.735Z"}
-{"level":"info","timestamp":"2017-12-20T23:02:56.735Z"}
-{"level":"info","message":"server off","timestamp":"2017-12-20T23:02:56.738Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:08:17.287Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:08:17.348Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:08:17.349Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.349Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:08:17.349Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.349Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:08:17.380Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:08:17.380Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.380Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:08:17.380Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.380Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:08:17.404Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:08:17.404Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.404Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:08:17.404Z"}
+{"level":"info","timestamp":"2017-12-21T00:08:17.404Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:08:17.406Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:08:17.587Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:08:17.685Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:08:17.708Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:17:46.874Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:17:47.004Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:17:47.005Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.005Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:17:47.005Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.005Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:17:47.037Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:17:47.037Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.037Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:17:47.037Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.037Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:17:47.061Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:17:47.061Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.061Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:17:47.061Z"}
+{"level":"info","timestamp":"2017-12-21T00:17:47.061Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:17:47.063Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:17:47.235Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:17:47.265Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:17:47.292Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:18:29.945Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:18:30.006Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:18:30.007Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.007Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:18:30.007Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.007Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:18:30.040Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:18:30.040Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.040Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:18:30.043Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.043Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:18:30.123Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:18:30.123Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.123Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:18:30.123Z"}
+{"level":"info","timestamp":"2017-12-21T00:18:30.124Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:18:30.126Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:18:30.307Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:18:30.333Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:18:30.355Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:22:28.505Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:22:28.566Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:22:28.567Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.567Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:22:28.568Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.568Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:22:28.601Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:22:28.601Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.601Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:22:28.601Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.601Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:22:28.627Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:22:28.628Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.628Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:22:28.628Z"}
+{"level":"info","timestamp":"2017-12-21T00:22:28.628Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:22:28.630Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:22:28.812Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:22:28.914Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:22:28.936Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:34:33.171Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:34:33.236Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:34:33.238Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.238Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:34:33.238Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.238Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:34:33.271Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:34:33.272Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.272Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:34:33.272Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.272Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:34:33.296Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:34:33.296Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.296Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:34:33.296Z"}
+{"level":"info","timestamp":"2017-12-21T00:34:33.296Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:34:33.298Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:34:33.481Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:34:33.567Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:34:33.588Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:43:17.113Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:43:17.174Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:43:17.176Z"}
+{"level":"info","timestamp":"2017-12-21T00:43:17.176Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:43:17.176Z"}
+{"level":"info","timestamp":"2017-12-21T00:43:17.176Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:43:17.184Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:43:17.374Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:43:17.466Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:43:17.490Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:45:22.402Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:45:22.463Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:45:22.464Z"}
+{"level":"info","timestamp":"2017-12-21T00:45:22.465Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:45:22.465Z"}
+{"level":"info","timestamp":"2017-12-21T00:45:22.465Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:45:22.473Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:45:22.651Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:45:22.749Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:45:22.772Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:46:17.634Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:46:17.695Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:17.697Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:17.697Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:46:17.697Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:17.697Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:46:17.704Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:46:17.881Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:46:17.973Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:46:17.996Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:46:48.306Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:46:48.368Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:46:48.369Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:48.369Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:46:48.369Z"}
+{"level":"info","timestamp":"2017-12-21T00:46:48.369Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:46:48.377Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:46:48.552Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:46:48.646Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:46:48.667Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:52:32.278Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:52:32.407Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:52:32.409Z"}
+{"level":"info","timestamp":"2017-12-21T00:52:32.409Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:52:32.409Z"}
+{"level":"info","timestamp":"2017-12-21T00:52:32.409Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:52:32.417Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:52:32.596Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:52:32.626Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:52:32.648Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:58:43.323Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:58:43.390Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:58:43.392Z"}
+{"level":"info","timestamp":"2017-12-21T00:58:43.392Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:58:43.392Z"}
+{"level":"info","timestamp":"2017-12-21T00:58:43.392Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:58:43.399Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:58:43.574Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:58:43.672Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:58:43.694Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:59:12.301Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T00:59:12.363Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T00:59:12.364Z"}
+{"level":"info","timestamp":"2017-12-21T00:59:12.364Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T00:59:12.364Z"}
+{"level":"info","timestamp":"2017-12-21T00:59:12.364Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:59:12.372Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T00:59:12.548Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T00:59:12.642Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T00:59:12.666Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:02:39.261Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:02:39.283Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:02:39.348Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:02:39.349Z"}
+{"message":"__ERROR__ username, password and email are all required to create an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T01:02:39.349Z"}
+{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to create an account","timestamp":"2017-12-21T01:02:39.350Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:02:39.354Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:02:39.377Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:02:39.396Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$FpTVx/Dq2YCqQv76d5rvJeldwafYPzR.6heMXf8fKAmL/7HzbVQKC","tokenSeed":"611b8cad33793543bf1f3336c857463e9ced4a8392252f9fdc6c3e4fc82c57783fcd3623bcd542d52b248c445cdec3d6f7a54205b553d907539fc82f086f9955","_id":"5a3b082fb29244e202a953e3","created":"2017-12-21T01:02:39.394Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T01:02:39.397Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:02:39.427Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:02:39.427Z"}
+{"level":"info","timestamp":"2017-12-21T01:02:39.427Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:02:39.427Z"}
+{"level":"info","timestamp":"2017-12-21T01:02:39.427Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:02:39.430Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:02:39.606Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:02:39.702Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:02:39.713Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:05:15.165Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:05:15.243Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:05:15.310Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:05:15.311Z"}
+{"message":"__ERROR__ username, password and email are all required to create an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T01:05:15.311Z"}
+{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to create an account","timestamp":"2017-12-21T01:05:15.312Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:05:15.316Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:05:15.338Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:05:15.357Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$jL/TVjXCN0yb0mCs8hL5mO7vX0oHZGcQaaXy74rLjrWykLGyPO5MW","tokenSeed":"f9999f31494eb525535ed91e630436063fa8cbc9b6f7005b468ebeec1235f7100e66ffae9538ca8b4c563cdbca3dc7f15a656b9fa1714f89f15accf75ba505aa","_id":"5a3b08cb2773fce25aa85556","created":"2017-12-21T01:05:15.355Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T01:05:15.358Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:05:15.390Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:05:15.391Z"}
+{"level":"info","timestamp":"2017-12-21T01:05:15.391Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:05:15.391Z"}
+{"level":"info","timestamp":"2017-12-21T01:05:15.391Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:05:15.393Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:05:15.569Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:05:15.595Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:05:15.606Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:06:29.026Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:06:29.051Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:06:29.120Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:06:29.121Z"}
+{"message":"__ERROR__ username, password and email are all required to create an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T01:06:29.121Z"}
+{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to create an account","timestamp":"2017-12-21T01:06:29.122Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:06:29.126Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:06:29.148Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:06:29.167Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$0huuuL7v0KPKxMbszo5af.FkEU80Bn1BxhjgMR6Xat19SfY/y7Maa","tokenSeed":"db4be7a7684a1f4c484db4903c59e4a844eae20abb11d574c1518027cf6cfc263a0c5566e18fdbb4771a1c06cc4a28db1bfd6dfcdb64198fbf845f5635b4bd0d","_id":"5a3b09156f499ee2c6004d14","created":"2017-12-21T01:06:29.165Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T01:06:29.168Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:06:29.198Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:06:29.199Z"}
+{"level":"info","timestamp":"2017-12-21T01:06:29.199Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:06:29.199Z"}
+{"level":"info","timestamp":"2017-12-21T01:06:29.199Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:06:29.201Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:06:29.435Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:06:29.461Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:06:29.472Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:07:51.653Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:07:51.674Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:07:51.740Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:07:51.741Z"}
+{"message":"__ERROR__ username, password and email are all required to create an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T01:07:51.741Z"}
+{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to create an account","timestamp":"2017-12-21T01:07:51.742Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:07:51.746Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:07:51.771Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:07:51.790Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$0JQBHSYSQOYqyMo5wULEMurW1rZJ/fb2usPH8EJEcWl4VTGURkZ4y","tokenSeed":"17c6e192fa7a4550fd183d54a0491fc41be42651cc49867ed40294e643c9254843b026b4644542aca17ca1a74b94c948f94246191ed1bd301407302d2d2a280e","_id":"5a3b09672c799ae31f2b579b","created":"2017-12-21T01:07:51.788Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T01:07:51.791Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:07:51.822Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:07:51.822Z"}
+{"level":"info","timestamp":"2017-12-21T01:07:51.822Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:07:51.822Z"}
+{"level":"info","timestamp":"2017-12-21T01:07:51.822Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:07:51.827Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:07:52.009Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:07:52.109Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:07:52.121Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:10:25.200Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:10:25.287Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:10:25.353Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:10:25.354Z"}
+{"message":"__ERROR__ username, password and email are all required to create an account","stack":"BadRequestError: __ERROR__ username, password and email are all required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/route/auth-router.js:14:91)\n    at Layer.handle [as handle_request] (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/express/lib/router/route.js:137:13)\n    at /Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:224:16)\n    at done (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/austriker/Documents/code-fellows/cf-401/labs/16-19-auth/lab-david/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-21T01:10:25.354Z"}
+{"level":"info","message":"responding with a 400 status and a message : __ERROR__ username, password and email are all required to create an account","timestamp":"2017-12-21T01:10:25.355Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:10:25.359Z"}
+{"level":"info","message":"processing : POST on /signup","timestamp":"2017-12-21T01:10:25.381Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:10:25.401Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"president@galaxy.org\" }","op":{"username":"zaphod","email":"president@galaxy.org","passwordHash":"$2a$08$CbEZhplKCKr9s4m2pC/qMuv7Q0BlFCeF7QBpnSui0WDuTPiT5unbq","tokenSeed":"7b03b64694d7cbb0ace86f5022d8c3e1ec4e1b8bfe519a8be2593073a117042542442c0aed22d2234659af81859aa1746d5059b55617229c85b35959dddf2248","_id":"5a3b0a0183834be3910f55ca","created":"2017-12-21T01:10:25.399Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-21T01:10:25.402Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:10:25.432Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:10:25.432Z"}
+{"level":"info","timestamp":"2017-12-21T01:10:25.432Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:10:25.432Z"}
+{"level":"info","timestamp":"2017-12-21T01:10:25.433Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:10:25.437Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:10:25.615Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:10:25.641Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:10:25.652Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:10:45.386Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:10:45.451Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-21T01:10:45.453Z"}
+{"level":"info","timestamp":"2017-12-21T01:10:45.453Z"}
+{"level":"info","message":"responding with a 500 status code","timestamp":"2017-12-21T01:10:45.453Z"}
+{"level":"info","timestamp":"2017-12-21T01:10:45.453Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:10:45.461Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:10:45.633Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:10:45.729Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:10:45.752Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:12:36.282Z"}
+{"level":"info","message":"processing : GET on /login","timestamp":"2017-12-21T01:12:36.341Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:12:36.376Z"}
+{"level":"info","message":"server is listening on port 7000","timestamp":"2017-12-21T01:12:36.594Z"}
+{"level":"info","message":"processing : POST on /profiles","timestamp":"2017-12-21T01:12:36.658Z"}
+{"level":"info","message":"server off","timestamp":"2017-12-21T01:12:36.677Z"}

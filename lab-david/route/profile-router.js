@@ -16,8 +16,8 @@ profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, resp
     ...request.body,
     account : request.account._id,
   }).save()
-  .then(profile => response.json(profile))
-  .catch(next);
+    .then(profile => response.json(profile))
+    .catch(next);
 });
 
 // authRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
