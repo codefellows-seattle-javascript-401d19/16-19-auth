@@ -3,7 +3,7 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMock = require('./lib/account-mock-factory');
+const accountMockFactory = require('./lib/account-mock-factory');
 
 const apiURL = `http://localhost:${process.env.PORT}`;
 
@@ -75,8 +75,19 @@ describe('Account Router', () => {
         });
     });
 
-    //TODO: WRITE 400 TEST
+    test('GET /login should return a 400 with an incomplete request', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
 
     //TODO: WRITE 401 TEST
+    
   });
 });
