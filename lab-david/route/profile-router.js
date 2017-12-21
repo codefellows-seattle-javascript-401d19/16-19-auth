@@ -20,11 +20,13 @@ profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, resp
     .catch(next);
 });
 
-// authRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
-//   if(!request.account)
-//     return next(new httpErrors(404, '__ERROR__ Not Found'));
+profileRouter.get('/login/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ Not Found'));
 
-//   return request.account.createToken()
-//     .then(token => response.json({token}))
-//     .catch(next);
-// });
+  return Profile.findById(request.params.id)
+    .then(foundProfile => {
+      return response.json(foundProfile)
+    })
+    .catch(next)
+});
