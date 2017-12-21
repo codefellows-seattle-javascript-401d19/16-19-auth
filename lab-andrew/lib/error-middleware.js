@@ -35,6 +35,11 @@ module.exports = (error, request, response, next) => { //eslint-disable-line
     return response.sendStatus(401);
   }
 
+  if(message.includes('jwt malformed')){
+    logger.log('info', 'Responding with a 401 status code');
+    return response.sendStatus(401);
+  }
+
   logger.log('info', 'Responding with a 500 status code');
   logger.log('info',error);
   return response.sendStatus(500);
