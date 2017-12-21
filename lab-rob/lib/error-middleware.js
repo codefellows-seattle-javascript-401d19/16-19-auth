@@ -26,7 +26,7 @@ module.exports = (error, request, response, next) => {
     return response.sendStatus(404);
   }
 
-  if(message.includes('unauthorized')) {
+  if(message.includes('unauthorized') || message.includes('jwt malformed')) {
     logger.error('Unauthorized access. Responding with a 401 status.');
     return response.sendStatus(401);
   }
