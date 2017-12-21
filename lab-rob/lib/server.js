@@ -14,6 +14,7 @@ mongoose.Promise = Promise;
 
 app.use(require('./logger-middleware'));
 app.use(require('../route/auth-router'));
+app.use(require('../route/movie-router'));
 
 app.all('*', (request, response) => {
   logger.error(`Bad endpoint with a ${request.method} request. Sending a 404 status.`);

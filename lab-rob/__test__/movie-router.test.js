@@ -31,7 +31,7 @@ describe('movie-router.js', () => {
             });
         })
         .then(response => {
-          expect(response.status).toEqual(2001);
+          expect(response.status).toEqual(200);
           expect(response.body.title).toEqual('Hot Rod');
           expect(response.body.lead).toEqual('Andy Samberg');
           expect(response.body.year).toEqual(2007);
