@@ -1,5 +1,4 @@
 'use strict';
-//NOTE : this looks like lecture code
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
 const Account = require('../model/account');
@@ -10,7 +9,6 @@ const authRouter = module.exports = new Router();
 
 authRouter.post('/signup', jsonParser, (request, response, next) => {
   if(!request.body.username || !request.body.email || !request.body.password){
-    console.log('__ERROR__ username, email, and password are required to create an account');//TODO: remove
     return next(new httpErrors(400, '__ERROR__ username, email, and password are required to create an account'));
   }
   Account.create(request.body.username, request.body.email, request.body.password)

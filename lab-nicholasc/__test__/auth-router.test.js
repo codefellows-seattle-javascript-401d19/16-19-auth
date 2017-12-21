@@ -3,9 +3,9 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMockFactory = require('./lib/account-mock-factory'); //TODO: change all accountMock in accountmock.js to account-mock-factory
+const accountMockFactory = require('./lib/account-mock-factory'); 
 
-const apiUrl =`http://localhost:${process.env.PORT}`; //TODO : give/signup to post routes
+const apiUrl =`http://localhost:${process.env.PORT}`;
 
 describe('auth router', () => {
   beforeAll(server.start);

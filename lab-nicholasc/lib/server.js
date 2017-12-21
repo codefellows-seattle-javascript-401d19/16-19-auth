@@ -7,7 +7,6 @@ const logger = require('./logger');
 const app = express();
 let isServerOn = false;
 let httpServer = null;
-//NOTE: debugged, server working great
 //------------------------------------------------
 mongoose.Promise = Promise;
 // mongoose.connect(process.env.MONGODB_URI, {useMongoClient : true});
