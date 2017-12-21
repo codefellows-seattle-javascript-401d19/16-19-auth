@@ -83,6 +83,52 @@ describe('auth-router.js', () => {
           expect(response.body.token).toBeTruthy();
         });
     });
-  });
 
+    test('login should return a 400 status if no auth header is sent', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiUrl}/login`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('login should throw a 400 status error if authorization is sent without Basic', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiUrl}/login`)
+            .set('Authorization', 'schmoopy');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('login should throw a 400 status error if authorization is sent without an improperly formatted Basic authorization', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiUrl}/login`)
+            .set('Authorization', 'Basic hey there bud');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('login should throw a 404 status error if no username is found with the sent username', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.get(`${apiUrl}/login`)
+            .auth('I am not a real username', 'passy');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+  });
 });
