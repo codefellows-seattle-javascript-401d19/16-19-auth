@@ -8,7 +8,7 @@ const soundMockFactory = module.exports = {};
 
 soundMockFactory.create = () => {
 	let mock = {};
-	
+
 	return accountMockFactory.create()
 		.then(accountMock => {
 			mock.accountMock = accountMock;
@@ -29,4 +29,4 @@ soundMockFactory.remove = () => {
 		accountMockFactory.remove(),
 		Sound.remove({}),
 	]);
-}
+};

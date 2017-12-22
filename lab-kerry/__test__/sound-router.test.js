@@ -7,7 +7,7 @@ const server = require('../lib/server');
 const accountMockFactory = require('./lib/account-mock-factory');
 const soundMockFactory = require('./lib/sound-mock-factory');
 
-const apiURL = `http://localhost:${process.env.PORT}/`;
+const apiURL = `http://localhost:${process.env.PORT}`;
 
 describe('/sounds', () => {
 	beforeAll(server.start);
@@ -23,14 +23,14 @@ describe('/sounds', () => {
 
 				return superagent.post(`${apiURL}/sounds`)
 					.set('Authorization', `Bearer ${accountMock.token}`)
-					.field('title', 'dog barks')
-					.attach('sound', `${__dirname}/asset/dog.wav`)
+					.field('title', 'TGIF')
+					.attach('sound', `${__dirname}/asset/thank-god-its-friday.wav`)
 					.then(response => {
 						expect(response.status).toEqual(200);
-						expect(response.body).toEqual('dog barks');
+						expect(response.body.title).toEqual('TGIF');
 						expect(response.body._id).toBeTruthy();
 						expect(response.body.url).toBeTruthy();
 					});
-			})
+			});
 	});
 });

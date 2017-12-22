@@ -43,6 +43,7 @@ node_modules/
 jspm_packages/
 db/
 .vscode/
+temp/
 
 # Typescript v1 declaration files
 typings/
@@ -64,10 +65,6 @@ typings/
 
 # dotenv environment variables file
 .env
-
-#Secret Key environment variables
-setup.js
-
 
 ### OSX ###
 *.DS_Store

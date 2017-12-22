@@ -5,7 +5,7 @@
 // ROUTER
 //--------------------------------------
 
-const { Router } = require('express');
+const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 const Sound = require('../model/sound');
@@ -24,14 +24,15 @@ const s3 = require('../lib/s3');
 const soundRouter = module.exports = new Router();
 
 soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, response, next) => {
-	if (!request.account) {
+	if (!request.account) 
 		return next(new httpErrors(404, '__ERROR__ Not found.'));
-	}
-	if (!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'sound') {
+	
+	if (!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'sound') 
 		return next(new httpErrors(400, '__ERROR__ invalid request'));
-	}
+	
 	let file = request.files[0]; 
 	let key = `${file.filename}.${file.originalname}`; 
+
 
 	return s3.upload(file.path, key)
 		.then(url => {
