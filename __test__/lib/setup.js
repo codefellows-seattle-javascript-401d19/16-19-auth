@@ -8,9 +8,11 @@ process.env.MONGODB_URI = 'mongodb://localhost/testing';
 process.env.ROCKET_CLOUD_SECRET = 'wtfMateBARF';
 
 
-process.env.AWS_BUCKET = 'SECRET CHANGE THIIIS';
-process.env.AWS_ACCESS_KEY_ID = 'SECRET ID';
-process.env.AWS_SECRET_ACCESS_KEY = 'SECRET KEY';
+process.env.AWS_BUCKET = 'fake';
+process.env.AWS_ACCESS_KEY_ID = 'fake';
+process.env.AWS_SECRET_ACCESS_KEY = 'fake';
+
+
 
 awsSDKMock.mock('S3', 'upload', (params, callback) => {
   if (!params.Key || !params.Bucket || !params.Body || !params.ACL)
