@@ -1,7 +1,7 @@
 {
-  "name": "phelan-401-lab-17",
+  "name": "phelan-401-lab-18",
   "version": "0.0.0",
-  "description": "Phelan's 401 Lab 17",
+  "description": "Phelan's 401 Lab 18",
   "main": "index.js",
   "directories": {
     "lib": "lib"

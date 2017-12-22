@@ -9,9 +9,9 @@ const accountMockFactory = module.exports = {};
 accountMockFactory.create = () => {
   let mock = {};
   mock.request = {
-    username : faker.internet.username(),
+    username : faker.internet.userName(),
     email : faker.internet.email(),
-    password : faker.loren.words(10),
+    password : faker.lorem.words(3),
   };
 
   return Account.create(mock.request.username, mock.request.email, mock.request.password)
@@ -28,3 +28,5 @@ accountMockFactory.create = () => {
       return mock;
     });
 };
+
+accountMockFactory.remove = () => Account.remove({});
