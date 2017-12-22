@@ -27,7 +27,7 @@ describe('/photographs', () => {
         return superagent.post(`${apiURL}/photographs`)
           .set(`Authorization', 'Bearer ${accountMock.token}`) 
           .field('title', 'sweet photo')
-          .attach('photograph', `${__dirname}/assets/photo1.jpg`)
+          .attach('photograph', `${__dirname}/assets/giphy.gif`)
           .then(response => {
             expect(response.status).toEqual(200);
             expect(response.body.title).toEqual('sweet photo');
