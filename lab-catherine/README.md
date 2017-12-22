@@ -1,13 +1,13 @@
 # Code Fellows: Seattle 401 JavaScript - 401d19
 
-##  Lab 18: Authorization
+##  Lab 19: Authorization - File Management
 
 ### Author:
  Catherine Looper
 
 ### Motivation
 
-In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic and bearer authentication using Express. This server handles POST and GET requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence.
+In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic and bearer authentication using Express. This server handles POST, GET and DELETE requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence. This app is also using AWS S3 file storage.
 
 ### Build
 
@@ -15,7 +15,7 @@ In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server wit
 
 The server module is creating an http server, defining server-on behavior and exporting an interface for starting and stopping the server. The server module exports an object containing start and stop methods.
 
-The server module requires in express, mongoose, logger, logger-middleware, error-middleware, auth-router.js and the profile-router.js file. The server.start and stop methods return a new Promise with resolve and reject parameters. The start method contains an app.listen function that listens for the server start. The server.stop method has an httpServer.close function that turns the server off by setting the isServerOn variable to false.
+The server module requires in express, mongoose, logger, logger-middleware, error-middleware, auth-router.js, profile-router.js and the photo-router.js file. The server.start and stop methods return a new Promise with resolve and reject parameters. The start method contains an app.listen function that listens for the server start. The server.stop method has an httpServer.close function that turns the server off by setting the isServerOn variable to false.
 
 #### Route Module
 
@@ -27,6 +27,10 @@ The server module requires in express, mongoose, logger, logger-middleware, erro
 
 `profile-router.js` requires in the Router object from express, the jsonParser(body-parser), http-errors, the profile.js model, and bearer-auth-middleware.js. Inside the module, there is a function declared for `profileRouter.post` with the route `/profiles` and a `profileRouter.get` method with the route `/profiles/:id`. These routes handle posting a profile and retrieving a profile based on its id.
 
+##### `photo-router.js`
+
+`photo-router.js` requires in the Router object from express, httpErrors, bearerAuthMiddleware.js, the photo.js model, multer, and s3. Inside the module, there is a function declared for `photoRouter.post`, `photoRouter.get`, and `photoRouter.delete`. This router also relies on methods delcared in s3.js `s3.upload` and `s3.remove`.
+
 
 #### Model Module
 
@@ -37,6 +41,10 @@ The server module requires in express, mongoose, logger, logger-middleware, erro
 ##### `profile.js`
 
 `profile.js` requires in mongoose. The profile model includes the parameters: bio, avatar, lastName, firstName, and account. The profile model is being exported from the file. This model belongs to the account model.
+
+##### `photo.js`
+
+`photo.js` requires in mongoose. The photo model includes the parameters: title, url, createdOn, and account. The photo model is being exported from the file.
 
 
 #### Test Module
@@ -55,6 +63,11 @@ Contains a `lib/` directory with the files: `setup.js`,   `account-mock-factory.
   * `401`/`404 ` - if unauthorized request
   * `409` - if keys are unique
 
+* `DELETE` - tests for status codes:
+  * `204` - successful delete request
+  * `404` - if an incomplete delete request is sent
+  * `401` - if unauthorized request
+
 
 #### Middleware
 
@@ -65,6 +78,10 @@ The basic auth middleware sets up the authentication for username/password verif
 ##### `bearer-auth-middleware.js`
 
 The bearer auth middleware handles the error checking for the authorization. It checks that the token is authorized.
+
+##### `s3.js`
+
+The `s3.js` middleware requires in fs-extra and aws-sdk. This middleware contains the functions `s3.upload` and `s3.remove` that allow uploading to AWS.
 
 ##### `error-middleware.js`
 
@@ -143,6 +160,11 @@ Standard JavaScript with ES6
 * bcrypt
 * crypto
 * jsonwebtoken
+* fs-extra
+* multer
+* aws-sdk
+* aws-sdk-mock
+* Amazon Web Services
 
 
 ### How to use?
