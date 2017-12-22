@@ -42,9 +42,22 @@ describe('/gifs', () => {
       })
       .then(response => {
         expect(response.status).toEqual(200);
-        console.log(response.body);
         expect(response.body.title).toEqual(gifToTest.gif.title);
         expect((response.body._id).toString()).toEqual((gifToTest.gif._id).toString());
+      });
+  });
+  test('DELETE should return 204 if no errors', () => {
+    let gifToDelete = null;
+    return gifMockFactory.create()
+      .then(gif => {
+        gifToDelete = gif;
+        return superagent.delete(`${apiUrl}/gifs/${gif.gif._id}`)
+          .set('Authorization', `Bearer ${gif.accountMock.token}`);
+      })
+      .then(response => {
+        expect(response.status).toEqual(204);
+        // expect(response.body.title).toEqual(gifToDelete.gif.title);
+        // expect((response.body._id).toString()).toEqual((gifToDelete.gif._id).toString());
       });
   });
 });
