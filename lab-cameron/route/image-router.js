@@ -46,6 +46,7 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
   return Image.findById(request.params.id)
     .then(image => {
       if (!image) {
+        console.log(image);
         throw httpErrors(404, 'not found');
       }
       logger.log('info', 'GET - returning a 200 status code');

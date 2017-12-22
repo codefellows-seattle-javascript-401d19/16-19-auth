@@ -56,18 +56,45 @@ describe('image-router.js', () => {
   });
 
   describe('GET /images/id', () => {
-    test.only('GET /images/id should return a 200 if there are no errors', () => {
+    test('GET /images/id should return a 200 if there are no errors', () => {
       let accountMock = null;
       return imageMockFactory.create()
         .then(imageMock => {
           accountMock = imageMock.accountMock;
-          const accountId = accountMock.account._id;
-          return superagent.get(`${apiURL}/images/${accountId}`)
+          const imageId = imageMock.image._id;
+          return superagent.get(`${apiURL}/images/${imageId}`)
             .set('Authorization', `Bearer ${accountMock.token}`);
         })
         .then(response => {
-          console.log('eureka');
           expect(response.status).toEqual(200);
+          console.log(response.body);
+        });
+    });
+
+    test('GET /images/id should return a 404 if id is invalid', () => {
+      let accountMock = null;
+      return imageMockFactory.create()
+        .then(imageMock => {
+          accountMock = imageMock.accountMock;
+          return superagent.get(`${apiURL}/images/invalidId`)
+            .set('Authorization', `Bearer ${accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('GET /images/id should return a 401 if id is invalid', () => {
+      return imageMockFactory.create()
+        .then(imageMock => {
+          const imageId = imageMock.image._id;
+          return superagent.get(`${apiURL}/images/${imageId}`)
+            .set('Authorization', `Bearer invalidToken`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
   });
