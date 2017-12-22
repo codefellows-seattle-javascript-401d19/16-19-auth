@@ -36,8 +36,8 @@ Add a screenshot of your uploaded Model into your AWS bucket.
   * on failure due to a bad id send a 404 status code
   * on failure due to bad token or lack of token respond with a 401 status code
 * `DELETE /<resouces-name>/:id` 
-  * pass a bearer authentication token in the request to authorize the creation of the resource
-  * on success respond with a 204 status code and an authentication token
+  * pass a bearer authentication token in the request to authorize the deletion of the resource
+  * on success respond with a 204 status code
   * on failure due to a bad id send a 404 status code
   * on failure due to bad token or lack of token respond with a 401 status code
   
