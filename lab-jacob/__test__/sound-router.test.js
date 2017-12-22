@@ -34,4 +34,21 @@ describe('/sounds', () => {
           });
       });
   });  
+  
+  test('Get by ID should return a 200 and response body', () => {
+    let tempSoundMock = null;
+    return soundMockFactory.create()
+      .then(soundMock => {
+        tempSoundMock = soundMock;
+
+        return superagent.get(`${apiURL}/sounds/${soundMock.sound._id}`)
+          .set('Authorization', `Bearer ${soundMock.account.token}`);     
+      })
+      .then(response => {
+        expect(response.status).toEqual(200);
+      });
+  });
+ 
 });
+  
+
