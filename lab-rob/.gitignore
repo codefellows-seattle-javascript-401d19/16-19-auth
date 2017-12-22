@@ -152,3 +152,7 @@ node_modules/*
 coverage/*
 db/*
 db
+.vscode
+.vscode/*
+.vscode/launch.json
+temp
