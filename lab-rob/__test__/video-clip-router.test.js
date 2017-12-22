@@ -132,5 +132,35 @@ describe('video-clip-router.js', () => {
           expect(response.status).toEqual(204);
         });
     });
+
+    test('should respond with a 404 status if requested id is not found', () => {
+      let mock = null;
+      return videoClipMockFactory.create()
+        .then(mockData => {
+          mock = mockData;
+
+          return superagent.delete(`${apiUrl}/video-clips/bad-id`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should respond with a 401 status if bad Bearer auth is sent', () => {
+      let mock = null;
+      return videoClipMockFactory.create()
+        .then(mockData => {
+          mock = mockData;
+
+          return superagent.delete(`${apiUrl}/video-clips/${mock.videoClip._id}`)
+            .set('Authorization', `Bearer bad-auth`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
   });
 });
