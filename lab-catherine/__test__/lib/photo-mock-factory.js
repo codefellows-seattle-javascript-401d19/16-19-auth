@@ -11,6 +11,7 @@ photoMockFactory.create = () => {
   return accountMockFactory.create()
     .then(accountMock => {
       mock.accountMock = accountMock;
+      
       return new Photo({
         account: accountMock.account._id,
         title: faker.lorem.words(10),

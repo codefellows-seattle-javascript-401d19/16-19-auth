@@ -132,8 +132,6 @@ describe('/photos', () => {
       
           return superagent.delete(`${apiURL}/photos/${tempPhotoMock.photo._id}`)
             .set('Authorization', `Bearer ${tempPhotoMock.accountMock.token}`)
-            .field('title', 'cat photo')
-            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
             .then(response => {
               expect(response.status).toEqual(204);
             });
@@ -149,8 +147,6 @@ describe('/photos', () => {
       
           return superagent.delete(`${apiURL}/photos/invalidId`)
             .set('Authorization', `Bearer ${tempPhotoMock.accountMock.token}`)
-            .field('title', 'cat photo')
-            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
             .then(Promise.reject)
             .catch(response => {
               expect(response.status).toEqual(404);
@@ -167,8 +163,6 @@ describe('/photos', () => {
       
           return superagent.delete(`${apiURL}/photos/${tempPhotoMock.photo._id}`)
             .set('Authorization', `Bearer is invalid`)
-            .field('title', 'cat photo')
-            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
             .then(Promise.reject)
             .catch(response => {
               expect(response.status).toEqual(401);
