@@ -104,7 +104,7 @@ describe('Song router', () => {
           tempSongMock = songMock;
 
           return superagent.get(`${__API_URL__}/songs/${tempSongMock.song._id}`)
-            .set('Authorization', `Bearer ofBadTokens`)
+            .set('Authorization', 'Bearer ofBadTokens')
             .then(Promise.reject)
             .catch(response => {
               expect(response.status).toEqual(401);
@@ -123,6 +123,34 @@ describe('Song router', () => {
             .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
             .then(response => {
               expect(response.status).toEqual(204);
+            });
+        });
+    });
+
+    test('DELETE /songs/:id should return a 404 status if the id is bad', () => {
+      let tempSongMock = null;
+      return songMock.create()
+        .then(songMock => {
+          tempSongMock = songMock;
+          return superagent.delete(`${__API_URL__}/songs/badId`)
+            .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(404);
+            });
+        });
+    });
+
+    test('DELETE /songs/:id should return a 401 status if the token is invalid', () => {
+      let tempSongMock = null;
+      return songMock.create()
+        .then(songMock => {
+          tempSongMock = songMock;
+          return superagent.delete(`${__API_URL__}/songs/${tempSongMock.song._id}`)
+            .set('Authorization', 'Bearer ofBadTokens')
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(401);
             });
         });
     });
