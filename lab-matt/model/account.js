@@ -5,6 +5,7 @@ const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const httpError = require('http-errors');
 const jsonWebToken = require('jsonwebtoken');
+const log = require('../lib/logger');
 
 const accountSchema = mongoose.Schema({
   passwordHash: {
@@ -55,7 +56,7 @@ const Account = module.exports = mongoose.model('account', accountSchema);
 
 Account.create = (username, password, email) => {
   const HASH_SALT_ROUNDS = 8;
-  console.log(`USER: ${username}\nPASS: ${password}\nEMAIL: ${email}`);
+  log('verbose', `\n--USER: ${username}\n--PASS: ${password}\n--EMAIL: ${email}\n`);
   return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
       let tokenSeed = crypto.randomBytes(64).toString('hex');

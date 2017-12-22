@@ -6,7 +6,6 @@ const superagent = require('superagent');
 const server = require('../lib/server');
 const accountMock = require('./lib/account-mock');
 const Account = require('../model/account');
-const log = require('../lib/logger');
 
 const __API_URL__ = `http://localhost:${process.env.PORT}`;
 
@@ -24,7 +23,7 @@ describe('ACCOUNTS', () => {
           email: 'sno@balz.com',
         })
         .then(response => {
-          log('verbose', response.body);
+          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
