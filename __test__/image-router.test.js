@@ -14,7 +14,7 @@ describe('/images', () => {
   afterAll(server.stop);
   afterEach(imageMockFactory.remove);
   describe('images POST Route', () => {
-    test('POST /images should return a 200 status code and a image if there are no errors', () => {
+    test('Should return a 200 status code and a image if there are no errors', () => {
       let tempAccountMock = null;
       return accountMockFactory.create()
         .then(accountMock => {
@@ -35,7 +35,22 @@ describe('/images', () => {
     });
 
     //TODO: ADD 400 TEST
+    test('Should return a 400 status when given a bad request if there are no erros', () => {
+      let tempAccountMock = null;
+      return accountMockFactory.create()
+        .then(accountMock => {
+          tempAccountMock = accountMock;
 
+          return superagent.post(`${apiURL}/images`)
+            .set('Authorization', `Bearer ${accountMock.token}`)
+            .field('tite', '')
+            .attach('image', `${__dirname}/assets/mountains.jpg`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(400);
+            });
+        });
+    });
     //TODO: ADD 401 TEST
 
 
