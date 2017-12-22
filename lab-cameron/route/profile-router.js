@@ -27,7 +27,7 @@ profileRouter.get('/profiles/:id', bearerAuthMiddleware, (request, response, nex
   return Profile.findById(request.params.id)
     .then(profile => {
       if (!profile) {
-        throw httpErrors(404, 'no found');
+        throw httpErrors(404, 'not found');
       }
       logger.log('info', 'GET - returning a 200 status code');
       logger.log('info', profile);
