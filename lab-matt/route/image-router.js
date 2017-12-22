@@ -24,7 +24,6 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
 
   let file = request.files[0];
   let key = `${file.fieldname}.${file.originalname}`;
-  console.log('he\nll\no', file.path);
   
   return s3.upload(file.path, key)
     .then(url => {
@@ -36,6 +35,22 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
     })
     .then(savedImage => {
       return response.json(savedImage);
+    })
+    .catch(next);
+});
+
+imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) {
+    return next(new httpError(404, '__ERROR__ not found'));
+  }
+
+  return Image.findById(request.params.id)
+    .then(foundImage => {
+      if (!foundImage) {
+        return next(new httpError(404, '__ERROR__ vehicle not found'));
+      }
+
+      return response.json(foundImage);
     })
     .catch(next);
 });
