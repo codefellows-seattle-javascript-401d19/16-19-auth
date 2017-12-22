@@ -100,7 +100,7 @@ describe('image-router.js', () => {
   });
 
   describe('DELETE /images/id', () => {
-    test.only('DELETE /images/id should return a 204 if there are no errors', () => {
+    test('DELETE /images/id should return a 204 if there are no errors', () => {
       let accountMock = null;
       return imageMockFactory.create()
         .then(imageMock => {
@@ -111,6 +111,33 @@ describe('image-router.js', () => {
         })
         .then(response => {
           expect(response.status).toEqual(204);
+        });
+    });
+
+    test('DELETE /images/id should return a 404 if an invalid id is provided', () => {
+      let accountMock = null;
+      return imageMockFactory.create()
+        .then(imageMock => {
+          accountMock = imageMock.accountMock;
+          return superagent.delete(`${apiURL}/images/invalidId`)
+            .set('Authorization', `Bearer ${accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('DELETE /images/id should return a 401 if an invalid token is provided', () => {
+      return imageMockFactory.create()
+        .then(imageMock => {
+          const imageId = imageMock.image._id;
+          return superagent.delete(`${apiURL}/images/${imageId}`)
+            .set('Authorization', `Bearer invalidToken`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
   });
