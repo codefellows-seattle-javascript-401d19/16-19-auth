@@ -15,12 +15,15 @@ describe('video-clip-router.js', () => {
 
   describe('POST /video-clips', () => {
     test('should respond with a 200 status code and video document if no errors.', () => {
-
       return accountMockFactory.create()
         .then(accountMock => {
           return superagent.post(`${apiUrl}/video-clips`)
             .set('Authorization', `Bearer ${accountMock.token}`)
-            .field('title', 'Come Sail Away - Kishi Bashi')
+            .field({
+              title: 'Come Sail Away - Kishi Bashi',
+              duration: 200,
+              location: 'Seattle, WA',
+            })
             .attach('video-clip', `${__dirname}/assets/kishi.MOV`);
         })
         .then(response => {
@@ -28,6 +31,41 @@ describe('video-clip-router.js', () => {
           expect(response.body.title).toEqual('Come Sail Away - Kishi Bashi');
           expect(response.body._id).toBeTruthy();
           expect(response.body.url).toBeTruthy();
+        });
+    });
+
+    test('should respond with a 400 status if missing the title field.', () => {
+      return accountMockFactory.create()
+        .then(accountMock => {
+          return superagent.post(`${apiUrl}/video-clips`)
+            .set('Authorization', `Bearer ${accountMock.token}`)
+            .field({
+              duration: 200,
+              location: 'Seattle, WA',
+            })
+            .attach('video-clip', `${__dirname}/assets/kishi.MOV`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(400);
+        });
+    });
+
+    test('should respond with a 401 status if missing the correct authorization.', () => {
+      return accountMockFactory.create()
+        .then(() => {
+          return superagent.post(`${apiUrl}/video-clips`)
+            .set('Authorization', `Bearer bad token`)
+            .field({
+              title: 'Come Sail Away - Kishi Bashi',
+              duration: 200,
+              location: 'Seattle, WA',
+            })
+            .attach('video-clip', `${__dirname}/assets/kishi.MOV`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
   });

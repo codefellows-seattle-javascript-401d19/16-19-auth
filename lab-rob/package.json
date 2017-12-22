@@ -5,6 +5,9 @@
   "main": "error-middleware.js",
   "scripts": {
     "test": "jest -i --coverage",
+    "test-video": "jest -i --coverage video-clip-router.test.js",
+    "test-auth": "jest -i --coverage auth-router.test.js",
+    "test-movie": "jest -i --coverage movie-router.test.js",
     "start": "node index.js",
     "lint": "eslint .",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
