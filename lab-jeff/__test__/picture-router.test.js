@@ -16,10 +16,10 @@ describe('picture-router', () => {
 
   describe('POST /pictures', () => {
     test('should return 200 and a picture if no errors', () => {
-      let tempAccountMock = null;
+      // let tempAccountMock = null;
       return accountMockFactory.create()
         .then(accountMock => {
-          tempAccountMock = accountMock;
+          // tempAccountMock = accountMock;
 
           return superagent.post(`${apiURL}/pictures`)
             .set('Authorization', `Bearer ${accountMock.token}`)
@@ -35,10 +35,10 @@ describe('picture-router', () => {
     });
 
     test('should return 400 if incorrect field information is sent', () => {
-      let tempAccountMock = null;
+      // let tempAccountMock = null;
       return accountMockFactory.create()
         .then(accountMock => {
-          tempAccountMock = accountMock;
+          // tempAccountMock = accountMock;
 
           return superagent.post(`${apiURL}/pictures`)
             .set('Authorization', `Bearer ${accountMock.token}`)
@@ -52,10 +52,10 @@ describe('picture-router', () => {
     });
 
     test('should return 401 if a bad token is sent', () => {
-      let tempAccountMock = null;
+      // let tempAccountMock = null;
       return accountMockFactory.create()
         .then(accountMock => {
-          tempAccountMock = accountMock;
+          // tempAccountMock = accountMock;
 
           return superagent.post(`${apiURL}/pictures`)
             .set('Authorization', `Bearer ${accountMock.token}1`)
