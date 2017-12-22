@@ -15,6 +15,8 @@ app.use(require('../route/auth-router'));
 app.use(require('./logger-middleware'));
 app.use(require('../route/auth-router'));
 app.use(require('../route/profile-router'));
+app.use(require('../route/sound-router'));
+
 
 app.all('*', (request, response)=> {
   logger.log('info', '404 from Catch-All route');

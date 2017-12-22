@@ -13,6 +13,7 @@ s3.upload = (path,key) => {
     ACL : 'public-read',
     Body : fs.createReadStream(path),
   };
+
   return amazonS3.upload(uploadOptions)
     .promise()
     .then(response => {

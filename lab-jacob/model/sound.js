@@ -8,6 +8,9 @@ const soundSchema = mongoose.Schema({
   createdOn : {type : Date, default : () => new Date()},
 
   account : {
-    type : mongoose.Schema.Types,
-  }
-})
+    type : mongoose.Schema.Types.ObjectId,
+    required : true,
+  },
+});
+
+module.exports = mongoose.model('sound', soundSchema);

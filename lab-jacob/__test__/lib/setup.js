@@ -7,7 +7,7 @@ process.env.PORT = 7000;
 process.env.MONGODB_URI = 'mongodb://localhost/testing';
 process.env.CAT_CLOUD_SECRET = 'yggrasil_secret';
 
-process.env.AWS_BUCKET = //name of Bucket made in S3 
+process.env.AWS_BUCKET = 'Whatever';
 process.env.AWS_ACCESS_KEY_ID = 'Secret ID';
 process.env.AWS_ACCESS_KEY_AC = 'Super Secret Key';
 

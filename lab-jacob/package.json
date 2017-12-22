@@ -12,10 +12,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
-    "mongoose": "^4.13.7",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
@@ -25,6 +23,7 @@
     "httperrors": "^2.3.0",
     "jest": "^22.0.3",
     "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
     "superagent": "^3.8.2",
     "winston": "^2.4.0"
   }

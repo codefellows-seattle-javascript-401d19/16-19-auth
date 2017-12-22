@@ -1,16 +1,17 @@
 'use strict';
 
-const faker
-const accountMockFactory
-const Sound
+const faker = require('faker');
+const accountMockFactory = require('./account-mock-factory');
+const Sound = require('../../model/sound');
 
 const soundMockFactory = module.exports = {};
 
 soundMockFactory.create = () => {
-  let mock = {} 
-    return accountMockFactory.create()
+  let mock = {};
+
+  return accountMockFactory.create()
     .then(accountMock => {
-      mock.account = account;
+      mock.account = accountMock;
       return new Sound({
         account : accountMock.account._id,
         title : faker.lorem.words(10),
@@ -25,6 +26,7 @@ soundMockFactory.create = () => {
 
 soundMockFactory.remove = () => {
   return Promise.all([
-
-  ])
-}
+    accountMockFactory.remove(),
+    Sound.remove({}),
+  ]);
+};
