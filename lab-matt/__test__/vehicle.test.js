@@ -15,7 +15,7 @@ describe('VEHICLES', () => {
   afterEach(vehicleMock.remove);
 
   describe('POST /vehicles', () => {
-    test('returns a 200 and vehicle data if no erros', () => {
+    test(': returns a 200 and vehicle data if no errors', () => {
       let mockAccount = null;
 
       return accountMock.create()
@@ -39,7 +39,7 @@ describe('VEHICLES', () => {
         });
     });
 
-    test('returns a 400 due to a bad request', () => {
+    test(': returns a 400 due to an incomplete request', () => {
       let mockAccount = null;
 
       return accountMock.create()
@@ -58,7 +58,7 @@ describe('VEHICLES', () => {
         });
     });
     
-    test('returns a 401 due to a bad token', () => {
+    test(': returns a 401 due to a bad token', () => {
       return superagent.post(`${__API_URL__}/vehicles`)
         .set('Authorization', `Bearer unAuthorizedToken`)
         .send({
@@ -69,6 +69,42 @@ describe('VEHICLES', () => {
         .then(Promise.reject)
         .catch(error => {
           expect(error.status).toEqual(401);
+        });
+    });
+
+    test(': returns a 404 due to a bad request url', () => {
+      return superagent.post(`${__API_URL__}/vehicle`)
+        .set('Authorization', `Bearer unAuthorizedToken`)
+        .send({
+          vehicleType: 'motorcycle',
+          capacity: 2,
+          wheels: 2,
+        })
+        .then(Promise.reject)
+        .catch(error => {
+          expect(error.status).toEqual(404);
+        });
+    });
+  });
+
+  describe('GET /vehicles/:id', () => {
+    test(': returns a 200 and vehicle data based on id if no errors', () => {
+      let vehicleAndAccount = null;
+
+      return vehicleMock.create()
+        .then(mockObject => {
+          vehicleAndAccount = mockObject;
+
+          return superagent.get(`${__API_URL__}/vehicles/${vehicleAndAccount.vehicle._id}`)
+            .set('Authorization', `Bearer ${vehicleAndAccount.account.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.account).toEqual(vehicleAndAccount.account.account._id.toString());
+          expect(response.body.vehicleType).toEqual(vehicleAndAccount.vehicle.vehicleType);
+          expect(response.body.capacity).toEqual(vehicleAndAccount.vehicle.capacity);
+          expect(response.body.wheels).toEqual(vehicleAndAccount.vehicle.wheels);
+          expect(response.body._id).not.toEqual(vehicleAndAccount.vehicle._id);
         });
     });
   });
