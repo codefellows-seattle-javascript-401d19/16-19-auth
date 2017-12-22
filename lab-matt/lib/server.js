@@ -22,6 +22,7 @@ app.use(require('./logger-middleware'));
 
 app.use(require('../route/account-router'));
 app.use(require('../route/profile-router'));
+app.use(require('../route/vehicle-router'));
 
 app.all('*', (request, response) => {
   log('info', '__404__ They don\'t think it be like it is, but it do.');

@@ -7,7 +7,7 @@ const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 
 const Vehicle = require('../model/vehicle');
 
-const vehicleRouter = module.exports = {};
+const vehicleRouter = module.exports = new Router();
 
 vehicleRouter.post('/vehicles', bearerAuthMiddleware, jsonParser, (request, response, next) => {
   if (!request.account) {

@@ -7,22 +7,22 @@ const Profile = require('../../model/profile');
 const profileMock = module.exports = {};
 
 profileMock.create = () => {
-  let resultMock = {};
+  let mockObject = {};
 
   return accountMock.create()
     .then(newAccount => {
-      resultMock.account = newAccount;
+      mockObject.account = newAccount;
       return new Profile({
         bio: faker.lorem.words(100),
         avatar: faker.random.image(),
         lastName: faker.name.lastName(),
         firstName: faker.name.firstName(),
-        account: accountMock.account._id,
+        account: mockObject.account._id,
       }).save();
     })
     .then(newProfile => {
-      resultMock.profile = newProfile;
-      return resultMock;
+      mockObject.profile = newProfile;
+      return mockObject;
     });
 };
 

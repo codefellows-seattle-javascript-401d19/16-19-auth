@@ -35,6 +35,7 @@ describe('PROFILES', () => {
           expect(response.body.firstName).toEqual('Leonard');
           expect(response.body.lastName).toEqual('Maximus');
           expect(response.body.bio).toEqual('I is cat');
+          expect(response.body._id).not.toEqual(response.body.account);
         });
     });
   });
