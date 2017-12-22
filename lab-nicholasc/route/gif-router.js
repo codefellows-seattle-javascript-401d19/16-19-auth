@@ -3,7 +3,7 @@
 const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
-const Sound = require('../model/gif');
+const Gif = require('../model/gif');
 
 const multer = require('multer');
 const upload = multer({dest: `${__dirname}/../temp`});
@@ -22,7 +22,7 @@ gifRouter.post('/gifs', bearerAuthMiddleware, upload.any(), (request, response, 
 
   return s3.upload(file.path, key)
     .then(url => {
-      return new Sound({
+      return new Gif({
         title : request.body.title,
         account : request.account._id,
         url,
@@ -32,6 +32,18 @@ gifRouter.post('/gifs', bearerAuthMiddleware, upload.any(), (request, response, 
       console.log(gif);
       console.log(typeof gif);
       return response.json(gif);
+    })
+    .catch(next);
+});
+
+gifRouter.get('/gifs/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ not found'));
+  return Gif.findById(request.params.id)
+    .then(foundGif => {
+      if(!foundGif)
+        throw new httpErrors(404, '__ERROR__ not found');
+      return response.json(foundGif);
     })
     .catch(next);
 });
