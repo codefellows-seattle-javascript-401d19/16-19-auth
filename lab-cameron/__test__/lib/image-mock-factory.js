@@ -16,6 +16,7 @@ imageMockFactory.create = () => {
         account: accountMock.account._id,
         title: faker.lorem.words(10),
         url: faker.random.image(),
+        key: faker.lorem.words(1),
       }).save();
     })
     .then(image => {

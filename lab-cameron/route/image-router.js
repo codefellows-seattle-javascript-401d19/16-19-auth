@@ -30,6 +30,7 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
         title: request.body.title,
         account: request.account._id,
         url,
+        key,
       }).save();
     })
     .then(image => {
@@ -45,7 +46,6 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
   return Image.findById(request.params.id)
     .then(image => {
       if (!image) {
-        console.log(image);
         throw httpErrors(404, 'not found');
       }
       logger.log('info', 'GET - returning a 200 status code');
@@ -57,11 +57,20 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
 });
 
 imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
-  console.log(request.params.id);
   return Image.findByIdAndRemove(request.params.id)
     .then(deletedImage => {
-      logger.log('info', 'DELETE - returning a 204 status code');
+      if (!deletedImage) {
+        throw httpErrors(404, 'image not found');
+      }
+
+      logger.log('info', 'Removing image from Amazon');
       logger.log('info', deletedImage);
+
+      return s3.remove(deletedImage.key);
+    })
+    .then(() => {
+      logger.log('info', 'DELETE - returning a 204 status code');
+
       return response.sendStatus(204);
     })
     .catch(next);
