@@ -29,7 +29,7 @@ profileRouter.get('/profiles/:id', bearerAuthMiddleware, (request, response, nex
       if(!foundProfile)
         throw new httpErrors(404, '__ERROR__ Not Found');
 
-      return response.json(foundProfile)
+      return response.json(foundProfile);
     })
-    .catch(next)
+    .catch(next);
 });
