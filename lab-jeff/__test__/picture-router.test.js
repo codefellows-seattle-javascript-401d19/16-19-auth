@@ -34,6 +34,39 @@ describe('/pictures', () => {
         });
     });
 
+    test('should return 400 if incorrect field information is sent', () => {
+      let tempAccountMock = null;
+      return accountMockFactory.create()
+        .then(accountMock => {
+          tempAccountMock = accountMock;
+
+          return superagent.post(`${apiURL}/pictures`)
+            .set('Authorization', `Bearer ${accountMock.token}`)
+            .field('not a valid field', 'Thor Dog')
+            .attach('picture', `${__dirname}/asset/dog-thor.jpg`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(400);
+            });
+        });
+    });
+
+    test('should return 401 if a bad token is sent', () => {
+      let tempAccountMock = null;
+      return accountMockFactory.create()
+        .then(accountMock => {
+          tempAccountMock = accountMock;
+
+          return superagent.post(`${apiURL}/pictures`)
+            .set('Authorization', `Bearer ${accountMock.token}1`)
+            .field('title', 'Thor Dog')
+            .attach('picture', `${__dirname}/asset/dog-thor.jpg`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(401);
+            });
+        });
+    });
 
   });
 });

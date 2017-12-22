@@ -4,9 +4,9 @@ const faker = require('faker');
 const accountMockFactory = require('./account-mock-factory');
 const Picture = require('../../model/picture');
 
-const soundMockFactory = module.exports = {};
+const pictureMockFactory = module.exports = {};
 
-soundMockFactory.create = () => {
+pictureMockFactory.create = () => {
   let mock = {};
 
   return accountMockFactory.create()
@@ -24,7 +24,7 @@ soundMockFactory.create = () => {
     });
 };
 
-soundMockFactory.remove = () => {
+pictureMockFactory.remove = () => {
   return Promise.all([
     accountMockFactory.remove(),
     Picture.remove({}),
