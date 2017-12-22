@@ -199,3 +199,11 @@
 {"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T01:38:23.140Z"}
 {"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T01:38:23.192Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-22T01:38:27.310Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T01:46:26.299Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T01:46:26.351Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c63f6765e415b3c21c507","timestamp":"2017-12-22T01:46:30.614Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T01:46:30.619Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T01:47:50.179Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T01:47:50.232Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c644ae1db665cb988085b","timestamp":"2017-12-22T01:47:54.464Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T01:47:54.471Z"}
