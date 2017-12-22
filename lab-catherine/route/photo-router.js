@@ -39,3 +39,15 @@ photoRouter.get('/photos/:id', bearerAuthMiddleware, (request, response, next) =
     .then(photo => response.json(photo))
     .catch(next);
 });
+
+photoRouter.delete('/photos/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ Not Found'));
+  return Photo.findByIdAndRemove(request.params.id)
+    .then(photo => {
+      if(!photo) {
+        throw httpErrors(404, 'photo not found');
+      }
+      return response.sendStatus(204);
+    }).catch(next);
+});

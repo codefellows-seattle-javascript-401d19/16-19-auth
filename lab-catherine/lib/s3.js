@@ -6,7 +6,7 @@ const amazonS3 = new aws.S3();
 
 const s3 = module.exports = {};
 
-s3.upload = (path, key) => { // this returns a promise because we coded it to 
+s3.upload = (path, key) => {
   let uploadOptions = {
     Bucket: process.env.AWS_BUCKET,
     Key: key, 
@@ -15,7 +15,7 @@ s3.upload = (path, key) => { // this returns a promise because we coded it to
   };
   return amazonS3.upload(uploadOptions)
     .promise()
-    .then(response => { // this is coming from AWS 
+    .then(response => {
       return fs.remove(path)
         .then(() => response.Location);
     })

@@ -121,4 +121,41 @@ describe('/photos', () => {
         });
     });
   });
+
+  describe('DELETE /photos/:id', () => {
+    test('DELETE should return a 204 status code if successful', () => {
+      let tempPhotoMock = null;
+      
+      return photoMockFactory.create()
+        .then(photoMock => {
+          tempPhotoMock = photoMock;
+      
+          return superagent.delete(`${apiURL}/photos/${tempPhotoMock.photo._id}`)
+            .set('Authorization', `Bearer ${tempPhotoMock.accountMock.token}`)
+            .field('title', 'cat photo')
+            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
+            .then(response => {
+              expect(response.status).toEqual(204);
+            });
+        });
+    });
+
+    test('DELETE should return a 404 status code if id is not found', () => {
+      let tempPhotoMock = null;
+      
+      return photoMockFactory.create()
+        .then(photoMock => {
+          tempPhotoMock = photoMock;
+      
+          return superagent.delete(`${apiURL}/photos/invalidId`)
+            .set('Authorization', `Bearer ${tempPhotoMock.accountMock.token}`)
+            .field('title', 'cat photo')
+            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(404);
+            });
+        });
+    });
+  });
 });
