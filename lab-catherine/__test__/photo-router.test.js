@@ -102,5 +102,23 @@ describe('/photos', () => {
             });
         });
     });
+
+    test('GET should return a 401 status code if token is invalid', () => {
+      let tempPhotoMock = null;
+      
+      return photoMockFactory.create()
+        .then(photoMock => {
+          tempPhotoMock = photoMock;
+      
+          return superagent.get(`${apiURL}/photos/${tempPhotoMock.photo._id}`)
+            .set('Authorization', `Bearer is invalid`)
+            .field('title', 'cat photo')
+            .attach('photo', `${__dirname}/asset/mooshy.jpg`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(401);
+            });
+        });
+    });
   });
 });
