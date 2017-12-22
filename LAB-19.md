@@ -23,19 +23,19 @@ Create a model with at least 4 properties that represents some type of file asse
 Add a screenshot of your uploaded Model into your AWS bucket.
 
 #### Server Endpoints
-* `POST /<resouces-name>` 
+* `POST /<resource-name>` 
   * pass a bearer authentication token in the request to authorize the creation of the resource
   * pass data as `multipart/form-data` in the body of a **POST** request to create a new resource
     * should include an attached file asset
   * on success respond with a 200 status code and a json representation of the resource
   * on failure due to a bad request send a 400 status code
   * on failure due to bad token or lack of token respond with a 401 status code
-* `GET /<resouces-name>/:id` 
+* `GET /<resource-name>/:id` 
   * pass a bearer authentication token in the request to authorize the creation of the resource
   * on success respond with a 200 status code and a json representation of the resource
   * on failure due to a bad id send a 404 status code
   * on failure due to bad token or lack of token respond with a 401 status code
-* `DELETE /<resouces-name>/:id` 
+* `DELETE /<resource-name>/:id` 
   * pass a bearer authentication token in the request to authorize the deletion of the resource
   * on success respond with a 204 status code
   * on failure due to a bad id send a 404 status code
