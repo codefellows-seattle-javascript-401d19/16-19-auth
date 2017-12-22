@@ -3,13 +3,13 @@
 const faker = require('faker');
 const awsSdkMock = require('aws-sdk-mock');
 
-process.env.PORT = 3000;
+process.env.PORT = 7000;
 process.env.MONGODB_URI = 'mongodb://localhost/testing';
 process.env.CAT_CLOUD_SECRET = 'supersecretcatpassword';
 
 process.env.AWS_BUCKET = 'fakebucket';
-process.env.AWS_ACCESS_KEY_ID = 'fakekey';
-process.env.AWS_SECRET_ACCESS = 'fakesecret';
+process.env.AWS_ACCESS_KEY_ID = 'fakeid';
+process.env.AWS_SECRET_ACCESS_KEY = 'fakekey';
 
 awsSdkMock.mock('S3', 'upload', (params, callback) => {
   if (!params.Key || !params.Bucket || !params.Body || !params.ACL){

@@ -8,8 +8,8 @@ const s3 = module.exports = {};
 
 s3.upload = (path, key) => {
   let uploadOptions = {
-    Key: key,
     Bucket: process.env.AWS_BUCKET,
+    Key: key,
     ACL: 'public-read',
     Body: fsx.createReadStream(path),
   };

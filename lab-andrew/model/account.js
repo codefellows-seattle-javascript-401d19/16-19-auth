@@ -56,7 +56,7 @@ accountSchema.methods.createToken = function(){
 const Account = module.exports = mongoose.model('account', accountSchema);
 
 Account.create = (username, email, password) => {
-  const HASH_SALT_ROUNDS = 8;
+  const HASH_SALT_ROUNDS = 1;
   return bcrypt.hash(password, HASH_SALT_ROUNDS)
     .then(passwordHash => {
       let tokenSeed = crypto.randomBytes(64).toString('hex');
