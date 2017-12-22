@@ -36,6 +36,14 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
 });
 
 // //TODO: ADD IMAGE GET ROUTE
+imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account)
+    return new httpErrors(404, '_ERROR_ not found');
+
+  return Image.findById(request.params.id)
+    .then(image => response.json(image))
+    .catch(next);
+});
 // GET / <resouces-name>/:id
 // pass a bearer authentication token in the request to authorize the creation of the resource
 // on success respond with a 200 status code and an authentication token

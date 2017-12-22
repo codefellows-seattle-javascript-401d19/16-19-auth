@@ -73,13 +73,33 @@ describe('/images', () => {
 
   describe(' images GET Route', () => {
     //TODO: ADD 200 TEST
+    test('Should return a 200 status code and a image if there are no errors', () => {
+      let imageMock = null;
+
+      return imageMockFactory.create()
+        .then(mock => {
+          imageMock = mock;
+          return superagent.get(`${apiURL}/images/${imageMock.image._id}`)
+            .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
+        })
+        .then(response => {
+          console.log(response.body);
+          expect(response.status).toEqual(200);
+          expect(response.body._id).toEqual(imageMock.image._id.toString());
+          expect(response.body.url).toEqual(imageMock.image.url);
+
+        });
+    });
+
+    });
+
 
     //TODO: ADD 404 TEST
 
     //TODO: ADD 401 TEST
 
     
-  });
+  // });
 
   describe(' images DELETE Route', () => {
     //TODO: ADD 204 TEST
