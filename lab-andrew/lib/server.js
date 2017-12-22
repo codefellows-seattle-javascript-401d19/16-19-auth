@@ -1,6 +1,5 @@
 'use strict';
 
-require('dotenv').config();
 const express = require('express');
 const logger = require('./logger');
 const mongoose = require('mongoose');
@@ -17,6 +16,7 @@ const app = express();
 app.use(require('./logger-middleware'));
 app.use(require('../route/account-router'));
 app.use(require('../route/cat-router'));
+app.use(require('../route/song-router'));
 
 app.all('*', (request, response) => {
   logger.log('info','Returning a 404 from the catch-all route');
