@@ -1,10 +1,10 @@
-# 17: Relational-Modeling
-Description: **Lab 17 of Code Fellows JavaScript 401d19** </br>
+# 19: Basic Authentication
+Description: **Lab 19 of Code Fellows JavaScript 401d19** </br>
 Author: **Matthew LeBlanc** </br>
-Date: **12/19/17**
+Date: **12/21/17**
 
 ## Features
-This lab features creating a login account for a server with a hash algorithm and a cryptic algorithm
+This lab features creating a login account for a server with a hash algorithm and a cryptic algorithm, which also includes a profile, vehicle model, and image asset management.
 
 ## Tech/Framework Used
 - node.js
@@ -62,3 +62,10 @@ process.env.CLOUD_SALT = '<random mixture of numbers and letters>';
 `GET /vehicles` => 200 status code if vehicle data based on id is returned </br>
 `GET /vehicles` => 401 status code if using a bad token </br>
 `GET /vehicles` => 404 status code if there is a bad vehicle id, (not found) </br>
+`GET /profiles` => 200 status code if no issues and profile data was returned </br>
+`POST /images` => 200 status code and a json representation of the resource </br>
+`POST /images` => 400 status code due to a bad request </br>
+`POST /images` => 401 status code due to a bad token </br>
+`GET /images/:id` => 200 status code and a json representation of the resource </br>
+`GET /images/:id` => 404 status code if there is a bad id given </br>
+`GET /images/:id` => 401 status code if there is a bad token </br>
