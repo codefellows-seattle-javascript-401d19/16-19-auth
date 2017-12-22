@@ -98,6 +98,8 @@ typings/
 
 # dotenv environment variables file
 .env
+*/.env
+
 
 # mongo db
 db

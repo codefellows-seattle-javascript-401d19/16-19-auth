@@ -14,7 +14,7 @@ songMock.create = () => {
 
       return new Song({
         title: faker.lorem.words(1),
-        url: faker.random.image(),
+        url: `${faker.internet.url()}/stringofnumbers.catsong.mp3`,
         account: accountMock.account._id,
       }).save();
     })

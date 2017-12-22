@@ -44,3 +44,22 @@ songRouter.get('/songs/:id', bearerAuthMiddleware, (request, response, next) => 
     .then(song => response.json(song))
     .catch(next);
 });
+
+songRouter.delete('/songs/:id', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) {
+    return new httpErrors(404, '__ERROR__ not found');
+  }
+  return Song.findById(request.params.id)
+    .then(song => {
+      // console.log(song.url);
+      let urlArray = song.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+      // console.log(key);
+      return s3.remove(key)
+        .then(() => {
+          // console.log('remove successful');
+          return Song.findByIdAndRemove(request.params.id);
+        });
+    })
+    .catch(next);
+});
