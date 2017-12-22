@@ -212,3 +212,33 @@
 {"level":"info","message":"Processing : GET on : /gifs/5a3c66468d8ef265fead5d97","timestamp":"2017-12-22T01:56:22.341Z"}
 {"level":"info","message":"Processing : DELETE on : /gifs/5a3c66468d8ef265fead5d99","timestamp":"2017-12-22T01:56:22.370Z"}
 {"level":"info","message":"Server is off","timestamp":"2017-12-22T01:56:22.746Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:19:33.156Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:19:48.446Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T02:19:48.498Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c6bc7e36a1b118dbf8fb3","timestamp":"2017-12-22T02:19:51.721Z"}
+{"level":"info","message":"Processing : DELETE on : /gifs/5a3c6bc7e36a1b118dbf8fb5","timestamp":"2017-12-22T02:19:51.744Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T02:19:51.749Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:21:41.971Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T02:21:42.023Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c6c36865ce112f0bfaedd","timestamp":"2017-12-22T02:21:42.072Z"}
+{"level":"info","message":"Processing : DELETE on : /gifs/5a3c6c36865ce112f0bfaedf","timestamp":"2017-12-22T02:21:42.096Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T02:21:42.103Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:39:27.363Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T02:39:27.416Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-22T02:39:27.437Z"}
+{"message":"__ERROR__","stack":"Error: __ERROR__\n    at Function.Object.<anonymous>.awsSDKMock.mock (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/__test__/lib/setup.js:21:95)\n    at features.constructor.<anonymous> (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/aws-sdk-mock/index.js:175:15)\n    at Function.invoke (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/sinon/lib/sinon/spy.js:176:59)\n    at features.constructor.proxy [as upload] (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/sinon/lib/sinon/spy.js:85:30)\n    at Object.<anonymous>.s3.upload (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/lib/s3.js:19:19)\n    at Object.<anonymous>.gifRouter.post (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/route/gif-router.js:23:13)\n    at Layer.handle [as handle_request] (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/route.js:137:13)\n    at Immediate._onImmediate (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/multer/lib/make-middleware.js:53:37)\n    at runCallback (timers.js:793:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","level":"info","timestamp":"2017-12-22T02:39:27.437Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2017-12-22T02:39:27.437Z"}
+{"message":"__ERROR__","stack":"Error: __ERROR__\n    at Function.Object.<anonymous>.awsSDKMock.mock (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/__test__/lib/setup.js:21:95)\n    at features.constructor.<anonymous> (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/aws-sdk-mock/index.js:175:15)\n    at Function.invoke (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/sinon/lib/sinon/spy.js:176:59)\n    at features.constructor.proxy [as upload] (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/sinon/lib/sinon/spy.js:85:30)\n    at Object.<anonymous>.s3.upload (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/lib/s3.js:19:19)\n    at Object.<anonymous>.gifRouter.post (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/route/gif-router.js:23:13)\n    at Layer.handle [as handle_request] (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/express/lib/router/route.js:137:13)\n    at Immediate._onImmediate (/home/ncarignan/cf/401/lab-assignments/16-19-auth/lab-nicholasc/node_modules/multer/lib/make-middleware.js:53:37)\n    at runCallback (timers.js:793:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","level":"info","timestamp":"2017-12-22T02:39:27.437Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c705feec1a816b2f1960f","timestamp":"2017-12-22T02:39:27.464Z"}
+{"level":"info","message":"Processing : DELETE on : /gifs/5a3c705feec1a816b2f19611","timestamp":"2017-12-22T02:39:27.491Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T02:39:27.497Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:39:54.064Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T02:39:54.117Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c707a9048e4176795fc78","timestamp":"2017-12-22T02:39:54.167Z"}
+{"level":"info","message":"Processing : DELETE on : /gifs/5a3c707a9048e4176795fc7a","timestamp":"2017-12-22T02:39:54.192Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T02:39:54.198Z"}
+{"level":"info","message":"Server is linstening on port 7000","timestamp":"2017-12-22T02:42:19.804Z"}
+{"level":"info","message":"Processing : POST on : /gifs","timestamp":"2017-12-22T02:42:19.856Z"}
+{"level":"info","message":"Processing : GET on : /gifs/5a3c710b895d60190074685b","timestamp":"2017-12-22T02:42:19.904Z"}
+{"level":"info","message":"Processing : DELETE on : /gifs/5a3c710b895d60190074685d","timestamp":"2017-12-22T02:42:19.928Z"}
+{"level":"info","message":"Server is off","timestamp":"2017-12-22T02:42:19.935Z"}
