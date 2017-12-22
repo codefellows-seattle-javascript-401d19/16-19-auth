@@ -131,7 +131,7 @@ describe('IMAGES', () => {
           expect(error.status).toEqual(404);
         });
     });
-
+    
     test(': should respond with a 401 status code if there is a bad token', () => {
       return imageMock.create()
         .then(mockObject => {

@@ -69,3 +69,6 @@ process.env.CLOUD_SALT = '<random mixture of numbers and letters>';
 `GET /images/:id` => 200 status code and a json representation of the resource </br>
 `GET /images/:id` => 404 status code if there is a bad id given </br>
 `GET /images/:id` => 401 status code if there is a bad token </br>
+`DELETE /images/:id` => 204 status code if the image was found and removed </br>
+`DELETE /images/:id` => 404 status code if there was no matching id </br>
+`DELETE /images/:id` => 401 status code if there is a bad token </br>
