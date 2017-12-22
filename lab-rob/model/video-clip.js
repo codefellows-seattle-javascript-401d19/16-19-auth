@@ -21,6 +21,10 @@ const videoClipSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
   },
+  key: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model('videoClip', videoClipSchema);

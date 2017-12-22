@@ -117,4 +117,20 @@ describe('video-clip-router.js', () => {
         });
     });
   });
+
+  describe('DELETE /video-clips/:id', () => {
+    test('should respond with a 204 status if successful removal of resource', () => {
+      let mock = null;
+      return videoClipMockFactory.create()
+        .then(mockData => {
+          mock = mockData;
+
+          return superagent.delete(`${apiUrl}/video-clips/${mock.videoClip._id}`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
+    });
+  });
 });

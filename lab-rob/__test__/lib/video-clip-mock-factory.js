@@ -19,6 +19,7 @@ videoClipMockFactory.create = () => {
         duration: Math.floor(Math.random() * 300),
         location: faker.address.city(),
         account: mockAccount.account._id,
+        key: faker.lorem.word(),
       }).save();
     })
     .then(videoClip => {

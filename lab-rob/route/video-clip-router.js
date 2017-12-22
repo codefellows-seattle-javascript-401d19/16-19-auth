@@ -26,6 +26,7 @@ videoClipRouter.post('/video-clips', bearerAuth, upload.any(), (request, respons
         title: request.body.title,
         account: request.account._id,
         url,
+        key,
       };
       
       if(request.body.duration)
@@ -47,6 +48,20 @@ videoClipRouter.get('/video-clips/:id', bearerAuth, (request, response, next) =>
         throw new httpErrors(404, '__ERROR__ not found');
 
       return response.json(videoClip);
+    })
+    .catch(next);
+});
+
+videoClipRouter.delete('/video-clips/:id', bearerAuth, (request, response, next) => {
+  return VideoClip.findByIdAndRemove(request.params.id)
+    .then(videoClip => {
+      if(!videoClip)
+        throw new httpErrors(404, '__ERROR__ not found');
+
+      return s3.remove(videoClip.key);
+    })
+    .then(() => {
+      return response.sendStatus(204);
     })
     .catch(next);
 });
