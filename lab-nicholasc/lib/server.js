@@ -16,7 +16,7 @@ app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
 app.use(require('../route/profile-router'));
-app.use(require('../route/sound-router'));
+app.use(require('../route/gif-router'));
 
 
 

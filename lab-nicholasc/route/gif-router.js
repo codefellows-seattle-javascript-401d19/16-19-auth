@@ -3,18 +3,18 @@
 const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
-const Sound = require('../model/sound');
+const Sound = require('../model/gif');
 
 const multer = require('multer');
 const upload = multer({dest: `${__dirname}/../temp`});
 const s3 = require('../lib/s3');
 
-const soundRouter = module.exports = new Router();
+const gifRouter = module.exports = new Router();
 
-soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, response, next) => {
+gifRouter.post('/gifs', bearerAuthMiddleware, upload.any(), (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
-  if(!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'sound')
+  if(!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'gif')
     return next(new httpErrors(400, '__ERROR__ invalid request'));
 
   let file = request.files[0];
@@ -28,10 +28,10 @@ soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, respon
         url,
       }).save();
     })
-    .then(sound => {
-      console.log(sound);
-      console.log(typeof sound);
-      return response.json(sound);
+    .then(gif => {
+      console.log(gif);
+      console.log(typeof gif);
+      return response.json(gif);
     })
     .catch(next);
 });

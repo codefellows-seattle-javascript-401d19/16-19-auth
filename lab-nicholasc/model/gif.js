@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-const soundSchema = mongoose.Schema({
+const gifSchema = mongoose.Schema({
   title : {type : String, required : true},
   url : {type : String, required : true},
   createdOn : {type : Date, default : new Date()},
@@ -13,4 +13,4 @@ const soundSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('sound', soundSchema);
+module.exports = mongoose.model('gif', gifSchema);
