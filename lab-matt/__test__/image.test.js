@@ -106,4 +106,42 @@ describe('IMAGES', () => {
         });
     });
   });
+
+  describe('DELETE /images/:id', () => {
+    test(': should respond with a 204 status code if image found and removed', () => {
+      return imageMock.create()
+        .then(mockObject => {
+
+          return superagent.delete(`${__API_URL__}/images/${mockObject.image._id}`)
+            .set('Authorization', `Bearer ${mockObject.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
+    });
+    
+    test(': should respond with a 404 status code if no image is found', () => {
+      return imageMock.create()
+        .then(mockObject => {
+          return superagent.delete(`${__API_URL__}/images/aBadID`)
+            .set('Authorization', `Bearer ${mockObject.token}`);
+        })
+        .then(Promise.reject)
+        .catch(error => {
+          expect(error.status).toEqual(404);
+        });
+    });
+
+    test(': should respond with a 401 status code if there is a bad token', () => {
+      return imageMock.create()
+        .then(mockObject => {
+          return superagent.delete(`${__API_URL__}/images/${mockObject.image._id}`)
+            .set('Authorization', `Bearer insertBadTokenHere`);
+        })
+        .then(Promise.reject)
+        .catch(error => {
+          expect(error.status).toEqual(401);
+        });
+    });
+  });
 });

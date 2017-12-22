@@ -54,3 +54,19 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
     })
     .catch(next);
 });
+
+imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) {
+    return next(new httpError(404, '__ERROR__ not found'));
+  }
+
+  return Image.findByIdAndRemove(request.params.id)
+    .then(foundImage => {
+      if (!foundImage) {
+        return next(new httpError(404, '__ERROR__ vehicle not found'));
+      }
+
+      return response.sendStatus(204);
+    })
+    .catch(next);
+});
