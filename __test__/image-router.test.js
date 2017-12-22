@@ -51,7 +51,6 @@ describe('/images', () => {
         });
     });
 
-    //TODO: ADD 401 TEST
     test('Should return a 401 status when given a bad token if there are no erros', () => {
       let tempAccountMock = null;
       return accountMockFactory.create()

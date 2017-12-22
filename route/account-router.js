@@ -23,6 +23,9 @@ accountRouter.post('/signup', jsonParser, (request, response, next) => {
 accountRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
   if(!request.account)
     return next(httpErrors(404, '_ERROR_ not found'));
+  
+  // if(!request.account.username || !request.account.password)
+  //   return next(httpErrors(404, '_ERROR_ not found'));
 
   return request.account.createToken()
     .then(token => response.json({token}))

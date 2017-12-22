@@ -39,7 +39,7 @@ describe('Account Router', () => {
         });
     });
 
-    test('POST /signup - a duplate request should return a 409', () => {
+    test('POST /signup - a duplicate request should return a 409', () => {
       return superagent.post(`${apiURL}/signup`)
         .send({
           username: 'stupid',
@@ -87,7 +87,29 @@ describe('Account Router', () => {
         });
     });
 
-    //TODO: WRITE 401 TEST
+    test('GET /login should return a 404 with an incorrect username', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth('badUsername', mock.request.password);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+    
+    test('GET /login should return a 401 with an incorrect password', () => {
+      return accountMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiURL}/login`)
+            .auth(mock.request.username, 'badUserPass');
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
     
   });
 });
