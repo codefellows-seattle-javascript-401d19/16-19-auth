@@ -49,11 +49,24 @@ gifRouter.get('/gifs/:id', bearerAuthMiddleware, (request, response, next) => {
 gifRouter.delete('/gifs/:id', bearerAuthMiddleware, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
-  return Gif.findByIdAndRemove(request.params.id)
-    .then(foundGif => {
-      if(!foundGif)
-        throw new httpErrors(404, '__ERROR__ not found');
-      return response.sendStatus(204);
+  return Gif.findById(request.params.id)
+    .then(gif => {
+      let urlArray = gif.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+      return s3.remove(key)
+        .then(() => {
+          return Gif.findByIdAndRemove(request.params.id)
+            .then(foundGif => {
+              if(!foundGif)
+                throw new httpErrors(404, '__ERROR__ not found');
+              return response.sendStatus(204);
+            });
+        });
+
     })
-    .catch(next);
+    .catch(error => {
+      return Gif.findByIdAndRemove(request.params.id)
+        .then(() => Promise.reject(error))
+        .catch(next);
+    });
 });
