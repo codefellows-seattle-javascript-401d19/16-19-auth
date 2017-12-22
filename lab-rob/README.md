@@ -22,6 +22,10 @@ The purpose of this lab is to establish a RESTful API that authenticates users a
   - bcrypt
   - crypto
   - jsonwebtoken
+  - multer
+  - fs-extra
+  - aws-sdk
+  - aws-sdk-mock
 - mongodb
 
 ## How to use?
