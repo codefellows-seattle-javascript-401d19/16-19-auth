@@ -49,9 +49,11 @@ pictureRouter.delete('/pictures/:id', bearerAuthMiddleware, (request, response, 
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ Not found'));
 
-  Picture.findById(request.params.id)
+  return Picture.findByIdAndRemove(request.params.id)
     .then(picture => {
-      return s3.remove(picture.url)
+      let url = picture.url.split('/');
+      let key = url[url.length - 1];
+      return s3.remove(key)
         .then(() => response.sendStatus(204));
     })
     .catch(next);
