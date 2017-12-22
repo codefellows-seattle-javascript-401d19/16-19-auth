@@ -30,6 +30,5 @@ s3.remove = key => {
     Key: key,
     Bucket: process.env.AWS_BUCKET,
   };
-  // return amazonS3.deleteObject(removeOptions).promise();
-  return new Promise();
+  return amazonS3.deleteObject(removeOptions).promise();
 };

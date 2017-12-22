@@ -51,14 +51,14 @@ songRouter.delete('/songs/:id', bearerAuthMiddleware, (request, response, next) 
   }
   return Song.findById(request.params.id)
     .then(song => {
-      // console.log(song.url);
       let urlArray = song.url.split('/');
       let key = urlArray[urlArray.length - 1];
-      // console.log(key);
       return s3.remove(key)
         .then(() => {
-          // console.log('remove successful');
-          return Song.findByIdAndRemove(request.params.id);
+          Song.findByIdAndRemove(request.params.id)
+            .then(() => {
+              response.sendStatus(204);
+            });
         });
     })
     .catch(next);

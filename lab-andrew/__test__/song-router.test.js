@@ -119,9 +119,6 @@ describe('Song router', () => {
       return songMock.create()
         .then(songMock => {
           tempSongMock = songMock;
-          // return superagent.post(`${__API_URL__}/songs`)
-          //   .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
-
           return superagent.delete(`${__API_URL__}/songs/${tempSongMock.song._id}`)
             .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
             .then(response => {
