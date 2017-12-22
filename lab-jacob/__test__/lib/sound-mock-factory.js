@@ -16,6 +16,8 @@ soundMockFactory.create = () => {
         account : accountMock.account._id,
         title : faker.lorem.words(10),
         url : faker.random.image(),
+        key : faker.lorem.word(),
+
       }).save();
     })
     .then(sound => {

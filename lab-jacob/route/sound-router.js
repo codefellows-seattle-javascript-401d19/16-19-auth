@@ -26,9 +26,33 @@ soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, respon
         title : request.body.title,
         account : request.account._id,
         url,
+        key,
       }).save();
     })
     .then(sound => response.json(sound))
     .catch(next);
 
+});
+
+soundRouter.get('/sounds/:id', bearerAuthMiddleware, (request,response,next) => {
+
+  return Sound.findById(request.params.id)
+    .then(sound => {
+      if(!sound)
+        return next(new httpErrors(404, 'ERROR not found'));
+      return response.json(sound);
+    })
+    .catch(next);
+});
+
+soundRouter.delete('/sound', bearerAuthMiddleware, (request,response,next) => {
+
+  return Sound.findByIdAndRemove(request.params.id)
+    .then(sound => {
+      if(!sound)
+        return next(new httpErrors(404, 'ERROR not found'));
+      return s3.remove(sound.key)
+        .then(response => response.send(status));
+    })
+    .catch(next);
 });

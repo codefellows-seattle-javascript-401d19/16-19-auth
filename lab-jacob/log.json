@@ -29,3 +29,19 @@
 {"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:39:26.487Z"}
 {"level":"info","message":"Processing : GET on : /profiles/5a3c7e6e1cd6473e47270203","timestamp":"2017-12-22T03:39:26.515Z"}
 {"level":"info","message":"Server off","timestamp":"2017-12-22T03:39:26.521Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:43:39.446Z"}
+{"level":"info","message":"Processing : POST on : /sounds","timestamp":"2017-12-22T03:43:39.528Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:43:39.596Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:43:39.995Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:43:40.158Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:43:40.159Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-22T03:43:40.166Z"}
+{"message":"__ERROR__ username, email, and password required to make an account","stack":"BadRequestError: __ERROR__ username, email, and password required to make an account\n    at Object.<anonymous>.authRouter.post (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/route/auth-router.js:14:89)\n    at Layer.handle [as handle_request] (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/express/lib/router/route.js:137:13)\n    at /home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/raw-body/index.js:224:16)\n    at done (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/cloud/Documents/codefellows/401/16-19-auth/lab-jacob/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:106:13)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T03:43:40.166Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to make an account","timestamp":"2017-12-22T03:43:40.168Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:43:40.172Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:43:40.588Z"}
+{"level":"info","message":"Processing : POST on : /profiles","timestamp":"2017-12-22T03:43:40.628Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:43:40.643Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:43:40.644Z"}
+{"level":"info","message":"Processing : GET on : /profiles/5a3c7f6c5fd5a3407fab2da0","timestamp":"2017-12-22T03:43:40.676Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:43:40.684Z"}
