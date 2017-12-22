@@ -36,7 +36,10 @@ module.exports = (error, request, response, next) => { // eslint-disable-line
   }
 
   // ================ JSON_WEB_TOKEN ERRORS ================
-
+  if (message.includes('jwt malformed')) {
+    log('info', 'Responding with a 401 status code - jsonWebToken Malformed');
+    return response.sendStatus(401);
+  }
 
   // ================ ELSE ================
   log('info', 'Responding with a 500 status code');

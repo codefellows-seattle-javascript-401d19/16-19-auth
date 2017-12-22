@@ -30,7 +30,6 @@ module.exports = (request, response, next) => {
   }
 
   return promisify(jsonWebToken.verify)(token, process.env.CLOUD_SALT)
-    .catch(error => Promise.reject(new httpError(401, error))) // TODO jsonWebToken Error Handling
     .then(decryptedData => {
       console.log(decryptedData);
       return Account.findOne({

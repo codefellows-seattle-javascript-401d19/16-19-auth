@@ -24,9 +24,12 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
 
   let file = request.files[0];
   let key = `${file.fieldname}.${file.originalname}`;
+  console.log('=======\n=======\n=======\n=======\n',file);
   
   return s3.upload(file.path, key)
     .then(url => {
+  console.log('=======\n=======\n=======\n=======\n',url);
+      
       return new Image({
         title: request.body.title,
         account: request.account._id,
