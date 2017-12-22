@@ -57,9 +57,16 @@ describe('image-router.js', () => {
 
   describe('GET /images/id', () => {
     test.only('GET /images/id should return a 200 if there are no errors', () => {
+      let accountMock = null;
       return imageMockFactory.create()
         .then(imageMock => {
-          console.log(imageMock);
+          accountMock = imageMock.accountMock;
+          const accountId = accountMock.account._id;
+          return superagent.get(`${apiURL}/images/${accountId}`);
+        })
+        .then(response => {
+          console.log('eureka');
+          expect(response.status).toEqual(200);
         });
     });
   });
