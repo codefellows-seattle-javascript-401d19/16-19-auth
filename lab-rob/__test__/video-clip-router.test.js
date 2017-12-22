@@ -69,4 +69,25 @@ describe('video-clip-router.js', () => {
         });
     });
   });
+
+  describe('GET /video-clips/:id', () => {
+    test('should respond with a 200 and document if no errors', () => {
+      let mock = null;
+      return videoClipMockFactory.create()
+        .then(mockData => {
+          mock = mockData;
+
+          return superagent.get(`${apiUrl}/video-clips/${mock.videoClip._id}`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(200);
+          expect(response.body.title).toEqual(mock.videoClip.title);
+          expect(response.body.duration).toEqual(mock.videoClip.duration);
+          expect(response.body.location).toEqual(mock.videoClip.location);
+          expect(response.body.url).toEqual(mock.videoClip.url);
+          expect(response.body.account).toEqual(mock.videoClip.account.toString());
+        });
+    });
+  });
 });

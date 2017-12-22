@@ -39,3 +39,14 @@ videoClipRouter.post('/video-clips', bearerAuth, upload.any(), (request, respons
     .then(videoClip => response.json(videoClip))
     .catch(next);
 });
+
+videoClipRouter.get('/video-clips/:id', bearerAuth, (request, response, next) => {
+  return VideoClip.findById(request.params.id)
+    .then(videoClip => {
+      if(!videoClip)
+        throw new httpErrors(404, '__ERROR__ not fount');
+
+      return response.json(videoClip);
+    })
+    .catch(next);
+});
