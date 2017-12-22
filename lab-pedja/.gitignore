@@ -78,6 +78,9 @@ typings/
 # mongodb db folder
 db
 
+# multer temp folder
+temp
+
 
 ### OSX ###
 *.DS_Store

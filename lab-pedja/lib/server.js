@@ -19,6 +19,7 @@ app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
 app.use(require('../route/hero-router'));
+app.use(require('../route/image-router'));
 
 app.all('*', (request, response) => {
   logger.log('info', 'Returning 404 from a catch-all route');
