@@ -55,3 +55,14 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
     })
     .catch(next);
 });
+
+imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+  console.log(request.params.id);
+  return Image.findByIdAndRemove(request.params.id)
+    .then(deletedImage => {
+      logger.log('info', 'DELETE - returning a 204 status code');
+      logger.log('info', deletedImage);
+      return response.sendStatus(204);
+    })
+    .catch(next);
+});

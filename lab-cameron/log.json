@@ -1984,3 +1984,35 @@
 {"level":"info","message":"Processing : DELETE on : /images/5a3c7d248fdcdc68d35ec5b0","timestamp":"2017-12-22T03:33:56.512Z"}
 {"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-22T03:33:56.513Z"}
 {"level":"info","message":"Server off","timestamp":"2017-12-22T03:33:56.526Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:44:10.810Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c7f8a67e1b96c8484a5c5","timestamp":"2017-12-22T03:44:10.950Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-22T03:44:10.952Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:44:10.964Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:44:21.992Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c7f963e476a6cac4ebdc2","timestamp":"2017-12-22T03:44:22.133Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-22T03:44:22.135Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:44:22.147Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:45:03.107Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c7fbf8f376d6cde39c242","timestamp":"2017-12-22T03:45:03.242Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-22T03:45:03.243Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:45:03.257Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:50:30.489Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c81060dc7726d3a6bda6d","timestamp":"2017-12-22T03:50:30.628Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:51:01.357Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c8125e1f11a6d6945a24a","timestamp":"2017-12-22T03:51:01.497Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:52:49.861Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c81919ddb5f6ddeb3f23f","timestamp":"2017-12-22T03:52:50.000Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:53:47.342Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c81cbd99aa36e3435b9f2","timestamp":"2017-12-22T03:53:47.484Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:54:58.075Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c82122e32056e9734a5ad","timestamp":"2017-12-22T03:54:58.213Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:56:09.289Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c82597b54a36ee04d35ab","timestamp":"2017-12-22T03:56:09.432Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:56:09.452Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T03:58:53.241Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c82fd51bc2b6f3b65c34e","timestamp":"2017-12-22T03:58:53.392Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T03:58:53.425Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T04:03:57.922Z"}
+{"level":"info","message":"Processing : DELETE on : /images/5a3c842e0aeaf56fbef6588c","timestamp":"2017-12-22T04:03:58.059Z"}
+{"level":"info","message":"DELETE - returning a 204 status code","timestamp":"2017-12-22T04:03:58.071Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-22T04:03:58.081Z"}
