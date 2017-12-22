@@ -9,6 +9,7 @@ const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 const Sound = require('../model/sound');
+const logger = require('../lib/logger')
 
 //--------------------------------------
 // UPLOAD
@@ -43,5 +44,20 @@ soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, respon
 			}).save();
 		})
 		.then(sound => response.json(sound))
+		.catch(next);
+});
+
+soundRouter.get('/sounds/:id', bearerAuthMiddleware, (request, response, next) => {
+	if (!request.account)
+		return next(new httpErrors(404, '__ERROR__ Not found.'));
+
+	return Sound.findById(request.params.id)
+		.then(sound => {
+			if (!sound) {
+			throw new httpErrors(404, '__ERROR__ not found')
+			logger.log('info', 'GET - responding with a 404 failure code at /sounds/:id - id not found')
+		}
+			return response.json(sound);
+		})
 		.catch(next);
 });
