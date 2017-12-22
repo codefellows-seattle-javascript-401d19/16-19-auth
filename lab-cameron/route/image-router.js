@@ -16,7 +16,6 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
     return next(new httpErrors(404, '__ERROR__ not found'));
   }
 
-  console.log('BODY', request.files[0].fieldname === 'image');
   if (!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'image') {
     return next(new httpErrors(400, '__ERROR__ invalid request'));
   }
@@ -26,7 +25,6 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
 
   return s3.upload(file.path, key)
     .then(url => {
-      console.log('wtf');
       return new Image({
         title: request.body.title,
         account: request.account._id,
