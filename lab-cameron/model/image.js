@@ -13,12 +13,10 @@ const imageSchema = mongoose.Schema({
   },
   createdOn: {
     type: Date,
-    default: () => {
-      return new Date();
-    },
+    default: () => new Date(),
   },
   account: {
-    type: mongoose.Schema.Types.objectId,
+    type: mongoose.Schema.Types.ObjectId,
     required: true,
   },
 });
