@@ -75,13 +75,10 @@ describe('/sounds', () => {
 		return soundMockFactory.create()
 			.then(mock => {
 				soundMock = mock;
-				console.log(soundMock.sound);
-				console.log(soundMock.accountMock.token)
 				return superagent.get(`${apiURL}/sounds/${soundMock.sound._id}`)
 					.set('Authorization', `Bearer ${soundMock.accountMock.token}`);
 			})
 					.then(response => {
-						console.log(response.body);
 						expect(response.status).toEqual(200);
 						expect(response.body.account).toEqual(soundMock.accountMock.account._id.toString());
 						expect(response.body.account).toEqual(soundMock.sound.account.toString());
@@ -120,5 +117,22 @@ describe('/sounds', () => {
 			});
 	});
 	});
-});
 
+	describe('DELETE routes', () => {
+		test.only('DELETE - should respond with no body and a 204 status code if there is no error', () => {
+			let soundMock = null;
+
+			return soundMockFactory.create()
+				.then(mock => {
+					soundMock = mock;
+					console.log(soundMock.sound._id);
+					console.log(soundMock.sound.url);
+					return superagent.delete(`${apiURL}/${soundMock.sound._id}`)
+					.set('Authorization', `Bearer ${soundMock.accountMock.token}`)
+				})
+				.then(response => {
+					expect(response.status).toEqual(204);
+				});
+		});
+	});
+});

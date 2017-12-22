@@ -61,3 +61,19 @@ soundRouter.get('/sounds/:id', bearerAuthMiddleware, (request, response, next) =
 		})
 		.catch(next);
 });
+
+soundRouter.delete('/sounds/:id', bearerAuthMiddleware, (request, response, next) => { 
+	// if (!request.account) {
+	// 	return next(new httpErrors(404, '__ERROR__ Not found.'));
+	// }
+
+		return Sound.findById(request.params.id)
+
+		.then(sound => {
+			console.log(sound);
+		return s3.remove(sound.url)
+			
+		.then(() => response.sendStatus(204));
+		})
+		.catch(next);
+});
