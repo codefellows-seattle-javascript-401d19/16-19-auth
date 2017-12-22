@@ -89,5 +89,32 @@ describe('video-clip-router.js', () => {
           expect(response.body.account).toEqual(mock.videoClip.account.toString());
         });
     });
+
+    test('should respond with a 404 if a bad id is provided', () => {
+      return videoClipMockFactory.create()
+        .then(mock => {
+          return superagent.get(`${apiUrl}/video-clips/bad-id`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should respond with a 401 if bad bearer auth sent', () => {
+      let mock = null;
+      return videoClipMockFactory.create()
+        .then(mockData => {
+          mock = mockData;
+
+          return superagent.get(`${apiUrl}/video-clips/${mock.videoClip._id}`)
+            .set('Authorization', `Bearer bad stuff`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
   });
 });

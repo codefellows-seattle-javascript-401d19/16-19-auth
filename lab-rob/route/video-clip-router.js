@@ -44,7 +44,7 @@ videoClipRouter.get('/video-clips/:id', bearerAuth, (request, response, next) =>
   return VideoClip.findById(request.params.id)
     .then(videoClip => {
       if(!videoClip)
-        throw new httpErrors(404, '__ERROR__ not fount');
+        throw new httpErrors(404, '__ERROR__ not found');
 
       return response.json(videoClip);
     })
