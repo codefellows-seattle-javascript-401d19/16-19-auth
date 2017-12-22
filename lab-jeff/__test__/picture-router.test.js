@@ -9,12 +9,12 @@ const pictureMockFactory = require('./lib/picture-mock-factory');
 
 const apiURL = `http://localhost:${process.env.PORT}`;
 
-describe('/pictures', () => {
+describe('picture-router', () => {
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(pictureMockFactory.remove);
 
-  describe('POST', () => {
+  describe('POST /pictures', () => {
     test('should return 200 and a picture if no errors', () => {
       let tempAccountMock = null;
       return accountMockFactory.create()
@@ -67,6 +67,24 @@ describe('/pictures', () => {
             });
         });
     });
+  });
+  describe('GET /pictures:id', () => {
+    test.only('should return 200 and a picture if no errors', () => {
+      let resultMock = null;
 
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/pictures/${resultMock.picture._id}`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(response => {
+          console.log(response.body);
+          expect(response.status).toEqual(200);
+          expect(response.body._id).toEqual(resultMock.picture._id.toString());
+          expect(response.body.url).toBeTruthy();
+
+        });
+    });
   });
 });

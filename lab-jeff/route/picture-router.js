@@ -32,3 +32,14 @@ pictureRouter.post('/pictures', bearerAuthMiddleware, upload.any(), (request, re
     .then(picture => response.json(picture))
     .catch(next);
 });
+
+pictureRouter.get('/pictures/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ Not found'));
+
+  Picture.findById(request.params.id)
+    .then(picture => {
+      response.json(picture);
+    })
+    .catch(next);
+});
