@@ -107,5 +107,37 @@ describe('VEHICLES', () => {
           expect(response.body._id).not.toEqual(vehicleAndAccount.vehicle._id);
         });
     });
+
+    test(': returns a 401 if using a bad token', () => {
+      let vehicleAndAccount = null;
+
+      return vehicleMock.create()
+        .then(mockObject => {
+          vehicleAndAccount = mockObject;
+
+          return superagent.get(`${__API_URL__}/vehicles/${vehicleAndAccount.vehicle._id}`)
+            .set('Authorization', `Bearer insertBadTokenHere`);
+        })
+        .then(Promise.reject)
+        .catch(error => {
+          expect(error.status).toEqual(401);
+        });
+    });
+
+    test(': returns a 404 if there is a bad vehicle id', () => {
+      let vehicleAndAccount = null;
+
+      return vehicleMock.create()
+        .then(mockObject => {
+          vehicleAndAccount = mockObject;
+
+          return superagent.get(`${__API_URL__}/vehicles/1234`)
+            .set('Authorization', `Bearer ${vehicleAndAccount.account.token}`);
+        })
+        .then(Promise.reject)
+        .catch(error => {
+          expect(error.status).toEqual(404);
+        });
+    });
   });
 });
