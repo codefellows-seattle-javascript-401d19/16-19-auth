@@ -66,7 +66,11 @@ imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next
         return next(new httpError(404, '__ERROR__ vehicle not found'));
       }
 
-      return response.sendStatus(204);
+      let urlArray = foundImage.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+
+      return s3.remove(key)
+        .then(() => response.sendStatus(204));
     })
     .catch(next);
 });
