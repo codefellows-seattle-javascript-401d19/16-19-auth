@@ -13,6 +13,7 @@ mongoose.Promise = Promise;
 app.use(require('./logger-middleware'));
 app.use(require('../route/auth-router'));
 app.use(require('../route/profile-router'));
+app.use(require('../route/picture-router'));
 
 app.all('*', (request, response) => {
   logger.log('info', 'Returning a 404 from the catch-all route');
