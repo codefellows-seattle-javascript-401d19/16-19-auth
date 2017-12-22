@@ -47,7 +47,7 @@ pictureRouter.get('/pictures/:id', bearerAuthMiddleware, (request, response, nex
     }).catch(next);
 });
 
-pictureRouter.delete('/pictures:id', bearerAuthMiddleware, (request, response, next) => {
+pictureRouter.delete('/pictures/:id', bearerAuthMiddleware, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
 
@@ -55,6 +55,9 @@ pictureRouter.delete('/pictures:id', bearerAuthMiddleware, (request, response, n
     .then(picture => {
       if(!picture)
         return next(new httpErrors(404, '__ERROR__ not found'));
-      return s3.remove(picture.url);
+      return s3.remove(picture.url)
+      .then(() => {
+        return response.sendStatus(204);
+      });
     }).catch(next);
 });

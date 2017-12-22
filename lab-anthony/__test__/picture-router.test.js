@@ -63,9 +63,9 @@ describe('/pictures', () => {
     });
   });
 
-  describe('GET /pictures', () => {
+  describe('GET /pictures/:id', () => {
 
-    test('GET /pictures/:id should return 200', () => {
+    test('GET /pictures/:id should return a 200 and a response body', () => {
       let pictureMock = null;
       return pictureMockFactory.create()
       .then(mock => {
@@ -80,7 +80,7 @@ describe('/pictures', () => {
       });
     });
 
-    test('GET /pictures/:id should return 404', () => {
+    test('GET /pictures/:id should return a 404 if a bad id is given', () => {
       return pictureMockFactory.create()
       .then(mock => {
         return superagent.get(`${apiURL}/pictures/12345abcd`)
@@ -89,6 +89,33 @@ describe('/pictures', () => {
       .then(Promise.reject)
       .catch(response => {
         expect(response.status).toEqual(404);
+      });
+    });
+
+    test('GET /pictures/:id should return a 401 if a bad token is given', () => {
+      return pictureMockFactory.create()
+      .then(mock => {
+        return superagent.get(`${apiURL}/pictures/${mock.picture._id}`)
+        .set('Authorization', `Bearer 12345abcd`);
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(401);
+      });
+    });
+  });
+
+  describe('DELETE /pictures/:id', () => {
+
+    test.only('DELETE /pictures/:id should return a 204', () => {
+      return pictureMockFactory.create()
+      .then(mock => {
+        console.log('this is mock:', mock);
+        return superagent.delete(`${apiURL}/pictures/${mock.picture._id}`)
+        .set('Authorization', `Bearer ${mock.accountMock.token}`);
+      })
+      .then(response => {
+        expect(response.status).toEqual(204);
       });
     });
   });
