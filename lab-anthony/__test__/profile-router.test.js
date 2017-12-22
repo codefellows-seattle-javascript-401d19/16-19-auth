@@ -9,23 +9,51 @@ const profileMockFactory = require('./lib/profile-mock');
 
 const apiURL = `http://localhost:${process.env.PORT}`;
 
-describe('POST /profiles', () => {
+describe('/profiles', () => {
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(profileMockFactory.remove);
 
   describe('GET /profiles/:id', () => {
-    let profileMock = null;
 
     test('Should return a 200 and a resource', () => {
+
+      let profileMock = null;
+
       return profileMockFactory.create()
       .then(profile => {
         profileMock = profile;
-        return superagent.get(`${apiURL}/profiles/${profile.accountMock.id}`)
-        .set('Authorization', (`Bearer ${profileMock.accountMock.token}`));
+
+        const profileId = profileMock.profile._id;
+        return superagent.get(`${apiURL}/profiles/${profileId}`)
+        .set('Authorization', `Bearer ${profileMock.accountMock.token}`);
       })
       .then(response => {
         expect(response.status).toEqual(200);
+      });
+    });
+
+    test('Should return a 404 if a profile is not found', () => {
+
+      let profileMock = null;
+
+      return profileMockFactory.create()
+      .then(profile => {
+        profileMock = profile;
+        return superagent.get(`${apiURL}/profiles/123abcd`)
+        .set('Authorization', `Bearer ${profileMock.accountMock.token}`);
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(404);
+      });
+    });
+
+    test('Should return a 400 and a resource', () => {
+      return superagent.get(`${apiURL}/profiles/123456`)
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(400);
       });
     });
   });
@@ -53,6 +81,55 @@ describe('POST /profiles', () => {
         expect(response.body.bio).toEqual('I am a dog');
       });
     });
-  });
 
+    test('Should return a 400 authorization header required', () => {
+      return accountMockFactory.create()
+      .then(() => {
+        return superagent.post(`${apiURL}/profiles`)
+        .send({
+          bio: 'I am a dog',
+          firstName: 'Huck',
+          lastName: 'Robinson',
+        });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(400);
+      });
+    });
+
+    test('Should return a 400 if no token is sent', () => {
+      return accountMockFactory.create()
+      .then(() => {
+        return superagent.post(`${apiURL}/profiles`)
+        .set('Authorization', ``)
+        .send({
+          bio: 'I am a dog',
+          firstName: 'Huck',
+          lastName: 'Robinson',
+        });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(400);
+      });
+    });
+
+    test('Should return a 401 with a malformed token', () => {
+      return accountMockFactory.create()
+      .then(() => {
+        return superagent.post(`${apiURL}/profiles`)
+        .set('Authorization', `Bearer 12345abcd`)
+        .send({
+          bio: 'I am a dog',
+          firstName: 'Huck',
+          lastName: 'Robinson',
+        });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(401);
+      });
+    });
+  });
 });

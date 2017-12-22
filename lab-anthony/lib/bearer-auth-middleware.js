@@ -5,9 +5,10 @@ const httpErrors = require('http-errors');
 
 const Account = require('../model/account');
 
+
 const promisify = (fn) => (...args) => {
-  return new Promise((resolve, reject) => {
-    fn(...args,(error, data) => {
+  return new Promise((resolve,reject) => {
+    fn(...args,(error,data) => {
       if(error)
         return reject(error);
       return resolve(data);
@@ -15,24 +16,23 @@ const promisify = (fn) => (...args) => {
   });
 };
 
-module.exports = (request, response, next) => {
+module.exports = (request,response,next) => {
   if(!request.headers.authorization)
-    return next(new httpErrors(400, '__ERROR__ authorization header is required'));
+    return next(new httpErrors(400,'__ERROR__ authorization header required'));
 
   const token = request.headers.authorization.split('Bearer ')[1];
 
   if(!token)
-    return next(new httpErrors(400, '__ERROR__ token is required'));
+    return next(new httpErrors(400,'__ERROR__ token required'));
 
   return promisify(jsonWebToken.verify)(token, process.env.SUPER_DUPER_SECRET)
-    .catch(error => Promise.reject(new httpErrors(401, error)))
+    .catch(error => Promise.reject(new httpErrors(401,error)))
     .then(decryptedData => {
-      console.log(decryptedData);
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
     })
     .then(account => {
       if(!account)
-        throw new httpErrors(404, '__ERROR__ not found');
+        return next(new httpErrors(404,'__ERROR__ not found'));
 
       request.account = account;
       return next();
