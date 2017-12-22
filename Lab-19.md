@@ -47,4 +47,4 @@ Add a screenshot of your uploaded Model into your AWS bucket.
 * Write 204, 404, and 401 tests for `DELETE /<resource-name>/:id`
 
 ## Documentation
-In the README.md write documention for starting your server and making requests to each endpoint it provides. The documentation should describe how the server would respond to valid and invalid requests.
+In the README.md write documentation for starting your server and making requests to each endpoint it provides. The documentation should describe how the server would respond to valid and invalid requests.
