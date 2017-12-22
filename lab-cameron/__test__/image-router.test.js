@@ -44,7 +44,7 @@ describe('image-router.js', () => {
         });
     });
 
-    test('POST /images should return a 400 if title, file quantity or fieldname is bad', () => {
+    test('POST /images should return a 401 if title, file quantity or fieldname is bad', () => {
       return superagent.post(`${apiURL}/images`)
         .set('Authorization', `Bearer invalidToken`)
         .attach('image', `${__dirname}/asset/dog.jpeg`)
@@ -62,7 +62,8 @@ describe('image-router.js', () => {
         .then(imageMock => {
           accountMock = imageMock.accountMock;
           const accountId = accountMock.account._id;
-          return superagent.get(`${apiURL}/images/${accountId}`);
+          return superagent.get(`${apiURL}/images/${accountId}`)
+            .set('Authorization', `Bearer ${accountMock.token}`);
         })
         .then(response => {
           console.log('eureka');

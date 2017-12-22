@@ -4,6 +4,7 @@ const { Router } = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 const Image = require('../model/image');
+const logger = require('../lib/logger');
 
 const multer = require('multer');
 const upload = multer({ dest: `${__dirname}/../temp`});
@@ -33,6 +34,23 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
       }).save();
     })
     .then(image => {
+      logger.log('info', 'POST - returning a 200 status code');
+      logger.log('info', image);
+
+      return response.json(image);
+    })
+    .catch(next);
+});
+
+imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+  return Image.findById(request.params.id)
+    .then(image => {
+      if (!image) {
+        throw httpErrors(404, 'not found');
+      }
+      logger.log('info', 'GET - returning a 200 status code');
+      logger.log('info', image);
+
       return response.json(image);
     })
     .catch(next);
