@@ -98,4 +98,20 @@ describe('image-router.js', () => {
         });
     });
   });
+
+  describe('DELETE /images/id', () => {
+    test.only('DELETE /images/id should return a 204 if there are no errors', () => {
+      let accountMock = null;
+      return imageMockFactory.create()
+        .then(imageMock => {
+          accountMock = imageMock.accountMock;
+          const imageId = imageMock.image._id;
+          return superagent.delete(`${apiURL}/images/${imageId}`)
+            .set('Authorization', `Bearer ${accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
+    });
+  });
 });
