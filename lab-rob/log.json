@@ -206,3 +206,10 @@
 {"message":"__ERROR__ not found","stack":"NotFoundError: __ERROR__ not found\n    at Account.findOne.then.account (/Users/robertreed/Documents/programming/cf/401/lab/16-19-auth/lab-rob/lib/basic-auth-middleware.js:25:86)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)","name":"NotFoundError","level":"error","timestamp":"2017-12-21T09:04:29.591Z"}
 {"level":"error","message":"Message: __ERROR__ not found. Responding with a 404 status.","timestamp":"2017-12-21T09:04:29.591Z"}
 {"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-21T09:04:29.592Z"}
+{"level":"info","message":"Server running on port 3000.","timestamp":"2017-12-22T01:38:04.078Z"}
+{"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-22T01:38:14.103Z"}
+{"level":"info","message":"Server running on port 3000.","timestamp":"2017-12-22T01:38:51.486Z"}
+{"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-22T01:38:51.577Z"}
+{"level":"info","message":"Server running on port 3000.","timestamp":"2017-12-22T01:39:24.007Z"}
+{"level":"info","message":"Handling a POST request at endpoint /video-clips.","timestamp":"2017-12-22T01:39:24.081Z"}
+{"level":"info","message":"Server successfully shut down.","timestamp":"2017-12-22T01:39:31.653Z"}

@@ -6,7 +6,7 @@ const server = require('../lib/server');
 const accountMockFactory = require('./lib/account-mock-factory');
 const videoClipMockFactory = require('./lib/video-clip-mock-factory');
 
-const apiUrl = `http://locatlhost:${process.env.PORT}`;
+const apiUrl = `http://localhost:${process.env.PORT}`;
 
 describe('video-clip-router.js', () => {
   beforeAll(server.start);
