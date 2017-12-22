@@ -2,7 +2,7 @@
 
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
-const httpErrors = require('http-errors');// vinicio - might refactor this to HttpErrors
+const httpErrors = require('http-errors');
 const Hero = require('../model/hero');
 
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
