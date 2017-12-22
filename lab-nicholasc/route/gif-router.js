@@ -47,3 +47,15 @@ gifRouter.get('/gifs/:id', bearerAuthMiddleware, (request, response, next) => {
     })
     .catch(next);
 });
+
+gifRouter.delete('/gifs/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ not found'));
+  return Gif.findByIdAndRemove(request.params.id)
+    .then(foundGif => {
+      if(!foundGif)
+        throw new httpErrors(404, '__ERROR__ not found');
+      return response.sendStatus(204);
+    })
+    .catch(next);
+});
