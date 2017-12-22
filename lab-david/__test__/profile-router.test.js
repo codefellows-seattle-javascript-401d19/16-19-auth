@@ -47,21 +47,21 @@ describe('POST /profiles', () => {
       });
   });
 
-  test('should return a 404 for a bad request with a bad token or lack of token', () => {
+  test('should return a 401 for a bad request with a bad token or lack of token', () => {
     let accountMock = null;
 
     return accountMockFactory.create()
       .then(mock => {
         accountMock = mock;
         return superagent.post(`${apiURL}/profiles`)
-          .set('Authorization', `Bearer ${accountMock.token}`)
+          .set('Authorization', `Bearer fakeToken`)
           .send({
             bio : 'I am the president',
           });
       })
       .then(Promise.reject)
       .catch(response => {
-        expect(response.status).toEqual(404);
+        expect(response.status).toEqual(401);
       });
   });
 
@@ -83,7 +83,6 @@ describe('POST /profiles', () => {
         });
     });
 
-    // TODO : write test for 404 on /profiles/:id due to bad idea
     test('should get a 404 if the id is bad', () => {
       let tempProfileMock = null;
       return profileMockFactory.create()
