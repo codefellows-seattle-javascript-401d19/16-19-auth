@@ -29,8 +29,6 @@ gifRouter.post('/gifs', bearerAuthMiddleware, upload.any(), (request, response, 
       }).save();
     })
     .then(gif => {
-      console.log(gif);
-      console.log(typeof gif);
       return response.json(gif);
     })
     .catch(next);
