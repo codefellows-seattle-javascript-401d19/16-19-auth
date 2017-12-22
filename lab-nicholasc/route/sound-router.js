@@ -28,6 +28,10 @@ soundRouter.post('/sounds', bearerAuthMiddleware, upload.any(), (request, respon
         url,
       }).save();
     })
-    .then(sound => response.json(sound))
+    .then(sound => {
+      console.log(sound);
+      console.log(typeof sound);
+      return response.json(sound);
+    })
     .catch(next);
 });

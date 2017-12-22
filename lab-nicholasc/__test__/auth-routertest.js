@@ -3,7 +3,7 @@
 require('./lib/setup');
 const superagent = require('superagent');
 const server = require('../lib/server');
-const accountMockFactory = require('./lib/account-mock-factory'); 
+const accountMockFactory = require('./lib/account-mock-factory');
 
 const apiUrl =`http://localhost:${process.env.PORT}`;
 

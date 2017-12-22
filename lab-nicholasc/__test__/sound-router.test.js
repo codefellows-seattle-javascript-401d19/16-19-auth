@@ -22,19 +22,14 @@ describe('/sounds', () => {
         accountMock = mock;
         return superagent.post(`${apiUrl}/sounds`)
           .set('Authorization', `Bearer ${accountMock.token}`)
-          .field('title', 'human barks')
-          .attach('sound', `${__dirname}/asset/human.wav`)
+          .field('title', 'cultivate-mass')
+          .attach('sound', `${__dirname}/asset/cultivate-mass.gif`)
           .then(response => {
             expect(response.status).toEqual(200);
-            expect(response.body.title).toEqual('human barks');
+            expect(response.body.title).toEqual('cultivate-mass');
             expect(response.body._id).toBeTruthy();
             expect(response.body.url).toBeTruthy();
           });
-      })
-      .then(response => {
-        expect(response.status).toEqual(200);
-        expect(response.body.account).toEqual(accountMock.account._id.toString());
-        expect(response.body.firstName).toEqual('Nicholas');
       });
   });
 });
