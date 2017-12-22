@@ -23,7 +23,7 @@ Create a model with at least four properties that belongs to an account. The mod
 #### Server Endpoints
 * `GET /login` (Auth Route)
   * Create a login route that uses the basic authentication middleware to log in a user.
-* `POST /<resouces-name>` 
+* `POST /<resource-name>` 
   * pass a bearer authentication token in the request to authorize the creation of the resource
   * pass data as stringifed JSON in the body of a **POST** request to create a new resource
   * on success respond with a 200 status code and an authentication token
