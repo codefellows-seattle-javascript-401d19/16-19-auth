@@ -1,17 +1,13 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const crypto = require('crypto');
-const bcrypt = require('bcrypt');
-const httpError = require('http-errors');
-const jsonWebToken = require('jsonwebtoken');
 
 const vehicleSchema = mongoose.Schema({
   vehicleType: {
     type: String,
   },
-  engineSize: {
-    type: String,
+  capacity: {
+    type: Number,
     unique: true,
   },
   wheels: {
