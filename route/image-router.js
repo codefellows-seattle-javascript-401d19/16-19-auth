@@ -34,3 +34,18 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
     .then(image => response.json(image))
     .catch(next);
 });
+
+// //TODO: ADD IMAGE GET ROUTE
+// GET / <resouces-name>/:id
+// pass a bearer authentication token in the request to authorize the creation of the resource
+// on success respond with a 200 status code and an authentication token
+// on failure due to a bad id send a 404 status code
+// on failure due to bad token or lack of token respond with a 401 status code
+
+
+//TODO: ADD IMAGE DELETE ROUTE
+// DELETE / <resouces-name>/:id
+// pass a bearer authentication token in the request to authorize the creation of the resource
+// on success respond with a 204 status code and an authentication token
+// on failure due to a bad id send a 404 status code
+// on failure due to bad token or lack of token respond with a 401 status code
