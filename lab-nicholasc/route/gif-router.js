@@ -14,9 +14,9 @@ const gifRouter = module.exports = new Router();
 gifRouter.post('/gifs', bearerAuthMiddleware, upload.any(), (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
+  console.log(request.body);
   if(!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'gif')
     return next(new httpErrors(400, '__ERROR__ invalid request'));
-
   let file = request.files[0];
   let key = `${file.filename}.${file.originalname}`; //TODO: remove this NOTE: if you dont have the originalname the filename in aws will just be a random hash with nothing descriptive
 
