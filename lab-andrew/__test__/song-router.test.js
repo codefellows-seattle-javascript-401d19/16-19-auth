@@ -64,4 +64,53 @@ describe('Song router', () => {
     });
   });
 
+  describe('GET /songs', () => {
+    test('GET /songs/:id should return a 200 status and a song if there are no errors', () => {
+      let tempSongMock = null;
+      return songMock.create()
+        .then(songMock => {
+          tempSongMock = songMock;
+
+          return superagent.get(`${__API_URL__}/songs/${tempSongMock.song._id}`)
+            .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
+            .then(response => {
+              expect(response.status).toEqual(200);
+              expect(response.body.title).toEqual(tempSongMock.song.title);
+              expect(response.body._id).toEqual(tempSongMock.song._id.toString());
+              expect(response.body.url).toEqual(tempSongMock.song.url);
+            });
+        });
+    });
+
+    test('GET /songs/:id should return a 404 status if the id is not found', () => {
+      let tempSongMock = null;
+      return songMock.create()
+        .then(songMock => {
+          tempSongMock = songMock;
+
+          return superagent.get(`${__API_URL__}/songs/fakesongid`)
+            .set('Authorization', `Bearer ${tempSongMock.accountMock.token}`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(404);
+            });
+        });
+    });
+
+    test('GET /songs/:id should return a 401 status if the token is bad', () => {
+      let tempSongMock = null;
+      return songMock.create()
+        .then(songMock => {
+          tempSongMock = songMock;
+
+          return superagent.get(`${__API_URL__}/songs/${tempSongMock.song._id}`)
+            .set('Authorization', `Bearer ofBadTokens`)
+            .then(Promise.reject)
+            .catch(response => {
+              expect(response.status).toEqual(401);
+            });
+        });
+    });
+  });
+
 });

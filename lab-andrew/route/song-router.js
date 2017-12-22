@@ -35,3 +35,12 @@ songRouter.post('/songs', bearerAuthMiddleware, upload.any(), (request, response
     .then(song => response.json(song))
     .catch(next);
 });
+
+songRouter.get('/songs/:id', bearerAuthMiddleware, (request, response, next) => {
+  if (!request.account) {
+    return new httpErrors(404, '__ERROR__ not found');
+  }
+  return Song.findById(request.params.id)
+    .then(song => response.json(song))
+    .catch(next);
+});
