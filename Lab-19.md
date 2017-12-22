@@ -7,8 +7,8 @@
 
 ## Resources
 * [express docs](http://expressjs.com/en/4x/api.html)
-* [mongoosse guide](http://mongoosejs.com/docs/guide.html)
-* [mongoosse api docs](http://mongoosejs.com/docs/api.html)
+* [mongoose guide](http://mongoosejs.com/docs/guide.html)
+* [mongoose api docs](http://mongoosejs.com/docs/api.html)
 * [aws sdk](https://github.com/aws/aws-sdk-js)
 * [aws sdk s3 docs](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html)
 * [aws sdk mock docs](https://github.com/dwyl/aws-sdk-mock)
@@ -27,12 +27,12 @@ Add a screenshot of your uploaded Model into your AWS bucket.
   * pass a bearer authentication token in the request to authorize the creation of the resource
   * pass data as `multipart/form-data` in the body of a **POST** request to create a new resource
     * should include an attached file asset
-  * on success respond with a 200 status code and an authentication token
+  * on success respond with a 200 status code and a json representation of the resource
   * on failure due to a bad request send a 400 status code
   * on failure due to bad token or lack of token respond with a 401 status code
 * `GET /<resouces-name>/:id` 
   * pass a bearer authentication token in the request to authorize the creation of the resource
-  * on success respond with a 200 status code and an authentication token
+  * on success respond with a 200 status code and a json representation of the resource
   * on failure due to a bad id send a 404 status code
   * on failure due to bad token or lack of token respond with a 401 status code
 * `DELETE /<resouces-name>/:id` 
@@ -47,4 +47,4 @@ Add a screenshot of your uploaded Model into your AWS bucket.
 * Write 204, 404, and 401 tests for `DELETE /<resource-name>/:id`
 
 ## Documentation
-In the README.md write documention for starting your server and makeing requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
+In the README.md write documention for starting your server and making requests to each endpoint it provides. The documentation should describe how the server would respond to valid and invalid requests.
