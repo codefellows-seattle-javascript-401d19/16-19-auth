@@ -43,3 +43,16 @@ pictureRouter.get('/pictures/:id', bearerAuthMiddleware, (request, response, nex
     })
     .catch(next);
 });
+
+
+pictureRouter.delete('/pictures/:id', bearerAuthMiddleware, (request, response, next) => {
+  if(!request.account)
+    return next(new httpErrors(404, '__ERROR__ Not found'));
+
+  Picture.findById(request.params.id)
+    .then(picture => {
+      return s3.remove(picture.url)
+        .then(() => response.sendStatus(204));
+    })
+    .catch(next);
+});

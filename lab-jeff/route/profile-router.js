@@ -24,7 +24,7 @@ profileRouter.post('/profiles', bearerAuthMiddleware, jsonParser, (request, resp
 profileRouter.get('/profiles/:id', bearerAuthMiddleware, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ Not found'));
-  Profile.findById(request.params.id)
+  Profile.findByIdAndRemove(request.params.id)
     .then(profile => {
       response.json(profile);
     })

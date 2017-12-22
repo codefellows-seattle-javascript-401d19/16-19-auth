@@ -85,7 +85,7 @@ describe('picture-router', () => {
         });
     });
 
-    test.only('should return 404 if the id is invalid', () => {
+    test('should return 404 if the id is invalid', () => {
       let resultMock = null;
 
       return pictureMockFactory.create()
@@ -115,5 +115,51 @@ describe('picture-router', () => {
         });
     });
 
+  });
+
+  describe('DELETE /pictures/:id', () => {
+    test('should return a 204 status code if there are no errors', () => {
+      let resultMock = null;
+
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.delete(`${apiURL}/pictures/${resultMock.picture._id}`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
+    });
+
+    test('should return 404 if the id is invalid', () => {
+      let resultMock = null;
+
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.delete(`${apiURL}/pictures/1234`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should return 401 if a bad token is sent', () => {
+      let resultMock = null;
+
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.delete(`${apiURL}/pictures/${resultMock.picture._id}`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}1`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
   });
 });
