@@ -17,8 +17,8 @@ photoMockFactory.create = () => {
         url: faker.random.image(),
       }).save();
     })
-    .then(sound => {
-      mock.sound = sound;
+    .then(photo => {
+      mock.photo = photo;
       return mock;
     });
 };
