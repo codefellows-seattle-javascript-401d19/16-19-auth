@@ -119,7 +119,7 @@ describe('/sounds', () => {
 	});
 
 	describe('DELETE routes', () => {
-		test.only('DELETE - should respond with no body and a 204 status code if there is no error', () => {
+		test('DELETE - should respond with no body and a 204 status code if there is no error', () => {
 			let soundMock = null;
 
 			return soundMockFactory.create()
@@ -127,11 +127,41 @@ describe('/sounds', () => {
 					soundMock = mock;
 					console.log(soundMock.sound._id);
 					console.log(soundMock.sound.url);
-					return superagent.delete(`${apiURL}/${soundMock.sound._id}`)
+					return superagent.delete(`${apiURL}/sounds/${soundMock.sound._id}`)
 					.set('Authorization', `Bearer ${soundMock.accountMock.token}`)
 				})
 				.then(response => {
 					expect(response.status).toEqual(204);
+				});
+		});
+		test('DELETE - should respond with no body and a 204 status code if there is no error', () => {
+			let soundMock = null;
+
+			return soundMockFactory.create()
+				.then(mock => {
+					soundMock = mock;
+					return superagent.delete(`${apiURL}/sounds/badID`)
+						.set('Authorization', `Bearer ${soundMock.accountMock.token}`)
+				})
+				.then(Promise.reject)
+				.catch(response => {
+					expect(response.status).toEqual(404);
+				});
+		});
+		test('DELETE - should respond with no body and a 204 status code if there is no error', () => {
+			let soundMock = null;
+
+			return soundMockFactory.create()
+				.then(mock => {
+					soundMock = mock;
+					console.log(soundMock.sound._id);
+					console.log(soundMock.sound.url);
+					return superagent.delete(`${apiURL}/sounds/${soundMock.sound._id}`)
+						.set('Authorization', `Bearer badtokenyah`)
+				})
+				.then(Promise.reject)
+				.catch(response => {
+					expect(response.status).toEqual(401);
 				});
 		});
 	});
