@@ -69,7 +69,7 @@ describe('picture-router', () => {
     });
   });
   describe('GET /pictures:id', () => {
-    test.only('should return 200 and a picture if no errors', () => {
+    test('should return 200 and a picture if no errors', () => {
       let resultMock = null;
 
       return pictureMockFactory.create()
@@ -79,12 +79,41 @@ describe('picture-router', () => {
             .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body._id).toEqual(resultMock.picture._id.toString());
           expect(response.body.url).toBeTruthy();
-
         });
     });
+
+    test.only('should return 404 if the id is invalid', () => {
+      let resultMock = null;
+
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/pictures/1234`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
+
+    test('should return 401 if a bad token is sent', () => {
+      let resultMock = null;
+
+      return pictureMockFactory.create()
+        .then(mock => {
+          resultMock = mock;
+          return superagent.get(`${apiURL}/pictures/${resultMock.picture._id}`)
+            .set('Authorization', `Bearer ${resultMock.accountMock.token}1`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
+    });
+
   });
 });
