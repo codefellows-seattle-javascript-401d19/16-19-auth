@@ -31,7 +31,14 @@ The purpose of this lab is to establish a RESTful API that authenticates users a
 ## How to use?
 Clone this repo, `cd` into `lab-rob`, run `npm install`. 
 
-Touch `.env` in `lab-rob` and add `PORT=<you-desired-port>` and `MONGODB_URI=mongodb://localhost/<desired database name>`, and `SALT_SECRET=<your secret code>`.
+Touch `.env` in `lab-rob` and add the following:
+
+`PORT=<you-desired-port>`
+`MONGODB_URI=mongodb://localhost/<desired database name>`
+`SALT_SECRET=<your secret code>`
+`AWS_BUCKET=<your bucket name>`
+`AWS_ACCESS_KEY_ID=<your access key>`
+`AWS_SECRET_ACCESS_KEY=<your secret>`
 
 Run `npm start` to start the server.
 
