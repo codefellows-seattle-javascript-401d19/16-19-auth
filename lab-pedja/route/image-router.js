@@ -53,11 +53,28 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
 imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
   if(!request.account)
     return next(new httpErrors(404, '__ERROR__ not found'));
-
-  Image.findById(request.params.id)
+  return Image.findById(request.params.id)
     .then(image => {
-      return s3.remove(image.url)
-        .then(() => response.sendStatus(204));        
+      let urlArray = image.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+      return s3.remove(key) // Amazon
+        .then(() => {
+          return Image.findByIdAndRemove(request.params.id)// Mongo
+            .then(() => {
+              response.sendStatus(204);
+            });
+        });
     })
-    .catch(next);
+    .catch(error => {
+      return Image.findByIdAndRemove(request.params.id)
+        .then(() => Promise.reject(error))
+        .catch(next);
+    });
+
+  // Image.findById(request.params.id)
+  //   .then(image => {
+  //     return s3.remove(image.url)
+  //       .then(() => response.sendStatus(204));        
+  //   })
+  //   .catch(next);
 });
