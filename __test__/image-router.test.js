@@ -25,7 +25,6 @@ describe('/images', () => {
             .field('title', 'mountains')
             .attach('image', `${__dirname}/assets/mountains.jpg`)
             .then(response => {
-              console.log(response.body);
               expect(response.status).toEqual(200);
               expect(response.body.title).toEqual('mountains');
               expect(response.body._id).toBeTruthy();
@@ -83,7 +82,6 @@ describe('/images', () => {
             .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
         })
         .then(response => {
-          console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body._id).toEqual(imageMock.image._id.toString());
           expect(response.body.url).toEqual(imageMock.image.url);

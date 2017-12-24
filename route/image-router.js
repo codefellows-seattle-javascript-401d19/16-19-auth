@@ -52,6 +52,8 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
 
 
 //TODO: ADD IMAGE DELETE ROUTE
+// Delete from MONGODB first and this wiell return the delete object which you can use properties of it to delete form aws/s3
+//mongodb method of findbyidandremove
 // DELETE / <resouces-name>/:id
 // pass a bearer authentication token in the request to authorize the creation of the resource
 // on success respond with a 204 status code and an authentication token
