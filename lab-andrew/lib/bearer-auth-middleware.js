@@ -31,7 +31,7 @@ module.exports = (request, response, next) => {
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
     })
     .then(account => {
-      if(!account){
+      if (!account){
         throw new httpErrors(404, '__ERROR__ not found');
       }
       request.account = account;
