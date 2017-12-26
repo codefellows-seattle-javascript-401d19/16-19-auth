@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const carSchema = mongoose.Schema({
   //Mongo automatically inserts an <_id> field here.
   publicName : {type : String},
-  prodName : {type : String},
+  prodName : {type : String, required : true},
   description : {type : String},
   photo : {type : String},
 

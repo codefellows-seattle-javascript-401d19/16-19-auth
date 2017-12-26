@@ -11,7 +11,7 @@ const apiURL = `http://localhost:${process.env.PORT}`;
 
 describe('POST /cars', () => {
   //...no Auth Header -> 400
-  //...crappy credentials -> 404
+  //...crappy credentials -> 401
   beforeAll(server.start);
   afterAll(server.stop);
   afterEach(carMockFactory.remove);
@@ -39,6 +39,43 @@ describe('POST /cars', () => {
         expect(response.body.description).toEqual('Definitely not the Dodge Dart. No relation whatsoever. This car actually has wheels.');
       });
   });
+
+  test('Should fail with a 400 due to no Authorization header.', () => {
+
+    return superagent.post(`${apiURL}/cars`)
+      .send({
+        publicName : 'The Dirge Dort',
+        prodName : 'EMW-DGDT-00-A1',
+        description : 'Definitely not the Dodge Dart. No relation whatsoever. This car actually has wheels.',
+      })
+      .catch(error => {
+        console.log(error.status);
+        expect(error.status).toEqual(400);
+      });
+  });
+
+  test.only('Should fail with a 400 status code due to missing required fields.', () => {
+    let accountMock = null;
+
+    return accountMockFactory.create()
+      .then(mock => {
+        accountMock = mock;
+        return superagent.post(`${apiURL}/cars`)
+          .set('Authorization', `Bearer ${accountMock.token}`)
+          .send({
+            publicName : 'The Dirge Dort',
+            prodName : 'EMW-DGDT-00-A1',
+            description : 'Definitely not the Dodge Dart. No relation whatsoever. This car actually has wheels.',
+            _id : 'Xx_FAILTIME_ABC_123_xX',
+          });
+      })
+      .catch(error => {
+        console.log(error.status);
+        expect(error.status).toEqual(404);
+      });
+  });
+
+
 });
 
 // describe GET cars WITH id

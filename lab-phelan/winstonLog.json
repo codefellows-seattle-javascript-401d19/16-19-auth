@@ -653,3 +653,110 @@
 {"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:40:50.412Z"}
 {"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:40:50.422Z"}
 {"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:40:50.431Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:08:19.028Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.173Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.293Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:08:19.296Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.346Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:08:19.359Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:08:19.368Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421f93d67d2e478f34a14d ]","timestamp":"2017-12-26T10:08:19.420Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:08:19.440Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:08:19.448Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:08:19.457Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:13.227Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.377Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.501Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:09:13.504Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.557Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:13.570Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:13.580Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421fc9a6e47747c610bb47 ]","timestamp":"2017-12-26T10:09:13.631Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:09:13.649Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:09:13.657Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:13.666Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:57.873Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.021Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.141Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:09:58.144Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.203Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:58.217Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:58.227Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421ff600d37d47fc8c17b0 ]","timestamp":"2017-12-26T10:09:58.285Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:09:58.302Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:09:58.308Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:58.316Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:00.755Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:00.910Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:00.986Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:12:00.989Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:01.049Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:01.064Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:01.073Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a42207167561e484a8e8cdd ]","timestamp":"2017-12-26T10:12:01.129Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:12:01.139Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:12:01.152Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:01.161Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:16.761Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:16.837Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:12:16.841Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:16.901Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:16.911Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:16.912Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:14:23.561Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:14:23.620Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:14:23.625Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:14:23.681Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:14:23.690Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:14:23.690Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:16:23.340Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:16:23.622Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:16:23.709Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:16:23.720Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:16:23.721Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:10.451Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:17:10.750Z"}
+{"level":"info","message":"Responding with a 400 status code.","timestamp":"2017-12-26T10:17:10.795Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:10.819Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:10.829Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:10.830Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:54.658Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:17:54.956Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:17:55.001Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:55.031Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:55.043Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:55.043Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:13.426Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:19:13.586Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:19:13.632Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:13.660Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:13.669Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:13.670Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:41.183Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:19:41.338Z"}
+{"level":"info","message":"Responding with a 400 status code.","timestamp":"2017-12-26T10:19:41.382Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:41.407Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:41.417Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:41.417Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:21:25.581Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:21:25.728Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:21:25.776Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:21:25.801Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:21:25.810Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:21:25.811Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.048Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:25:48.193Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:25:48.241Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:48.263Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.281Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:48.282Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.766Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T10:25:48.946Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T10:25:49.031Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-26T10:25:49.033Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.084Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.129Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2017-12-26T10:25:49.130Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.137Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2017-12-26T10:25:49.140Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:49.146Z"}
