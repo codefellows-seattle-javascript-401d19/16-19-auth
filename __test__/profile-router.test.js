@@ -45,9 +45,6 @@ describe('Profile Router', () => {
   });
 
   describe('GET/profiles', () => {
-
-    //TODO: Write 200, test for POST / profiles
-
     test('Should return a 200 and a profile if there are no errors', () => {
       let profileMock = null;
 
