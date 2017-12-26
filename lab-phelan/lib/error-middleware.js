@@ -2,12 +2,12 @@
 
 const logger = require('./logger');
 
-module.exports = (error,request,response/*,next*/) => {
+module.exports = (error,request,response,next) => {
 
 
 
-  logger.log('info','__STARTING error-middleware.js__');
-  logger.log('info',error);
+  console.log('info','__STARTING error-middleware.js__');
+  // console.log('info',error);
 
   if(error.status){
     logger.log('info',`Responding with a ${error.status} status. Message: ${error.message}.`);

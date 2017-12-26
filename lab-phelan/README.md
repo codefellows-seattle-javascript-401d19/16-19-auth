@@ -6,9 +6,7 @@ In the README.md write documention for starting your server and makeing requests
 
 A] Starting this server:
 
-!!! Important note for TAs !!! Due to a deep "bug" (whose ultimate origin is still undiagnosed despite the extensive efforts of Josh, Steve, and Myself), my version of this code omits the beforeAll and afterAll calls in my Jest testing suite, and MUST be run by directly running this lab's mode server ($ node index.js) in a terminal, and then running ($ jest) in another.
-
-As stated above, in order to run my Node instance in this lab...
+In order to run my Node instance in this lab...
 1. Clone the gitHub repository.
 Since we're assuming this whole project is being run from your local system...
 2. Create an ENV file with the following information:
@@ -19,12 +17,12 @@ MONGODB_URI=http://localhost
 From the project's root directory
 3. ...run ($ npm install).
 4. ...create a 'db' folder, then run ($ mongod --dbpath "./db")
-5. ...run ($ node index.js)
-6. ...then run ($ jest) if jest is installed globally, or ($npm test) if it is installed locally.
+5. ...then run ($ node index.js) + ($ jest) in separate windows if jest is installed globally
+6. ...or simply run ($npm test) if jest is installed locally.
 
 B] Making requests:
 
-The test suite is intended to make an automatic battery of requests to test the basic integrity of the server and its routes...
+The Jest suite is an automatic battery of requests to test the basic integrity of the server and its routes...
 
 If a user wished to start the server and make custom calls against it themselves, the user would need to...
 
@@ -33,14 +31,27 @@ If a user wished to start the server and make custom calls against it themselves
 
 Available endpoints are as follows:
 
-[site]/api/plants
-- This url only responds POST requests
-- When posted to with an well-populated 'Plant' object, this route will commit it to the local MongoDB, and then respond with *that* object (plus additional fields returned by Mongo as it wrote the object), and a 200 Status Code.
-- When posted to with a malformed 'Plant' object, this route will respond with a 400 Status Code.
-- If an unexpected error happens at any point during this Route's processing, it will return a 500 Status Code.
+[site]/signup
+- This endpoint only responds to POST requests.
+- When posted to with a username, email, and password, this route creates a corresponding user in the database, creates a crypto token for this user, and then returns the user and the token back to the client.
+- Lacking a username, email, or password, this endpoint will send a 404 to the client
 
-[site]/api/plants:id | 
-- This url only responds GET requests
-- When posted to with an valid 'plant._id' string, this route will retrieve the Plant object with that '._id' from the local MongoDB, and then respond with *that* object and a 200 Status Code.
-- When posted to with a nonexistent 'Plant ._id' value, this route will respond with a 404 Status Code.
-- If an unexpected error happens at any point during this Route's processing, it will return a 500 Status Code.
+[site]/login
+- This endpoint peels off the "Authorization" data from the header, and checks that the provided username/password are valid.
+- If the incorrect Auth type is sent in the headers, it will fail with a 400.
+- If 'Basic Authentication' values are not present in the 'Authentication' header keyword, it will fail with a 404.
+- If a username or password value are not included in the Basic Auth header, it will return a 400.
+- If the password does not match that of the user's retrieved from the database, the endpoint will fail with a 401.
+- Surviving all those errors, this endpoint will send back an 'Auth Token' to the user, to be used in subsequent requests via 'Bearer-Auth'-style authentication.
+
+[site]/cars
+- This endpoint only responds to POST requests.
+- When posted to with a valid 'car' object, this endpoint saves that object to the DB, and responds with that object, and a 200 Status Code.
+- If an invalid Auth token is presented, this endpoint fails with a 400 status code.
+- If for some reason there is a failure decrypting that token and associating it to a user, a 404 error is thrown.
+
+[site]/cars:id 
+- This endpoint only responds to GET requests.
+- When posted to with an valid "car._id", this route will retrieve the Car with that '._id' from the local MongoDB, and then respond with that Car and a 200 Status Code.
+- The route will fail with a 404 if a plantId is not provided in the URL call ("/cars/").
+- This route responds with a variety of 400 error codes based upon the nature of the various errors that can occur during internal server operations, and a '500' as a catch-all for any error state not specifically defined.

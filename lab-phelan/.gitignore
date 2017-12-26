@@ -82,5 +82,8 @@ db/
 # Anything I pull over from the lecture Repo:
 lecture*
 
+#Phelan - Local archive for multi-day labs
+archive/
+
 
 # End of https://www.gitignore.io/api/node,linux

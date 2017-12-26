@@ -57,3 +57,706 @@
 {"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-21T05:36:49.848Z"}
 {"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-21T05:36:50.069Z"}
 {"level":"info","message":"Server turned off.","timestamp":"2017-12-21T05:36:50.084Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-22T20:47:08.576Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T20:47:08.651Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T20:47:08.859Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T20:47:08.872Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T20:47:13.532Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T20:47:13.802Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T20:47:13.928Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testing.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$yl/80vuJUjfzrqxih5VgBOXTXL2kGUqrQXRrRNLt52OHwBV2TebQ.","tokenSeed":"3427feca89a66ab790de70ec6f4c08cd186500247ea17a427484fd703dc3775468f73fdd192e246bbcc68ca9b9112e03b352725293921d470fe0a76667ce1465","_id":"5a3d6f5106a80f06a9e04aed","created":"2017-12-22T20:47:13.891Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T20:47:13.935Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T20:47:13.952Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T20:47:13.955Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T20:47:13.955Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T20:47:13.957Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T20:47:13.967Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-22T21:04:37.663Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:04:37.725Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:04:37.864Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: testing.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$97iq4yETPcJLEG5bsSSVkeYnnErMVvVzQQhj.Wn/l2rnQ.MKCFA8q","tokenSeed":"b2835b38f10eec2c0ad3c39e2d57b754d7fb8dd6973816c434b79084d949f95631c12a24e1306fe17985dd5e8c0c8a9d2f2db187a53a80c713106ead6ef7563d","_id":"5a3d73652581230932c23d18","created":"2017-12-22T21:04:37.829Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T21:04:37.869Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:04:37.893Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:04:37.897Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:04:37.897Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:04:37.900Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:04:37.918Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T21:06:30.599Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:06:30.814Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:06:31.077Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:06:31.082Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:06:31.083Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:06:31.087Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:06:31.100Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T21:07:33.571Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:07:33.779Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:07:33.901Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: lab18test.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$45SXW4c.uG9lc35c2O9j8.uh7XEdG27wgbfzJ8AU4wbO/YVqF4UWW","tokenSeed":"7327ed8d64cdadb5a9c0bc2e616054a7200510875738c46dcba502543247abc9e3a3c3c654adebd692f8e27573bda015b379e54dbf0651575bfcd392dc92424d","_id":"5a3d741549efd80a48fd4e65","created":"2017-12-22T21:07:33.865Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T21:07:33.911Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:07:33.938Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:07:33.941Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:07:33.942Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:07:33.943Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:07:33.958Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T21:09:26.050Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:09:26.285Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:09:26.443Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: lab18test.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$lFjUy4ifcINJdBL2zMT9oO1DH4d2J6MCwHLUGVshk8tRIDZk6XADW","tokenSeed":"8d5a0e458f595f14c7cdc0d2b7c67a5b076a0f8f8f5ff2287445b8b4fb7348c55885d8afafb2a42d1944fd4c06931e87fc496d9b1598a9f642d18395a7dabc1b","_id":"5a3d7486c0574b0b21ecbefc","created":"2017-12-22T21:09:26.399Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T21:09:26.450Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:09:26.477Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:09:26.480Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:09:26.480Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:09:26.482Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T21:09:26.577Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:09:26.634Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T21:24:42.698Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:24:42.918Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:24:43.052Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: lab18test.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$tPsGM8pjqBGrncy0LnKKo.7NDVx3X1e9IkP0mjdSscn6.OGBIUUby","tokenSeed":"e788740ddafaccf58b07e04de0ecc4bc88e82468d9413414d92a7c6fe4a095886fc7e4a5c49044add169dc5cd9c6f0cf3601ba88fc6f763fe991142a2caf68df","_id":"5a3d781b9c5f390c9cf90fc8","created":"2017-12-22T21:24:43.008Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T21:24:43.060Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:24:43.108Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:24:43.111Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:24:43.111Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:24:43.114Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T21:24:43.199Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:24:43.252Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T21:43:12.014Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:43:12.223Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:43:12.406Z"}
+{"code":11000,"index":0,"errmsg":"insertDocument :: caused by :: 11000 E11000 duplicate key error index: lab18test.accounts.$email_1  dup key: { : \"abc@123.com\" }","op":{"username":"testUser","email":"abc@123.com","passwordHash":"$2a$08$mCthBHo4wwibs8eAml1Hbub8veUoOv/f2n41p8sG5FBGGbJnT4q7m","tokenSeed":"0d4b81890f2e0ba2eb975926e41efa94768336db947b8b5a718484a59b365fcb720954a1a2fe6df590f408f8cfcdd203be8685e898bd9ea390c0981dd4056572","_id":"5a3d7c7029cd671186f4b109","created":"2017-12-22T21:43:12.347Z","__v":0}}
+{"level":"info","message":"Responding with a 409 status code.","timestamp":"2017-12-22T21:43:12.414Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T21:43:12.460Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-22T21:43:12.463Z"}
+{"message":"__ERROR__ username, email, and password required","stack":"BadRequestError: __ERROR__ username, email, and password required\n    at Object.<anonymous>.authRouter.post (/home/main/401/labs/16-19-auth/lab-phelan/route/auth-router.js:16:91)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:224:16)\n    at done (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/raw-body/index.js:273:7)\n    at IncomingMessage.emit (events.js:159:13)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-22T21:43:12.463Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-22T21:43:12.465Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T21:43:12.562Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T21:43:12.616Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T22:11:07.255Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:11:07.450Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:11:07.649Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T22:11:07.738Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T22:11:07.805Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T22:12:42.738Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:12:42.800Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:12:42.968Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T22:12:43.047Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T22:12:43.105Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T22:14:12.224Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:14:12.295Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T22:14:12.478Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T22:14:12.560Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T22:14:12.613Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-22T23:19:49.240Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T23:19:49.437Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-22T23:19:49.609Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-22T23:19:49.683Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-22T23:19:49.739Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T02:30:17.438Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:30:17.647Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:30:17.854Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T02:30:17.941Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T02:30:17.996Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T02:36:09.241Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:36:09.303Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:36:09.472Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T02:36:09.548Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T02:36:09.613Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T02:36:32.018Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:36:32.076Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:36:32.231Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T02:36:32.305Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T02:36:32.367Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T02:37:33.242Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:37:33.327Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T02:37:33.619Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T02:37:33.723Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T02:37:33.789Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:17:30.800Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:17:30.986Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:17:31.177Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T11:17:31.256Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:17:31.313Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:23:09.880Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-23T11:23:10.033Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:23:10.103Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:23:10.113Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:23:10.124Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:23:10.852Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:23:10.865Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:23:10.948Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T11:23:11.010Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:23:11.061Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:31:19.930Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-23T11:31:20.084Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:31:20.169Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:31:20.180Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:31:20.192Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:31:20.721Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:31:20.887Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:31:20.977Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T11:31:21.039Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:31:21.090Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:05.358Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-23T11:45:05.501Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:05.592Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:05.601Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:05.613Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:06.339Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:45:06.355Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:45:06.435Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T11:45:06.496Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:06.550Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:24.072Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-23T11:45:24.233Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:24.335Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:24.345Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:24.360Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-23T11:45:25.171Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:45:25.187Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-23T11:45:25.267Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-23T11:45:25.328Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-23T11:45:25.379Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:24:00.275Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T00:24:00.496Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:24:00.578Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:24:00.587Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:24:00.597Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:24:01.130Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T00:24:01.141Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T00:24:01.215Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T00:24:01.276Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:24:01.323Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:40:08.704Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T00:40:08.855Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:40:08.941Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:40:08.961Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:40:08.973Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T00:40:09.490Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T00:40:09.650Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T00:40:09.731Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T00:40:09.790Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T00:40:09.839Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:09:33.841Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:09:33.988Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:09:34.077Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:09:34.086Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:09:34.097Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:09:34.811Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:09:34.826Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:09:34.901Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:09:34.956Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:09:35.000Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:10:07.680Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:10:07.821Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:10:07.909Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:10:07.920Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:10:07.936Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:10:08.592Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:10:08.642Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:10:08.720Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:10:08.781Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:10:08.829Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:20:29.310Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:20:29.605Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:20:29.684Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:20:29.694Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:20:29.706Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:20:30.238Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:20:30.250Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:20:30.324Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:20:30.383Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:20:30.434Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:21:06.973Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:21:07.296Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:21:07.379Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:21:07.388Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:21:07.398Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:21:07.919Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:21:07.930Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:21:07.997Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:21:08.060Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:21:08.114Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:22:07.581Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:22:07.866Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:22:07.944Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:22:07.955Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:22:07.966Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:22:08.489Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:22:08.500Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:22:08.592Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:22:08.661Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:22:08.712Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:17.672Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:24:17.813Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:17.895Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:17.904Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:17.916Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:18.594Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:24:18.637Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:24:18.731Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:24:18.795Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:18.848Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:53.536Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:24:53.678Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:53.759Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:53.768Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:53.780Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:24:54.391Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:24:54.450Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:24:54.522Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:24:54.586Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:24:54.637Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:25:21.681Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T01:25:21.828Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:25:21.908Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:25:21.917Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:25:21.929Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T01:25:22.543Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:25:22.604Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T01:25:22.694Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T01:25:22.759Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T01:25:22.811Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:36:54.363Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T03:36:54.509Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:36:54.582Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:36:54.592Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:36:54.602Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:36:55.316Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:36:55.332Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:36:55.409Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:36:55.466Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:36:55.513Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:36:55.534Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:36:55.542Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:45:34.162Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:45:34.221Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:45:34.371Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:45:34.456Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:45:34.508Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:45:34.531Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:45:34.545Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:45:35.270Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T03:45:35.326Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:45:35.357Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:45:35.363Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:45:35.374Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:57:16.645Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:57:16.703Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:57:16.860Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:57:16.945Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:57:16.993Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:57:17.013Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:57:17.029Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:57:17.763Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T03:57:17.822Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:57:17.853Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:57:17.859Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:57:17.869Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:58:49.778Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:58:49.835Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T03:58:50.012Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:58:50.092Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:58:50.146Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T03:58:50.165Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:58:50.177Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:58:50.863Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T03:58:50.920Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:58:50.953Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T03:58:50.958Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T03:58:50.968Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:29.645Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T04:00:29.704Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T04:00:29.869Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:29.942Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:29.995Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:30.015Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:30.032Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:30.800Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T04:00:30.856Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:30.892Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:30.899Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:30.911Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:51.255Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T04:00:51.317Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T04:00:51.479Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:51.565Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:51.617Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T04:00:51.637Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:51.649Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:52.351Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T04:00:52.439Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:52.473Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T04:00:52.479Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T04:00:52.489Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:05:13.070Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:05:13.129Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:05:13.286Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:05:13.354Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:05:13.408Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:05:13.428Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:05:13.444Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:05:14.297Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:05:14.358Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:05:14.390Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:05:14.396Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:05:14.461Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:05:14.462Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:05:14.465Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:08:54.363Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:08:54.420Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:08:54.567Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:08:54.641Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:08:54.691Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:08:54.705Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:08:54.713Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:08:55.426Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:08:55.486Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:08:55.520Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:08:55.527Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:08:55.607Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:08:55.611Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:08:55.613Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:11:10.978Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:11:11.128Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:11:11.199Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:11:11.208Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:11:11.281Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:11:11.282Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:11:11.299Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:11:12.024Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:11:12.037Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:11:12.111Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:11:12.171Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:11:12.219Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:11:12.233Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:11:12.241Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:12:34.176Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:12:34.332Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:12:34.406Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:12:34.416Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:12:34.477Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:12:35.186Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:12:35.200Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:12:35.273Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:12:35.331Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:12:35.377Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:12:35.392Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:12:35.400Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:13:42.207Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:13:42.359Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:13:42.430Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:13:42.440Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:13:42.509Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:13:42.510Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:13:42.513Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:13:43.232Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:13:43.244Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:13:43.313Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:13:43.379Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:13:43.434Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:13:43.448Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:13:43.455Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:16:28.633Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:16:28.778Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:16:28.853Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:16:28.863Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:16:28.933Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:16:28.934Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41db2cf54e1733e2e12728 ]","timestamp":"2017-12-26T05:16:28.937Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:16:28.938Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:16:28.953Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:16:29.655Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:16:29.670Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:16:29.743Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:16:29.810Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:16:29.860Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:16:29.874Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:16:29.882Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:18:09.801Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T05:18:09.959Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:18:10.030Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:18:10.039Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41db922299b23434fe8913 ]","timestamp":"2017-12-26T05:18:10.106Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:18:10.107Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T05:18:10.110Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:18:10.111Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:18:10.137Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:18:10.841Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:18:10.853Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:18:10.919Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:18:10.985Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:18:11.035Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:18:11.048Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:18:11.056Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:31:59.739Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:31:59.744Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:31:59.788Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41decf530411351343841f ]","timestamp":"2017-12-26T05:31:59.938Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:31:59.940Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:31:59.972Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:32:00.680Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:32:00.694Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T05:32:00.800Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:32:00.863Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:32:00.916Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T05:32:00.929Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:32:00.936Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:32:26.203Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:32:26.208Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:32:26.251Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:32:26.390Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:35:26.313Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:35:26.318Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:35:26.360Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:35:26.491Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:41:48.802Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:41:48.807Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:41:48.850Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41e11dd711fc3625811c02 ]","timestamp":"2017-12-26T05:41:49.069Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:41:49.072Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:41:49.114Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:59:39.651Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:59:39.656Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T05:59:39.852Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41e54b4ac2123729e5e016 ]","timestamp":"2017-12-26T05:59:39.984Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T05:59:39.987Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T05:59:40.023Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:31:01.942Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:31:01.947Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:31:01.990Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fab69160d63c57d19504 ]","timestamp":"2017-12-26T07:31:02.125Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-26T07:31:02.128Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:31:02.161Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:33:01.873Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:33:01.878Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:33:01.922Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fb2e505a723c9a36e60a ]","timestamp":"2017-12-26T07:33:02.188Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:33:06.941Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:36:14.407Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:36:14.412Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:36:14.604Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fbee6abf703ce428ea78 ]","timestamp":"2017-12-26T07:36:14.745Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:36:19.625Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:39:13.635Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:39:13.640Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:39:13.683Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fca13cd3a83d2e6eaaaa ]","timestamp":"2017-12-26T07:39:13.824Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:39:18.700Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:40:53.315Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:40:53.320Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:40:53.364Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fd05d11f7a3d6baa2f1b ]","timestamp":"2017-12-26T07:40:53.504Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:40:58.381Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:44:49.476Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:44:49.481Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:44:49.525Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fdf19b65e23df3acd4a0 ]","timestamp":"2017-12-26T07:44:49.660Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:44:54.541Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:46:50.113Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:46:50.119Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:46:50.162Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fe6ae78f993e3ec79ca2 ]","timestamp":"2017-12-26T07:46:50.300Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:46:55.178Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:47:48.847Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:47:48.851Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:47:48.904Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41fea581c7d53e75dc8b77 ]","timestamp":"2017-12-26T07:47:49.041Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:47:53.920Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:49:27.035Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:49:27.039Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:49:27.092Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41ff07dc4ac93eacb649ce ]","timestamp":"2017-12-26T07:49:27.229Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:49:32.109Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:50:17.637Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T07:50:17.804Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:50:17.879Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:50:17.889Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a41ff394eced13ede3d14f4 ]","timestamp":"2017-12-26T07:50:17.956Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T07:50:17.960Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:50:17.999Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:57:47.347Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:57:47.352Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T07:57:47.396Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T07:57:47.529Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T07:57:47.569Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:21:41.707Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:21:41.712Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:21:41.755Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:21:41.886Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:21:41.933Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:26:39.756Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:26:39.762Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:26:39.822Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:26:39.951Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:26:40.009Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:33:11.516Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:33:11.521Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:33:11.718Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:33:11.840Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-26T08:33:11.856Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:33:11.903Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:34:49.714Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:34:49.719Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:34:49.919Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:34:50.053Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-26T08:34:50.074Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:34:50.120Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:36:25.546Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:36:25.552Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:36:25.605Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:36:25.754Z"}
+{"level":"info","message":"__STARTING error-middleware.js__","timestamp":"2017-12-26T08:36:25.775Z"}
+{"message":"Cast to ObjectId failed for value \"XXXTHISisAwrongIDXXX\" at path \"_id\" for model \"car\"","stack":"CastError: Cast to ObjectId failed for value \"XXXTHISisAwrongIDXXX\" at path \"_id\" for model \"car\"\n    at new CastError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/error/cast.js:27:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/schema/objectid.js:158:13)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/schematype.js:1088:15)\n    at ObjectId.Object.<anonymous>.ObjectId.castForQuery (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/schema/objectid.js:198:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/schematype.js:1045:15)\n    at cast (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/cast.js:269:32)\n    at model.Query.Object.<anonymous>.Query.cast (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/query.js:3302:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/query.js:1292:10)\n    at model.Query.Object.<anonymous>.Query._findOne (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/mongoose/lib/query.js:1504:8)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/kareem/index.js:250:8\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/kareem/index.js:23:7\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"CastError","stringValue":"\"XXXTHISisAwrongIDXXX\"","kind":"ObjectId","value":"XXXTHISisAwrongIDXXX","path":"_id","level":"info","timestamp":"2017-12-26T08:36:25.775Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:36:25.778Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:36:25.827Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:36:50.803Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:36:50.808Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:36:51.000Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:36:51.126Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:36:51.153Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:36:51.189Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:37:46.283Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T08:37:46.429Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:37:46.507Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:37:46.517Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a420a5a02c8c3427f28e8b9 ]","timestamp":"2017-12-26T08:37:46.580Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:37:46.599Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:37:46.614Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:37:46.630Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:38:07.347Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T08:38:07.505Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:38:07.598Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:38:07.609Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:38:07.696Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a420a6fdbc08c42ac465389 ]","timestamp":"2017-12-26T08:38:07.708Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:38:07.717Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:38:07.733Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:39:00.547Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T08:39:00.695Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:39:00.789Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:39:00.800Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:39:00.864Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:39:00.887Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:39:00.898Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:40:19.223Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T08:40:19.369Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:40:19.448Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:40:19.459Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a420af330e59643318e04ed ]","timestamp":"2017-12-26T08:40:19.519Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:40:19.529Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:40:19.559Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:40:49.948Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T08:40:50.249Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:40:50.320Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T08:40:50.331Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a420b12958d884363bd89ce ]","timestamp":"2017-12-26T08:40:50.392Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T08:40:50.412Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T08:40:50.422Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T08:40:50.431Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:08:19.028Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.173Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.293Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:08:19.296Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:08:19.346Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:08:19.359Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:08:19.368Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421f93d67d2e478f34a14d ]","timestamp":"2017-12-26T10:08:19.420Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:08:19.440Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:08:19.448Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:08:19.457Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:13.227Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.377Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.501Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:09:13.504Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:13.557Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:13.570Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:13.580Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421fc9a6e47747c610bb47 ]","timestamp":"2017-12-26T10:09:13.631Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:09:13.649Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:09:13.657Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:13.666Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:57.873Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.021Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.141Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:09:58.144Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:09:58.203Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:58.217Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:09:58.227Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a421ff600d37d47fc8c17b0 ]","timestamp":"2017-12-26T10:09:58.285Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:09:58.302Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:09:58.308Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:09:58.316Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:00.755Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:00.910Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:00.986Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:12:00.989Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:01.049Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:01.064Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:01.073Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a42207167561e484a8e8cdd ]","timestamp":"2017-12-26T10:12:01.129Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2017-12-26T10:12:01.139Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:12:01.152Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:01.161Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:16.761Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:12:16.837Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:12:16.841Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:16.901Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:12:16.911Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:12:16.912Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:14:23.561Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:14:23.620Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2017-12-26T10:14:23.625Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:14:23.681Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:14:23.690Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:14:23.690Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:16:23.340Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:16:23.622Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:16:23.709Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:16:23.720Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:16:23.721Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:10.451Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:17:10.750Z"}
+{"level":"info","message":"Responding with a 400 status code.","timestamp":"2017-12-26T10:17:10.795Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:10.819Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:10.829Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:10.830Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:54.658Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:17:54.956Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:17:55.001Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:55.031Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:17:55.043Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:17:55.043Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:13.426Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:19:13.586Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:19:13.632Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:13.660Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:13.669Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:13.670Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:41.183Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:19:41.338Z"}
+{"level":"info","message":"Responding with a 400 status code.","timestamp":"2017-12-26T10:19:41.382Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:41.407Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:19:41.417Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:19:41.417Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:21:25.581Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:21:25.728Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:21:25.776Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:21:25.801Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:21:25.810Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:21:25.811Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.048Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2017-12-26T10:25:48.193Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2017-12-26T10:25:48.241Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:48.263Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.281Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:48.282Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2017-12-26T10:25:48.766Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T10:25:48.946Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2017-12-26T10:25:49.031Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2017-12-26T10:25:49.033Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.084Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.129Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2017-12-26T10:25:49.130Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2017-12-26T10:25:49.137Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2017-12-26T10:25:49.140Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2017-12-26T10:25:49.146Z"}
