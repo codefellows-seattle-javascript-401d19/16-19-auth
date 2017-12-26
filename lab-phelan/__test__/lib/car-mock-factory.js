@@ -11,7 +11,7 @@ carMockFactory.create = () => {
 
   return accountMockFactory.create()
     .then(accountMock => {
-      resultMock.accountMock = accountMock;
+      resultMock.account = accountMock;
 
       return new Car({
         publicName : `Model ${faker.lorem.words(2)}`,

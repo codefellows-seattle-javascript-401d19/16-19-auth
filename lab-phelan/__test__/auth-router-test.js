@@ -22,7 +22,7 @@ describe('AUTH Router', () => {
           password : 'p@ssw0rd',
         })
         .then(response => {
-          console.log(response.body);
+          //console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
@@ -42,17 +42,35 @@ describe('AUTH Router', () => {
   });
 
   describe('GET /login', () => {
-    test('GET /login should return an Auth Token and a 200 status code.', () => {
+    test('should return an Auth Token and a 200 status code', () => {
       return accountMockFactory.create()
         .then(mock => {
           return superagent.get(`${apiURL}/login`)
             .auth(mock.request.username,mock.request.password);
         })
         .then(response => {
-          console.log(response.body);
+          //console.log(response.body);
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
     });
+
+    test('should return a 400 status code', () => {
+      return superagent.get(`${apiURL}/login`)
+        .catch(error => {
+          //console.log(error);
+          expect(error.status).toEqual(400);
+        });
+    });
+
+    test('should return a 401 status code', () => {
+      return superagent.get(`${apiURL}/login`)
+        .auth('XX___NONSENSE__XX','XX___NONSENSE__XX')
+        .catch(error => {
+          //console.log(error);
+          expect(error.status).toEqual(401);
+        });
+    });
+
   });
 });

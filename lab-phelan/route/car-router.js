@@ -7,14 +7,12 @@ const httpErrors = require('http-errors');
 const Car = require('../model/car');
 
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
+const errorMiddleware = require('../lib/error-middleware');
 
 const carRouter = module.exports = new Router();
 
 carRouter.post('/cars',bearerAuthMiddleware,jsonParser,
   (request,response,next) => {
-    // 200 if successful
-    // 400 if details not included (?)
-    // 401 if account not found
     if(!request.account)
       return next(new httpErrors(404,'__ERROR__ not found'));
 
@@ -26,16 +24,13 @@ carRouter.post('/cars',bearerAuthMiddleware,jsonParser,
     .catch(next);
 });
 
-carRouter.get('/cars:id',bearerAuthMiddleware,jsonParser,(request,response,next) => {
-  // 200 if successful
-  // 400 if account details not included (?)
-  // 401 if account not found
-  // 404 if specified id does not return from db
-  if (!request.params.id) return next(new httpErrors(404,'__ERROR__ not found'));
+carRouter.get('/cars/:id',bearerAuthMiddleware,errorMiddleware,jsonParser,(request,response,next) => {
+  // console.log(`CR-G-cars/:id - ${request.params.id}`)
+  if (!request.params.id) return next(new httpErrors(404,'__ERROR__ CR not found'));
 
   Car.findOne({'_id':request.params.id})
   .then(car => {
-    console.log(`GET cars/:id car: ${JSON.stringify(car)}`);
+    //console.log(`CR-G-cars/:id - Successfully read target car from db:\n ${JSON.stringify(car)}`);
     response.json(car);
   })
   .catch(next)

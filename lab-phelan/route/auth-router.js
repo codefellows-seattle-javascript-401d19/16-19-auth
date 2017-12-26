@@ -23,7 +23,7 @@ authRouter.post('/signup',jsonParser, (request,response,next) => {
 
 authRouter.get('/login',basicAuthMiddleware,(request,response,next) => {
   if(!request.account)
-    return next(new httpErrors(404,'__ERROR__ not found'));
+    return next(new httpErrors(400,'__ERROR__ malformed request'));
 
   return request.account.createToken()
     .then(token => response.json({token}))

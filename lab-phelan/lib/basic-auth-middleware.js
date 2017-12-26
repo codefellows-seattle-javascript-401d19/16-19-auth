@@ -21,7 +21,7 @@ module.exports = (request,response,next) => {
   return Account.findOne({username})
     .then(account => {
       if (!account)
-        throw new httpErrors(404,'__ERROR__ not found');
+        throw new httpErrors(401,'__AUTH__ Incorrect username or password');
       return account.verifyPassword(password);
     })
     .then(account => {

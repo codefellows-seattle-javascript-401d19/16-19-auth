@@ -35,7 +35,7 @@ module.exports = (request,response,next) => {
     })
     .then(account => {
       if(!account)
-        throw new httpErrors(404,'__ERROR__ not found');
+        throw new httpErrors(404,'__ERROR__ BMW not found');
 
       request.account = account;
       return next();
