@@ -19,7 +19,7 @@ carMockFactory.create = () => {
         decription : faker.lorem.words(100),
         photo : faker.random.image(),
 
-        account : accountMock.account._id,
+        accountId : accountMock.account._id,
       }).save();
     })
     .then(car => {

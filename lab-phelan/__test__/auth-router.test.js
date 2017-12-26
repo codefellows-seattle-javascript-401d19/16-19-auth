@@ -1,6 +1,7 @@
 'use strict';
 
 require('./lib/setup');
+
 const superagent = require('superagent');
 const server = require('../lib/server');
 const accountMockFactory = require('./lib/account-mock-factory');
@@ -25,10 +26,6 @@ describe('AUTH Router', () => {
           expect(response.status).toEqual(200);
           expect(response.body.token).toBeTruthy();
         });
-        // .catch(error => {
-        //   console.log(error);
-        //   expect(true).toEqual(false);
-        // });
     });
 
     test('POST: Incomplete signup values should return a 400', () => {

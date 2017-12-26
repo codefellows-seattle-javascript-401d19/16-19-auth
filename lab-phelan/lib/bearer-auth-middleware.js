@@ -26,10 +26,10 @@ module.exports = (request,response,next) => {
     return next(new httpErrors(400,'__ERROR__ token required'));
 
 
-  return promisify(jsonWebToken.verify)(token,process.env.CAT_CLOUD_SECRET)
+  return promisify(jsonWebToken.verify)(token,process.env.SECRET)
     .catch(error => Promise.reject(new httpErrors(401,error)))
     .then(decryptedData => {
-      console.log(decryptedData);
+      console.log(`BAM - Data Decrypted: ${JSON.stringify(decryptedData)}`);
 
       return Account.findOne({tokenSeed : decryptedData.tokenSeed});
     })
