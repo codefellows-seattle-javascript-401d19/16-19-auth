@@ -84,6 +84,7 @@ describe('/images', () => {
           expect(response.body.url).toEqual(imageMock.image.url);
         });
     });
+
     test('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
       let imageMock = null;
 
@@ -96,6 +97,21 @@ describe('/images', () => {
         .then(Promise.reject)
         .catch(response => {
           expect(response.status).toEqual(404);
+        });
+    });
+
+    test('Sould return a 401 status when given a bad token if there are no erros', () => {
+      let imageMock = null;
+
+      return imageMockFactory.create()
+        .then(mock => {
+          imageMock = mock;
+          return superagent.get(`${apiURL}/images/${imageMock.image._id}`)
+            .set('Authorization', `Bearer ${imageMock.accountMock.badToken}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
         });
     });
     //TODO: ADD 401 TEST
