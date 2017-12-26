@@ -36,11 +36,16 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
 });
 
 imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) => {
-  if (!request.account || !request.params.id)
-    return new httpErrors(404, '_ERROR_ not found');
+  if (!request.account)
+    return next(new httpErrors(404, '_ERROR_ not found'));
 
   return Image.findById(request.params.id)
-    .then(image => response.json(image))
+    .then(image => {
+      if(!image) {
+        return next(new httpErrors(404, '__ERROR__ Image not found'));
+      }
+      return response.json(image);
+    })
     .catch(next);
 });
 // GET / <resouces-name>/:id

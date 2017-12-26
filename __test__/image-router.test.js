@@ -84,8 +84,7 @@ describe('/images', () => {
           expect(response.body.url).toEqual(imageMock.image.url);
         });
     });
-    //TODO: ADD 404 TEST
-    test.only('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
+    test('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
       let imageMock = null;
 
       return imageMockFactory.create()
@@ -94,10 +93,10 @@ describe('/images', () => {
           return superagent.get(`${apiURL}/images/5a40056e4bc15268d81faa6`)
             .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
         })
-        .then(response => {
+        .then(Promise.reject)
+        .catch(response => {
           expect(response.status).toEqual(404);
         });
-
     });
     //TODO: ADD 401 TEST
 
