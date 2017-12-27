@@ -1,30 +1,44 @@
 {
-  "name": "lab-seth",
+  "name": "bearer-auth",
   "version": "1.0.0",
-  "description": "This is a server built from express and MongoDB that uses a MongoDB model to save api hits. It is setup as in inventory of planets.",
+  "description": "bearer-auth server",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test": "jest -i --coverage",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
     "dboff": "killall mongod"
   },
+  "keywords": [],
   "author": "Seth Donohue",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^4.13.0",
-    "faker": "^4.1.0",
-    "jest": "^21.2.1",
-    "superagent": "^3.8.2"
-  },
   "dependencies": {
+    "aws-sdk": "^2.173.0",
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "fs-extra": "^5.0.0",
     "http-errors": "^1.6.2",
-    "mongoose": "^4.13.6",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "multer": "^1.3.0",
     "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "aws-sdk-mock": "^1.7.0",
+    "faker": "^4.1.0",
+    "jest": "^22.0.3",
+    "superagent": "^3.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethDonohue/16-19-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SethDonohue/16-19-auth/issues"
+  },
+  "homepage": "https://github.com/SethDonohue/16-19-auth#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
