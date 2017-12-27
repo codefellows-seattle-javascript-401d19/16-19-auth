@@ -49,8 +49,6 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
     .catch(next);
 });
 
-//TODO: ADD IMAGE DELETE ROUTE
-
 imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
 
   return Image.findByIdAndRemove(request.params.id)

@@ -120,7 +120,6 @@ describe('/images', () => {
   // });
 
   describe(' images DELETE Route', () => {
-    //TODO: ADD 204 TEST
     test('Should return a 204 status code if there are no errors', () => {
       let imageMock = null;
 
@@ -136,20 +135,20 @@ describe('/images', () => {
     });
       
       //TODO: ADD 404 TEST
-    // test('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
-    //   let imageMock = null;
+    test('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
+      let imageMock = null;
 
-    //   return imageMockFactory.create()
-    //     .then(mock => {
-    //       imageMock = mock;
-    //       return superagent.get(`${apiURL}/images/5a40056e4bc15268d81faa6`)
-    //         .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
-    //     })
-    //     .then(Promise.reject)
-    //     .catch(response => {
-    //       expect(response.status).toEqual(404);
-    //     });
-    // });
+      return imageMockFactory.create()
+        .then(mock => {
+          imageMock = mock;
+          return superagent.get(`${apiURL}/images/falseID`)
+            .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
+    });
     
     //TODO: ADD 401 TEST
     // test('Sould return a 401 status when given a bad token if there are no erros', () => {
