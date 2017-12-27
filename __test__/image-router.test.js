@@ -17,10 +17,8 @@ describe('/images', () => {
   afterEach(accountMockFactory.remove);
   describe('images POST Route', () => {
     test('Should return a 200 status code and a image if there are no errors', () => {
-      let tempAccountMock = null;
       return accountMockFactory.create()
         .then(accountMock => {
-          tempAccountMock = accountMock;
 
           return superagent.post(`${apiURL}/images`)
             .set('Authorization', `Bearer ${accountMock.token}`)
@@ -114,8 +112,6 @@ describe('/images', () => {
           expect(response.status).toEqual(401);
         });
     });
-    //TODO: ADD 401 TEST
-
   });
 
 
@@ -125,11 +121,50 @@ describe('/images', () => {
 
   describe(' images DELETE Route', () => {
     //TODO: ADD 204 TEST
+    test('Should return a 204 status code if there are no errors', () => {
+      let imageMock = null;
 
-    //TODO: ADD 404 TEST
+      return imageMockFactory.create()
+        .then(mock => {
+          imageMock = mock;
+          return superagent.delete(`${apiURL}/images/${imageMock.image._id}`)
+            .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
+    });
+      
+      //TODO: ADD 404 TEST
+    // test('Sould return a 404 if the id is incorrect/not found and there are no other errors', () => {
+    //   let imageMock = null;
 
-    //TODO: ADD 401 TEST
-
+    //   return imageMockFactory.create()
+    //     .then(mock => {
+    //       imageMock = mock;
+    //       return superagent.get(`${apiURL}/images/5a40056e4bc15268d81faa6`)
+    //         .set('Authorization', `Bearer ${imageMock.accountMock.token}`);
+    //     })
+    //     .then(Promise.reject)
+    //     .catch(response => {
+    //       expect(response.status).toEqual(404);
+    //     });
+    // });
     
+    //TODO: ADD 401 TEST
+    // test('Sould return a 401 status when given a bad token if there are no erros', () => {
+    //   let imageMock = null;
+
+    //   return imageMockFactory.create()
+    //     .then(mock => {
+    //       imageMock = mock;
+    //       return superagent.get(`${apiURL}/images/${imageMock.image._id}`)
+    //         .set('Authorization', `Bearer ${imageMock.accountMock.badToken}`);
+    //     })
+    //     .then(Promise.reject)
+    //     .catch(response => {
+    //       expect(response.status).toEqual(401);
+    //     });
+    // });
   });
 });

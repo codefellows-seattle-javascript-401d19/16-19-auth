@@ -48,18 +48,24 @@ imageRouter.get('/images/:id', bearerAuthMiddleware, (request, response, next) =
     })
     .catch(next);
 });
-// GET / <resouces-name>/:id
-// pass a bearer authentication token in the request to authorize the creation of the resource
-// on success respond with a 200 status code and an authentication token
-// on failure due to a bad id send a 404 status code
-// on failure due to bad token or lack of token respond with a 401 status code
-
 
 //TODO: ADD IMAGE DELETE ROUTE
-// Delete from MONGODB first and this wiell return the delete object which you can use properties of it to delete form aws/s3
-//mongodb method of findbyidandremove
-// DELETE / <resouces-name>/:id
-// pass a bearer authentication token in the request to authorize the creation of the resource
-// on success respond with a 204 status code and an authentication token
-// on failure due to a bad id send a 404 status code
-// on failure due to bad token or lack of token respond with a 401 status code
+
+imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+
+  return Image.findByIdAndRemove(request.params.id)
+    .then(image => {
+      console.log('-----------image to delete-----------', image);
+      console.log('-----------image key-----------', image.key);
+      if (!image)
+        throw new httpErrors(404, '__ERROR__ not found');
+
+      let urlArray = image.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+      return s3.remove(key);
+    })
+    .then(() => {
+      return response.sendStatus(204);
+    })
+    .catch(next);
+});
