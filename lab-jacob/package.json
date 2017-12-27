@@ -1,0 +1,30 @@
+{
+  "name": "lab-jacob",
+  "version": "1.0.0",
+  "description": "* Day 15 Bunary Tree Traversal",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --coverage",
+    "lint": "eslint",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db --port 27018",
+    "dboff": "killall mongod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "httperrors": "^2.3.0",
+    "jest": "^22.0.3",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.7",
+    "superagent": "^3.8.2",
+    "winston": "^2.4.0"
+  }
+}
