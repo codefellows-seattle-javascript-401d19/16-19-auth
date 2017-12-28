@@ -17,7 +17,7 @@
 * **httpErrors**
 * **jsonwebtoken**
 * **bcrypt**
-
+* **Travis CI**
 ## Authors
 
 * **Jacob Evans**
