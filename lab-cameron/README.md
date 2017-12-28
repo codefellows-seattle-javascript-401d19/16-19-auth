@@ -1,4 +1,4 @@
-# Basic auth
+# Back-end Deployment
 
 Auth in Node.js using bcrypt and JWT
 
