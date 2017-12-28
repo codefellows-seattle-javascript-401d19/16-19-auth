@@ -1,63 +1,171 @@
-//TODO: Write documention for starting your server and makeing requests to each endpoint it provides. The documentaion should describe how the server would respond to valid and invalid requests.
+# REST API using MongoDB deployed wth Github, Travis CI, and Heroku
 
-## REST API built using Express and MongoDB
-This is a server built from express and MongoDB that uses a MongoDB model to save api hits. It is setup as in inventory of mountains. 
+This is a simple HTTP server which follows REST constraints, that allows users to create an account, login, and update their profile and upload an image associated with their account.
 
-## Motivation
-I was motivated by an extreme desire to learn web development which led me to enroll in this program which ultimately led me to this assignment. 
+## Routes Explanation
 
-## Mountains
-Should have the following characteristics:
-- unique ID (via MongoDB)
-- name
-- state
-- range
+### URL: /signup
+
+#### POST: 
+  - If valid **username, email, and password** are given:
+    - Server response:
+      - Stores account in mongoDB
+      - creates a token the user can use for future requests while signed in
+  - If the **_information_** is incorrect or not present:
+    - Server response: _400 error_ stating the username, email and password are required.
+
+### URL: /login
+#### GET: 
+  - If **the account exist**:
+    - Server response: token for the user to use on future requests
+  - If **no account exists**:
+    - Server response: 404 Error not found.
+
+### URL: /profiles
+
+#### POST: 
+  - If valid **username, email, and password** are given:
+    - Server response:
+      - Stores account in mongoDB
+      - creates a token the user can use for future requests while signed in
+  - If the **_information_** is incorrect or not present:
+    - Server response: _400 error_ stating the username, email and password are required.
+
+### URL: /profiles/id
+#### GET: 
+  - If **the account exist**:
+    - Server response: token for the user to use on future requests
+  - If **no account exists**:
+    - Server response: 404 Error not found.
+
+### URL /images
+#### POST:
+  - If valid **account and valid image title and filepath** based on Bearer Authorization:
+    - Server response:
+      - uploads image to AWS via S3
+      - Stores new Image in mongoDB tied to account id with image AWS url as a property
+  - If no **account**:
+    - Server response: _404 Error_ not found.
+  - If improper or no **title or filepath**:
+    - Server response: _400 Error_ invalid request.
+
+### URL: images/id
+#### GET: 
+  - If **the account exist, bearer Auth passes and image id exists**:
+    - Server response: json of Image object from mongoDB
+  - If **no account exists**:
+    - Server response: 404 Error not found.
+  - If **image does not exsit**:
+    - Server response: 404 Image not found.
+
+#### DELETE: 
+  - If a valid **id** is given:
+    - Server response: deletes object from mongoDB, then removes from AWS S3, sends response of 204 status
+- If invalid o or no **id** is given:
+    - Server response: _404 error_ Not Found
+
+
+
+## Build status
+
+<!-- Build status of continus integration i.e. travis, appveyor etc. Ex.  -->
+Status: Working
+
+
+## Code style
+
+js-standard-style
 
 ## Tech/framework used
-Node.JS, Javascript, 
-### Dependencies necessary for production: 
-- dotenv
-- express
-- mongoose
-- parser
-- winston
-### Dependencies necessary for development: 
-- eslint
-- faker
+- Eslint
+- Node
 - jest
 - superagent
+- dotenv
+- Winston
+- Faker
+- Javascript /ES6
+- express
+- http-errors
+- mongoose
+- mongodb
 
+
+#### Built with
+
+VScode
 
 ## Features
-Server should run and respond to API put, post and delete calls regarding mountains. 
+
+- It uses Winston Logger to keep track of logs.
+- GET, POST, PUT, DELETE routes for newly discovered exo-planets and hoststars
+- Uses Faker to fake information for testing purposes
+
+## Code Example
+
+### Routes Example
+```
+
+imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next) => {
+
+  return Image.findByIdAndRemove(request.params.id)
+    .then(image => {
+      if (!image)
+        throw new httpErrors(404, '__ERROR__ not found');
+
+      let urlArray = image.url.split('/');
+      let key = urlArray[urlArray.length - 1];
+      return s3.remove(key);
+    })
+    .then(() => {
+      return response.sendStatus(204);
+    })
+    .catch(next);
+});
+```
 
 ## Installation
-Clone this repo to your local machine then install the npm dependencies necessary to run this guy. 
+1. ) Get source code from github 
+2. ) In terminal navigate to 'lab-seth' folder and run following commands:
+```
+npm i
+```
+
+## API Reference
+
+Docs in Progress
 
 ## Tests
-There are four tests right now.
-```
-- GET : 404 : should respond with a 404 error for any valid requests with an id that was not found
-- GET : 200 : should contain a response body for a request made with a valid id
-- POST : 400 : should respond with a bad request if no request body was provided or the body was invalid
-- POST : 200 : should respond with the body content for a post request with a valid body
-```
 
-## How to use?
-Once you install the dependencies you should be able to run `npm run test` to start the tests which starts the server in your CLI. 
+- Confirms a 200 status code on a proper POST request
+- Confirms a 400 status code when an improper POST request is made
 
+- Confirms a 200 status code on a proper GET request
+- Confirms a 400 status code when an improper GET request is made
 
-## Contribute
-If anyone wants to help, feel free to open a pull request and send it over. PRs will be answered in the order they are received. 
+- Confirms a 200 status code on a proper PUT request
+- Confirms a 400 status code when an improper PUT request is made
+
+- Confirms a 200 status code on a proper DELETE request
+- Confirms a 400 status code when an improper DELETE request is made
+
+#### To Run Tests, run these commands in terminal from lab-seth folder
+
+- npm run dbon
+- npm run test
+
 
 ## Credits
-Initial codebase created by the Vinincio Vladimir Sanchez Trejo. 
-Mad props to anyone who helped me and my parents for birthing me.
 
-#### Anything else that seems useful
-```You miss 100% of the shots you don't take. Wayne Gretzky.``` 
-
--Michael Scott.  
+- Winston
+- Node
+- dotenv
+- Faker
+- suepragent
+- jest
+- uuid
+- Classmates that helped me!
 
 ## License
-MIT License
+
+#### MIT © Seth Donohue

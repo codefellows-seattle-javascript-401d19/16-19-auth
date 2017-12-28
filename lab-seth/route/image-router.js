@@ -53,8 +53,6 @@ imageRouter.delete('/images/:id', bearerAuthMiddleware, (request, response, next
 
   return Image.findByIdAndRemove(request.params.id)
     .then(image => {
-      console.log('-----------image to delete-----------', image);
-      console.log('-----------image key-----------', image.key);
       if (!image)
         throw new httpErrors(404, '__ERROR__ not found');
 
