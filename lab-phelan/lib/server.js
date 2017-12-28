@@ -1,5 +1,5 @@
 'use strict';
-//require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const logger = require('./logger');
@@ -19,6 +19,7 @@ app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
 app.use(require('../route/car-router'));
+app.use(require('../route/sound-router'));
 
 
 app.all('*', (request, response) => {

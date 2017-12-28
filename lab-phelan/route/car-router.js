@@ -3,7 +3,6 @@
 const {Router} = require('express');
 const jsonParser = require('body-parser').json();
 const httpErrors = require('http-errors');
-
 const Car = require('../model/car');
 
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');

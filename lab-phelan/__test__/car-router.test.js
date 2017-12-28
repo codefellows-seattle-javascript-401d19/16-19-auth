@@ -54,7 +54,7 @@ describe('POST /cars', () => {
       });
   });
 
-  test.only('Should fail with a 400 status code due to missing required fields.', () => {
+  test('Should fail with a 400 status code due to missing required fields.', () => {
     let accountMock = null;
 
     return accountMockFactory.create()
