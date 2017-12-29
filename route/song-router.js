@@ -49,17 +49,15 @@ songRouter.delete('/songs/:id', bearerAuthMiddleware, (request, response, next) 
   if (!request.account) {
     return new httpErrors(404, '__ERROR__ not found');
   }
-  return Song.findById(request.params.id)
+  return Song.findByIdAndRemove(request.params.id)
     .then(song => {
       let urlArray = song.url.split('/');
       let key = urlArray[urlArray.length - 1];
       return s3.remove(key)
         .then(() => {
-          Song.findByIdAndRemove(request.params.id)
-            .then(() => {
-              response.sendStatus(204);
-            });
-        });
+          response.sendStatus(204);
+        })
+        .catch(next);
     })
     .catch(next);
 });
