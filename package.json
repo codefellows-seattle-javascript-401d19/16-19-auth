@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.9.3"
+  },
   "scripts": {
     "test": "jest -i --coverage",
     "start": "node index.js",
