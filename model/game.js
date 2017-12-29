@@ -6,7 +6,6 @@ const gameSchema = mongoose.Schema({
   title: String,
   type: String,
   year: Number,
-  synopsis: String,
   account: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -14,4 +13,4 @@ const gameSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('movie', gameSchema);
+module.exports = mongoose.model('game', gameSchema);
