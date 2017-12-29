@@ -1,13 +1,12 @@
 # Code Fellows: Seattle 401 JavaScript - 401d19
 
-##  Lab 19: Authorization - File Management
-
+##  Lab 21: Continuous Integration and Deployment
 ### Author:
  Catherine Looper
 
 ### Motivation
 
-In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic and bearer authentication using Express. This server handles POST, GET and DELETE requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence. This app is also using AWS S3 file storage.
+In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server with basic and bearer authentication using Express. This server handles POST, GET and DELETE requests/responses. This API uses MongoDB and Mongoose to write data to a db directory for persistence. This app is also using AWS S3 file storage, Travis CI for continuous integration, and Heroku for deployment.
 
 ### Build
 
@@ -165,6 +164,8 @@ Standard JavaScript with ES6
 * aws-sdk
 * aws-sdk-mock
 * Amazon Web Services
+* TravisCI
+* Heroku
 
 
 ### How to use?
