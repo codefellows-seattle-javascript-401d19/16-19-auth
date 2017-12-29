@@ -7,6 +7,7 @@
   "description": "* Day 15 Bunary Tree Traversal",
   "main": "index.js",
   "scripts": {
+    "start": "node lib/server.js",
     "test": "jest -i --coverage",
     "lint": "eslint",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db --port 27018",
