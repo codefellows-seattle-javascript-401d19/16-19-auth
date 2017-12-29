@@ -35,4 +35,5 @@ The POST request to this route is `'__server_address__/songs'`. All song request
 ***
 ## Technology/Credits
 
+
 Created by Andrew Bloom. This app is being logged with winston and is using superagent and jest for testing server requests. Request/server errors are being managed with http-errors. Using bcrypt for hashing and jsonWebServer for encryption/decryption. Files being parsed and temporarily stored with multer, and Amazon cloud services is handled by the aws-sdk. Server built with express and persistence managed by mongoose/mongodb. Using Travis CI for continuous integration. Deployed with Heroku.
