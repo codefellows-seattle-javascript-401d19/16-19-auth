@@ -40,9 +40,6 @@ soundRouter.get('/sounds/:id', bearerAuthMiddleware, (request,response,next) => 
     .then(sound => {
       if(!sound)
         return next(new httpErrors(404, 'ERROR not found'));
-        console.log('====================================');
-        console.log('GET BY ID', sound);
-        console.log('====================================');
       return response.json(sound);
     })
     .catch(next);
@@ -52,9 +49,6 @@ soundRouter.delete('/sound', bearerAuthMiddleware, (request,response,next) => {
 
   return Sound.findByIdAndRemove(request.params.id)
     .then(sound => {
-      console.log('====================================');
-      console.log('DELETE LOG', sound);
-      console.log('====================================');
       if(!sound)
         return next(new httpErrors(404, 'ERROR not found'));
       return s3.remove(sound.key)
