@@ -68,39 +68,39 @@ describe('/pictures', () => {
     test('GET /pictures/:id should return a 200 and a response body', () => {
       let pictureMock = null;
       return pictureMockFactory.create()
-      .then(mock => {
-        pictureMock = mock;
-        return superagent.get(`${apiURL}/pictures/${pictureMock.picture._id}`)
-        .set('Authorization', `Bearer ${pictureMock.accountMock.token}`);
-      })
-      .then(response => {
-        expect(response.body.url).toEqual(pictureMock.picture.url);
-        expect(response.status).toEqual(200);
-      });
+        .then(mock => {
+          pictureMock = mock;
+          return superagent.get(`${apiURL}/pictures/${pictureMock.picture._id}`)
+            .set('Authorization', `Bearer ${pictureMock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.body.url).toEqual(pictureMock.picture.url);
+          expect(response.status).toEqual(200);
+        });
     });
 
     test('GET /pictures/:id should return a 404 if a bad id is given', () => {
       return pictureMockFactory.create()
-      .then(mock => {
-        return superagent.get(`${apiURL}/pictures/12345abcd`)
-        .set('Authorization', `Bearer ${mock.accountMock.token}`);
-      })
-      .then(Promise.reject)
-      .catch(response => {
-        expect(response.status).toEqual(404);
-      });
+        .then(mock => {
+          return superagent.get(`${apiURL}/pictures/12345abcd`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
     });
 
     test('GET /pictures/:id should return a 401 if a bad token is given', () => {
       return pictureMockFactory.create()
-      .then(mock => {
-        return superagent.get(`${apiURL}/pictures/${mock.picture._id}`)
-        .set('Authorization', `Bearer 12345abcd`);
-      })
-      .then(Promise.reject)
-      .catch(response => {
-        expect(response.status).toEqual(401);
-      });
+        .then(mock => {
+          return superagent.get(`${apiURL}/pictures/${mock.picture._id}`)
+            .set('Authorization', `Bearer 12345abcd`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
     });
   });
 
@@ -108,37 +108,37 @@ describe('/pictures', () => {
 
     test('DELETE /pictures/:id should return a 204 if a picture was successfully deleted', () => {
       return pictureMockFactory.create()
-      .then(mock => {
-        return superagent.delete(`${apiURL}/pictures/${mock.picture._id}`)
-        .set('Authorization', `Bearer ${mock.accountMock.token}`);
-      })
-      .then(response => {
-        expect(response.status).toEqual(204);
-      });
+        .then(mock => {
+          return superagent.delete(`${apiURL}/pictures/${mock.picture._id}`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(response => {
+          expect(response.status).toEqual(204);
+        });
     });
 
     test('DELETE /pictures/:id should return a 404 if a bad id is entered', () => {
       return pictureMockFactory.create()
-      .then(mock => {
-        return superagent.delete(`${apiURL}/pictures/12345abcd`)
-        .set('Authorization', `Bearer ${mock.accountMock.token}`);
-      })
-      .then(Promise.reject)
-      .catch(response => {
-        expect(response.status).toEqual(404);
-      });
+        .then(mock => {
+          return superagent.delete(`${apiURL}/pictures/12345abcd`)
+            .set('Authorization', `Bearer ${mock.accountMock.token}`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(404);
+        });
     });
 
     test('DELETE /pictures/:id should return a 401 if an invalid token is used', () => {
       return pictureMockFactory.create()
-      .then(mock => {
-        return superagent.delete(`${apiURL}/pictures/${mock.picture._id}`)
-        .set('Authorization', `Bearer 12345abcd`);
-      })
-      .then(Promise.reject)
-      .catch(response => {
-        expect(response.status).toEqual(401);
-      });
+        .then(mock => {
+          return superagent.delete(`${apiURL}/pictures/${mock.picture._id}`)
+            .set('Authorization', `Bearer 12345abcd`);
+        })
+        .then(Promise.reject)
+        .catch(response => {
+          expect(response.status).toEqual(401);
+        });
     });
   });
 

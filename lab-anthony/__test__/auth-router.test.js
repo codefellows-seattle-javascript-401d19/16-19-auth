@@ -14,55 +14,55 @@ describe('Auth Router', () => {
 
   test('POST /signup creating an account should respond with a 200', () => {
     return superagent.post(`${apiURL}/signup`)
-    .send({
-      username: 'Huckleberry',
-      email: 'imadog@woofer.com',
-      password: 'barkbarkbark',
-    })
-    .then(response => {
-      expect(response.status).toEqual(200);
-    });
+      .send({
+        username: 'Huckleberry',
+        email: 'imadog@woofer.com',
+        password: 'barkbarkbark',
+      })
+      .then(response => {
+        expect(response.status).toEqual(200);
+      });
   });
 
   test('POST /signup creating an account without required parameters should respond with a 400', () => {
     return superagent.post(`${apiURL}/signup`)
-    .send({
-      username: 'Huckleberry',
-      email: 'imadog@woofer.com',
-    })
-    .then(Promise.reject)
-    .catch(response => {
-      expect(response.status).toEqual(400);
-    });
+      .send({
+        username: 'Huckleberry',
+        email: 'imadog@woofer.com',
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(400);
+      });
   });
 
   test('POST /signup creating an account with a bad url should send a 404', () => {
     return superagent.post(`${apiURL}/signu`)
-    .send({
-      username: 'Huckleberry',
-      email: 'imadog@woofer.com',
-      password: 'arfarf',
-    })
-    .then(Promise.reject)
-    .catch(response => {
-      expect(response.status).toEqual(404);
-    });
+      .send({
+        username: 'Huckleberry',
+        email: 'imadog@woofer.com',
+        password: 'arfarf',
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(404);
+      });
   });
 
   test('POST /signup creating an account with a duplicate unique parameter should respond with a 409', () => {
     return accountMockFactory.create()
-    .then(duplicateUser => {
-      return superagent.post(`${apiURL}/signup`)
-      .send({
-        username: duplicateUser.account.username,
-        email: 'stuff@email.com',
-        password: 'secret',
+      .then(duplicateUser => {
+        return superagent.post(`${apiURL}/signup`)
+          .send({
+            username: duplicateUser.account.username,
+            email: 'stuff@email.com',
+            password: 'secret',
+          });
+      })
+      .then(Promise.reject)
+      .catch(response => {
+        expect(response.status).toEqual(409);
       });
-    })
-    .then(Promise.reject)
-    .catch(response => {
-      expect(response.status).toEqual(409);
-    });
   });
 
   test('GET /login should get a 200 status code and a token if there are no errors', () => {
