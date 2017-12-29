@@ -36,6 +36,7 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
     .then(image => {
       logger.log('info', 'POST - returning a 200 status code');
       logger.log('info', image);
+      console.log('IMAGE POST INFO', image);
 
       return response.json(image);
     })
