@@ -59,7 +59,7 @@ describe('/gifs', () => {
             .attach('gif', `${__dirname}/asset/cultivate-mass.gif`)
             .then(Promise.reject)
             .catch(response => {
-              expect(response.status).toEqual(401);
+              expect(response.status).toEqual(400);
             });
         });
     });
