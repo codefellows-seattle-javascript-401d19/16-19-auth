@@ -1,5 +1,7 @@
-# Code Fellows 401 Lab 17
-The purpose of this lab is to implement user authorization and file uploads and downloads with AWS S3.  There are three models: account, profile, and picture.  
+# Code Fellows 401 Lab 21
+The purpose of this lab is to deploy continuous integration (CI) and continuous deployment (CD) on our previous labs.  Details below are from the previous labs.
+
+This code implements user authorization and file uploads and downloads with AWS S3.  There are three models: account, profile, and picture.  
 
 'Account' allows a user to sign up with a username, email and password.  Upon doing so, they receive a token.  Subsequently logging in with a valid username and password also returns a token.
 
