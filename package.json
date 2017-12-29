@@ -28,6 +28,7 @@
   "scripts": {
     "test": "jest -i --coverage || exit 0",
     "lint": "eslint *.js */**.js",
+    "start": "node index.js",
     "dbon": "mkdir -p ./db && mongod --dbpath ./db",
     "dboff": "killall mongod"
   },
