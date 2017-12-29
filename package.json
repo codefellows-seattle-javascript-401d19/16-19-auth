@@ -2,7 +2,7 @@
   "name": "lab-jacob",
   "version": "1.0.0",
   "engines": {
-    "node": "8.4.0"
+    "node": "8.9.0"
   },
   "description": "* Day 15 Bunary Tree Traversal",
   "main": "index.js",
@@ -17,6 +17,9 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "aws-mock": "^1.2.0",
+    "aws-sdk": "^2.175.0",
+    "aws-sdk-mock": "^1.7.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
