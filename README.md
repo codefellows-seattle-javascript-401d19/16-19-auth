@@ -1,14 +1,15 @@
-# Lab 19 File Management
+# Lab 21 Deployment
 
 ## Overview
 
-This API is a simple User Database API. It exists so you can create virtual users and securely store their passwords in an secure manner. After a user is created, they can post cats and get cats by their id if they have a valid token, which is obtained by logging in. A user can also post, get and delete songs, which are stored in the aws cloud service. This server-side app is built using express and mongo.
+This API is a simple User Database API. It exists so you can create virtual users and securely store their passwords in an secure manner. After a user is created, they can post cats and get cats by their id if they have a valid token, which is obtained by logging in. A user can also post, get and delete songs, which are stored in the aws cloud service. This server-side app is built using express and mongo. It is deployed using heroku and tested for continuous integration with Travis CI. 
 ***
 ## Getting Started
 
 To get started using this application, familiarity with node and npm, as well as git is assumed. It is also assumed that you have a current version of mongodb. Fork/clone this repo to your machine, and do an `npm install`.
 
 Install jest if you do not have it globally installed with `npm i jest`. In the terminal, navigate to the project folder. Open another new tab in the terminal and in that tab run the command `npm run dbon`. To run the tests, in the original terminal tab type `npm run test`.
+To start the server, type `node index.js`.
 ***
 ## Modules
 
@@ -34,4 +35,5 @@ The POST request to this route is `'__server_address__/songs'`. All song request
 ***
 ## Technology/Credits
 
-Created by Andrew Bloom. This app is being logged with winston and is using superagent and jest for testing server requests. Request/server errors are being managed with http-errors. Using bcrypt for hashing and jsonWebServer for encryption/decryption. Files being parsed and temporarily stored with multer, and Amazon cloud services is handled by the aws-sdk. Server built with express and persistence managed by mongoose/mongodb.
+
+Created by Andrew Bloom. This app is being logged with winston and is using superagent and jest for testing server requests. Request/server errors are being managed with http-errors. Using bcrypt for hashing and jsonWebServer for encryption/decryption. Files being parsed and temporarily stored with multer, and Amazon cloud services is handled by the aws-sdk. Server built with express and persistence managed by mongoose/mongodb. Using Travis CI for continuous integration. Deployed with Heroku.
