@@ -259,3 +259,125 @@
 {"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T03:06:39.423Z"}
 {"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T03:06:39.423Z"}
 {"level":"info","message":"Server off","timestamp":"2017-12-29T03:06:39.426Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-29T05:53:43.093Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:53:43.186Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.187Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:53:43.224Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.225Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:53:43.253Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.253Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:53:43.279Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.279Z"}
+{"level":"info","message":"Processing : GET on : /games/5a45d867c009a1217d5ea05c","timestamp":"2017-12-29T05:53:43.308Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.308Z"}
+{"level":"info","message":"Processing : GET on : /games/123123123","timestamp":"2017-12-29T05:53:43.337Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.337Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:53:43.363Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:53:43.364Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T05:53:43.366Z"}
+{"level":"info","message":"Server is listening on port 7000","timestamp":"2017-12-29T05:53:43.832Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:53:43.837Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:53:43.888Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T05:53:43.889Z"}
+{"message":"__ERROR__ username, email, and password required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/routes/auth-router.js:13:91)\n    at Layer.handle [as handle_request] (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/route.js:137:13)\n    at /Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:224:16)\n    at done (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:105:13)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-29T05:53:43.889Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to create an account","timestamp":"2017-12-29T05:53:43.891Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:53:43.894Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:53:43.918Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T05:53:43.939Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"Billybob@bob.com\" }","op":{"username":"Billy","email":"Billybob@bob.com","passwordHash":"$2a$08$RezEUENPfwIzBR59MJ3ZoeLkI5pSXTbmGDYsIx7B7YBHKWxFRVygy","tokenSeed":"4e232a5ea8ce891df381d025f2db9fd9cb6b24a7e022d449f09c20b9b81ad36a4484f3ac283c0dcf374e751bfdbd5f76c9748de7d67bfe9419dabc478f82f9d3","_id":"5a45d8671ae35e217d95905c","created":"2017-12-29T05:53:43.938Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-29T05:53:43.941Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T05:53:43.943Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T05:59:48.039Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:59:48.125Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.126Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:59:48.161Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.162Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:59:48.190Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.190Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:59:48.216Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.216Z"}
+{"level":"info","message":"Processing : GET on : /games/5a45d9d44bf92422e5e999ff","timestamp":"2017-12-29T05:59:48.244Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.244Z"}
+{"level":"info","message":"Processing : GET on : /games/123123123","timestamp":"2017-12-29T05:59:48.271Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.272Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T05:59:48.296Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T05:59:48.296Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T05:59:48.299Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T05:59:48.778Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:59:48.782Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:59:48.834Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T05:59:48.835Z"}
+{"message":"__ERROR__ username, email, and password required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/routes/auth-router.js:13:91)\n    at Layer.handle [as handle_request] (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/route.js:137:13)\n    at /Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:224:16)\n    at done (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:105:13)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-29T05:59:48.835Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to create an account","timestamp":"2017-12-29T05:59:48.837Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:59:48.840Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T05:59:48.864Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T05:59:48.886Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"Billybob@bob.com\" }","op":{"username":"Billy","email":"Billybob@bob.com","passwordHash":"$2a$08$xUI6V2L811ReCXT9iNX6uODjkvu.niqnbOkzBt.JoHkeCrR9sy.Vy","tokenSeed":"9ee719de2fbb1a4bae1e074b56a4248e79573c0f7e9ec74ff669afc981e43a8baa6422dbd38e29acffcbf6d4fabd8d6ec776424abd951939cb2bbc059a6802ab","_id":"5a45d9d461fc9222e5a4a825","created":"2017-12-29T05:59:48.884Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-29T05:59:48.888Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T05:59:48.890Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:03:20.386Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:03:20.607Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:03:20.990Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:21.081Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:21.133Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:03:21.134Z"}
+{"message":"__ERROR__ username, email, and password required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/routes/auth-router.js:13:91)\n    at Layer.handle [as handle_request] (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/route.js:137:13)\n    at /Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:224:16)\n    at done (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:105:13)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-29T06:03:21.134Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to create an account","timestamp":"2017-12-29T06:03:21.136Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:21.139Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:21.164Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:03:21.184Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"Billybob@bob.com\" }","op":{"username":"Billy","email":"Billybob@bob.com","passwordHash":"$2a$08$Cf657CI6S23onKIAsnzgd.SDHg6QcewfEl5MUF5eRrr3YsbiqKlQm","tokenSeed":"c4023e863ec20532de2e27a9f55a3974f55096f91a7212ed9f753608d63e80e80701f0177f8e1b4af1480eb9824e2757e498f437e47b9d5f68acf31f2e9a8292","_id":"5a45daa90d3dc223bb67bdfa","created":"2017-12-29T06:03:21.182Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-29T06:03:21.185Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:03:21.187Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:03:58.187Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:03:58.273Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:03:58.274Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:03:58.309Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:03:58.309Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:03:58.339Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:03:58.339Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:03:58.365Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:03:58.365Z"}
+{"level":"info","message":"Processing : GET on : /games/5a45daceaffa3123fcd501d8","timestamp":"2017-12-29T06:03:58.393Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:03:58.393Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:03:58.444Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:03:58.835Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:58.918Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:58.964Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:03:58.965Z"}
+{"message":"__ERROR__ username, email, and password required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/routes/auth-router.js:13:91)\n    at Layer.handle [as handle_request] (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/route.js:137:13)\n    at /Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:224:16)\n    at done (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:105:13)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-29T06:03:58.965Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to create an account","timestamp":"2017-12-29T06:03:58.966Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:58.970Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:03:58.994Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:03:59.014Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"Billybob@bob.com\" }","op":{"username":"Billy","email":"Billybob@bob.com","passwordHash":"$2a$08$qyVRj1fd9c5z8hKlxHpgceU106zsyHhE.5vGRYBG9BRfbSr2df3pe","tokenSeed":"5b36e48ba89d00398084966555f514a547341f0ba2de37267489ce56be73ac80ef40108284576f9f1e8f777fe4a199f6bd84b5de6bc48adc8688ca29f68fd0c5","_id":"5a45dacf58522d23fc463c14","created":"2017-12-29T06:03:59.012Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-29T06:03:59.015Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:03:59.017Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:04:15.537Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:04:15.624Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.624Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:04:15.660Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.660Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:04:15.691Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.691Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:04:15.717Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.717Z"}
+{"level":"info","message":"Processing : GET on : /games/5a45dadf1b8d9d241afe301a","timestamp":"2017-12-29T06:04:15.750Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.751Z"}
+{"level":"info","message":"Processing : GET on : /games/123123123","timestamp":"2017-12-29T06:04:15.778Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.779Z"}
+{"level":"info","message":"Processing : POST on : /games","timestamp":"2017-12-29T06:04:15.804Z"}
+{"level":"info","message":"Returning a 404 from the catch-all route","timestamp":"2017-12-29T06:04:15.804Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:04:15.806Z"}
+{"level":"info","message":"Server is listening on port 3000","timestamp":"2017-12-29T06:04:16.178Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:04:16.259Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:04:16.303Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:04:16.304Z"}
+{"message":"__ERROR__ username, email, and password required to create an account","stack":"BadRequestError: __ERROR__ username, email, and password required to create an account\n    at Object.<anonymous>.authRouter.post (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/routes/auth-router.js:13:91)\n    at Layer.handle [as handle_request] (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/express/lib/router/route.js:137:13)\n    at /Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:224:16)\n    at done (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/DaltonCarr/codefellows/401/lab-assignments/16-19-auth/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:105:13)\n    at IncomingMessage.emit (events.js:207:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","name":"BadRequestError","level":"info","timestamp":"2017-12-29T06:04:16.304Z"}
+{"level":"info","message":"Responding with a 400 status and message: __ERROR__ username, email, and password required to create an account","timestamp":"2017-12-29T06:04:16.305Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:04:16.309Z"}
+{"level":"info","message":"Processing : POST on : /signup","timestamp":"2017-12-29T06:04:16.331Z"}
+{"level":"info","message":"__ERROR_MIDDLEWARE__","timestamp":"2017-12-29T06:04:16.351Z"}
+{"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: testing.accounts index: email_1 dup key: { : \"Billybob@bob.com\" }","op":{"username":"Billy","email":"Billybob@bob.com","passwordHash":"$2a$08$KBhKp1K0ejUVlEFH38Gi2uES.kx8Z712rrRFvqEYWmw.yP/E1Yrae","tokenSeed":"5e8f3c2a308e26b2b870b59d716799d4d42cbb97e94fbb7ab83e29dbd3d40638f8bb0914c001f8d5da31571ff9d30b47c3bda83ffde3c646a9346b92f6df86b0","_id":"5a45dae0366b3e241abbd7fc","created":"2017-12-29T06:04:16.349Z","__v":0}}
+{"level":"info","message":"responding with a 409 status code","timestamp":"2017-12-29T06:04:16.352Z"}
+{"level":"info","message":"Server off","timestamp":"2017-12-29T06:04:16.354Z"}
