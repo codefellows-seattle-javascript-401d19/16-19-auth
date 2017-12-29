@@ -18,9 +18,9 @@ imageRouter.post('/images', bearerAuthMiddleware, upload.any(), (request, respon
   if (!request.account) {
     return next(new httpError(404, '__ERROR__ not found'));
   }
-  if (!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'image') {
-    return next(new httpError(400, '__ERROR__ invalid request'));
-  }
+  // if (!request.body.title || request.files.length > 1 || request.files[0].fieldname !== 'image') {
+  //   // return next(new httpError(400, '__ERROR__ invalid request'));
+  // }
 
   let file = request.files[0];
   let key = `${file.fieldname}.${file.originalname}`;
