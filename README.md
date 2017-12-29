@@ -1,6 +1,10 @@
 # Back-end Deployment
 
-Auth in Node.js using bcrypt and JWT!
+Auth in Node.js using bcrypt and JWT
+
+Basic auth for login and signup
+
+Bearer auth for all subsequent API calls for profiles and images GET and POSTS
 
 # Tech Used
 
@@ -37,6 +41,8 @@ Auth in Node.js using bcrypt and JWT!
 - Stores POST requests in MongoDB, hashes passwords using bcrypt, and encrypts JWT's via a salt and preferably sent over HTTPS
 
 POST requests must include a username, email and password.
+
+Basic auth is used for /signup routes whereas bearer auth is used after signup for autheniticating uses with a token
 
 200 status codes are returned on success, 400 if request is bad and 409 if
 unique key clashes in the database occur.
@@ -80,6 +86,8 @@ unique key clashes in the database occur.
 # Tests
 
 All tests use faker, superagent and jest
+
+All PR's to this repo will be checked against existing tests via Travis CI
 
 # Credits
 
