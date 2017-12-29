@@ -11,6 +11,9 @@
     "lint": "eslint ."
   },
   "author": "Jeff Kusowski",
+  "engines": {
+   "node": "8.4.0"
+ },
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.173.0",
