@@ -10,6 +10,8 @@ In this project, I built a RESTful (Hypertext Transfer Protocol) HTTP server wit
 
 ### Build
 
+[![Build Status](https://travis-ci.org/ccloops/16-19-auth.svg?branch=master)](https://travis-ci.org/ccloops/16-19-auth)
+
 #### Server Module
 
 The server module is creating an http server, defining server-on behavior and exporting an interface for starting and stopping the server. The server module exports an object containing start and stop methods.
