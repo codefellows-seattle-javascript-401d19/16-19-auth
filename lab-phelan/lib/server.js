@@ -19,7 +19,7 @@ app.use(require('./logger-middleware'));
 
 app.use(require('../route/auth-router'));
 app.use(require('../route/car-router'));
-app.use(require('../route/sound-router'));
+app.use(require('../route/video-router'));
 
 
 app.all('*', (request, response) => {

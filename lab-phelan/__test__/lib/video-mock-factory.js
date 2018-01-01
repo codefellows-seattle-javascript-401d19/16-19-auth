@@ -2,31 +2,31 @@
 
 const faker = require('faker');
 const accountMockFactory = require('./account-mock-factory');
-const Sound = require('../../model/sound');
+const Video = require('../../model/video');
 
-const soundMockFactory = module.exports = {};
+const videoMockFactory = module.exports = {};
 
-soundMockFactory.create = () => {
+videoMockFactory.create = () => {
   let mock = {};
 
   return accountMockFactory.create()
     .then(accountMock => {
       mock.accountMock = accountMock;
-      return new Sound({
+      return new Video({
         account : accountMock.account._id,
         title : faker.lorem.words(10),
         url : faker.random.image(),
       }).save();
     })
-    .then(sound => {
-      mock.sound = sound;
+    .then(video => {
+      mock.video = video;
       return mock;
     });
 };
 
-soundMockFactory.remove = () => {
+videoMockFactory.remove = () => {
   return Promise.all([
     accountMockFactory.remove(),
-    Sound.remove({}),
+    Video.remove({}),
   ]);
 };
