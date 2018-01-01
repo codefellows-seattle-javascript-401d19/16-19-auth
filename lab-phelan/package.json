@@ -11,7 +11,7 @@
   "author": "Phelan Carey",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.173.0",
+    "aws-sdk": "^2.176.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",

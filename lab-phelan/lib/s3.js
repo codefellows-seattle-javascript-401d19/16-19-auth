@@ -7,6 +7,11 @@ const amazonS3 = new aws.S3();
 const s3 = module.exports = {};
 
 s3.upload = (path, key) => {
+
+  console.log(`S3 Bucket: ${process.env.AWS_BUCKET}`);
+  console.log(`S3 Bucket: ${process.env.AWS_ACCESS_KEY_ID}`);
+  console.log(`S3 Bucket: ${process.env.AWS_SECRET_ACCESS_KEY}`);
+
   let uploadOptions = {
     Bucket : process.env.AWS_BUCKET,
     Key : key,

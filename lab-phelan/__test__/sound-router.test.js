@@ -14,7 +14,7 @@ describe('/sounds', () => {
   afterAll(server.stop);
   afterEach(soundMockFactory.remove);
 
-  test.only('POST /sounds should return a 200 status code and a sound if there are no errors', () => {
+  test('POST /sounds should return a 200 status code and a sound if there are no errors', () => {
     let tempAccountMock = null;
     return accountMockFactory.create()
       .then(accountMock => {

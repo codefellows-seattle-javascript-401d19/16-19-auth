@@ -29,8 +29,14 @@ soundRouter.post('/sounds',bearerAuthMiddleware,upload.any(),(request,response,n
   let key = `${file.filename}.${file.originalname}`;
   // bumper
 
+  console.log(`SR /sounds : files ${JSON.stringify(request.files)}`);
+  console.log(`SR /sounds : file ${file}`);
+  console.log(`SR /sounds : file.path ${file.path}`);
+  console.log(`SR /sounds : key ${key}`);
+
   return s3.upload(file.path,key)
     .then(url => {
+      //console.log('SR S3 Upload complete.');
       return new Sound({
         title : request.body.title,
         account : request.account._id,
