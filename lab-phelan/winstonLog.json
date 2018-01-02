@@ -23,3 +23,472 @@
 {"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-01T03:58:45.491Z"}
 {"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2018-01-01T03:58:45.494Z"}
 {"level":"info","message":"Server turned off.","timestamp":"2018-01-01T03:58:45.499Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-01T08:30:28.555Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-01T08:30:28.685Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-01T08:30:28.850Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2018-01-01T08:30:28.853Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-01T08:30:28.918Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-01T08:30:28.973Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2018-01-01T08:30:28.974Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-01T08:30:28.981Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2018-01-01T08:30:28.984Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-01T08:30:28.990Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-01T08:30:29.638Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-01T08:30:29.701Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-01T08:30:29.766Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-01T08:30:30.342Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-01T08:30:30.634Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-01T08:30:30.673Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-01T08:30:30.674Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-01T08:30:30.728Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-01T08:30:30.737Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-01T08:30:30.744Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-01T08:30:30.751Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2018-01-01T08:30:30.813Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a49f1a6d3f1ce696dc15766 ]","timestamp":"2018-01-01T08:30:30.816Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-01T08:30:30.821Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-01T08:30:30.840Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:29:42.781Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:29:42.840Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:29:42.991Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2018-01-02T01:29:42.997Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:29:43.061Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:29:43.115Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2018-01-02T01:29:43.116Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:29:43.123Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2018-01-02T01:29:43.126Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:29:43.132Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:29:43.769Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:29:43.826Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:29:43.861Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T01:29:43.862Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:29:43.917Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:29:43.925Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:29:43.932Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:29:43.939Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a4ae0871e22aa7df96f9881 ]","timestamp":"2018-01-02T01:29:43.997Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2018-01-02T01:29:44.002Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:29:44.017Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:29:44.026Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:30:17.264Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:30:17.475Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:30:17.627Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2018-01-02T01:30:17.631Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:30:17.692Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:30:17.746Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2018-01-02T01:30:17.747Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:30:17.754Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2018-01-02T01:30:17.758Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:30:17.763Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:30:18.420Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:30:18.472Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:30:18.509Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T01:30:18.510Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:30:18.576Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:30:18.584Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:30:18.591Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:30:18.596Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a4ae0aa73fd787e305f5e59 ]","timestamp":"2018-01-02T01:30:18.654Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2018-01-02T01:30:18.657Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:30:18.665Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:30:18.680Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:30:20.239Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T01:30:20.315Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:30:20.375Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:33:52.022Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:33:52.224Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /signup ]","timestamp":"2018-01-02T01:33:52.373Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ username, email, and password required.","timestamp":"2018-01-02T01:33:52.376Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:33:52.452Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:33:52.505Z"}
+{"level":"info","message":"Responding with a 400 status. Message: __ERROR__ 'Authorization' header required.","timestamp":"2018-01-02T01:33:52.506Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /login ]","timestamp":"2018-01-02T01:33:52.513Z"}
+{"level":"info","message":"Responding with a 401 status. Message: __AUTH__ Incorrect username or password.","timestamp":"2018-01-02T01:33:52.516Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:33:52.521Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:33:53.625Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T01:33:53.693Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:33:53.771Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:33:54.497Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:33:54.665Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:33:54.697Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T01:33:54.698Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /cars ]","timestamp":"2018-01-02T01:33:54.752Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:33:54.763Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:33:54.769Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T01:33:54.774Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/5a4ae182fc7c0d7fe86795a7 ]","timestamp":"2018-01-02T01:33:54.834Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /cars/XXXTHISisAwrongIDXXX ]","timestamp":"2018-01-02T01:33:54.840Z"}
+{"level":"info","message":"Responding with a 404 status code.","timestamp":"2018-01-02T01:33:54.852Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T01:33:54.861Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:17:51.611Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:17:51.619Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:21:58.033Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:21:58.042Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:23:32.166Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:23:32.447Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:24:45.737Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:24:46.015Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:25:05.774Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:25:06.063Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:26:15.914Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:26:16.214Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-02T02:26:16.222Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:26:16.265Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:33:25.643Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:33:25.947Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-02T02:33:25.955Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:33:25.997Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:45:19.198Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:45:19.363Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:45:19.433Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:45:19.437Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:45:19.472Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:47:02.709Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:47:03.028Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:47:03.098Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:47:03.102Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:47:03.126Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:48:12.409Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:48:12.640Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:48:12.711Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:48:12.715Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:48:12.740Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:49:38.951Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:49:39.250Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:49:39.321Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:49:39.325Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:49:39.348Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:53:13.454Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:53:13.760Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:53:13.833Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:53:13.836Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:53:13.862Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:55:05.534Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:55:05.833Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:55:05.914Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:55:05.918Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:55:05.942Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:55:26.225Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T02:55:26.539Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T02:55:26.615Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T02:55:26.620Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:55:26.644Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T02:58:51.213Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T02:58:51.374Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:03:19.051Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:03:19.364Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:03:19.436Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:03:19.439Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:03:19.463Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:04:58.147Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:04:58.436Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:04:58.526Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:10:01.761Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:10:01.976Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:10:02.060Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:11:28.288Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:11:28.514Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T03:11:28.572Z"}
+{"message":"response.sendJSON is not a function","stack":"TypeError: response.sendJSON is not a function\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:47:105)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T03:11:28.573Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:11:28.612Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:11:47.658Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:11:47.876Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:11:47.962Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:39:11.120Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:39:11.381Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:39:11.492Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:42:08.474Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:42:08.758Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:42:08.858Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:42:08.864Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:42:08.894Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:54:07.248Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:54:07.504Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:54:07.598Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:54:07.602Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:54:07.623Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:54:47.388Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:54:47.622Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:54:47.701Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:54:47.705Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:54:47.731Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:56:12.348Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:56:12.577Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:56:12.652Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:56:12.657Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:56:12.681Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:58:46.417Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:58:46.658Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:58:46.733Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:58:46.737Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:58:46.760Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:59:12.964Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:59:13.196Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:59:13.271Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:59:13.274Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:59:13.298Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T03:59:45.307Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T03:59:45.471Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T03:59:45.544Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T03:59:45.548Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T03:59:45.570Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:00:15.248Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:00:15.480Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:00:15.532Z"}
+{"message":"Converting circular structure to JSON","stack":"TypeError: Converting circular structure to JSON\n    at JSON.stringify (<anonymous>)\n    at s3.upload.then.url (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:40:51)\n    at <anonymous>","level":"info","timestamp":"2018-01-02T04:00:15.532Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:00:15.562Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:02:40.887Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:02:41.198Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:02:41.250Z"}
+{"message":"Converting circular structure to JSON","stack":"TypeError: Converting circular structure to JSON\n    at JSON.stringify (<anonymous>)\n    at s3.upload.then.url (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:40:51)\n    at <anonymous>","level":"info","timestamp":"2018-01-02T04:02:41.250Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:02:41.280Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:03:14.416Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:03:14.791Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:03:14.927Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:03:14.934Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:03:14.977Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:12:39.300Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:12:39.537Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:12:39.598Z"}
+{"message":"response.json is not a function","stack":"TypeError: response.json is not a function\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:51:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T04:12:39.599Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:12:39.634Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:13:11.924Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:13:12.164Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:13:12.223Z"}
+{"message":"response.json is not a function","stack":"TypeError: response.json is not a function\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:51:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T04:13:12.223Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:13:12.257Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:14:23.207Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:14:23.448Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:14:23.503Z"}
+{"message":"response.json is not a function","stack":"TypeError: response.json is not a function\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:52:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T04:14:23.503Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:14:23.536Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:16:48.593Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:16:48.819Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:16:48.893Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:16:48.897Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:16:48.920Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:35:15.866Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:35:16.094Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:35:16.168Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:35:16.172Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:35:16.196Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:39:23.874Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:39:24.056Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:39:24.120Z"}
+{"message":"s3FileName is not defined","stack":"ReferenceError: s3FileName is not defined\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:49:11)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T04:39:24.121Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:39:24.160Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:42:12.197Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:42:12.522Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:42:12.614Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:42:12.620Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:42:12.652Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:43:58.290Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:43:58.524Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:43:58.600Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:43:58.605Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:43:58.632Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:44:31.990Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:44:32.168Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:44:32.244Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:44:32.248Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:44:32.272Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:46:11.129Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:46:11.299Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:46:11.352Z"}
+{"message":"Converting circular structure to JSON","stack":"TypeError: Converting circular structure to JSON\n    at JSON.stringify (<anonymous>)\n    at s3.upload.then.url (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:40:51)\n    at <anonymous>","level":"info","timestamp":"2018-01-02T04:46:11.353Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:46:11.382Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:47:00.849Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:47:01.086Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:47:01.159Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:47:01.163Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:47:01.188Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:47:37.679Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:47:37.927Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:47:38.006Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:47:38.011Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:47:38.038Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:48:14.234Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:48:14.453Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T04:48:14.505Z"}
+{"message":"Converting circular structure to JSON","stack":"TypeError: Converting circular structure to JSON\n    at JSON.stringify (<anonymous>)\n    at s3.upload.then.url (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:40:44)\n    at <anonymous>","level":"info","timestamp":"2018-01-02T04:48:14.505Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:48:14.534Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T04:49:05.508Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T04:49:05.729Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T04:49:05.804Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T04:49:05.808Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T04:49:05.834Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:03:47.189Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:03:47.413Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T05:03:47.484Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T05:03:47.488Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:03:47.511Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:07:30.543Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:07:30.759Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:07:30.859Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:38:45.835Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:38:46.052Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:38:46.144Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:40:57.428Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:40:57.641Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T05:40:57.701Z"}
+{"message":"Cannot set property 's3FileName' of undefined","stack":"TypeError: Cannot set property 's3FileName' of undefined\n    at s3.upload.then.then.video (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:50:35)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T05:40:57.701Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:40:57.741Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:41:51.465Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:41:51.756Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:41:51.841Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:43:48.490Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:43:48.709Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:43:48.801Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:44:55.585Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:44:55.810Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:44:55.905Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:46:58.982Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:46:59.140Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:46:59.233Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:47:49.069Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:47:49.241Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:47:49.334Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:48:48.459Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:48:48.670Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:48:48.763Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:54:03.860Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:54:04.072Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:54:04.172Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:55:08.927Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:55:09.226Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:55:09.310Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T05:57:33.014Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T05:57:33.302Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T05:57:33.403Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:01:23.190Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:01:23.381Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:01:23.473Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:01:47.594Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:01:47.895Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:01:48.039Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T06:01:48.065Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T06:01:48.068Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:01:48.086Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:02:35.857Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:02:36.153Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:02:36.297Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/undefined ]","timestamp":"2018-01-02T06:02:36.324Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T06:02:36.328Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:02:36.343Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:03:51.485Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:03:51.777Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:03:51.918Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/101dd641d79b57c52fabd16b89b9880d.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T06:03:51.945Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T06:03:51.949Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:03:51.963Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:09:38.923Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:09:39.158Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:09:39.300Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/0929bd29c5f9f3b13b73727b2c10ea5b.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T06:09:39.326Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T06:09:39.330Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:09:39.350Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:10:39.773Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:10:40.011Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:10:40.150Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/146a22bdc12292184c4eec0ee9c9db76.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T06:10:40.177Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR__ 'Authorization' header required..","timestamp":"2018-01-02T06:10:40.181Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:10:40.196Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T06:11:45.289Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:11:45.576Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T06:11:45.722Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/4f9f5882e9d6a8e05e35ac31607c4a8b.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T06:11:45.750Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T06:11:45.759Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:42:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T06:11:45.759Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T06:11:45.775Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:39:12.699Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:39:12.995Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:39:13.133Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/886ea4b88d772ec2a4271947f07247c5.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:39:13.160Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:39:13.167Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:42:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:39:13.167Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:39:13.182Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:40:59.418Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:40:59.630Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:40:59.777Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/e793e71d224911a0baef202691eea647.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:40:59.803Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:40:59.810Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:40:59.810Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:40:59.826Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:42:10.354Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:42:10.677Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/802250a68241bbc94ce5e9ebbe6dd9e3.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:42:10.747Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:42:10.755Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:42:10.755Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:42:10.781Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:50:08.131Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:50:08.463Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/5fcd2d142647310bf0e7ccd61f5d5b5b.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:50:08.533Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:50:08.541Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:50:08.542Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:50:08.571Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:51:19.057Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:51:19.280Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/4959e7367fd39f6318127ba35f24ded6.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:51:19.351Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:51:19.359Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:51:19.359Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:51:19.401Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:53:21.685Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:53:21.981Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/1a655351bf36af2f864cdb02c3d99c46.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:53:22.051Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:53:22.059Z"}
+{"message":"s3.getObjects is not a function","stack":"TypeError: s3.getObjects is not a function\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:64:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-02T07:53:22.059Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:53:22.095Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:54:12.076Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:54:12.307Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/2971e48f771eb62dd5702cffdbdd138c.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:54:12.379Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:54:12.403Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:57:20.937Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:57:21.167Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/2a9d36d0ea5c4eef6812b2a96b266b48.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:57:21.239Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:57:21.267Z"}
+{"message":"Expected params.Key to be a string","stack":"InvalidParameterType: Expected params.Key to be a string\n    at ParamValidator.fail (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:50:37)\n    at ParamValidator.validateType (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:222:10)\n    at ParamValidator.validateString (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:154:32)\n    at ParamValidator.validateScalar (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:130:21)\n    at ParamValidator.validateMember (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:94:21)\n    at ParamValidator.validateStructure (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:75:14)\n    at ParamValidator.validateMember (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:88:21)\n    at ParamValidator.validate (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:34:10)\n    at Request.VALIDATE_PARAMETERS (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:125:42)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:85:9\n    at finish (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:320:7)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:362:9\n    at resolveNext (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:107:9)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:120:11\n    at EnvironmentCredentials.get (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials.js:126:7)\n    at resolveNext (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:119:15)\n    at CredentialProviderChain.resolve (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:127:5)\n    at Config.getCredentials (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:357:31)\n    at Request.VALIDATE_CREDENTIALS (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:80:26)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:101:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at Request.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:403:15)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:791:12\n    at new Promise (<anonymous>)\n    at Request.promise (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:777:12)\n    at Object.<anonymous>.s3.getObject.id [as getObject] (/home/main/401/labs/16-19-auth/lab-phelan/lib/s3.js:31:3)\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:67:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","code":"InvalidParameterType","time":"2018-01-02T07:57:21.264Z","name":"InvalidParameterType","level":"info","timestamp":"2018-01-02T07:57:21.267Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:57:21.301Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T07:59:27.815Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T07:59:28.038Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/ce0ec5ce51b36487893e8abfbc6a7222.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T07:59:28.112Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T07:59:28.579Z"}
+{"message":"The specified key does not exist.","stack":"NoSuchKey: The specified key does not exist.\n    at Request.extractError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/services/s3.js:577:35)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:269:13)\n    at IncomingMessage.emit (events.js:164:20)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","code":"NoSuchKey","region":null,"name":"NoSuchKey","time":"2018-01-02T07:59:28.574Z","requestId":"08AD21B1C1DD4A6B","extendedRequestId":"8DQgP8jh3RUSJ8PhY2GAx1VeMad3mhR1GPYpaVXS2T7GNQ+KCtb3zr+d1au4PxUUmtHofT3wwfE=","statusCode":404,"retryable":false,"retryDelay":58.091813419705886,"level":"info","timestamp":"2018-01-02T07:59:28.579Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T07:59:28.615Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T08:00:34.085Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T08:00:34.257Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/f0d10c17bcbaadcb92f66d380baae31a.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T08:00:34.329Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T08:00:34.799Z"}
+{"message":"The specified key does not exist.","stack":"NoSuchKey: The specified key does not exist.\n    at Request.extractError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/services/s3.js:577:35)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:269:13)\n    at IncomingMessage.emit (events.js:164:20)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","code":"NoSuchKey","region":null,"name":"NoSuchKey","time":"2018-01-02T08:00:34.794Z","requestId":"31CFD83A121E1706","extendedRequestId":"kd7iD+WTTIvMu/qGSTkSlfCSBJxky5izDmz9KK/QLI1Vak5tTfcV420ee6c35gbbbeM/LMRn5EI=","statusCode":404,"retryable":false,"retryDelay":158.21651375851934,"level":"info","timestamp":"2018-01-02T08:00:34.799Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T08:00:34.837Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T08:02:01.794Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T08:02:01.960Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/02876e23e1b559f35415f8eff3058221.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T08:02:02.029Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T08:02:02.057Z"}
+{"message":"Unexpected key 'ACL' found in params","stack":"UnexpectedParameter: Unexpected key 'ACL' found in params\n    at ParamValidator.fail (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:50:37)\n    at ParamValidator.validateStructure (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:77:14)\n    at ParamValidator.validateMember (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:88:21)\n    at ParamValidator.validate (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/param_validator.js:34:10)\n    at Request.VALIDATE_PARAMETERS (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:125:42)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:85:9\n    at finish (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:320:7)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:362:9\n    at resolveNext (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:107:9)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:120:11\n    at EnvironmentCredentials.get (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials.js:126:7)\n    at resolveNext (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:119:15)\n    at CredentialProviderChain.resolve (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/credentials/credential_provider_chain.js:127:5)\n    at Config.getCredentials (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/config.js:357:31)\n    at Request.VALIDATE_CREDENTIALS (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:80:26)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:101:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at Request.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:403:15)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:791:12\n    at new Promise (<anonymous>)\n    at Request.promise (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:777:12)\n    at Object.<anonymous>.s3.getObject.id [as getObject] (/home/main/401/labs/16-19-auth/lab-phelan/lib/s3.js:35:3)\n    at Object.<anonymous>.videoRouter.get (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:65:6)\n    at Layer.handle [as handle_request] (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/express/lib/router/route.js:137:13)\n    at promisify.catch.then.then.account (/home/main/401/labs/16-19-auth/lab-phelan/lib/bearer-auth-middleware.js:43:12)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","code":"UnexpectedParameter","time":"2018-01-02T08:02:02.054Z","name":"UnexpectedParameter","level":"info","timestamp":"2018-01-02T08:02:02.058Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T08:02:02.094Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T09:17:12.067Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T09:17:12.267Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/e9f880fb97d4276fdcdabc8ec408d272.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T09:17:12.341Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T09:17:13.186Z"}
+{"message":"The specified key does not exist.","stack":"NoSuchKey: The specified key does not exist.\n    at Request.extractError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/services/s3.js:577:35)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:269:13)\n    at IncomingMessage.emit (events.js:164:20)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","code":"NoSuchKey","region":null,"name":"NoSuchKey","time":"2018-01-02T09:17:13.181Z","requestId":"739E1D60D6E17CA1","extendedRequestId":"UEnn++JaebJzVELAEXowrhT9z1NNXKMpxn7sWOJi+HRqag3MEnCR3fKNVRXzTBX5pnCRB2O92kc=","statusCode":404,"retryable":false,"retryDelay":139.4485854105186,"level":"info","timestamp":"2018-01-02T09:17:13.186Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T09:17:13.224Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T10:01:44.905Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T10:01:45.102Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/f6db7f83078adb6324d8b99cef95fe1d.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T10:01:45.175Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T10:01:45.577Z"}
+{"message":"The specified key does not exist.","stack":"NoSuchKey: The specified key does not exist.\n    at Request.extractError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/services/s3.js:577:35)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:269:13)\n    at IncomingMessage.emit (events.js:164:20)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","code":"NoSuchKey","region":null,"name":"NoSuchKey","time":"2018-01-02T10:01:45.572Z","requestId":"4730BB0AB5067E22","extendedRequestId":"uBbSbx0R0tfj7Hkux2RoCbRg+dRwB4ZUsGd2YjSOBba/6Ba4B8W9DBRQFFNEcCRJyaX8UOXQrDg=","statusCode":404,"retryable":false,"retryDelay":150.0870174677413,"level":"info","timestamp":"2018-01-02T10:01:45.578Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T10:01:45.614Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T10:04:24.003Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T10:04:24.169Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/8a1fa1f86f51fb081dbc223bb70f4269.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T10:04:24.247Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-02T10:04:24.690Z"}
+{"message":"The specified key does not exist.","stack":"NoSuchKey: The specified key does not exist.\n    at Request.extractError (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/services/s3.js:577:35)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:105:20)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:77:10)\n    at Request.emit (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:683:14)\n    at Request.transition (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/request.js:685:12)\n    at Request.callListeners (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:115:18)\n    at callNextListener (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/sequential_executor.js:95:12)\n    at IncomingMessage.onEnd (/home/main/401/labs/16-19-auth/lab-phelan/node_modules/aws-sdk/lib/event_listeners.js:269:13)\n    at IncomingMessage.emit (events.js:164:20)\n    at endReadableNT (_stream_readable.js:1054:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:218:9)","code":"NoSuchKey","region":null,"name":"NoSuchKey","time":"2018-01-02T10:04:24.685Z","requestId":"CB89395C0B9D8395","extendedRequestId":"EBoq81q/2FrefznfYNx1gvWUJxsSZ7TKC32nj49WkGPGXa+5WhwmjRztoxcc/cOt7yXbe8lbG2Y=","statusCode":404,"retryable":false,"retryDelay":20.415704746960905,"level":"info","timestamp":"2018-01-02T10:04:24.690Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T10:04:24.728Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T10:06:23.387Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T10:06:23.825Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/a1728e9c214f646776f090ab99b9db6c.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T10:06:24.766Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T10:06:25.676Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-02T10:07:32.552Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-02T10:07:32.736Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/7b1635d88137b77f30a438c0453c316b.chimp-and-lion.mp4 ]","timestamp":"2018-01-02T10:07:33.632Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-02T10:07:34.822Z"}

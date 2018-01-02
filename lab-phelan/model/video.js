@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const videoSchema = mongoose.Schema({
   title : { type : String, required : true},
+  key : { type : String, required : false},
   url : { type : String, required : true},
   createdOn : { type : Date, default : () => new Date()},
 

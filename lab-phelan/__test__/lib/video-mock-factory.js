@@ -14,7 +14,7 @@ videoMockFactory.create = () => {
       mock.accountMock = accountMock;
       return new Video({
         account : accountMock.account._id,
-        title : faker.lorem.words(10),
+        title : faker.lorem.words(2),
         url : faker.random.image(),
       }).save();
     })

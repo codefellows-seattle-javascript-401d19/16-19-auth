@@ -22,6 +22,7 @@ module.exports = (request,response,next) => {
     return next(new httpErrors(400,`_ERROR__ 'Authorization' header required.`));
 
   const token = request.headers.authorization.split('Bearer ')[1];
+  console.log(`BearerAuth: token: ${token}`);
 
   if(!token)
     return next(new httpErrors(400,'__ERROR__ token required'));

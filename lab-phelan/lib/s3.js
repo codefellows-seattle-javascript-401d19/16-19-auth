@@ -7,11 +7,6 @@ const amazonS3 = new aws.S3();
 const s3 = module.exports = {};
 
 s3.upload = (path, key) => {
-
-  console.log(`S3 Bucket: ${process.env.AWS_BUCKET}`);
-  console.log(`S3 Bucket: ${process.env.AWS_ACCESS_KEY_ID}`);
-  console.log(`S3 Bucket: ${process.env.AWS_SECRET_ACCESS_KEY}`);
-
   let uploadOptions = {
     Bucket : process.env.AWS_BUCKET,
     Key : key,
@@ -30,10 +25,28 @@ s3.upload = (path, key) => {
     });
 };
 
-s3.remove = (key) => {
+s3.getObject = id => {
+  console.log('hit s3.getObject');
+  let getOptions = {
+    Bucket : process.env.AWS_BUCKET,
+    Key : id,
+  };
+  return amazonS3.getObject(getOptions)
+    .promise()
+    .then(response => {
+      console.log(`as3.getObject Success: response: ${response.body}`);
+      return response;
+    })
+    .catch(error => Promise.reject(error));
+};
+
+s3.remove = key => {
   let removeOptions = {
     Key : key,
     Bucket : process.env.AWS_BUCKET,
   };
-  return amazonS3.deleteObject(removeOptions).promise();
+  return amazonS3.deleteObject(removeOptions)
+    .promise()
+    .then(response => response)
+    .catch(error => Promise.reject(error));
 };

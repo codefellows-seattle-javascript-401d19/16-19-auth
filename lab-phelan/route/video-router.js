@@ -7,6 +7,7 @@ const {Router} = require('express');
 const httpErrors = require('http-errors');
 const bearerAuthMiddleware = require('../lib/bearer-auth-middleware');
 const Video = require('../model/video');
+const jsonParser = require('body-parser').json();
 
 
 
@@ -29,24 +30,50 @@ videoRouter.post('/videos',bearerAuthMiddleware,upload.any(),(request,response,n
   let key = `${file.filename}.${file.originalname}`;
   // bumper
 
-  console.log(`VR /videos : files ${JSON.stringify(request.files)}`);
-  console.log(`VR /videos : file ${file}`);
-  console.log(`VR /videos : file.path ${file.path}`);
-  console.log(`VR /videos : key ${key}`);
+  // console.log(`VR /videos : files ${JSON.stringify(request.files)}`);
+  // console.log(`VR /videos : file ${JSON.stringify(file)}`);
+  // console.log(`VR /videos : file.path ${file.path}`);
+  // console.log(`VR /videos : key ${key}`);
 
   return s3.upload(file.path,key)
     .then(url => {
-      //console.log('VR S3 Upload complete.');
       return new Video({
         title : request.body.title,
         account : request.account._id,
+        //key : request.body.key,
         url,
       }).save();
     })
-    .then(video => response.json(video))
+    .then(video => {
+      let responseInfo = {};
+      responseInfo.title = video.title;
+      responseInfo.account = video.account;
+      responseInfo.url = video.url;
+      responseInfo._id = video._id;
+      responseInfo.createdOn = video.createdOn;
+      responseInfo.s3FileName = key;
+      // console.log(` key: ${JSON.stringify(video)}`);
+      // console.log(` video: ${JSON.stringify(responseInfo)}`);
+      response.json(responseInfo);
+    })
     .catch(next);
 });
 
-videoRouter.get('/videos/:id');
+videoRouter.get('/videos/:id', bearerAuthMiddleware, (request,response,next) => {
+  console.log(`Hit VR GET:id Route: ${request.params.id}`);
 
-videoRouter.delete('/videos/:id');
+  s3.getObject(request.params.id)
+    .then(video => {
+      console.log(`s3 GetObjects return: ${JSON.stringify(video)}`);
+      response.json(video);
+    })
+    .catch(next);
+});
+
+videoRouter.delete('/videos/:id', bearerAuthMiddleware, (request,response,next) => {
+  s3.getObjects(request.params.id)
+    .then(
+      response.sendStatus(204)
+    )
+    .catch(next);
+});
