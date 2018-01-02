@@ -34,7 +34,8 @@ s3.getObject = id => {
   return amazonS3.getObject(getOptions)
     .promise()
     .then(response => {
-      console.log(`as3.getObject Success: response: ${response.body}`);
+      let buffer = response;
+      console.log(`as3.getObject Success: responses' keys: ${Object.keys(buffer)}`);
       return response;
     })
     .catch(error => Promise.reject(error));

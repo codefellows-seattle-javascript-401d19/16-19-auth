@@ -64,7 +64,7 @@ videoRouter.get('/videos/:id', bearerAuthMiddleware, (request,response,next) => 
 
   s3.getObject(request.params.id)
     .then(video => {
-      console.log(`s3 GetObjects return: ${JSON.stringify(video)}`);
+      //console.log(`s3 GetObjects return: ${JSON.stringify(video)}`);
       response.json(video);
     })
     .catch(next);
