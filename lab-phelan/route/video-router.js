@@ -60,20 +60,18 @@ videoRouter.post('/videos',bearerAuthMiddleware,upload.any(),(request,response,n
 });
 
 videoRouter.get('/videos/:id', bearerAuthMiddleware, (request,response,next) => {
-  console.log(`Hit VR GET:id Route: ${request.params.id}`);
-
   s3.getObject(request.params.id)
     .then(video => {
-      //console.log(`s3 GetObjects return: ${JSON.stringify(video)}`);
+      console.log(`VR GET .then: s3 GetObjects return: ${JSON.stringify(video)}`);
       response.json(video);
     })
     .catch(next);
 });
 
 videoRouter.delete('/videos/:id', bearerAuthMiddleware, (request,response,next) => {
-  s3.getObjects(request.params.id)
-    .then(
-      response.sendStatus(204)
-    )
+  s3.remove(request.params.id)
+    .then(response => {
+      response.sendStatus(204);
+    })
     .catch(next);
 });
