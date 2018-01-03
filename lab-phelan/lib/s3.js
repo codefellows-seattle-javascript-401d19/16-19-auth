@@ -26,7 +26,6 @@ s3.upload = (path, key) => {
 };
 
 s3.getObject = id => {
-  console.log('hit s3.getObject');
   let getOptions = {
     Bucket : process.env.AWS_BUCKET,
     Key : id,
@@ -34,22 +33,20 @@ s3.getObject = id => {
   return amazonS3.getObject(getOptions)
     .promise()
     .then(response => {
-      //console.log(`s3.getObject .then ${Object.keys(response)}`);
       return response;
     })
     .catch(error => {
-      //console.log(`s3.getObject .catch ${JSON.stringify(error)}`);
       return error;
     });
 };
 
-s3.remove = key => {
+s3.deleteObject = key => {
   let removeOptions = {
     Key : key,
     Bucket : process.env.AWS_BUCKET,
   };
   return amazonS3.deleteObject(removeOptions)
     .promise()
-    .then(response => response)
-    .catch(error => Promise.reject(error));
+    .then()
+    .catch(error => error);
 };

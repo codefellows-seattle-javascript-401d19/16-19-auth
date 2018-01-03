@@ -1133,3 +1133,429 @@
 {"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:02:56.825Z"}
 {"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:02:56.829Z"}
 {"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:02:56.830Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:10:20.067Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:20.219Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:21.244Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T05:10:21.261Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:21.321Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T05:10:21.324Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:10:21.334Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:10:21.343Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:21.403Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/a4e8dc0526ec60cc729ceddf96e85b70.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T05:10:21.838Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:22.804Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/d624f5033431820006587be12e3dde06.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T05:10:23.250Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T05:10:23.255Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:23.318Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T05:10:23.886Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:10:24.108Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:10:24.117Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:24.164Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/94c3e52f51e4578a562dbb919c9dc518.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T05:10:24.920Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T05:10:25.110Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T05:10:25.111Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:25.184Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/0a79bf7f960af53fff45d86ba2b96eec.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T05:10:25.630Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T05:10:25.632Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:10:25.693Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T05:10:26.173Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T05:10:26.390Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T05:10:26.391Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:10:26.402Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:11:25.830Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:11:25.836Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:11:25.932Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:11:25.933Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T05:11:25.943Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T05:11:26.087Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/0e48149f9857edd896f82eacdb1035ca.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T05:11:26.949Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T05:11:27.107Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T05:11:27.107Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T05:11:27.144Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:00:31.451Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:00:31.457Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:00:31.662Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:00:31.663Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:00:31.674Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:00:31.824Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/202894da03524521949b37a2147461c0.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:00:32.838Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:00:32.992Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:00:32.992Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:00:33.032Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:07:49.730Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:07:49.739Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:07:49.816Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:07:49.816Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:07:49.826Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:07:49.970Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/a6f6255e0946de0201e358f34c9f7e64.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:07:50.890Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:07:51.125Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:07:51.125Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:07:51.164Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:08:53.571Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:08:53.576Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:08:53.618Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:08:53.619Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:08:53.629Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:08:53.777Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/44a3a80ee5a566e53391049dff044270.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:08:54.616Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:08:54.829Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:08:54.829Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:08:54.852Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:17:26.871Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:17:26.878Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:17:26.953Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:17:26.954Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:17:26.964Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:17:27.114Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/353097bfc646879c8a4ef60a6bdb7be9.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:17:28.373Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:17:28.552Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:17:28.553Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:17:28.577Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:19:53.573Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:19:53.580Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:19:53.657Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:19:53.658Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:19:53.668Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:19:53.820Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/abfa9657736ce09976e08320ac102ef4.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:19:54.760Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:19:54.925Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:19:54.925Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:19:54.950Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:30:55.022Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:30:55.028Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:30:55.141Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:30:55.142Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:30:55.152Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:30:55.295Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/21af67eed8324c0387e267ed5fb60651.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:30:56.268Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:30:56.498Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:30:56.498Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:30:56.522Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:33:26.274Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:33:26.281Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:33:26.401Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:33:26.402Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:33:26.412Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:33:26.556Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/7fb5e8b8a1fdf899ae61b68fced102ed.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:33:27.472Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:33:27.652Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:33:27.653Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:33:27.677Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:34:24.382Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:34:24.388Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:34:24.515Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:34:24.516Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:34:24.526Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:34:24.683Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/2e0c9641acf8679d059c81fbdf898042.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:34:25.705Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:34:25.864Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.remove.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:34:25.864Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:34:25.890Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:38:29.823Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:38:29.829Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:38:29.870Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:38:29.871Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:38:29.881Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:38:30.025Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/75d978be6f02127d6350c0598126cf19.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:38:30.979Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:38:31.145Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.deleteObject.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:38:31.145Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:38:31.170Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:41:36.660Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:41:36.666Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:41:36.779Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:41:36.780Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:41:36.790Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:41:36.938Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/1df8701c0269aa46de4866d7782f7994.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:41:37.764Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:41:37.936Z"}
+{"message":"response.json is not a function","stack":"TypeError: response.json is not a function\n    at s3.deleteObject.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:41:37.937Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:41:37.964Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:48:41.757Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:48:41.765Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:48:41.866Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:48:41.867Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:48:41.878Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:48:42.022Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/4ab2274b822b0d0a30d61b5dded8df90.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:48:42.880Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:48:42.901Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.deleteObject.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:48:42.901Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:48:42.922Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:54:39.289Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:54:39.294Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:54:39.338Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:54:39.340Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:54:39.350Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:54:39.499Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/f4d7a12b89e5465cf544141bee72d087.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:54:40.475Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:54:40.637Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.deleteObject.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:54:40.637Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:54:40.663Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:55:42.057Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:55:42.063Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:55:42.182Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:55:42.183Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:55:42.192Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:55:42.337Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/925555c5d710a0bfc993dcf845c276d5.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:55:43.361Z"}
+{"level":"info","message":"Responding with a 500 status code","timestamp":"2018-01-03T10:55:43.542Z"}
+{"message":"response.sendStatus is not a function","stack":"TypeError: response.sendStatus is not a function\n    at s3.deleteObject.then.response (/home/main/401/labs/16-19-auth/lab-phelan/route/video-router.js:74:14)\n    at <anonymous>\n    at process._tickDomainCallback (internal/process/next_tick.js:228:7)","level":"info","timestamp":"2018-01-03T10:55:43.543Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:55:43.579Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:57:30.785Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:57:30.795Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:57:30.875Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:57:30.877Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:57:30.891Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:57:31.097Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/1b47b346b6fe73e0fcd7259eaefb61bf.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:57:32.094Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:58:21.576Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:58:21.584Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:58:21.680Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:58:21.682Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:58:21.692Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:58:21.833Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/f697da5960c1cb2241a3e041d156193a.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:58:23.027Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:59:00.212Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:59:00.218Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:59:00.333Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T10:59:00.334Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T10:59:00.348Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T10:59:00.508Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/37c3079039d9d6ef9434293517a3be46.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T10:59:01.778Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:00:24.321Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:00:24.326Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:00:24.434Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:00:24.435Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:00:24.445Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:00:24.584Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/59f9046afe01ffc567a5766a8bffdb19.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:00:25.447Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:00:25.670Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:01.133Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:01:01.139Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:01.240Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:01:01.241Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:01.252Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:01:01.406Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/50e50378bda913f7263446a6d8c77f14.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:01:02.348Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:01:02.542Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:39.864Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:01:39.869Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:39.912Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:01:39.913Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:01:39.924Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:01:40.072Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/22765688d2683140d14da623a2c00376.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:01:40.932Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:03:12.817Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:03:12.822Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:03:13.005Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:03:13.006Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:03:13.016Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:03:13.160Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/5d1988d27498c2eb2b3bf3da5793e191.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:03:14.108Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:04:09.077Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:04:09.082Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:04:09.264Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:04:09.265Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:04:09.275Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:04:09.422Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/19691d399a6f60cd66b7c8fd97ef6ae3.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:04:10.585Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:04:10.778Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:05:57.197Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:05:57.204Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:05:57.287Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:05:57.288Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:05:57.298Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:05:57.440Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/76e5f777ccc08396331bef878b64282a.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:05:58.442Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:05:58.618Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:06:27.153Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:06:27.160Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:06:27.233Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:06:27.234Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:06:27.244Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:06:27.389Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/cd195e51695e7517b8203305caaa627d.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:06:28.265Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:06:28.541Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:07:21.104Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:07:21.111Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:07:21.203Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:07:21.204Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:07:21.214Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:07:21.356Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/53243f045cde4c6ba545940549fe4404.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:07:22.371Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:07:22.545Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:11:44.800Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:11:44.805Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:11:44.852Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:11:44.853Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:11:44.863Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:11:45.015Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/453ca3800f0aad93f0a3d999c34d72cf.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:11:45.876Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:11:46.051Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:12:38.563Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:12:38.570Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:12:38.683Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:12:38.684Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:12:38.694Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:12:38.840Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/9cbea1ac23c47d943d016253c8a4ec0b.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:12:39.735Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:12:39.929Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:15:48.630Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:15:48.636Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:15:48.735Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:15:48.736Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:15:48.746Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:15:48.892Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/0805443f2a8faca79c86a738cf89f461.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:15:49.827Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:15:50.017Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:16:27.696Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:27.927Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:28.923Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:16:28.949Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:29.009Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:16:29.020Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:16:29.033Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:16:29.044Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:29.096Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/47cf25f8e050f48df3e9327ec8fbf799.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:16:29.518Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:30.530Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/ead119c97acf9969d82b3131c7505b8b.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:16:30.951Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:16:30.953Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:31.014Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:16:31.374Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:16:31.524Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:16:31.530Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:31.579Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/52f90c7e1c8b75872635902a78d8a8e4.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:16:32.149Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:32.520Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/8a4e56c1c6558afc6b352cd58da76723.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:16:32.991Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:16:32.994Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:16:33.058Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:16:33.500Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:16:33.678Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:19:29.347Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:29.505Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:30.705Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:19:30.722Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:30.780Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:19:30.785Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:19:30.797Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:19:30.806Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:30.866Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/ed30be128b16e85eb1cc7ac08756ab83.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:19:31.618Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:32.741Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/50dea7841da064acf4b83efc2f89e0da.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:19:33.181Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:19:33.184Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:33.245Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:19:33.664Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:19:33.839Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:19:33.844Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:33.893Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/679953ddb9c57ac5434ffc6e2b42ba46.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:19:34.491Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:34.749Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/5ee4f6e9220e2c42f8f52f7364492ea7.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:19:35.281Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:19:35.284Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:19:35.337Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:19:35.905Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:19:36.113Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:20:12.549Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:12.761Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:13.777Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:20:13.797Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:13.848Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:20:13.851Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:20:13.860Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:20:13.869Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:13.925Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/91483dadb70089a4bb62508fbe57b7e2.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:20:14.501Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:15.502Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/e48ff1ae49ede569b22b3c9d238d0686.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:20:15.919Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:20:15.921Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:15.981Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:20:17.256Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:20:17.471Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:20:17.479Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:17.532Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/acd44450e005932a498bf1c5b3066c0b.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:20:17.926Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:18.154Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/51cb82756e4e4f673786ac5f33435f5a.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:20:18.767Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:20:18.770Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:20:18.828Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:20:19.266Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:20:19.430Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:21:37.426Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:37.581Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:38.499Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:21:38.514Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:38.566Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:21:38.569Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:21:38.579Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:21:38.590Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:38.635Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/5f22152701551f837e10c4b0e0d522d9.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:21:39.114Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:39.672Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/18b940cd04607bea1991177d820e9675.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:21:40.200Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:21:40.201Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:40.425Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:21:40.907Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:21:41.096Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:21:41.101Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:41.155Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/8d1bc7dec969c5b54598b4e4b37aee12.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:21:41.641Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:41.859Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/2547eac8efe4706111b5142b88513694.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:21:42.285Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:21:42.288Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:21:42.519Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:21:43.139Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:21:43.322Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:22:38.001Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.298Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.437Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:22:38.464Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.522Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:22:38.525Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:22:38.534Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:22:38.545Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.610Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/1b2a5d35e3b7857d0261e62916ade69c.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:22:38.641Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.713Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/f803d0a60a74e32ce5622f60eb1a58e5.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:22:38.734Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:22:38.736Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.795Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:22:38.812Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:22:38.826Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:22:38.831Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.881Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/d9ad4022ff9c3e09fb2671c642d9caa1.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:22:38.900Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:38.965Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/859b9eb0f6d56805c5f58825aaa92319.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:22:38.985Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:22:38.987Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:22:39.045Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:22:39.063Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:22:39.075Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:28:00.458Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:00.743Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:00.962Z"}
+{"level":"info","message":"Responding with a 400 status. Message: _ERROR_ invalid request.","timestamp":"2018-01-03T11:28:00.987Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.051Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:28:01.060Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:28:01.078Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:28:01.094Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.169Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/2a67e18d6de1c39b66fe26fd164d2d5f.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:28:01.233Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.333Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/5125a7028dd20aa62104c12b5679a173.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:28:01.370Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:28:01.374Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.430Z"}
+{"level":"info","message":"Processing: [ GET ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:28:01.466Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:28:01.488Z"}
+{"level":"info","message":"Server is listening on port 7171","timestamp":"2018-01-03T11:28:01.494Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.574Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/fb81f426adcd934858b1a2800e76a13f.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:28:01.604Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.704Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/f4a9fc46b2c72db697ecb34e942f56f6.chimp-and-lion.mp4 ]","timestamp":"2018-01-03T11:28:01.734Z"}
+{"level":"info","message":"Responding with a 401 status. Message: jwt malformed.","timestamp":"2018-01-03T11:28:01.737Z"}
+{"level":"info","message":"Processing: [ POST ] on [ /videos ]","timestamp":"2018-01-03T11:28:01.808Z"}
+{"level":"info","message":"Processing: [ DELETE ] on [ /videos/xX-FAILURE-Xx ]","timestamp":"2018-01-03T11:28:01.836Z"}
+{"level":"info","message":"Server turned off.","timestamp":"2018-01-03T11:28:01.855Z"}
